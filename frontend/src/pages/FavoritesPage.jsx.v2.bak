@@ -1,0 +1,40 @@
+import { Link } from "react-router-dom";
+import { KATALOG } from "../data/katalogMotif";
+import KartuMotifBaru from "../components/KartuMotifBaru";
+import useFavoritLokal from "../hooks/useFavoritLokal";
+
+export default function FavoritesPage() {
+  const fav = useFavoritLokal();
+  const daftar = KATALOG.filter((m) => fav.ada(m.id));
+
+  return (
+    <div>
+      <h1 className="text-3xl font-bold">Favorit</h1>
+
+      {daftar.length === 0 ? (
+        <div className="mt-10 flex flex-col items-center text-center">
+          <div className="pola-kawung h-28 w-28 rounded-full ring-4 ring-malam" aria-hidden="true" />
+          <h2 className="mt-6 text-xl font-semibold">Belum ada motif tersimpan</h2>
+          <p className="mt-2 max-w-sm text-mute">
+            Tekan ikon hati pada sebuah motif di halaman Jelajah untuk menyimpannya di sini.
+          </p>
+          <Link
+            to="/jelajah"
+            className="mt-6 inline-flex h-12 items-center rounded-full bg-malam px-8 font-semibold text-nila"
+          >
+            Jelajah motif
+          </Link>
+        </div>
+      ) : (
+        <>
+          <p className="mt-1 text-mute">{daftar.length} motif tersimpan</p>
+          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {daftar.map((m) => (
+              <KartuMotifBaru key={m.id} motif={m} favorit onToggle={fav.toggle} />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}

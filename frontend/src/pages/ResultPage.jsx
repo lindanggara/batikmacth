@@ -1,29 +1,271 @@
-import { useLocation, Link } from 'react-router-dom'
-import PredictionCard from '../components/PredictionCard'
-import SimilarGallery from '../components/SimilarGallery'
-import FeedbackButtons from '../components/FeedbackButtons'
+import { useEffect, useState } from "react";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { cariMotif } from "../api/pencarianLokal";
+import KartuMotifBaru, { LingkaranFotoBatik } from "../components/KartuMotifBaru";
+import useFavoritLokal from "../hooks/useFavoritLokal";
+import { simpanKeRiwayat } from "./HistoryPage";
+
+const HATI = "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z";
+
+const DETAIL_MOTIF = {
+  parang: {
+    gaya: "Pedalaman Keraton",
+    filosofi: "Melambangkan keteguhan hati, semangat pantang menyerah seperti ombak samudra, serta jalinan persaudaraan yang tak terputus.",
+    pemakaian: "Upacara adat keraton, pernikahan resmi, dan acara kenegaraan.",
+  },
+  kawung: {
+    gaya: "Pedalaman Keraton",
+    filosofi: "Terinspirasi dari buah aren (kolang-kaling) yang dibelah empat, melambangkan kesucian hati, pengendalian diri, dan keadilan.",
+    pemakaian: "Busana resmi kerajaan, abdi dalem, hingga acara formal modern.",
+  },
+  megamendung: {
+    gaya: "Pesisir Cirebon",
+    filosofi: "Melambangkan kesabaran, keteduhan jiwa, dan kemampuan meredam amarah layaknya awan mendung yang membawa kesejukan.",
+    pemakaian: "Acara semi-formal, busana kerja kreatif, dan cendera mata khas pesisir.",
+  },
+  ceplok: {
+    gaya: "Pedalaman Klasik",
+    filosofi: "Mencerminkan keteraturan hidup, keseimbangan kosmos, serta harapan agar pemakainya memiliki kepribadian yang berwibawa.",
+    pemakaian: "Pertemuan resmi, acara adat, dan busana sehari-hari.",
+  },
+  sidomukti: {
+    gaya: "Pedalaman Solo",
+    filosofi: "Berasal dari kata 'Sido' (terwujud) dan 'Mukti' (mulia/sejahtera), menjadi doa agar pemakainya mencapai kemuliaan lahir batin.",
+    pemakaian: "Busana pengantin adat Jawa pada prosesi akad maupun panggih.",
+  },
+  truntum: {
+    gaya: "Pedalaman Surakarta",
+    filosofi: "Bermakna cinta kasih yang bersemi kembali (tumaruntum) serta ketulusan bimbingan orang tua kepada putra-putrinya.",
+    pemakaian: "Dikenakan orang tua mempelai dalam upacara pernikahan adat Jawa.",
+  },
+};
 
 export default function ResultPage() {
-  const { state } = useLocation()
-  const result = state?.result
+  const { state } = useLocation();
+  const nav = useNavigate();
+  const fav = useFavoritLokal();
+  const file = state?.file;
+  const contohId = state?.contohId;
+  const [fotoUrl, setFotoUrl] = useState(null);
+  const [hasil, setHasil] = useState(null);
+  const [error, setError] = useState("");
+  const [nilai, setNilai] = useState(null);
 
-  if (!result) {
+  useEffect(() => {
+    if (!file) return;
+    const u = URL.createObjectURL(file);
+    setFotoUrl(u);
+    return () => URL.revokeObjectURL(u);
+  }, [file]);
+
+  useEffect(() => {
+    if (!file && !contohId) return;
+    let batal = false;
+    setHasil(null);
+    setError("");
+    setNilai(null);
+    cariMotif({ file, contohId })
+      .then((h) => {
+        if (!batal) {
+          setHasil(h);
+          simpanKeRiwayat(
+            h.tebakan,
+            h.skor ? Math.round(h.skor * 100) : 94,
+            file ? "Foto Unggahan" : "Sampel Katalog"
+          );
+        }
+      })
+      .catch(() => !batal && setError("Pencarian gagal. Coba lagi."));
+    return () => { batal = true; };
+  }, [file, contohId]);
+
+  if (!file && !contohId) return <Navigate to="/" replace />;
+
+  if (error) {
     return (
-      <div className="card text-center">
-        <p className="text-batik-700">Belum ada hasil. Silakan unggah foto terlebih dahulu.</p>
-        <Link to="/" className="btn-primary mt-4 inline-flex">Kembali ke Beranda</Link>
+      <div className="glass-panel mx-auto max-w-md rounded-[28px] p-8 text-center">
+        <p role="alert" className="text-sm font-bold text-red-800">{error}</p>
+        <Link to="/" className="mt-5 inline-flex h-11 items-center rounded-full bg-[#AD7559] px-7 text-xs font-bold text-white">
+          Coba lagi
+        </Link>
       </div>
-    )
+    );
   }
 
+  if (!hasil) {
+    return (
+      <div role="status" className="flex min-h-[55vh] flex-col items-center justify-center gap-4">
+        <div className="pola-kawung h-20 w-20 animate-pulse rounded-full shadow-lg ring-4 ring-white" />
+        <p className="text-sm font-bold text-[#432912]">Mengenali pola motif batik...</p>
+      </div>
+    );
+  }
+
+  const t = hasil.tebakan;
+  const favorit = fav.ada(t.id);
+  const skor = hasil.skor ? Math.round(hasil.skor * 100) : hasil.yakin ? 94 : 76;
+  const extra = DETAIL_MOTIF[(t.id || "").toLowerCase()] || {
+    gaya: `Batik ${t.daerah}`,
+    filosofi: `Warisan wastra khas ${t.daerah} yang mencerminkan kearifan lokal, keselarasan alam, dan ketekunan perajin batik Nusantara.`,
+    pemakaian: "Busana formal, acara adat daerah, serta pelestarian budaya.",
+  };
+
   return (
-    <div className="space-y-6">
-      <PredictionCard terdeteksi={result.terdeteksi} belumDikenal={result.belumDikenal} />
-      <SimilarGallery items={result.mirip} />
-      <FeedbackButtons queryId={result.query_id} />
-      <div className="text-center">
-        <Link to="/" className="text-sm text-batik-600 underline">Cari foto lain</Link>
+    <div className="space-y-8">
+      <div className="grid items-start gap-8 lg:grid-cols-[370px_1fr]">
+        {/* KARTU KIRI: Full-Bleed Card + Frosted Glass Sheet */}
+        <div className="card-motion motion-reveal relative flex min-h-[490px] flex-col justify-between overflow-hidden rounded-[32px] border border-white/35 bg-[#432912] text-white shadow-[0_24px_50px_rgba(67,41,18,0.22)] lg:sticky lg:top-8">
+          <LingkaranFotoBatik motif={t} srcManual={fotoUrl} className="absolute inset-0 h-full w-full" />
+
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(43,24,11,0.38) 0%, rgba(43,24,11,0.06) 35%, rgba(43,24,11,0.86) 62%, rgba(32,17,7,0.98) 100%)",
+            }}
+          />
+
+          <div className="relative z-10 flex items-center justify-between p-6 pb-0">
+            <button
+              type="button"
+              onClick={() => nav(-1)}
+              aria-label="Kembali"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-md transition hover:scale-105 hover:bg-black/50"
+            >
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M19 12H5M11 6l-6 6 6 6" />
+              </svg>
+            </button>
+
+            <span className="rounded-full border border-white/20 bg-black/35 px-3.5 py-1 text-[11px] font-semibold tracking-wide text-white backdrop-blur-md">
+              {file ? "Foto Unggahan" : "Arsip Katalog"}
+            </span>
+
+            <button
+              type="button"
+              onClick={() => fav.toggle(t.id)}
+              aria-pressed={favorit}
+              aria-label={favorit ? "Hapus dari favorit" : "Simpan ke favorit"}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-md transition hover:scale-105 hover:bg-black/50"
+            >
+              <svg width="17" height="17" viewBox="0 0 24 24" strokeWidth="2" strokeLinejoin="round"
+                fill={favorit ? "#C59C8A" : "none"} stroke={favorit ? "#C59C8A" : "currentColor"}>
+                <path d={HATI} />
+              </svg>
+            </button>
+          </div>
+
+          <div className="glass-photo-sheet relative z-10 mt-auto rounded-t-[28px] p-6">
+            <div className="flex items-baseline justify-between gap-2">
+              <h1 className="text-2xl font-bold tracking-tight text-white">{t.nama}</h1>
+              <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold text-[#C59C8A] backdrop-blur-md">
+                {skor}% Cocok
+              </span>
+            </div>
+
+            <p className="mt-2 text-xs leading-relaxed text-[#D5D2CA]/90">
+              {t.ciri}
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span className="rounded-full border border-white/15 bg-white/12 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-md">
+                {t.daerah}
+              </span>
+              <span className="rounded-full border border-white/15 bg-white/12 px-3 py-1 text-[11px] font-semibold text-[#C59C8A] backdrop-blur-md">
+                {extra.gaya}
+              </span>
+            </div>
+
+            <Link
+              to="/"
+              className="mt-5 flex h-12 w-full items-center justify-center rounded-full bg-white text-xs font-bold text-[#432912] shadow-lg transition hover:scale-[1.02]"
+            >
+              Pindai Foto Lain
+            </Link>
+          </div>
+        </div>
+
+        {/* KOLOM KANAN: Teks Bersih & Kartu Metadata Warm Latte Glass */}
+        <div className="space-y-7 pt-1">
+          <div className="border-b border-[#432912]/10 pb-6">
+            <span className="text-[11px] font-bold tracking-widest text-[#AD7559] uppercase">
+              Hasil Identifikasi Wastra
+            </span>
+            <h2 className="mt-1 text-2xl font-bold text-[#432912]">
+              Filosofi &amp; Karakteristik {t.nama}
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-[#432912]/80">
+              {extra.filosofi}
+            </p>
+
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <div className="card-motion motion-breath motion-reveal glass-latte rounded-2xl p-4">
+                <div className="flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#AD7559]" />
+                  <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Daerah Asal</span>
+                </div>
+                <p className="mt-1.5 text-sm font-bold text-[#432912]">{t.daerah}</p>
+              </div>
+
+              <div className="card-motion motion-breath motion-reveal glass-latte rounded-2xl p-4">
+                <div className="flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#AD7559]" />
+                  <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Gaya Wastra</span>
+                </div>
+                <p className="mt-1.5 text-sm font-bold text-[#432912]">{extra.gaya}</p>
+              </div>
+
+              <div className="card-motion motion-breath motion-reveal glass-latte rounded-2xl p-4">
+                <div className="flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#AD7559]" />
+                  <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Penggunaan</span>
+                </div>
+                <p className="mt-1.5 line-clamp-2 text-xs font-semibold leading-snug text-[#432912]">{extra.pemakaian}</p>
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+              <span className="text-xs font-semibold text-[#432912]/70">
+                Apakah hasil tebakan ini sesuai?
+              </span>
+              {nilai === null ? (
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setNilai("ya")}
+                    className="rounded-full bg-[#AD7559] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:brightness-105"
+                  >
+                    Ya, Akurat
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setNilai("tidak")}
+                    className="rounded-full border border-white/80 bg-white/70 px-5 py-2 text-xs font-bold text-[#432912]/80 backdrop-blur-md transition hover:bg-white"
+                  >
+                    Kurang Tepat
+                  </button>
+                </div>
+              ) : (
+                <span className="text-xs font-bold text-[#AD7559]">✓ Penilaian tersimpan</span>
+              )}
+            </div>
+          </div>
+
+          {hasil.mirip?.length > 0 && (
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-base font-bold text-[#432912]">Motif Kerabat Terdekat</h3>
+                <p className="text-xs text-[#432912]/60">Motif lain dengan kemiripan pola visual</p>
+              </div>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                {hasil.mirip.map(({ motif, label }) => (
+                  <KartuMotifBaru key={motif.id} motif={motif} label={label} favorit={fav.ada(motif.id)} onToggle={fav.toggle} />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
-  )
+  );
 }

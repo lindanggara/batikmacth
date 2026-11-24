@@ -1,0 +1,44 @@
+const LANGKAH = [
+  { judul: "Foto", isi: "Kamu memotret atau memilih foto kain batik." },
+  { judul: "Ekstraksi ciri", isi: "Jaringan CNN mengubah foto menjadi deretan angka (embedding) yang mewakili polanya." },
+  { judul: "Pencarian", isi: "Embedding dibandingkan dengan koleksi memakai cosine similarity, lalu motif paling mirip ditampilkan." },
+];
+
+export default function AboutPage() {
+  return (
+    <div>
+      <h1 className="text-3xl font-bold">Tentang BatikLens</h1>
+      <p className="mt-3 max-w-xl leading-relaxed text-nila/90">
+        BatikLens membantu kamu mengenali motif batik dari sebuah foto, lalu menampilkan motif lain yang mirip.
+        Aplikasi ini dibuat sebagai tugas Praktikum Neuro Computing.
+      </p>
+
+      <section className="mt-8 max-w-3xl rounded-3xl bg-white p-6 shadow-sm ring-1 ring-nila/10">
+        <h2 className="text-xl font-semibold">Cara kerja</h2>
+        <ol className="mt-4 space-y-4">
+          {LANGKAH.map((l, i) => (
+            <li key={l.judul} className="flex gap-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-nila font-display font-bold text-malam">
+                {i + 1}
+              </span>
+              <div>
+                <h3 className="font-semibold">{l.judul}</h3>
+                <p className="text-mute">{l.isi}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="pola-ceplok mt-6 max-w-3xl rounded-[32px] p-2.5">
+        <div className="rounded-3xl bg-kain p-6">
+          <h2 className="text-xl font-semibold">Yang perlu kamu tahu</h2>
+          <p className="mt-2 text-nila/90">
+            Koleksi baru mencakup 15 motif. Tebakan bisa meleset pada motif yang mirip, jadi lihat juga motif
+            pembandingnya sebelum menyimpulkan.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}

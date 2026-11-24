@@ -1,0 +1,128 @@
+import { useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { KATALOG } from "../data/katalogMotif";
+import KartuMotifBaru from "../components/KartuMotifBaru";
+
+const MAKS_MB = 10;
+const CONTOH = ["parang", "kawung", "megamendung", "ceplok"].map((id) => KATALOG.find((m) => m.id === id));
+const LANGKAH = [
+  { judul: "Foto", isi: "Potret atau pilih foto kain batik dari galeri." },
+  { judul: "Ekstraksi ciri", isi: "Jaringan CNN mengubah foto menjadi deretan angka yang mewakili polanya." },
+  { judul: "Pencarian", isi: "Angka itu dibandingkan dengan koleksi, lalu motif paling mirip ditampilkan." },
+];
+
+export default function HomePage() {
+  const nav = useNavigate();
+  const kamera = useRef(null);
+  const galeri = useRef(null);
+  const [error, setError] = useState("");
+
+  function proses(file) {
+    setError("");
+    if (!file) return;
+    if (!file.type.startsWith("image/")) return setError("File harus berupa foto (JPG atau PNG).");
+    if (file.size > MAKS_MB * 1024 * 1024) return setError(`Ukuran foto maksimal ${MAKS_MB} MB.`);
+    nav("/hasil", { state: { file } });
+  }
+
+  return (
+    <div className="space-y-16 lg:space-y-24">
+      <section
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={(e) => { e.preventDefault(); proses(e.dataTransfer.files?.[0]); }}
+        className="relative overflow-hidden rounded-[28px] bg-gradient-to-br from-nila-mid via-nila to-nila-deep text-kain lg:rounded-[40px]"
+      >
+        <div className="pola-halus absolute inset-0 opacity-50" aria-hidden="true" />
+        <div className="relative grid gap-10 px-7 pb-20 pt-10 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-10 lg:px-16 lg:pb-24 lg:pt-16">
+          <div>
+            <p className="inline-flex items-center gap-2 rounded-full border border-malam/60 px-4 py-1.5 text-sm text-malam">
+              Pengenal motif batik berbasis CNN
+            </p>
+            <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.02] lg:text-7xl">Kenali batik dari satu foto</h1>
+            <p className="mt-5 max-w-md text-base leading-relaxed text-kain/80 lg:text-lg">
+              Unggah foto kain. Kami menebak motifnya, menunjukkan asal daerahnya, dan mencarikan motif yang mirip.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <button type="button" onClick={() => kamera.current?.click()}
+                className="h-12 rounded-full bg-malam px-8 font-semibold text-nila">Ambil foto</button>
+              <button type="button" onClick={() => galeri.current?.click()}
+                className="h-12 rounded-full border border-kain/50 px-8 font-semibold text-kain">Pilih dari galeri</button>
+            </div>
+            <p className="mt-5 text-sm text-kain/60">Atau seret foto ke sini. JPG atau PNG, maksimal {MAKS_MB} MB.</p>
+          </div>
+
+          <div className="relative mx-auto h-72 w-72 lg:h-[26rem] lg:w-[26rem]" aria-hidden="true">
+            <div className="pola-parang absolute left-0 top-8 h-56 w-44 -rotate-6 rounded-3xl shadow-2xl ring-2 ring-malam lg:h-72 lg:w-56" />
+            <div className="pola-kawung absolute right-0 top-0 h-56 w-44 rotate-6 rounded-3xl shadow-2xl ring-2 ring-malam lg:h-72 lg:w-56" />
+            <div className="pola-megamendung absolute bottom-0 left-1/2 h-36 w-36 -translate-x-1/2 rotate-2 rounded-3xl shadow-2xl ring-2 ring-kain lg:h-44 lg:w-44" />
+          </div>
+        </div>
+        <div className="pita-tumpal absolute inset-x-0 bottom-0" aria-hidden="true" />
+        <input ref={kamera} type="file" accept="image/*" capture="environment" className="hidden"
+          onChange={(e) => { proses(e.target.files?.[0]); e.target.value = ""; }} />
+        <input ref={galeri} type="file" accept="image/*" className="hidden"
+          onChange={(e) => { proses(e.target.files?.[0]); e.target.value = ""; }} />
+      </section>
+      {error && <p role="alert" className="-mt-10 rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-800">{error}</p>}
+
+      <section className="-mt-4 flex flex-col gap-5 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-malam/40 lg:-mt-12 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+        <div>
+          <h2 className="font-display text-3xl font-semibold">Belum punya foto?</h2>
+          <p className="text-mute">Coba dengan salah satu motif contoh.</p>
+        </div>
+        <div className="flex gap-4">
+          {CONTOH.map((m) => (
+            <button key={m.id} type="button" onClick={() => nav("/hasil", { state: { contohId: m.id } })}
+              className="text-center" aria-label={`Coba contoh motif ${m.nama}`}>
+              <div className={`h-16 w-16 rounded-2xl ring-2 ring-malam/70 lg:h-20 lg:w-20 ${m.pola}`} />
+              <span className="mt-1.5 block text-sm">{m.nama}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden rounded-[28px] bg-nila px-7 py-12 text-kain lg:rounded-[40px] lg:px-16 lg:py-16">
+        <div className="pola-lerek absolute inset-0" aria-hidden="true" />
+        <div className="relative">
+          <h2 className="font-display text-4xl font-semibold lg:text-5xl">Cara kerja</h2>
+          <ol className="mt-8 grid gap-8 lg:grid-cols-3 lg:gap-10">
+            {LANGKAH.map((l, i) => (
+              <li key={l.judul} className="border-t border-malam/60 pt-5">
+                <span className="font-display text-6xl font-semibold leading-none text-malam" aria-hidden="true">{i + 1}</span>
+                <h3 className="mt-3 font-display text-2xl font-semibold">{l.judul}</h3>
+                <p className="mt-1 text-kain/75">{l.isi}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        <div className="flex items-baseline justify-between">
+          <h2 className="font-display text-4xl font-semibold">Motif pilihan</h2>
+          <Link to="/jelajah" className="text-sm font-medium text-soga underline underline-offset-4">Lihat semua</Link>
+        </div>
+        <div className="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+          {KATALOG.slice(0, 4).map((m) => (
+            <Link key={m.id} to="/jelajah" aria-label={`Lihat motif ${m.nama}`}>
+              <KartuMotifBaru motif={m} besar />
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden rounded-[28px] lg:rounded-[40px]">
+        <div className="pola-parang absolute inset-0" aria-hidden="true" />
+        <div className="absolute inset-0 bg-nila/85" aria-hidden="true" />
+        <div className="relative flex flex-col items-start gap-6 px-7 py-12 text-kain lg:flex-row lg:items-center lg:justify-between lg:px-16 lg:py-14">
+          <div>
+            <h2 className="font-display text-4xl font-semibold lg:text-5xl">Punya kain batik di rumah?</h2>
+            <p className="mt-2 max-w-md text-kain/80">Coba kenali motifnya sekarang. Cukup satu foto.</p>
+          </div>
+          <button type="button" onClick={() => galeri.current?.click()}
+            className="h-14 shrink-0 rounded-full bg-malam px-10 text-lg font-semibold text-nila">Coba sekarang</button>
+        </div>
+      </section>
+    </div>
+  );
+}

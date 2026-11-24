@@ -1,0 +1,182 @@
+import { useEffect, useState } from "react";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { cariMotif } from "../api/pencarianLokal";
+import KartuMotifBaru, { LingkaranFotoBatik } from "../components/KartuMotifBaru";
+import useFavoritLokal from "../hooks/useFavoritLokal";
+
+const HATI = "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z";
+
+export default function ResultPage() {
+  const { state } = useLocation();
+  const nav = useNavigate();
+  const fav = useFavoritLokal();
+  const file = state?.file;
+  const contohId = state?.contohId;
+  const [fotoUrl, setFotoUrl] = useState(null);
+  const [hasil, setHasil] = useState(null);
+  const [error, setError] = useState("");
+  const [nilai, setNilai] = useState(null);
+
+  useEffect(() => {
+    if (!file) return;
+    const u = URL.createObjectURL(file);
+    setFotoUrl(u);
+    return () => URL.revokeObjectURL(u);
+  }, [file]);
+
+  useEffect(() => {
+    if (!file && !contohId) return;
+    let batal = false;
+    setHasil(null);
+    setError("");
+    cariMotif({ file, contohId })
+      .then((h) => !batal && setHasil(h))
+      .catch(() => !batal && setError("Pencarian gagal. Coba lagi."));
+    return () => { batal = true; };
+  }, [file, contohId]);
+
+  if (!file && !contohId) return <Navigate to="/" replace />;
+
+  if (error) {
+    return (
+      <div className="mx-auto max-w-md rounded-3xl bg-white p-8 text-center shadow-sm">
+        <p role="alert" className="font-medium text-red-800">{error}</p>
+        <Link to="/" className="bg-karamel mt-5 inline-flex h-12 items-center rounded-full px-8 font-bold text-white">
+          Coba lagi
+        </Link>
+      </div>
+    );
+  }
+
+  if (!hasil) {
+    return (
+      <div role="status" className="flex min-h-[50vh] flex-col items-center justify-center gap-4">
+        <div className="pola-kawung h-24 w-24 animate-pulse rounded-full ring-4 ring-white shadow-lg" />
+        <p className="font-display text-xl font-bold">Mengenali motif batik...</p>
+      </div>
+    );
+  }
+
+  const t = hasil.tebakan;
+  const favorit = fav.ada(t.id);
+
+  return (
+    <div className="mx-auto max-w-2xl overflow-hidden rounded-[36px] bg-white shadow-[0_20px_50px_rgba(38,20,9,0.12)] lg:max-w-4xl">
+      {/* Bagian Atas Melengkung Cokelat Sogan Gelap seperti Referensi Kanan */}
+      <div className="bg-sogan-grad relative rounded-b-[44px] px-6 pb-28 pt-6 text-white lg:pb-32">
+        <div className="flex items-center justify-between">
+          <button
+            type="button"
+            onClick={() => nav(-1)}
+            aria-label="Kembali"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-sm transition hover:bg-white/20"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M19 12H5M11 6l-6 6 6 6" />
+            </svg>
+          </button>
+
+          <span className="text-xs font-semibold tracking-widest text-karamel uppercase">
+            Detail Klasifikasi
+          </span>
+
+          <button
+            type="button"
+            onClick={() => fav.toggle(t.id)}
+            aria-pressed={favorit}
+            aria-label={favorit ? "Hapus dari favorit" : "Simpan ke favorit"}
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-sm transition hover:bg-white/20"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" strokeLinejoin="round"
+              fill={favorit ? "#AD7559" : "none"} stroke={favorit ? "#AD7559" : "currentColor"}>
+              <path d={HATI} />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Lingkaran Foto Besar Menembus Batas Lengkungan */}
+      <div className="relative z-10 mx-auto -mt-24 h-48 w-48 sm:h-56 sm:w-56">
+        <LingkaranFotoBatik motif={t} srcManual={fotoUrl} className="h-full w-full ring-[6px] ring-white" />
+      </div>
+
+      {/* Konten Detail Putih Bersih di Bawah */}
+      <div className="px-6 pb-9 pt-6 sm:px-10">
+        {/* Badge Keyakinan seperti badge ★ 4.3 */}
+        <div className="inline-flex items-center gap-1.5 rounded-full bg-[#AD7559] px-3.5 py-1 text-xs font-bold text-white shadow-sm">
+          <span>★</span>
+          <span>{hasil.yakin ? "Akurasi Tinggi" : "Perlu Perbandingan"}</span>
+        </div>
+
+        <div className="mt-3 flex flex-wrap items-baseline justify-between gap-2">
+          <h1 className="font-display text-xl font-bold text-[#432912] sm:text-3xl">{t.nama}</h1>
+          <span className="rounded-full bg-[#D5D2CA] px-3.5 py-1 text-xs font-bold text-[#432912]">
+            {t.daerah}
+          </span>
+        </div>
+
+        {/* Pilihan Evaluasi seperti pil ukuran Coffee size */}
+        <div className="mt-6">
+          <p className="text-xs font-bold text-[#432912]/60 uppercase tracking-wider">Apakah hasil tebakan sesuai?</p>
+          {nilai === null ? (
+            <div className="mt-2.5 flex gap-2.5">
+              <button
+                type="button"
+                onClick={() => setNilai("ya")}
+                className="bg-karamel rounded-full px-6 py-2 text-xs font-bold text-white shadow-sm transition hover:brightness-105"
+              >
+                Ya, Akurat
+              </button>
+              <button
+                type="button"
+                onClick={() => setNilai("tidak")}
+                className="rounded-full bg-[#D5D2CA] px-6 py-2 text-xs font-bold text-[#432912]/75 transition hover:bg-[#C59C8A]"
+              >
+                Kurang Tepat
+              </button>
+            </div>
+          ) : (
+            <p className="mt-2 text-xs font-semibold text-karamel">Terima kasih atas penilaianmu!</p>
+          )}
+        </div>
+
+        {/* Deskripsi Filosofi */}
+        <div className="mt-6">
+          <h2 className="text-sm font-bold text-[#432912]">Tentang Motif</h2>
+          <p className="mt-1.5 text-sm leading-relaxed text-[#432912]/75">{t.ciri}</p>
+        </div>
+
+        {/* Motif Serupa */}
+        {hasil.mirip?.length > 0 && (
+          <div className="mt-8 border-t border-[#432912]/10 pt-6">
+            <h2 className="text-sm font-bold text-[#432912]">Motif Serupa</h2>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              {hasil.mirip.map(({ motif, label }) => (
+                <KartuMotifBaru key={motif.id} motif={motif} label={label} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Baris Aksi Bawah (ikon lingkaran + tombol pil karamel besar seperti "Buy now") */}
+        <div className="mt-8 flex items-center gap-3.5">
+          <Link
+            to="/jelajah"
+            aria-label="Lihat katalog"
+            className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#432912]/15 bg-[#F3F1ED] text-[#432912] transition hover:bg-[#D5D2CA]"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9">
+              <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" />
+            </svg>
+          </Link>
+          <Link
+            to="/"
+            className="bg-karamel flex h-14 flex-1 items-center justify-center rounded-full text-base font-bold text-white shadow-md transition hover:brightness-105"
+          >
+            Pindai Foto Lain
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}

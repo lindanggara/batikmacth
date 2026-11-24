@@ -1,0 +1,45 @@
+const HATI = "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z";
+
+export default function KartuMotifBaru({ motif, favorit, onToggle, label, besar }) {
+  const tombol = onToggle && (
+    <button
+      type="button"
+      onClick={() => onToggle(motif.id)}
+      aria-pressed={favorit}
+      aria-label={favorit ? `Hapus ${motif.nama} dari favorit` : `Simpan ${motif.nama} ke favorit`}
+      className="absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-soga shadow"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" strokeWidth="1.8" strokeLinejoin="round"
+        fill={favorit ? "currentColor" : "none"} stroke="currentColor" aria-hidden="true">
+        <path d={HATI} />
+      </svg>
+    </button>
+  );
+
+  if (besar) {
+    return (
+      <article className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-md ring-1 ring-malam/60">
+        <div className={`absolute inset-0 ${motif.pola}`} />
+        <div className="absolute inset-0 bg-gradient-to-t from-nila-deep/95 via-nila-deep/35 to-transparent" />
+        {tombol}
+        <div className="absolute inset-x-0 bottom-0 p-4 text-kain">
+          <h3 className="font-display text-2xl font-semibold leading-tight">{motif.nama}</h3>
+          <p className="text-sm text-kain/80">{motif.daerah}</p>
+          {label && <p className="mt-1 text-xs font-semibold text-malam">{label}</p>}
+        </div>
+      </article>
+    );
+  }
+
+  return (
+    <article>
+      <div className="relative rounded-2xl bg-white p-1.5 ring-1 ring-malam/60">
+        <div className={`aspect-square rounded-xl ${motif.pola}`} />
+        {tombol}
+      </div>
+      <h3 className="mt-3 font-display text-xl font-semibold leading-tight">{motif.nama}</h3>
+      <p className="text-sm text-mute">{motif.daerah}</p>
+      {label && <p className="mt-0.5 text-xs font-semibold text-soga">{label}</p>}
+    </article>
+  );
+}

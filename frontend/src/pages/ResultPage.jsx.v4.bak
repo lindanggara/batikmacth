@@ -1,0 +1,145 @@
+import { useEffect, useState } from "react";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { cariMotif } from "../api/pencarianLokal";
+import KartuMotifBaru from "../components/KartuMotifBaru";
+import useFavoritLokal from "../hooks/useFavoritLokal";
+
+const HATI = "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z";
+
+function Belah() {
+  return (
+    <svg width="10" height="10" viewBox="0 0 14 14" className="text-malam" aria-hidden="true">
+      <path d="M7 0l7 7-7 7-7-7z" fill="currentColor" />
+    </svg>
+  );
+}
+
+export default function ResultPage() {
+  const { state } = useLocation();
+  const nav = useNavigate();
+  const fav = useFavoritLokal();
+  const file = state?.file;
+  const contohId = state?.contohId;
+  const [fotoUrl, setFotoUrl] = useState(null);
+  const [hasil, setHasil] = useState(null);
+  const [error, setError] = useState("");
+  const [nilai, setNilai] = useState(null);
+
+  useEffect(() => {
+    if (!file) return;
+    const u = URL.createObjectURL(file);
+    setFotoUrl(u);
+    return () => URL.revokeObjectURL(u);
+  }, [file]);
+
+  useEffect(() => {
+    if (!file && !contohId) return;
+    let batal = false;
+    setHasil(null);
+    setError("");
+    cariMotif({ file, contohId })
+      .then((h) => !batal && setHasil(h))
+      .catch(() => !batal && setError("Pencarian gagal. Coba lagi."));
+    return () => { batal = true; };
+  }, [file, contohId]);
+
+  if (!file && !contohId) return <Navigate to="/" replace />;
+
+  const kembali = (
+    <button type="button" onClick={() => nav(-1)} className="mb-6 inline-flex h-11 items-center gap-2 text-sm font-medium text-nila/70 hover:text-nila">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+      Kembali
+    </button>
+  );
+
+  if (error) {
+    return (
+      <div>
+        {kembali}
+        <p role="alert" className="mt-6">{error}</p>
+        <Link to="/" className="mt-4 inline-flex h-12 items-center rounded-full bg-nila px-8 font-semibold text-kain">Coba lagi</Link>
+      </div>
+    );
+  }
+
+  if (!hasil) {
+    return (
+      <div>
+        {kembali}
+        <div role="status" className="mt-20 flex flex-col items-center gap-5">
+          <div className="rounded-2xl p-1.5 ring-1 ring-malam/60"><div className="pola-kawung h-24 w-24 animate-pulse rounded-xl" aria-hidden="true" /></div>
+          <p className="font-display text-2xl">Sedang mencari motif...</p>
+        </div>
+      </div>
+    );
+  }
+
+  const t = hasil.tebakan;
+  const favorit = fav.ada(t.id);
+
+  return (
+    <div>
+      {kembali}
+      <div className="lg:grid lg:grid-cols-[5fr_6fr] lg:items-start lg:gap-16">
+        <div className="mx-auto w-full max-w-sm lg:sticky lg:top-28 lg:max-w-none">
+          <div className="rounded-[28px] bg-white p-2 ring-1 ring-malam/70">
+            <div className="aspect-[4/5] overflow-hidden rounded-[22px]">
+              {fotoUrl
+                ? <img src={fotoUrl} alt="Foto kain yang kamu unggah" className="h-full w-full object-cover" />
+                : <div className={`h-full w-full ${t.pola}`} role="img" aria-label={`Contoh motif ${t.nama}`} />}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 lg:mt-0">
+          <p className="text-sm text-mute">Kemungkinan besar</p>
+          <h1 className="font-display text-6xl font-semibold leading-none lg:text-7xl">{t.nama}</h1>
+          <p className="mt-3 text-lg font-medium text-soga">{t.daerah}</p>
+          <p className="mt-4 flex items-center gap-2 text-sm font-medium"><Belah />{hasil.yakin ? "Kami yakin dengan tebakan ini" : "Kami kurang yakin dengan tebakan ini"}</p>
+
+          {!hasil.yakin && (
+            <p className="mt-4 border-y border-malam/50 py-3 text-sm">
+              Coba foto lebih dekat dengan cahaya yang cukup, lalu bandingkan dengan motif di bawah.
+            </p>
+          )}
+
+          <section className="mt-8">
+            <h2 className="font-display text-2xl font-semibold">Tentang motif</h2>
+            <p className="mt-2 max-w-xl leading-relaxed text-nila/90">{t.ciri}</p>
+          </section>
+
+          <section className="mt-8 border-t border-nila/10 pt-5">
+            {nilai === null ? (
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="mr-2 font-medium">Apakah hasilnya sesuai?</span>
+                <button type="button" onClick={() => setNilai("ya")} className="h-11 rounded-full bg-nila px-7 font-semibold text-kain">Ya</button>
+                <button type="button" onClick={() => setNilai("tidak")} className="h-11 rounded-full border border-nila/40 px-7 font-semibold">Tidak</button>
+              </div>
+            ) : (
+              <p role="status" className="font-medium">Terima kasih atas penilaianmu.</p>
+            )}
+          </section>
+
+          <section className="mt-10 border-t border-nila/10 pt-8">
+            <h2 className="font-display text-2xl font-semibold">Motif yang mirip</h2>
+            <div className="mt-5 grid grid-cols-3 gap-4">
+              {hasil.mirip.map(({ motif, label }) => (
+                <KartuMotifBaru key={motif.id} motif={motif} label={label} favorit={fav.ada(motif.id)} onToggle={fav.toggle} />
+              ))}
+            </div>
+          </section>
+
+          <div className="mt-10 flex gap-3">
+            <Link to="/" className="flex h-14 flex-1 items-center justify-center rounded-full bg-nila text-lg font-semibold text-kain">Coba foto lain</Link>
+            <button type="button" onClick={() => fav.toggle(t.id)} aria-pressed={favorit}
+              aria-label={favorit ? "Hapus dari favorit" : "Simpan ke favorit"}
+              className="flex h-14 w-14 items-center justify-center rounded-full border border-nila/40 text-soga">
+              <svg width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.8" strokeLinejoin="round"
+                fill={favorit ? "currentColor" : "none"} stroke="currentColor" aria-hidden="true"><path d={HATI} /></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

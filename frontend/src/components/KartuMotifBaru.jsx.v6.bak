@@ -1,0 +1,72 @@
+import { useState } from "react";
+
+const HATI = "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z";
+
+function GambarMotif({ motif, className }) {
+  const [gagalFoto, setGagalFoto] = useState(false);
+  const sumberFoto = motif.gambar || `/motif/${motif.id}.jpg`;
+
+  if (!gagalFoto) {
+    return (
+      <img
+        src={sumberFoto}
+        alt={`Motif batik ${motif.nama}`}
+        onError={() => setGagalFoto(true)}
+        className={`h-full w-full object-cover ${className}`}
+        loading="lazy"
+      />
+    );
+  }
+
+  return <div className={`h-full w-full ${motif.pola} ${className}`} role="img" aria-label={`Motif ${motif.nama}`} />;
+}
+
+export default function KartuMotifBaru({ motif, favorit, onToggle, label, besar }) {
+  const tombol = onToggle && (
+    <button
+      type="button"
+      onClick={(e) => { e.preventDefault(); onToggle(motif.id); }}
+      aria-pressed={favorit}
+      aria-label={favorit ? `Hapus ${motif.nama} dari favorit` : `Simpan ${motif.nama} ke favorit`}
+      className="absolute right-3 top-3 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-malam/50 bg-[#101B33]/80 text-malam shadow-lg backdrop-blur-sm transition-transform duration-200 hover:scale-110 active:scale-95"
+    >
+      <svg width="18" height="18" viewBox="0 0 24 24" strokeWidth="2" strokeLinejoin="round"
+        fill={favorit ? "currentColor" : "none"} stroke="currentColor" aria-hidden="true">
+        <path d={HATI} />
+      </svg>
+    </button>
+  );
+
+  if (besar) {
+    return (
+      <article className="group relative aspect-[3/4] overflow-hidden rounded-[26px] bg-nila p-2 shadow-lg ring-1 ring-malam/60 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:ring-2 hover:ring-malam">
+        <div className="relative h-full w-full overflow-hidden rounded-[20px] border border-malam/40">
+          <GambarMotif motif={motif} className="transition-transform duration-700 ease-out group-hover:scale-110" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1224] via-[#0B1224]/30 to-transparent" />
+          {tombol}
+          <div className="absolute inset-x-0 bottom-0 p-5 text-kain">
+            <span className="inline-block rounded-md border border-malam/40 bg-[#101B33]/80 px-2.5 py-0.5 text-[10px] font-semibold tracking-widest text-malam uppercase backdrop-blur-sm">
+              {motif.daerah}
+            </span>
+            <h3 className="mt-2 font-display text-2xl font-bold leading-tight tracking-wide text-white">{motif.nama}</h3>
+            {label && <p className="mt-1.5 text-xs font-medium text-malam">{label}</p>}
+          </div>
+        </div>
+      </article>
+    );
+  }
+
+  return (
+    <article className="group rounded-2xl bg-white p-2 shadow-sm ring-1 ring-malam/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:ring-malam">
+      <div className="relative aspect-square overflow-hidden rounded-xl border border-malam/30">
+        <GambarMotif motif={motif} className="transition-transform duration-500 group-hover:scale-105" />
+        {tombol}
+      </div>
+      <div className="px-1 pb-1 pt-2.5">
+        <h3 className="font-display text-lg font-bold leading-tight text-nila group-hover:text-soga">{motif.nama}</h3>
+        <p className="text-[11px] font-medium tracking-wider text-mute uppercase">{motif.daerah}</p>
+        {label && <p className="mt-1 text-xs font-semibold text-soga">{label}</p>}
+      </div>
+    </article>
+  );
+}

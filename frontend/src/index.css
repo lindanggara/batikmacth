@@ -3,21 +3,554 @@
 @tailwind utilities;
 
 @layer base {
-  html { -webkit-tap-highlight-color: transparent; }
-  body { min-height: 100dvh; }
+  body {
+    @apply bg-nila font-sans text-nila antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible {
+    outline: 3px solid #C59C8A;
+    outline-offset: 2px;
+  }
 }
 
+/* Pola batik dibuat dari CSS, jadi tidak perlu file gambar */
 @layer components {
-  .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-batik-500 px-5 py-3 font-semibold text-white shadow-sm transition hover:bg-batik-600 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  .pola-kawung {
+    background-color: #24396b;
+    background-image:
+      radial-gradient(circle at 25% 25%, transparent 0 7px, #C59C8A 7px 8px, transparent 8px),
+      radial-gradient(circle at 75% 75%, transparent 0 7px, #C59C8A 7px 8px, transparent 8px);
+    background-size: 32px 32px;
   }
-  .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-batik-700 shadow-sm ring-1 ring-batik-200 transition hover:bg-batik-50 active:scale-[0.98];
+  .pola-parang {
+    background-color: #8a5a2b;
+    background-image:
+      repeating-linear-gradient(135deg, #e8d3a8 0 4px, transparent 4px 18px),
+      repeating-linear-gradient(135deg, rgba(20, 33, 61, 0.55) 0 8px, transparent 8px 18px);
   }
-  .card {
-    @apply rounded-2xl bg-white p-5 shadow-sm ring-1 ring-batik-100;
+  .pola-megamendung {
+    background-color: #432912;
+    background-image: repeating-radial-gradient(circle at 30% 70%, #4a6fb0 0 3px, transparent 3px 11px);
   }
-  .input {
-    @apply w-full rounded-xl border border-batik-200 bg-white px-4 py-2.5 text-batik-900 outline-none focus:border-batik-400 focus:ring-2 focus:ring-batik-200;
+  .pola-ceplok {
+    background-color: #f1e7d0;
+    background-image:
+      radial-gradient(circle, #8a5a2b 0 3px, transparent 3.5px),
+      linear-gradient(#c9b48a 1px, transparent 1px),
+      linear-gradient(90deg, #c9b48a 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.pola-halus {
+  background-color: #432912;
+  background-image:
+    radial-gradient(circle at 50% 50%, transparent 0 13px, rgba(197, 156, 138, 0.22) 13px 14px, transparent 14px),
+    radial-gradient(circle at 0 0, transparent 0 13px, rgba(197, 156, 138, 0.22) 13px 14px, transparent 14px),
+    radial-gradient(circle at 100% 100%, transparent 0 13px, rgba(197, 156, 138, 0.22) 13px 14px, transparent 14px);
+  background-size: 40px 40px;
+}
+/* Pita segitiga (tumpal) seperti tepi kain batik */
+.pita-tumpal {
+  height: 12px;
+  background-color: #432912;
+  background-image:
+    linear-gradient(135deg, #C59C8A 25%, transparent 25%),
+    linear-gradient(225deg, #C59C8A 25%, transparent 25%);
+  background-size: 24px 24px;
+}
+.pola-lerek {
+  background-image:
+    linear-gradient(45deg, rgba(197, 156, 138, 0.28) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(197, 156, 138, 0.28) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.tekstur-kain {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(rgba(20, 33, 61, 0.04) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(var(--rot, 0deg)); }
+  50% { transform: translateY(-6px) rotate(var(--rot, 0deg)); }
+}
+
+.anim-kain {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+/* BATIK_RICH_V5 */
+.pola-kawung {
+  background-color: #432912;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23e0b04a' stroke-width='1.5'%3E%3Cellipse cx='40' cy='20' rx='10' ry='18' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='40' cy='60' rx='10' ry='18' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='20' cy='40' rx='18' ry='10' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='60' cy='40' rx='18' ry='10' fill='%238c4a27' fill-opacity='0.45'/%3E%3Ccircle cx='40' cy='40' r='5' fill='%23e0b04a'/%3E%3Ccircle cx='40' cy='20' r='2' fill='%23faf8f5'/%3E%3Ccircle cx='40' cy='60' r='2' fill='%23faf8f5'/%3E%3Ccircle cx='20' cy='40' r='2' fill='%23faf8f5'/%3E%3Ccircle cx='60' cy='40' r='2' fill='%23faf8f5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 64px 64px;
+}
+
+.pola-parang {
+  background-color: #2b1810;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-10 50 L50 -10 M0 60 L60 0 M10 70 L70 10' stroke='%23e0b04a' stroke-width='2.5' fill='none'/%3E%3Cpath d='M15 30 Q30 15 45 30 T75 30' stroke='%23f4e8d1' stroke-width='1.5' fill='none' opacity='0.6'/%3E%3Ccircle cx='30' cy='30' r='4' fill='%23e0b04a'/%3E%3C/svg%3E");
+  background-size: 48px 48px;
+}
+
+.pola-megamendung {
+  background-color: #102a43;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='60' viewBox='0 0 100 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 45 Q25 20 50 35 T90 35' stroke='%2362b0e8' stroke-width='3' fill='none'/%3E%3Cpath d='M5 50 Q25 28 50 42 T95 42' stroke='%23e0b04a' stroke-width='1.5' fill='none'/%3E%3Cpath d='M15 38 Q30 15 50 28 T85 28' stroke='%23bcccdc' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-size: 80px 48px;
+}
+
+.pola-ceplok {
+  background-color: #3b1d14;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' y='8' width='48' height='48' rx='8' fill='none' stroke='%23e0b04a' stroke-width='1.5'/%3E%3Cpath d='M32 4 L38 26 L60 32 L38 38 L32 60 L26 38 L4 32 L26 26 Z' fill='%238c4a27' stroke='%23e0b04a' stroke-width='1.2'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23faf8f5'/%3E%3C/svg%3E");
+  background-size: 56px 56px;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 28s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+/* BATIK_REAL_PHOTO_V6 */
+/* Jika file foto ada di public/motif/, foto asli muncul di lapisan paling atas. Jika belum ada, pola SVG tetap tampil. */
+.pola-kawung {
+  background-image:
+    url("/motif/kawung.jpg"),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23e0b04a' stroke-width='1.5'%3E%3Cellipse cx='40' cy='20' rx='10' ry='18' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='40' cy='60' rx='10' ry='18' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='20' cy='40' rx='18' ry='10' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='60' cy='40' rx='18' ry='10' fill='%238c4a27' fill-opacity='0.45'/%3E%3Ccircle cx='40' cy='40' r='5' fill='%23e0b04a'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover, 64px 64px;
+  background-position: center;
+}
+
+.pola-parang {
+  background-image:
+    url("/motif/parang.jpg"),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-10 50 L50 -10 M0 60 L60 0 M10 70 L70 10' stroke='%23e0b04a' stroke-width='2.5' fill='none'/%3E%3Ccircle cx='30' cy='30' r='4' fill='%23e0b04a'/%3E%3C/svg%3E");
+  background-size: cover, 48px 48px;
+  background-position: center;
+}
+
+.pola-megamendung {
+  background-image:
+    url("/motif/megamendung.jpg"),
+    url("data:image/svg+xml,%3Csvg width='100' height='60' viewBox='0 0 100 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 45 Q25 20 50 35 T90 35' stroke='%2362b0e8' stroke-width='3' fill='none'/%3E%3Cpath d='M5 50 Q25 28 50 42 T95 42' stroke='%23e0b04a' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-size: cover, 80px 48px;
+  background-position: center;
+}
+
+.pola-ceplok {
+  background-image:
+    url("/motif/ceplok.jpg"),
+    url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' y='8' width='48' height='48' rx='8' fill='none' stroke='%23e0b04a' stroke-width='1.5'/%3E%3Cpath d='M32 4 L38 26 L60 32 L38 38 L32 60 L26 38 L4 32 L26 26 Z' fill='%238c4a27' stroke='%23e0b04a' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-size: cover, 56px 56px;
+  background-position: center;
+}
+
+.pola-sidomukti {
+  background-image: url("/motif/sidomukti.jpg"), linear-gradient(135deg, #2b1810, #432912);
+  background-size: cover;
+  background-position: center;
+}
+
+.pola-truntum {
+  background-image: url("/motif/truntum.jpg"), linear-gradient(135deg, #1b2b4b, #3b1d14);
+  background-size: cover;
+  background-position: center;
+}
+
+.pola-sekarjagad {
+  background-image: url("/motif/sekarjagad.jpg"), linear-gradient(135deg, #3b1d14, #102a43);
+  background-size: cover;
+  background-position: center;
+}
+/* SOGAN_ELEGANT_V7 */
+.bg-krem { background-color: #FAF7F2; }
+.bg-sogan-tua { background-color: #3D2314; }
+.bg-sogan-grad { background: linear-gradient(160deg, #5A351E 0%, #3A2011 55%, #261409 100%); }
+.bg-karamel { background-color: #C99A6B; }
+.text-sogan-tua { color: #2B180D; }
+.text-karamel { color: #C99A6B; }
+.border-karamel { border-color: #C99A6B; }
+/* UNIFIED_COHESIVE_V8 */
+body {
+  background-color: #FAF7F2;
+  color: #2B180D;
+  font-family: "Plus Jakarta Sans", "Figtree", sans-serif;
+}
+.bg-krem { background-color: #FAF7F2; }
+.bg-kapsul { background-color: #EFEAE2; }
+.bg-sogan-grad { background: linear-gradient(155deg, #54311B 0%, #381F10 55%, #241308 100%); }
+.bg-karamel { background-color: #C99A6B; }
+.text-sogan-tua { color: #2B180D; }
+.text-karamel { color: #C99A6B; }
+/* LUXURY_FONT_PAIRING */
+@layer base {
+  body {
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "SOFT" 50, "WONK" 1;
+    letter-spacing: -0.02em;
+  }
+}
+/* POPPINS_OVERRIDE */
+@layer base {
+  html, body, h1, h2, h3, h4, button, input, .font-display {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-variation-settings: normal !important;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: -0.025em;
+  }
+}
+/* POPPINS_SCALE_V10 */
+@layer base {
+  html {
+    font-size: 15px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  body {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    line-height: 1.55;
+    letter-spacing: -0.005em;
+  }
+
+  h1 {
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  h2 {
+    font-weight: 600 !important;
+    line-height: 1.28 !important;
+    letter-spacing: -0.015em !important;
+  }
+
+  h3 {
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    letter-spacing: -0.01em !important;
+  }
+}
+/* COCOA_BROWSER_PALETTE */
+:root {
+  --cocoa-light: #D5D2CA;
+  --cocoa-latte: #C59C8A;
+  --cocoa-caramel: #AD7559;
+  --cocoa-medium: #85522F;
+  --cocoa-dark: #432912;
+  --cocoa-canvas: #F3F1ED;
+}
+
+body {
+  background-color: var(--cocoa-canvas) !important;
+  color: var(--cocoa-dark) !important;
+}
+
+.bg-krem { background-color: #F3F1ED !important; }
+.bg-kapsul { background-color: #D5D2CA !important; }
+.bg-sogan-tua { background-color: #432912 !important; }
+.bg-sogan-grad {
+  background: linear-gradient(155deg, #85522F 0%, #5E371C 52%, #432912 100%) !important;
+}
+.bg-karamel { background-color: #AD7559 !important; }
+.bg-latte { background-color: #C59C8A !important; }
+
+.text-sogan-tua { color: #432912 !important; }
+.text-karamel { color: #AD7559 !important; }
+.text-latte { color: #C59C8A !important; }
+.border-karamel { border-color: #AD7559 !important; }
+.border-latte { border-color: #C59C8A !important; }
+/* GLASSMORPHISM_COCOA_V15 */
+body {
+  background-color: #F3F1ED !important;
+  background-image:
+    radial-gradient(at 15% 10%, rgba(197, 156, 138, 0.34) 0px, transparent 48%),
+    radial-gradient(at 88% 22%, rgba(173, 117, 89, 0.22) 0px, transparent 45%),
+    radial-gradient(at 52% 88%, rgba(213, 210, 202, 0.55) 0px, transparent 52%) !important;
+  background-attachment: fixed;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.58) !important;
+  backdrop-filter: blur(18px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(145%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.72) !important;
+  box-shadow:
+    0 12px 32px rgba(67, 41, 18, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+}
+
+.glass-soft {
+  background: rgba(250, 248, 245, 0.52) !important;
+  backdrop-filter: blur(14px) saturate(135%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(135%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+.glass-dark {
+  background: linear-gradient(145deg, rgba(133, 82, 47, 0.82), rgba(67, 41, 18, 0.88)) !important;
+  backdrop-filter: blur(18px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(140%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow:
+    0 16px 36px rgba(67, 41, 18, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+}
+/* GLOBAL_GLASS_CARDS_V20 */
+body {
+  background-color: #F3F1ED !important;
+  background-image:
+    radial-gradient(at 12% 8%, rgba(197, 156, 138, 0.42) 0px, transparent 46%),
+    radial-gradient(at 88% 18%, rgba(173, 117, 89, 0.28) 0px, transparent 44%),
+    radial-gradient(at 22% 85%, rgba(133, 82, 47, 0.16) 0px, transparent 48%),
+    radial-gradient(at 85% 88%, rgba(197, 156, 138, 0.34) 0px, transparent 50%) !important;
+  background-attachment: fixed !important;
+}
+
+.glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(243, 241, 237, 0.45)) !important;
+  backdrop-filter: blur(20px) saturate(150%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.75) !important;
+  box-shadow:
+    0 14px 34px rgba(67, 41, 18, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
+}
+
+.glass-latte {
+  background: linear-gradient(135deg, rgba(197, 156, 138, 0.28), rgba(255, 255, 255, 0.52)) !important;
+  backdrop-filter: blur(18px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(145%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.68) !important;
+  box-shadow:
+    0 10px 26px rgba(67, 41, 18, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+.glass-photo-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(67, 41, 18, 0.18) 0%,
+    rgba(67, 41, 18, 0.04) 36%,
+    rgba(67, 41, 18, 0.68) 64%,
+    rgba(43, 24, 11, 0.88) 100%
+  ) !important;
+  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(2px) !important;
+}
+
+.glass-photo-sheet {
+  background: rgba(43, 24, 11, 0.42) !important;
+  backdrop-filter: blur(16px) saturate(150%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(150%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+/* ANIMATED_GLASS_CARDS_V21 */
+@keyframes kartuMengambang {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes kilauKaca {
+  0% {
+    transform: translateX(-140%) skewX(-22deg);
+  }
+  100% {
+    transform: translateX(260%) skewX(-22deg);
+  }
+}
+
+.card-motion {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease !important;
+  will-change: transform;
+}
+
+/* Gerak mengambang pelan bergantian antar kartu */
+.card-float:nth-child(odd) {
+  animation: kartuMengambang 5.5s ease-in-out infinite;
+}
+.card-float:nth-child(even) {
+  animation: kartuMengambang 6.2s ease-in-out 1.4s infinite;
+}
+
+/* Hentikan float saat di-hover dan angkat kartu dengan mulus */
+.card-motion:hover,
+.card-float:hover {
+  animation-play-state: paused;
+  transform: translateY(-8px) scale(1.015) !important;
+  box-shadow:
+    0 24px 48px rgba(67, 41, 18, 0.16),
+    inset 0 1px 1px rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.card-motion:active {
+  transform: translateY(-2px) scale(0.985) !important;
+}
+
+/* Kilauan cahaya melintas di permukaan kartu kaca saat hover */
+.card-motion::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.28),
+    transparent
+  );
+  transform: translateX(-140%) skewX(-22deg);
+  pointer-events: none;
+  z-index: 30;
+}
+
+.card-motion:hover::after {
+  animation: kilauKaca 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-float:nth-child(odd),
+  .card-float:nth-child(even) {
+    animation: none !important;
+  }
+}
+/* VARIED_CARD_MOTIONS_V22 */
+@keyframes masukHalus {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes ayunanKain {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-5px) rotate(0.7deg);
+  }
+  66% {
+    transform: translateY(-2px) rotate(-0.7deg);
+  }
+}
+
+@keyframes napasKaca {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 24px rgba(67, 41, 18, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    transform: scale(1.016);
+    box-shadow: 0 16px 32px rgba(173, 117, 89, 0.14), inset 0 1px 1px rgba(255, 255, 255, 0.95);
+  }
+}
+
+.motion-reveal {
+  animation: masukHalus 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.motion-reveal:nth-child(2) { animation-delay: 0.07s; }
+.motion-reveal:nth-child(3) { animation-delay: 0.14s; }
+.motion-reveal:nth-child(4) { animation-delay: 0.21s; }
+
+/* Variasi 1: Ayunan kain lembut untuk Kartu Motif */
+.motion-sway {
+  animation: ayunanKain 6.8s ease-in-out infinite;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease !important;
+}
+.motion-sway:nth-child(even) {
+  animation-delay: 1.8s;
+  animation-duration: 7.4s;
+}
+.motion-sway:hover {
+  animation-play-state: paused;
+  transform: translateY(-10px) scale(1.02) !important;
+}
+
+/* Variasi 2: Efek bernapas & pendaran cahaya untuk Kartu Metadata/Statistik */
+.motion-breath {
+  animation: napasKaca 4.8s ease-in-out infinite;
+  transition: transform 0.35s ease, border-color 0.35s ease !important;
+}
+.motion-breath:nth-child(2) { animation-delay: 1.1s; }
+.motion-breath:nth-child(3) { animation-delay: 2.2s; }
+.motion-breath:nth-child(4) { animation-delay: 3.3s; }
+.motion-breath:hover {
+  animation-play-state: paused;
+  transform: translateY(-4px) scale(1.03) !important;
+  border-color: rgba(173, 117, 89, 0.7) !important;
+}
+
+/* Variasi 3: Tilt 3D Perspektif saat hover untuk Kartu Alur & Isen-Isen */
+.motion-tilt {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease !important;
+}
+.motion-tilt:nth-child(odd):hover {
+  transform: perspective(900px) rotateY(-4deg) rotateX(2deg) translateY(-6px) !important;
+}
+.motion-tilt:nth-child(even):hover {
+  transform: perspective(900px) rotateY(4deg) rotateX(2deg) translateY(-6px) !important;
+}
+
+/* Variasi 4: Geser horizontal halus untuk Kartu Panel Besar & Item Katalog */
+.motion-slide {
+  transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.32s ease !important;
+}
+.motion-slide:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 20px 44px rgba(67, 41, 18, 0.11) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-sway, .motion-breath, .motion-reveal {
+    animation: none !important;
   }
 }

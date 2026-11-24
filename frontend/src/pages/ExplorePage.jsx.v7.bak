@@ -1,0 +1,65 @@
+import { useMemo, useState } from "react";
+import { KATALOG } from "../data/katalogMotif";
+import KartuMotifBaru from "../components/KartuMotifBaru";
+import KepalaHalaman from "../components/KepalaHalaman";
+import useFavoritLokal from "../hooks/useFavoritLokal";
+
+export default function ExplorePage() {
+  const [daerah, setDaerah] = useState("Semua");
+  const [q, setQ] = useState("");
+  const fav = useFavoritLokal();
+
+  const daftarDaerah = useMemo(
+    () => ["Semua", ...Array.from(new Set(KATALOG.map((m) => m.daerah))).sort()],
+    []
+  );
+
+  const hasil = KATALOG.filter(
+    (m) =>
+      (daerah === "Semua" || m.daerah === daerah) &&
+      m.nama.toLowerCase().includes(q.trim().toLowerCase())
+  );
+
+  return (
+    <div>
+      <KepalaHalaman judul="Jelajah motif" sub={`${KATALOG.length} motif dari berbagai daerah`}>
+        <label className="mt-6 block max-w-md">
+          <span className="sr-only">Cari nama motif</span>
+          <input
+            type="search"
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="Cari nama motif"
+            className="h-12 w-full rounded-full bg-kain px-5 text-nila placeholder:text-mute"
+          />
+        </label>
+      </KepalaHalaman>
+
+      <div className="-mx-5 mt-6 flex gap-7 overflow-x-auto px-5 lg:mx-0 lg:flex-wrap lg:px-0">
+        {daftarDaerah.map((d) => (
+          <button
+            key={d}
+            type="button"
+            onClick={() => setDaerah(d)}
+            aria-pressed={daerah === d}
+            className={`min-h-[44px] shrink-0 border-b-2 text-sm font-medium ${
+              daerah === d ? "border-malam text-nila" : "border-transparent text-nila/60"
+            }`}
+          >
+            {d}
+          </button>
+        ))}
+      </div>
+
+      {hasil.length === 0 ? (
+        <p className="mt-12 text-mute">Tidak ada motif yang cocok. Coba kata kunci atau daerah lain.</p>
+      ) : (
+        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+          {hasil.map((m) => (
+            <KartuMotifBaru key={m.id} motif={m} besar favorit={fav.ada(m.id)} onToggle={fav.toggle} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

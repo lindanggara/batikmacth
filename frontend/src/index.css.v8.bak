@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-nila font-sans text-nila antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible {
+    outline: 3px solid #e0b04a;
+    outline-offset: 2px;
+  }
+}
+
+/* Pola batik dibuat dari CSS, jadi tidak perlu file gambar */
+@layer components {
+  .pola-kawung {
+    background-color: #24396b;
+    background-image:
+      radial-gradient(circle at 25% 25%, transparent 0 7px, #e0b04a 7px 8px, transparent 8px),
+      radial-gradient(circle at 75% 75%, transparent 0 7px, #e0b04a 7px 8px, transparent 8px);
+    background-size: 32px 32px;
+  }
+  .pola-parang {
+    background-color: #8a5a2b;
+    background-image:
+      repeating-linear-gradient(135deg, #e8d3a8 0 4px, transparent 4px 18px),
+      repeating-linear-gradient(135deg, rgba(20, 33, 61, 0.55) 0 8px, transparent 8px 18px);
+  }
+  .pola-megamendung {
+    background-color: #14213d;
+    background-image: repeating-radial-gradient(circle at 30% 70%, #4a6fb0 0 3px, transparent 3px 11px);
+  }
+  .pola-ceplok {
+    background-color: #f1e7d0;
+    background-image:
+      radial-gradient(circle, #8a5a2b 0 3px, transparent 3.5px),
+      linear-gradient(#c9b48a 1px, transparent 1px),
+      linear-gradient(90deg, #c9b48a 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.pola-halus {
+  background-color: #14213d;
+  background-image:
+    radial-gradient(circle at 50% 50%, transparent 0 13px, rgba(224, 176, 74, 0.22) 13px 14px, transparent 14px),
+    radial-gradient(circle at 0 0, transparent 0 13px, rgba(224, 176, 74, 0.22) 13px 14px, transparent 14px),
+    radial-gradient(circle at 100% 100%, transparent 0 13px, rgba(224, 176, 74, 0.22) 13px 14px, transparent 14px);
+  background-size: 40px 40px;
+}
+/* Pita segitiga (tumpal) seperti tepi kain batik */
+.pita-tumpal {
+  height: 12px;
+  background-color: #14213d;
+  background-image:
+    linear-gradient(135deg, #e0b04a 25%, transparent 25%),
+    linear-gradient(225deg, #e0b04a 25%, transparent 25%);
+  background-size: 24px 24px;
+}
+.pola-lerek {
+  background-image:
+    linear-gradient(45deg, rgba(224, 176, 74, 0.28) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(224, 176, 74, 0.28) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.tekstur-kain {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(rgba(20, 33, 61, 0.04) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(var(--rot, 0deg)); }
+  50% { transform: translateY(-6px) rotate(var(--rot, 0deg)); }
+}
+
+.anim-kain {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+/* BATIK_RICH_V5 */
+.pola-kawung {
+  background-color: #14213d;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23e0b04a' stroke-width='1.5'%3E%3Cellipse cx='40' cy='20' rx='10' ry='18' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='40' cy='60' rx='10' ry='18' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='20' cy='40' rx='18' ry='10' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='60' cy='40' rx='18' ry='10' fill='%238c4a27' fill-opacity='0.45'/%3E%3Ccircle cx='40' cy='40' r='5' fill='%23e0b04a'/%3E%3Ccircle cx='40' cy='20' r='2' fill='%23faf8f5'/%3E%3Ccircle cx='40' cy='60' r='2' fill='%23faf8f5'/%3E%3Ccircle cx='20' cy='40' r='2' fill='%23faf8f5'/%3E%3Ccircle cx='60' cy='40' r='2' fill='%23faf8f5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 64px 64px;
+}
+
+.pola-parang {
+  background-color: #2b1810;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-10 50 L50 -10 M0 60 L60 0 M10 70 L70 10' stroke='%23e0b04a' stroke-width='2.5' fill='none'/%3E%3Cpath d='M15 30 Q30 15 45 30 T75 30' stroke='%23f4e8d1' stroke-width='1.5' fill='none' opacity='0.6'/%3E%3Ccircle cx='30' cy='30' r='4' fill='%23e0b04a'/%3E%3C/svg%3E");
+  background-size: 48px 48px;
+}
+
+.pola-megamendung {
+  background-color: #102a43;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='60' viewBox='0 0 100 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 45 Q25 20 50 35 T90 35' stroke='%2362b0e8' stroke-width='3' fill='none'/%3E%3Cpath d='M5 50 Q25 28 50 42 T95 42' stroke='%23e0b04a' stroke-width='1.5' fill='none'/%3E%3Cpath d='M15 38 Q30 15 50 28 T85 28' stroke='%23bcccdc' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-size: 80px 48px;
+}
+
+.pola-ceplok {
+  background-color: #3b1d14;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' y='8' width='48' height='48' rx='8' fill='none' stroke='%23e0b04a' stroke-width='1.5'/%3E%3Cpath d='M32 4 L38 26 L60 32 L38 38 L32 60 L26 38 L4 32 L26 26 Z' fill='%238c4a27' stroke='%23e0b04a' stroke-width='1.2'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23faf8f5'/%3E%3C/svg%3E");
+  background-size: 56px 56px;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 28s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+/* BATIK_REAL_PHOTO_V6 */
+/* Jika file foto ada di public/motif/, foto asli muncul di lapisan paling atas. Jika belum ada, pola SVG tetap tampil. */
+.pola-kawung {
+  background-image:
+    url("/motif/kawung.jpg"),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23e0b04a' stroke-width='1.5'%3E%3Cellipse cx='40' cy='20' rx='10' ry='18' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='40' cy='60' rx='10' ry='18' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='20' cy='40' rx='18' ry='10' fill='%238c4a27' fill-opacity='0.45'/%3E%3Cellipse cx='60' cy='40' rx='18' ry='10' fill='%238c4a27' fill-opacity='0.45'/%3E%3Ccircle cx='40' cy='40' r='5' fill='%23e0b04a'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover, 64px 64px;
+  background-position: center;
+}
+
+.pola-parang {
+  background-image:
+    url("/motif/parang.jpg"),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-10 50 L50 -10 M0 60 L60 0 M10 70 L70 10' stroke='%23e0b04a' stroke-width='2.5' fill='none'/%3E%3Ccircle cx='30' cy='30' r='4' fill='%23e0b04a'/%3E%3C/svg%3E");
+  background-size: cover, 48px 48px;
+  background-position: center;
+}
+
+.pola-megamendung {
+  background-image:
+    url("/motif/megamendung.jpg"),
+    url("data:image/svg+xml,%3Csvg width='100' height='60' viewBox='0 0 100 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 45 Q25 20 50 35 T90 35' stroke='%2362b0e8' stroke-width='3' fill='none'/%3E%3Cpath d='M5 50 Q25 28 50 42 T95 42' stroke='%23e0b04a' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-size: cover, 80px 48px;
+  background-position: center;
+}
+
+.pola-ceplok {
+  background-image:
+    url("/motif/ceplok.jpg"),
+    url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' y='8' width='48' height='48' rx='8' fill='none' stroke='%23e0b04a' stroke-width='1.5'/%3E%3Cpath d='M32 4 L38 26 L60 32 L38 38 L32 60 L26 38 L4 32 L26 26 Z' fill='%238c4a27' stroke='%23e0b04a' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-size: cover, 56px 56px;
+  background-position: center;
+}
+
+.pola-sidomukti {
+  background-image: url("/motif/sidomukti.jpg"), linear-gradient(135deg, #2b1810, #14213d);
+  background-size: cover;
+  background-position: center;
+}
+
+.pola-truntum {
+  background-image: url("/motif/truntum.jpg"), linear-gradient(135deg, #1b2b4b, #3b1d14);
+  background-size: cover;
+  background-position: center;
+}
+
+.pola-sekarjagad {
+  background-image: url("/motif/sekarjagad.jpg"), linear-gradient(135deg, #3b1d14, #102a43);
+  background-size: cover;
+  background-position: center;
+}
+/* SOGAN_ELEGANT_V7 */
+.bg-krem { background-color: #FAF7F2; }
+.bg-sogan-tua { background-color: #3D2314; }
+.bg-sogan-grad { background: linear-gradient(160deg, #5A351E 0%, #3A2011 55%, #261409 100%); }
+.bg-karamel { background-color: #C99A6B; }
+.text-sogan-tua { color: #2B180D; }
+.text-karamel { color: #C99A6B; }
+.border-karamel { border-color: #C99A6B; }

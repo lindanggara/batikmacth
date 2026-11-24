@@ -1,0 +1,94 @@
+import { useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { KATALOG } from "../data/katalogMotif";
+
+const MAKS_MB = 10;
+const CONTOH = ["parang", "kawung", "megamendung", "ceplok"].map((id) => KATALOG.find((m) => m.id === id));
+
+export default function HomePage() {
+  const nav = useNavigate();
+  const kamera = useRef(null);
+  const galeri = useRef(null);
+  const [error, setError] = useState("");
+
+  function proses(file) {
+    setError("");
+    if (!file) return;
+    if (!file.type.startsWith("image/")) return setError("File harus berupa foto (JPG atau PNG).");
+    if (file.size > MAKS_MB * 1024 * 1024) return setError(`Ukuran foto maksimal ${MAKS_MB} MB.`);
+    nav("/hasil", { state: { file } });
+  }
+
+  return (
+    <div>
+      <section
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={(e) => { e.preventDefault(); proses(e.dataTransfer.files?.[0]); }}
+        className="relative overflow-hidden rounded-[28px] bg-nila text-kain lg:rounded-[32px]"
+      >
+        <div className="pola-halus absolute inset-0 opacity-60" aria-hidden="true" />
+        <div className="relative grid gap-10 p-7 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-14 lg:p-16">
+          <div>
+            <h1 className="font-display text-5xl font-semibold leading-[1.05] lg:text-7xl">Kenali batik dari satu foto</h1>
+            <p className="mt-5 max-w-md text-base leading-relaxed text-kain/80 lg:text-lg">
+              Unggah foto kain. Kami menebak motifnya, menunjukkan asal daerahnya, dan mencarikan motif yang mirip.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <button type="button" onClick={() => kamera.current?.click()}
+                className="h-12 rounded-full bg-kain px-8 font-semibold text-nila">Ambil foto</button>
+              <button type="button" onClick={() => galeri.current?.click()}
+                className="h-12 rounded-full border border-malam/70 px-8 font-semibold text-kain">Pilih dari galeri</button>
+            </div>
+            <p className="mt-5 text-sm text-kain/60">Foto dari dekat dengan cahaya cukup. JPG atau PNG, maksimal {MAKS_MB} MB.</p>
+          </div>
+          <div className="mx-auto w-full max-w-xs lg:max-w-sm" aria-hidden="true">
+            <div className="rounded-[28px] p-2 ring-1 ring-malam/70">
+              <div className="rounded-[22px] bg-[#0D1630] p-2">
+                <div className="pola-kawung aspect-[4/5] rounded-2xl" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <input ref={kamera} type="file" accept="image/*" capture="environment" className="hidden"
+          onChange={(e) => { proses(e.target.files?.[0]); e.target.value = ""; }} />
+        <input ref={galeri} type="file" accept="image/*" className="hidden"
+          onChange={(e) => { proses(e.target.files?.[0]); e.target.value = ""; }} />
+      </section>
+      {error && <p role="alert" className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-800">{error}</p>}
+
+      <section className="mt-14">
+        <h2 className="font-display text-3xl font-semibold">Belum punya foto?</h2>
+        <p className="mt-1 text-mute">Coba dengan salah satu motif contoh.</p>
+        <div className="mt-5 flex gap-5">
+          {CONTOH.map((m) => (
+            <button key={m.id} type="button" onClick={() => nav("/hasil", { state: { contohId: m.id } })}
+              className="text-center" aria-label={`Coba contoh motif ${m.nama}`}>
+              <div className="rounded-2xl bg-white p-1 ring-1 ring-malam/60">
+                <div className={`h-16 w-16 rounded-xl lg:h-24 lg:w-24 ${m.pola}`} />
+              </div>
+              <span className="mt-1.5 block text-sm">{m.nama}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-14 border-t border-nila/10 pt-10">
+        <div className="flex items-baseline justify-between">
+          <h2 className="font-display text-3xl font-semibold">Motif pilihan</h2>
+          <Link to="/jelajah" className="text-sm font-medium text-soga underline underline-offset-4">Lihat semua</Link>
+        </div>
+        <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-8 lg:grid-cols-4">
+          {KATALOG.slice(0, 4).map((m) => (
+            <Link key={m.id} to="/jelajah">
+              <div className="rounded-2xl bg-white p-1.5 ring-1 ring-malam/60">
+                <div className={`aspect-square rounded-xl ${m.pola}`} />
+              </div>
+              <h3 className="mt-3 font-display text-xl font-semibold leading-tight">{m.nama}</h3>
+              <p className="text-sm text-mute">{m.daerah}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}

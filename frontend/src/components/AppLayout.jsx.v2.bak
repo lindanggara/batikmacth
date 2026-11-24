@@ -1,0 +1,88 @@
+import { NavLink, Link, Outlet } from "react-router-dom";
+
+const IKON = {
+  home: "M4 11l8-7 8 7v9a1 1 0 01-1 1h-4v-6H9v6H5a1 1 0 01-1-1z",
+  grid: "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z",
+  heart: "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z",
+  info: "M12 3a9 9 0 100 18 9 9 0 000-18zM12 11v5M12 8v.01",
+  kamera: "M4 8h3l2-3h6l2 3h3v11H4zM12 10a3.5 3.5 0 100 7 3.5 3.5 0 000-7z",
+};
+
+const MENU = [
+  { to: "/", label: "Beranda", end: true },
+  { to: "/jelajah", label: "Jelajah" },
+  { to: "/favorit", label: "Favorit" },
+  { to: "/tentang", label: "Tentang" },
+];
+
+function Ikon({ d, size = 24 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d={d} />
+    </svg>
+  );
+}
+
+function ItemBawah({ to, label, d, end }) {
+  return (
+    <NavLink to={to} end={end} aria-label={label}
+      className={({ isActive }) =>
+        `flex h-12 w-12 items-center justify-center rounded-full ${isActive ? "text-malam" : "text-white/60"}`}>
+      <Ikon d={d} />
+    </NavLink>
+  );
+}
+
+export default function AppLayout({ children }) {
+  return (
+    <div className="min-h-screen bg-[#EEF1F7] text-nila">
+      {/* Menu atas: layar besar */}
+      <header className="sticky top-0 z-30 hidden bg-[#EEF1F7]/90 backdrop-blur lg:block">
+        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-8">
+          <Link to="/" className="flex items-center gap-3">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-nila font-display text-xl font-bold text-malam">B</span>
+            <span className="font-display text-xl font-bold">BatikLens</span>
+          </Link>
+          <nav aria-label="Menu utama" className="flex gap-1 rounded-full bg-white p-1.5 shadow-sm">
+            {MENU.map((m) => (
+              <NavLink key={m.to} to={m.to} end={m.end}
+                className={({ isActive }) =>
+                  `rounded-full px-5 py-2.5 text-sm font-semibold ${isActive ? "bg-nila text-kain" : "text-nila/70 hover:text-nila"}`}>
+                {m.label}
+              </NavLink>
+            ))}
+          </nav>
+          <Link to="/" className="inline-flex h-11 items-center rounded-full bg-malam px-6 font-semibold text-nila">
+            Ambil Foto
+          </Link>
+        </div>
+      </header>
+
+      <div className="mx-auto max-w-6xl px-5 pb-32 pt-8 lg:px-8 lg:pb-16 lg:pt-4">
+        {children ?? <Outlet />}
+        <p className="pt-10 text-center text-xs text-mute">
+          BatikLens, proyek Neuro Computing.{" "}
+          <Link to="/admin/login" className="underline">Admin</Link>
+        </p>
+      </div>
+
+      {/* Menu bawah: HP */}
+      <nav aria-label="Menu bawah"
+        className="fixed bottom-4 left-1/2 z-20 flex h-[68px] w-[calc(100%-2rem)] max-w-[28rem] -translate-x-1/2 items-center justify-between rounded-[34px] bg-nila px-5 shadow-2xl lg:hidden">
+        <div className="flex gap-1">
+          <ItemBawah to="/" end label="Beranda" d={IKON.home} />
+          <ItemBawah to="/jelajah" label="Jelajah" d={IKON.grid} />
+        </div>
+        <Link to="/" aria-label="Ambil foto"
+          className="-mt-9 flex h-16 w-16 items-center justify-center rounded-full bg-malam text-nila shadow-lg ring-[6px] ring-[#EEF1F7]">
+          <Ikon d={IKON.kamera} size={28} />
+        </Link>
+        <div className="flex gap-1">
+          <ItemBawah to="/favorit" label="Favorit" d={IKON.heart} />
+          <ItemBawah to="/tentang" label="Tentang" d={IKON.info} />
+        </div>
+      </nav>
+    </div>
+  );
+}

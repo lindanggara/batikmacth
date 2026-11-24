@@ -1,0 +1,96 @@
+import { NavLink, Link, Outlet } from "react-router-dom";
+
+const IKON = {
+  home: "M4 11l8-7 8 7v9a1 1 0 01-1 1h-4v-6H9v6H5a1 1 0 01-1-1z",
+  heart: "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z",
+  grid: "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z",
+  info: "M12 3a9 9 0 100 18 9 9 0 000-18zM12 11v5M12 8v.01",
+};
+
+const MENU = [
+  { to: "/", label: "Beranda", end: true, d: IKON.home },
+  { to: "/favorit", label: "Favorit", d: IKON.heart },
+  { to: "/jelajah", label: "Katalog", d: IKON.grid },
+  { to: "/tentang", label: "Tentang", d: IKON.info },
+];
+
+function Ikon({ d }) {
+  return (
+    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d={d} />
+    </svg>
+  );
+}
+
+export default function AppLayout({ children }) {
+  return (
+    <div className="bg-krem text-sogan-tua flex min-h-screen flex-col selection:bg-[#AD7559]/30">
+      {/* Header Desktop Menyatu dengan Latar Krem */}
+      <header className="bg-krem/90 sticky top-0 z-30 hidden backdrop-blur-md lg:block">
+        <div className="mx-auto flex h-20 max-w-5xl items-center justify-between px-6">
+          <Link to="/" className="flex items-center gap-2.5">
+            <span className="bg-sogan-grad flex h-9 w-9 items-center justify-center rounded-full text-xs font-bold text-[#F3F1ED] shadow-sm">
+              ✦
+            </span>
+            <span className="text-base font-bold tracking-tight">BatikLens</span>
+          </Link>
+
+          <nav aria-label="Menu utama" className="bg-kapsul flex items-center gap-1 rounded-full p-1">
+            {MENU.map((m) => (
+              <NavLink
+                key={m.to}
+                to={m.to}
+                end={m.end}
+                className={({ isActive }) =>
+                  `rounded-full px-5 py-2 text-xs font-bold transition-all ${
+                    isActive
+                      ? "bg-karamel text-white shadow-sm"
+                      : "text-[#432912]/65 hover:text-[#432912]"
+                  }`
+                }
+              >
+                {m.label}
+              </NavLink>
+            ))}
+          </nav>
+
+          <Link
+            to="/jelajah"
+            className="bg-kapsul rounded-full px-5 py-2.5 text-xs font-bold text-[#432912] transition hover:bg-[#C59C8A]"
+          >
+            15 Motif
+          </Link>
+        </div>
+      </header>
+
+      <main className="mx-auto w-full max-w-5xl flex-1 px-5 pb-28 pt-4 lg:px-6 lg:pb-16 lg:pt-4">
+        {children ?? <Outlet />}
+      </main>
+
+      {/* Bottom Navigation HP Bersih */}
+      <nav aria-label="Menu bawah" className="fixed inset-x-0 bottom-0 z-20 flex h-[66px] items-center justify-around bg-white/95 px-6 shadow-[0_-4px_20px_rgba(38,20,9,0.05)] backdrop-blur-md lg:hidden">
+        {MENU.map((m) => (
+          <NavLink
+            key={m.to}
+            to={m.to}
+            end={m.end}
+            aria-label={m.label}
+            className={({ isActive }) =>
+              `flex flex-col items-center justify-center gap-1 px-4 py-1.5 transition-colors ${
+                isActive ? "text-karamel" : "text-[#432912]/40 hover:text-[#432912]"
+              }`
+            }
+          >
+            {({ isActive }) => (
+              <>
+                <Ikon d={m.d} />
+                <span className={`h-1.5 w-1.5 rounded-full transition-opacity ${isActive ? "bg-karamel opacity-100" : "opacity-0"}`} />
+              </>
+            )}
+          </NavLink>
+        ))}
+      </nav>
+    </div>
+  );
+}

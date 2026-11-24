@@ -1,0 +1,12 @@
+// Nama dan daerah mengikuti data tiruan yang sudah ada. "pola" = kelas CSS di index.css.
+// Ganti dengan foto asli dari dataset kalau sudah siap.
+export const KATALOG = [
+  { id: "parang", nama: "Parang", daerah: "Jawa Tengah", pola: "pola-parang" },
+  { id: "kawung", nama: "Kawung", daerah: "Yogyakarta", pola: "pola-kawung" },
+  { id: "megamendung", nama: "Megamendung", daerah: "Cirebon", pola: "pola-megamendung" },
+  { id: "truntum", nama: "Truntum", daerah: "Solo", pola: "pola-ceplok" },
+  { id: "sogan", nama: "Sogan", daerah: "Yogyakarta", pola: "pola-parang" },
+  { id: "sidomukti", nama: "Sidomukti", daerah: "Solo", pola: "pola-kawung" },
+  { id: "ceplok", nama: "Ceplok", daerah: "Jawa", pola: "pola-ceplok" },
+  { id: "tujuh-rupi", nama: "Tujuh Rupi", daerah: "Bengkulu", pola: "pola-megamendung" },
+];

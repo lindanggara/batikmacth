@@ -1,0 +1,203 @@
+import { useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { KATALOG } from "../data/katalogMotif";
+import KartuMotifBaru from "../components/KartuMotifBaru";
+
+const MAKS_MB = 10;
+const CONTOH = ["parang", "kawung", "megamendung", "ceplok"].map((id) => KATALOG.find((m) => m.id === id));
+
+const LANGKAH = [
+  { angka: "I", judul: "Pindai Tekstur Kain", isi: "Ambil foto kain batik dari jarak dekat atau unggah gambar koleksi pribadimu." },
+  { angka: "II", judul: "Pemetaan Pola CNN", isi: "Model jaringan saraf tiruan mengekstraksi lengkungan, titik cecek, dan ritme geometris batik." },
+  { angka: "III", judul: "Klasifikasi & Arsip", isi: "Sistem mencocokkan vektor ciri dengan database wastra untuk mengungkap nama dan asal daerahnya." },
+];
+
+export default function HomePage() {
+  const nav = useNavigate();
+  const kamera = useRef(null);
+  const galeri = useRef(null);
+  const [error, setError] = useState("");
+  const [seret, setSeret] = useState(false);
+
+  function proses(file) {
+    setError("");
+    if (!file) return;
+    if (!file.type.startsWith("image/")) return setError("File harus berupa foto (JPG atau PNG).");
+    if (file.size > MAKS_MB * 1024 * 1024) return setError(`Ukuran foto maksimal ${MAKS_MB} MB.`);
+    nav("/hasil", { state: { file } });
+  }
+
+  return (
+    <div className="space-y-14 lg:space-y-20">
+      {/* HERO BENTO GRID */}
+      <section className="grid gap-5 lg:grid-cols-12">
+        {/* Kartu Utama Kiri (7 kolom) */}
+        <div
+          onDragOver={(e) => { e.preventDefault(); setSeret(true); }}
+          onDragLeave={() => setSeret(false)}
+          onDrop={(e) => { e.preventDefault(); setSeret(false); proses(e.dataTransfer.files?.[0]); }}
+          className={`relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#1B2B4B] via-[#14213D] to-[#0B1324] p-7 text-kain shadow-xl transition-all duration-300 lg:col-span-7 lg:p-12 ${
+            seret ? "ring-4 ring-malam scale-[1.01]" : "ring-1 ring-malam/50"
+          }`}
+        >
+          <div className="pola-kawung pointer-events-none absolute -right-16 -top-16 h-72 w-72 rounded-full opacity-25 blur-[1px]" aria-hidden="true" />
+          <div className="relative">
+            <span className="inline-flex items-center gap-2 rounded-full border border-malam/50 bg-malam/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-malam uppercase">
+              ✦ Galeri Digital Wastra
+            </span>
+            <h1 className="mt-5 font-display text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
+              Ungkap identitas di balik setiap guratan <span className="italic text-malam">batik</span>
+            </h1>
+            <p className="mt-4 max-w-lg text-sm leading-relaxed text-kain/80 sm:text-base">
+              Cukup unggah satu foto kain batik. Kecerdasan buatan kami mengenali nama motif, daerah asal, serta filosofi warisan budayanya.
+            </p>
+
+            {/* Area Dropzone Interaktif */}
+            <div className="mt-8 rounded-2xl border-2 border-dashed border-malam/50 bg-[#0B1324]/60 p-5 backdrop-blur-sm">
+              <div className="flex flex-wrap items-center gap-3">
+                <button
+                  type="button"
+                  onClick={() => kamera.current?.click()}
+                  className="flex-1 rounded-full bg-malam px-6 py-3.5 text-sm font-bold text-nila shadow-lg transition hover:brightness-110 active:scale-95 sm:flex-none"
+                >
+                  📷 Ambil Foto
+                </button>
+                <button
+                  type="button"
+                  onClick={() => galeri.current?.click()}
+                  className="flex-1 rounded-full border border-kain/40 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-malam hover:bg-white/15 active:scale-95 sm:flex-none"
+                >
+                  🖼️ Unggah dari Galeri
+                </button>
+              </div>
+              <p className="mt-3 text-center text-xs text-kain/60 sm:text-left">
+                Atau seret &amp; jatuhkan file foto langsung ke kotak ini (JPG/PNG, maks. {MAKS_MB} MB).
+              </p>
+            </div>
+          </div>
+
+          <input ref={kamera} type="file" accept="image/*" capture="environment" className="hidden"
+            onChange={(e) => { proses(e.target.files?.[0]); e.target.value = ""; }} />
+          <input ref={galeri} type="file" accept="image/*" className="hidden"
+            onChange={(e) => { proses(e.target.files?.[0]); e.target.value = ""; }} />
+        </div>
+
+        {/* Kolom Kanan Bento (5 kolom): Showcase Motif & Simulasi Cepat */}
+        <div className="grid gap-5 lg:col-span-5">
+          {/* Kartu Showcase 3 Kain */}
+          <div className="relative overflow-hidden rounded-[32px] bg-[#2B1810] p-6 text-kain shadow-xl ring-1 ring-malam/50">
+            <div className="pola-parang absolute inset-0 opacity-35" aria-hidden="true" />
+            <div className="relative flex h-full flex-col justify-between">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-semibold tracking-widest text-malam uppercase">Ragam Rupa Klasik</span>
+                <span className="rounded-full bg-malam/20 px-3 py-0.5 text-xs font-medium text-malam">CNN Model</span>
+              </div>
+
+              <div className="my-5 grid grid-cols-3 gap-3">
+                <div className="pola-kawung aspect-[3/4] rounded-2xl border-2 border-malam/70 shadow-lg" title="Motif Kawung" />
+                <div className="pola-megamendung aspect-[3/4] -translate-y-2 rounded-2xl border-2 border-kain/80 shadow-lg" title="Motif Megamendung" />
+                <div className="pola-ceplok aspect-[3/4] rounded-2xl border-2 border-malam/70 shadow-lg" title="Motif Ceplok" />
+              </div>
+
+              <p className="text-xs leading-relaxed text-kain/80">
+                Dilatih untuk membedakan detail geometris pedalaman (Solo &amp; Yogyakarta) hingga corak pesisir (Cirebon &amp; Pekalongan).
+              </p>
+            </div>
+          </div>
+
+          {/* Kartu Simulasi Cepat */}
+          <div className="rounded-[28px] border border-malam/50 bg-white p-6 shadow-md">
+            <div className="flex items-center justify-between">
+              <div>
+                <h2 className="font-display text-2xl font-bold text-nila">Coba Sampel Instan</h2>
+                <p className="text-xs text-mute">Klik salah satu motif untuk simulasi hasil</p>
+              </div>
+              <span className="text-lg text-malam">✦</span>
+            </div>
+            <div className="mt-4 grid grid-cols-4 gap-2.5">
+              {CONTOH.map((m) => (
+                <button
+                  key={m.id}
+                  type="button"
+                  onClick={() => nav("/hasil", { state: { contohId: m.id } })}
+                  className="group flex flex-col items-center rounded-xl border border-nila/10 bg-[#FAF8F5] p-2 transition hover:border-malam hover:bg-malam/10"
+                >
+                  <div className={`h-12 w-12 rounded-lg border border-malam/50 shadow-sm transition-transform group-hover:scale-105 ${m.pola}`} />
+                  <span className="mt-1.5 line-clamp-1 text-[11px] font-semibold text-nila">{m.nama}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {error && (
+        <p role="alert" className="-mt-8 rounded-2xl border border-red-300 bg-red-50 px-5 py-3.5 text-sm font-medium text-red-800 shadow-sm">
+          {error}
+        </p>
+      )}
+
+      {/* PITA MARQUEE MOTIF NUSANTARA */}
+      <div className="overflow-hidden rounded-2xl border border-malam/50 bg-[#101B33] py-3 text-malam shadow-md" aria-hidden="true">
+        <div className="animate-marquee gap-8 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span>✦ PARANG RUSAK</span>
+          <span>✦ KAWUNG PICIS</span>
+          <span>✦ MEGAMENDUNG CIREBON</span>
+          <span>✦ SIDOMUKTI SOLO</span>
+          <span>✦ TRUNTUM YOGYAKARTA</span>
+          <span>✦ SEKAR JAGAD</span>
+          <span>✦ TAMBAL KANOMAN</span>
+          <span>✦ PARANG RUSAK</span>
+          <span>✦ KAWUNG PICIS</span>
+          <span>✦ MEGAMENDUNG CIREBON</span>
+          <span>✦ SIDOMUKTI SOLO</span>
+          <span>✦ TRUNTUM YOGYAKARTA</span>
+          <span>✦ SEKAR JAGAD</span>
+          <span>✦ TAMBAL KANOMAN</span>
+        </div>
+      </div>
+
+      {/* KOLEKSI PILIHAN */}
+      <section>
+        <div className="flex flex-wrap items-end justify-between gap-4 border-b-2 border-malam/40 pb-4">
+          <div>
+            <span className="text-xs font-bold tracking-widest text-soga uppercase">✦ Khazanah Wastra</span>
+            <h2 className="mt-1 font-display text-4xl font-bold text-nila">Motif Batik Pilihan</h2>
+          </div>
+          <Link to="/jelajah" className="rounded-full bg-nila px-5 py-2.5 text-xs font-semibold tracking-wider text-malam uppercase shadow transition hover:brightness-110">
+            Lihat Semua Koleksi &rarr;
+          </Link>
+        </div>
+        <div className="mt-7 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+          {KATALOG.slice(0, 4).map((m) => (
+            <Link key={m.id} to="/jelajah" aria-label={`Lihat motif ${m.nama}`}>
+              <KartuMotifBaru motif={m} besar />
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* CARA KERJA DENGAN KARTU ORNAMEN */}
+      <section className="relative overflow-hidden rounded-[32px] border border-malam/60 bg-[#101B33] px-7 py-12 text-kain shadow-xl lg:px-14 lg:py-16">
+        <div className="pola-ceplok pointer-events-none absolute inset-0 opacity-15" aria-hidden="true" />
+        <div className="relative">
+          <div className="max-w-xl">
+            <span className="text-xs font-bold tracking-widest text-malam uppercase">Arsitektur Sistem</span>
+            <h2 className="mt-1 font-display text-4xl font-bold text-white lg:text-5xl">Tiga Tahap Identifikasi</h2>
+          </div>
+          <ol className="mt-10 grid gap-6 lg:grid-cols-3">
+            {LANGKAH.map((l) => (
+              <li key={l.judul} className="rounded-2xl border border-malam/40 bg-[#182747]/80 p-6 backdrop-blur-sm">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-malam bg-malam/15 font-display text-xl font-bold text-malam">
+                  {l.angka}
+                </span>
+                <h3 className="mt-4 font-display text-2xl font-bold text-white">{l.judul}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-kain/75">{l.isi}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+    </div>
+  );
+}

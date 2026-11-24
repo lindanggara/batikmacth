@@ -1,0 +1,176 @@
+import { useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { KATALOG } from "../data/katalogMotif";
+import KartuMotifBaru from "../components/KartuMotifBaru";
+
+const MAKS_MB = 10;
+const CONTOH = ["parang", "kawung", "megamendung", "ceplok"].map((id) => KATALOG.find((m) => m.id === id));
+
+const LANGKAH = [
+  { judul: "Abadikan Kain", isi: "Potret motif batik dari jarak dekat atau unggah foto koleksi yang sudah ada di galeri." },
+  { judul: "Ekstraksi Ciri", isi: "Arsitektur CNN memetakan struktur geometris dan lengkungan motif menjadi vektor numerik." },
+  { judul: "Pencocokan Arsip", isi: "Sistem menghitung kemiripan kosinus dengan basis data untuk menemukan asal dan kerabat motif." },
+];
+
+export default function HomePage() {
+  const nav = useNavigate();
+  const kamera = useRef(null);
+  const galeri = useRef(null);
+  const [error, setError] = useState("");
+  const [seret, setSeret] = useState(false);
+
+  function proses(file) {
+    setError("");
+    if (!file) return;
+    if (!file.type.startsWith("image/")) return setError("File harus berupa foto (JPG atau PNG).");
+    if (file.size > MAKS_MB * 1024 * 1024) return setError(`Ukuran foto maksimal ${MAKS_MB} MB.`);
+    nav("/hasil", { state: { file } });
+  }
+
+  return (
+    <div className="space-y-16 lg:space-y-24">
+      <section
+        onDragOver={(e) => { e.preventDefault(); setSeret(true); }}
+        onDragLeave={() => setSeret(false)}
+        onDrop={(e) => { e.preventDefault(); setSeret(false); proses(e.dataTransfer.files?.[0]); }}
+        className={`relative overflow-hidden rounded-[32px] bg-gradient-to-br from-nila-mid via-nila to-nila-deep text-kain shadow-xl transition-all duration-300 lg:rounded-[40px] ${
+          seret ? "ring-4 ring-malam scale-[1.01]" : "ring-1 ring-malam/30"
+        }`}
+      >
+        <div className="pola-halus absolute inset-0 opacity-45" aria-hidden="true" />
+        <div className="relative grid gap-12 px-7 pb-20 pt-12 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-10 lg:px-16 lg:pb-24 lg:pt-16">
+          <div>
+            <p className="inline-flex items-center gap-2 rounded-full border border-malam/50 bg-nila-deep/40 px-4 py-1.5 text-xs font-medium tracking-widest text-malam uppercase backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-malam" />
+              Pengenal Motif Batik Nusantara
+            </p>
+            <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.04] tracking-tight lg:text-7xl">
+              Kenali makna di balik setiap helai batik
+            </h1>
+            <p className="mt-5 max-w-md text-base leading-relaxed text-kain/80 lg:text-lg">
+              Unggah satu foto kain batik. Kami mengidentifikasi nama motif, daerah asal, beserta filosofi dan motif kerabatnya.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3.5">
+              <button
+                type="button"
+                onClick={() => kamera.current?.click()}
+                className="h-13 rounded-full bg-malam px-8 py-3.5 font-semibold text-nila shadow-lg transition-all duration-200 hover:brightness-105 active:scale-95"
+              >
+                Ambil Foto
+              </button>
+              <button
+                type="button"
+                onClick={() => galeri.current?.click()}
+                className="h-13 rounded-full border border-kain/40 bg-white/5 px-8 py-3.5 font-semibold text-kain backdrop-blur-sm transition-all duration-200 hover:border-malam hover:bg-white/10 active:scale-95"
+              >
+                Pilih dari Galeri
+              </button>
+            </div>
+            <p className="mt-5 text-xs tracking-wide text-kain/55">
+              Mendukung seret &amp; lepas (drag &amp; drop). Format JPG/PNG, maks. {MAKS_MB} MB.
+            </p>
+          </div>
+
+          <div className="relative mx-auto h-72 w-72 lg:h-[26rem] lg:w-[26rem]" aria-hidden="true">
+            <div style={{ "--rot": "-6deg" }} className="anim-kain pola-parang absolute left-0 top-8 h-56 w-44 -rotate-6 rounded-3xl shadow-2xl ring-2 ring-malam/80 lg:h-72 lg:w-56" />
+            <div style={{ "--rot": "6deg", animationDelay: "1.5s" }} className="anim-kain pola-kawung absolute right-0 top-0 h-56 w-44 rotate-6 rounded-3xl shadow-2xl ring-2 ring-malam/80 lg:h-72 lg:w-56" />
+            <div style={{ "--rot": "2deg", animationDelay: "3s" }} className="anim-kain pola-megamendung absolute bottom-0 left-1/2 h-36 w-36 -translate-x-1/2 rotate-2 rounded-3xl shadow-2xl ring-2 ring-kain/90 lg:h-44 lg:w-44" />
+          </div>
+        </div>
+
+        <div className="pita-tumpal absolute inset-x-0 bottom-0" aria-hidden="true" />
+        <input ref={kamera} type="file" accept="image/*" capture="environment" className="hidden"
+          onChange={(e) => { proses(e.target.files?.[0]); e.target.value = ""; }} />
+        <input ref={galeri} type="file" accept="image/*" className="hidden"
+          onChange={(e) => { proses(e.target.files?.[0]); e.target.value = ""; }} />
+      </section>
+
+      {error && (
+        <p role="alert" className="-mt-10 rounded-2xl border border-red-200 bg-red-50 px-5 py-3.5 text-sm font-medium text-red-800">
+          {error}
+        </p>
+      )}
+
+      <section className="-mt-4 flex flex-col gap-6 rounded-3xl bg-white/90 p-7 shadow-sm ring-1 ring-malam/40 backdrop-blur-sm lg:-mt-12 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+        <div>
+          <span className="text-xs font-semibold tracking-widest text-soga uppercase">Simulasi Cepat</span>
+          <h2 className="mt-1 font-display text-3xl font-semibold">Belum menyiapkan foto kain?</h2>
+          <p className="mt-0.5 text-sm text-mute">Pilih salah satu sampel motif klasik di samping untuk melihat cara kerja sistem.</p>
+        </div>
+        <div className="flex flex-wrap gap-4 sm:gap-5">
+          {CONTOH.map((m) => (
+            <button
+              key={m.id}
+              type="button"
+              onClick={() => nav("/hasil", { state: { contohId: m.id } })}
+              className="group text-center"
+              aria-label={`Coba contoh motif ${m.nama}`}
+            >
+              <div className="overflow-hidden rounded-2xl p-0.5 ring-1 ring-malam/60 transition-all duration-300 group-hover:-translate-y-1 group-hover:ring-2 group-hover:ring-malam">
+                <div className={`h-16 w-16 rounded-[14px] transition-transform duration-500 group-hover:scale-110 lg:h-20 lg:w-20 ${m.pola}`} />
+              </div>
+              <span className="mt-2 block text-xs font-medium text-nila/80 transition-colors group-hover:text-soga">{m.nama}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="flex flex-wrap items-end justify-between gap-4 border-b border-nila/10 pb-4">
+          <div>
+            <span className="text-xs font-semibold tracking-widest text-soga uppercase">Koleksi Terkurasi</span>
+            <h2 className="mt-1 font-display text-4xl font-semibold">Motif pilihan</h2>
+          </div>
+          <Link to="/jelajah" className="group inline-flex items-center gap-1.5 text-sm font-semibold text-soga">
+            <span>Jelajahi semua koleksi</span>
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">&rarr;</span>
+          </Link>
+        </div>
+        <div className="mt-7 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+          {KATALOG.slice(0, 4).map((m) => (
+            <Link key={m.id} to="/jelajah" aria-label={`Lihat motif ${m.nama}`}>
+              <KartuMotifBaru motif={m} besar />
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden rounded-[32px] bg-nila px-7 py-12 text-kain shadow-lg lg:rounded-[40px] lg:px-16 lg:py-16">
+        <div className="pola-lerek absolute inset-0 opacity-75" aria-hidden="true" />
+        <div className="relative">
+          <span className="text-xs font-semibold tracking-widest text-malam uppercase">Metodologi</span>
+          <h2 className="mt-1 font-display text-4xl font-semibold lg:text-5xl">Bagaimana BatikLens bekerja</h2>
+          <ol className="mt-10 grid gap-8 lg:grid-cols-3 lg:gap-12">
+            {LANGKAH.map((l, i) => (
+              <li key={l.judul} className="relative border-t border-malam/50 pt-6">
+                <span className="font-display text-5xl font-semibold leading-none text-malam/90" aria-hidden="true">0{i + 1}</span>
+                <h3 className="mt-4 font-display text-2xl font-semibold">{l.judul}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-kain/75">{l.isi}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden rounded-[32px] shadow-lg ring-1 ring-malam/40 lg:rounded-[40px]">
+        <div className="pola-parang absolute inset-0" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-nila-deep/95 via-nila/90 to-nila/80" aria-hidden="true" />
+        <div className="relative flex flex-col items-start gap-6 px-7 py-12 text-kain lg:flex-row lg:items-center lg:justify-between lg:px-16 lg:py-14">
+          <div>
+            <h2 className="font-display text-3xl font-semibold lg:text-5xl">Punya koleksi kain batik di rumah?</h2>
+            <p className="mt-2 max-w-md text-sm text-kain/80 lg:text-base">
+              Uji kemampuan pengenalan pola sekarang. Cukup unggah satu foto dengan pencahayaan yang terang.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => galeri.current?.click()}
+            className="h-14 shrink-0 rounded-full bg-malam px-9 text-base font-semibold text-nila shadow-lg transition-all hover:brightness-105 active:scale-95"
+          >
+            Unggah Foto Sekarang
+          </button>
+        </div>
+      </section>
+    </div>
+  );
+}

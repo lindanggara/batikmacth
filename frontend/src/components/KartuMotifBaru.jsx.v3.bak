@@ -1,0 +1,26 @@
+export default function KartuMotifBaru({ motif, favorit, onToggle, label }) {
+  return (
+    <article>
+      <div className="relative rounded-2xl bg-white p-1.5 ring-1 ring-malam/60">
+        <div className={`aspect-square rounded-xl ${motif.pola}`} />
+        {onToggle && (
+          <button
+            type="button"
+            onClick={() => onToggle(motif.id)}
+            aria-pressed={favorit}
+            aria-label={favorit ? `Hapus ${motif.nama} dari favorit` : `Simpan ${motif.nama} ke favorit`}
+            className="absolute right-3 top-3 flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-soga"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" strokeWidth="1.8" strokeLinejoin="round"
+              fill={favorit ? "currentColor" : "none"} stroke="currentColor" aria-hidden="true">
+              <path d="M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z" />
+            </svg>
+          </button>
+        )}
+      </div>
+      <h3 className="mt-3 font-display text-xl font-semibold leading-tight">{motif.nama}</h3>
+      <p className="text-sm text-mute">{motif.daerah}</p>
+      {label && <p className="mt-0.5 text-xs font-semibold text-soga">{label}</p>}
+    </article>
+  );
+}

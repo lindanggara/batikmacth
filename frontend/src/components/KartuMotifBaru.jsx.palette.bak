@@ -1,0 +1,79 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+const HATI = "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z";
+
+export function LingkaranFotoBatik({ motif, srcManual, className = "" }) {
+  const [gagal, setGagal] = useState(false);
+  const sumber = srcManual || motif?.gambar || `/motif/${motif?.id}.jpg`;
+
+  return (
+    <div className={`overflow-hidden rounded-full bg-[#EFEAE2] shadow-[0_12px_26px_rgba(38,20,9,0.24)] ring-[5px] ring-white ${className}`}>
+      {!gagal && sumber ? (
+        <img
+          src={sumber}
+          alt={motif ? `Motif ${motif.nama}` : "Foto kain batik"}
+          onError={() => setGagal(true)}
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
+      ) : (
+        <div className={`h-full w-full ${motif?.pola || "pola-kawung"}`} role="img" aria-label={motif?.nama || "Motif batik"} />
+      )}
+    </div>
+  );
+}
+
+export default function KartuMotifBaru({ motif, favorit, onToggle, label }) {
+  const nav = useNavigate();
+
+  return (
+    <article
+      onClick={() => nav("/hasil", { state: { contohId: motif.id } })}
+      className="group relative mt-14 cursor-pointer select-none"
+    >
+      {/* Lingkaran Foto Floating */}
+      <div className="relative z-10 mx-auto -mb-14 h-28 w-28 transition-transform duration-300 ease-out group-hover:-translate-y-1.5 group-hover:scale-105 sm:h-32 sm:w-32">
+        <LingkaranFotoBatik motif={motif} className="h-full w-full" />
+      </div>
+
+      {/* Kartu Sogan Pekat */}
+      <div className="bg-sogan-grad relative rounded-[28px] px-5 pb-5 pt-16 text-white shadow-[0_14px_30px_rgba(38,20,9,0.16)] transition-all duration-300 group-hover:shadow-[0_20px_38px_rgba(38,20,9,0.25)]">
+        {onToggle && (
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); onToggle(motif.id); }}
+            aria-pressed={favorit}
+            aria-label={favorit ? `Hapus ${motif.nama} dari favorit` : `Simpan ${motif.nama} ke favorit`}
+            className="absolute right-3.5 top-3.5 z-20 flex h-8 w-8 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition hover:scale-110"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" strokeWidth="2.2" strokeLinejoin="round"
+              fill={favorit ? "#C99A6B" : "none"} stroke={favorit ? "#C99A6B" : "currentColor"}>
+              <path d={HATI} />
+            </svg>
+          </button>
+        )}
+
+        <h3 className="text-base font-bold tracking-tight text-white">
+          {motif.nama}
+        </h3>
+
+        <div className="mt-1.5 inline-flex items-center gap-1 rounded-full bg-white/15 px-2.5 py-0.5 text-[11px] font-semibold text-[#FAF7F2]">
+          <span className="text-karamel">★</span>
+          <span>{motif.daerah}</span>
+        </div>
+
+        <p className="mt-2.5 line-clamp-1 text-xs text-white/60">
+          {label || "Ketuk untuk simulasi"}
+        </p>
+
+        <div className="mt-4 flex items-center justify-between">
+          <span className="text-xs font-bold text-[#FAF7F2]/90">Lihat motif</span>
+          <span className="text-sogan-tua flex h-9 w-9 items-center justify-center rounded-full bg-white text-lg font-bold shadow transition-transform group-hover:scale-110">
+            +
+          </span>
+        </div>
+      </div>
+    </article>
+  );
+}

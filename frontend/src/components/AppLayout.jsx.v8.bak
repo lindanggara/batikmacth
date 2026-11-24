@@ -1,0 +1,100 @@
+import { NavLink, Link, Outlet } from "react-router-dom";
+
+const IKON = {
+  home: "M4 11l8-7 8 7v9a1 1 0 01-1 1h-4v-6H9v6H5a1 1 0 01-1-1z",
+  heart: "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z",
+  grid: "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z",
+  info: "M12 3a9 9 0 100 18 9 9 0 000-18zM12 11v5M12 8v.01",
+};
+
+const MENU = [
+  { to: "/", label: "Beranda", end: true, d: IKON.home },
+  { to: "/favorit", label: "Favorit", d: IKON.heart },
+  { to: "/jelajah", label: "Katalog", d: IKON.grid },
+  { to: "/tentang", label: "Tentang", d: IKON.info },
+];
+
+function Ikon({ d }) {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d={d} />
+    </svg>
+  );
+}
+
+export default function AppLayout({ children }) {
+  return (
+    <div className="bg-krem text-sogan-tua flex min-h-screen flex-col selection:bg-[#C99A6B]/30">
+      {/* Header Desktop */}
+      <header className="bg-krem/90 sticky top-0 z-30 hidden border-b border-[#3D2314]/8 backdrop-blur-md lg:block">
+        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-8">
+          <Link to="/" className="flex items-center gap-3">
+            <span className="bg-sogan-tua flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold text-[#FAF7F2] shadow-sm">
+              ✦
+            </span>
+            <span className="font-display text-2xl font-bold tracking-tight">BatikLens</span>
+          </Link>
+
+          <nav aria-label="Menu utama" className="flex items-center gap-2 rounded-full bg-[#EFEAE2] p-1.5">
+            {MENU.map((m) => (
+              <NavLink
+                key={m.to}
+                to={m.to}
+                end={m.end}
+                className={({ isActive }) =>
+                  `rounded-full px-5 py-2 text-sm font-semibold transition-all ${
+                    isActive
+                      ? "bg-karamel text-white shadow-sm"
+                      : "text-[#3D2314]/70 hover:text-[#3D2314]"
+                  }`
+                }
+              >
+                {m.label}
+              </NavLink>
+            ))}
+          </nav>
+
+          <Link
+            to="/jelajah"
+            className="bg-sogan-tua rounded-full px-6 py-2.5 text-sm font-semibold text-[#FAF7F2] shadow-sm transition hover:opacity-90"
+          >
+            Semua Motif
+          </Link>
+        </div>
+      </header>
+
+      <main className="mx-auto w-full max-w-6xl flex-1 px-5 pb-28 pt-6 lg:px-8 lg:pb-16 lg:pt-10">
+        {children ?? <Outlet />}
+        <footer className="mt-16 border-t border-[#3D2314]/10 pt-6 text-center text-xs text-[#3D2314]/50">
+          BatikLens &bull; Klasifikasi Motif Batik Nusantara.{" "}
+          <Link to="/admin/login" className="underline hover:text-[#3D2314]">Admin</Link>
+        </footer>
+      </main>
+
+      {/* Bottom Navigation HP seperti referensi */}
+      <nav aria-label="Menu bawah" className="fixed inset-x-0 bottom-0 z-20 flex h-[68px] items-center justify-around border-t border-[#3D2314]/8 bg-white/95 px-4 backdrop-blur-md lg:hidden">
+        {MENU.map((m) => (
+          <NavLink
+            key={m.to}
+            to={m.to}
+            end={m.end}
+            aria-label={m.label}
+            className={({ isActive }) =>
+              `relative flex flex-col items-center justify-center gap-1 px-4 py-2 transition-colors ${
+                isActive ? "text-karamel" : "text-[#3D2314]/45 hover:text-[#3D2314]"
+              }`
+            }
+          >
+            {({ isActive }) => (
+              <>
+                <Ikon d={m.d} />
+                {isActive && <span className="bg-karamel h-1.5 w-1.5 rounded-full" />}
+              </>
+            )}
+          </NavLink>
+        ))}
+      </nav>
+    </div>
+  );
+}
