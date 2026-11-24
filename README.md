@@ -1,4 +1,4 @@
-﻿# BatikLens
+﻿# BatikMatch
 
 > Kenali dan pelajari motif batik dari fotomu.
 
