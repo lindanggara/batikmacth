@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
-import { cariMotif } from "../api/pencarianLokal";
+import { cariMotif, GagalPencarian, kirimUmpanBalik } from "../api/pencarianLokal";
 import KartuMotifBaru, { LingkaranFotoBatik } from "../components/KartuMotifBaru";
 import useFavoritLokal from "../hooks/useFavoritLokal";
 import { simpanKeRiwayat } from "./HistoryPage";
@@ -51,7 +51,10 @@ export default function ResultPage() {
           );
         }
       })
-      .catch(() => !batal && setError("Pencarian gagal. Coba lagi."));
+      .catch((err) => {
+        if (batal) return;
+        setError(err instanceof GagalPencarian ? err.message : "Pencarian gagal. Coba lagi.");
+      });
     return () => { batal = true; };
   }, [file, contohId]);
 
@@ -158,6 +161,17 @@ export default function ResultPage() {
 
         {/* KOLOM KANAN: Ensiklopedia Lengkap 4 Tab + Metadata */}
         <div className="space-y-7 pt-1">
+          {/* Peringatan "motif tidak dikenal": skor di bawah ambang batas backend */}
+          {hasil.yakin === false && (
+            <div role="alert" className="rounded-[24px] border border-amber-300/70 bg-amber-50/90 p-5 text-[#432912] shadow-sm">
+              <p className="text-sm font-bold">Motif ini mungkin belum ada di koleksi kami</p>
+              <p className="mt-1 text-xs leading-relaxed text-[#432912]/75">
+                Kemiripannya dengan koleksi rendah ({skor}%), jadi tebakan di bawah belum tentu benar.
+                Coba foto ulang dengan pencahayaan terang dan pastikan pola kain memenuhi kotak pemandu.
+              </p>
+            </div>
+          )}
+
           <div className="glass-panel rounded-[32px] p-6 sm:p-7">
             <span className="text-[11px] font-bold tracking-widest text-[#AD7559] uppercase">
               Ensiklopedia Wastra Nusantara
@@ -272,14 +286,14 @@ export default function ResultPage() {
                 <div className="flex items-center gap-2">
                   <button
                     type="button"
-                    onClick={() => { setNilai("ya"); try { const l = JSON.parse(localStorage.getItem("batikmatch_feedback_v1") || "[]"); localStorage.setItem("batikmatch_feedback_v1", JSON.stringify([{ id: Date.now(), motif: t.nama, status: "Akurat", waktu: new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }) }, ...l])); } catch {} }}
+                    onClick={() => { setNilai("ya"); kirimUmpanBalik(hasil.query_id, true); try { const l = JSON.parse(localStorage.getItem("batikmatch_feedback_v1") || "[]"); localStorage.setItem("batikmatch_feedback_v1", JSON.stringify([{ id: Date.now(), motif: t.nama, status: "Akurat", waktu: new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }) }, ...l])); } catch {} }}
                     className="rounded-full bg-[#AD7559] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:brightness-105"
                   >
                     Ya, Akurat
                   </button>
                   <button
                     type="button"
-                    onClick={() => { setNilai("tidak"); try { const l = JSON.parse(localStorage.getItem("batikmatch_feedback_v1") || "[]"); localStorage.setItem("batikmatch_feedback_v1", JSON.stringify([{ id: Date.now(), motif: t.nama, status: "Kurang Tepat", waktu: new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }) }, ...l])); } catch {} }}
+                    onClick={() => { setNilai("tidak"); kirimUmpanBalik(hasil.query_id, false); try { const l = JSON.parse(localStorage.getItem("batikmatch_feedback_v1") || "[]"); localStorage.setItem("batikmatch_feedback_v1", JSON.stringify([{ id: Date.now(), motif: t.nama, status: "Kurang Tepat", waktu: new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }) }, ...l])); } catch {} }}
                     className="rounded-full border border-white/80 bg-white/70 px-5 py-2 text-xs font-bold text-[#432912]/80 backdrop-blur-md transition hover:bg-white"
                   >
                     Kurang Tepat

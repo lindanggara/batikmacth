@@ -75,9 +75,9 @@ export default function ComparePage() {
             Uji Mirip:
           </span>
           {[
-            { a: "sidoluhur", b: "sidomukti", label: "Sidoluhur vs Sidomukti" },
-            { a: "kawung", b: "ceplok", label: "Kawung vs Ceplok" },
-            { a: "megamendung", b: "ciwaringin", label: "Megamendung vs Ciwaringin" },
+            { a: "bali", b: "poleng", label: "Bali vs Poleng" },
+            { a: "kawung", b: "sekar-jagad", label: "Kawung vs Sekar Jagad" },
+            { a: "megamendung", b: "celup", label: "Megamendung vs Celup" },
           ].map((p) => (
             <button
               key={p.label}

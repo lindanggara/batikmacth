@@ -16,28 +16,26 @@ dataset dari Data & Evaluasi (`outputs/reports/dataset_stats.json`), dan noteboo
 ID motif mengikuti katalog frontend kalau motifnya sudah ada di sana. Kolom **Label dataset** adalah nama folder
 di `data/raw/TRAIN/`. Backend otomatis menerjemahkan label ke ID.
 
-| ID | Label dataset | Ada di katalog frontend? |
+| ID | Label dataset | Isi info motif |
 |---|---|---|
-| `bali` | Batik Bali | ya |
-| `betawi` | Batik Betawi | ya |
-| `celup` | Batik Ikat Celup | ya |
-| `cendrawasih` | Batik Cendrawasih | ya |
-| `dayak` | Batik Dayak | **belum** |
-| `geblek-renteng` | Batik Geblek Renteng | **belum** |
-| `insang` | Batik Insang | **belum** |
-| `kawung` | Batik Kawung | ya |
-| `lasem` | Batik Lasem | ya |
-| `megamendung` | Batik Megamendung | ya |
-| `pala` | Batik Pala | **belum** |
-| `parang` | Batik Parang | ya |
-| `poleng` | Batik Poleng | **belum** |
-| `sekar-jagad` | Batik Sekar Jagad | ya |
-| `tambal` | Batik Tambal | ya |
+| `bali` | Batik Bali | lengkap |
+| `betawi` | Batik Betawi | lengkap |
+| `celup` | Batik Ikat Celup | lengkap |
+| `cendrawasih` | Batik Cendrawasih | lengkap |
+| `dayak` | Batik Dayak | draf |
+| `geblek-renteng` | Batik Geblek Renteng | draf |
+| `insang` | Batik Insang | draf |
+| `kawung` | Batik Kawung | lengkap |
+| `lasem` | Batik Lasem | lengkap |
+| `megamendung` | Batik Megamendung | lengkap |
+| `pala` | Batik Pala | draf |
+| `parang` | Batik Parang | lengkap |
+| `poleng` | Batik Poleng | draf |
+| `sekar-jagad` | Batik Sekar Jagad | lengkap |
+| `tambal` | Batik Tambal | lengkap |
 
-> ⚠️ **Untuk Frontend:** `katalogMotif.js` masih berisi `ceplok`, `ciwaringin`, `priangan`, `sidoluhur`, `sidomukti`
-> yang **tidak ada di dataset**, dan belum berisi 5 motif bertanda "belum" di atas. Kalau backend menjawab
-> `class_id: "dayak"`, kode sekarang jatuh ke `KATALOG[0]` (Batik Bali), jadi hasilnya salah.
-> Info 15 motif lengkap bisa diambil dari `GET /motifs`. Isi untuk 5 motif baru masih draf (`"draf": true`).
+> ✅ `frontend/src/data/katalogMotif.js` sudah disamakan dengan 15 kelas ini. Lima motif yang sebelumnya
+> belum ada (`dayak`, `geblek-renteng`, `insang`, `pala`, `poleng`) isinya masih draf (`draf: true`).
 
 Info motif disimpan di `backend/app/data/motifs.json`. Isi 10 motif disalin dari `katalogMotif.js`.
 
@@ -102,9 +100,9 @@ Error: `415` bukan gambar, `413` terlalu besar, `400` gambar rusak / model tidak
 
 Sama persis dengan `/predict`, tanpa `class_id` dan `confidence`.
 
-### Usulan perubahan `pencarianLokal.js` (untuk Frontend)
+### Cara frontend memakai `/predict`
 
-Supaya hasil motif mirip dan skornya benar-benar dari model, bukan hitungan lokal:
+Sudah diterapkan di `frontend/src/api/pencarianLokal.js` (versi ringkasnya):
 
 ```js
 if (res.ok) {
