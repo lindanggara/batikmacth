@@ -202,9 +202,9 @@ Mengumpulkan file evaluasi yang sudah ada. Bagian yang file-nya belum ada tidak 
 
 Login dulu, lalu kirim `Authorization: Bearer <token>`. Token berlaku 12 jam. Tanpa token valid: `401`.
 
-> **Untuk Frontend:** `AuthContext.jsx` sekarang membuat token tiruan (`mock-jwt-admin-...`) tanpa memanggil
-> backend, jadi token itu **ditolak** endpoint admin. Kalau halaman admin mau memakai data asli, panggil
-> `POST /admin/login` lalu simpan `token` dari respons ke `batikmatch_auth_v1`.
+Frontend: `AuthContext.loginAdmin()` memanggil `POST /admin/login` dan menyimpan token di `localStorage`
+(`batikmatch_auth_v1`). `src/api/admin.js` berisi semua pemanggil endpoint di bawah. Respons `401` membuat
+dashboard otomatis logout. Login **kolektor** tetap lokal di browser (hanya untuk favorit dan riwayat).
 
 | Endpoint | Body | Respons |
 |---|---|---|
@@ -214,6 +214,8 @@ Login dulu, lalu kirim `Authorization: Bearer <token>`. Token berlaku 12 jam. Ta
 | `POST /admin/motifs` | `{ "nama", "daerah", "deskripsi"?, "ciri"? }` | `201` + `Motif`. ID dibuat dari nama (`"Batik Uji"` → `batik-uji`). `409` kalau sudah ada |
 | `POST /admin/motifs/{id}/images` | multipart `file` | `201` + `Motif`. Gambar langsung bisa dicari **tanpa melatih ulang** (fitur bonus 6) |
 | `DELETE /admin/motifs/{id}` | | `{ "ok": true }`. Hanya motif tambahan; motif dataset → `403` |
+| `GET /admin/feedback?semua=false&limit=100` | | Umpan balik terbaru: `[{ "query_id", "cocok", "created_at", "selesai", "motif_id", "motif_nama", "skor", "yakin", "model" }]`. Default hanya yang belum selesai |
+| `POST /admin/feedback/{query_id}/selesai` | | `{ "ok": true }`. Menandai sudah ditinjau. Data tetap dihitung di statistik |
 
 ---
 

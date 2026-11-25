@@ -307,3 +307,43 @@ def test_incomplete_artifacts_give_warning(tmp_path, monkeypatch, dataset):
         h = c.get("/health").json()
         assert h["default_model"] == "histogram"
         assert any("tidak lengkap" in w for w in h["peringatan"])
+
+
+def test_admin_feedback_list_and_done(client):
+    h = login(client)
+    q1 = client.post("/predict", files=upload(CLASSES["Batik Kawung"])).json()["query_id"]
+    q2 = client.post("/predict", files=upload(CLASSES["Batik Poleng"])).json()["query_id"]
+    client.post("/feedback", json={"query_id": q1, "cocok": True})
+    client.post("/feedback", json={"query_id": q2, "cocok": False})
+
+    assert client.get("/admin/feedback").status_code == 401
+    items = client.get("/admin/feedback", headers=h).json()
+    assert {i["query_id"] for i in items} == {q1, q2}
+    poleng = next(i for i in items if i["query_id"] == q2)
+    assert poleng["cocok"] is False and poleng["motif_id"] == "poleng" and poleng["motif_nama"] == "Batik Poleng"
+    assert poleng["model"] == "histogram" and poleng["selesai"] is False
+
+    assert client.post(f"/admin/feedback/{q2}/selesai", headers=h).json() == {"ok": True}
+    assert client.post("/admin/feedback/ngawur/selesai", headers=h).status_code == 404
+    assert [i["query_id"] for i in client.get("/admin/feedback", headers=h).json()] == [q1]
+    assert len(client.get("/admin/feedback", params={"semua": True}, headers=h).json()) == 2
+    # tetap dihitung di statistik
+    s = client.get("/admin/stats", headers=h).json()
+    assert s["feedback_positif"] == 1 and s["feedback_negatif"] == 1
+
+
+def test_old_database_is_migrated(tmp_path):
+    import sqlite3
+
+    from app.store import Store
+
+    db = tmp_path / "lama.db"
+    con = sqlite3.connect(db)
+    con.executescript("CREATE TABLE feedback (query_id TEXT PRIMARY KEY, cocok INTEGER NOT NULL, created_at TEXT NOT NULL);"
+                      "INSERT INTO feedback VALUES ('q1', 1, '2026-11-25');")
+    con.commit()
+    con.close()
+    s = Store(db)
+    cols = [r[1] for r in s._conn.execute("PRAGMA table_info(feedback)")]
+    assert "selesai" in cols
+    s.close()

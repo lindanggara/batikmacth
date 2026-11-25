@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, HTTPException, Query, UploadFile
 from fastapi.concurrency import run_in_threadpool
 
 from ..auth import check_credentials, create_token, require_admin
@@ -10,7 +10,7 @@ from ..catalog import Catalog, slugify
 from ..config import settings
 from ..deps import get_catalog, get_engine, get_store, motif_out, read_image
 from ..engine import SearchEngine
-from ..models.schemas import AdminStats, LoginIn, LoginOut, Motif, MotifCreate, OkResponse
+from ..models.schemas import AdminStats, FeedbackItem, LoginIn, LoginOut, Motif, MotifCreate, OkResponse
 from ..store import Store
 
 router = APIRouter(prefix="/admin", tags=["Admin"])
@@ -93,4 +93,27 @@ def delete_motif(
     for rel in store.delete_custom_motif(motif_id):
         (settings.upload_dir / rel).unlink(missing_ok=True)
     engine.remove_motif(motif_id)
+    return OkResponse()
+
+
+@router.get("/feedback", response_model=list[FeedbackItem], dependencies=[Depends(require_admin)],
+            summary="Daftar umpan balik pengguna (terbaru dulu)")
+def list_feedback(
+    limit: int = Query(100, ge=1, le=1000),
+    semua: bool = Query(False, description="True untuk ikut menampilkan yang sudah ditandai selesai"),
+    store: Store = Depends(get_store),
+    catalog: Catalog = Depends(get_catalog),
+):
+    nama = {m["id"]: m["nama"] for m in catalog.all()}
+    return [
+        {**f, "motif_id": f["tebakan"], "motif_nama": nama.get(f["tebakan"], f["tebakan"])}
+        for f in store.list_feedback(limit, termasuk_selesai=semua)
+    ]
+
+
+@router.post("/feedback/{query_id}/selesai", response_model=OkResponse, dependencies=[Depends(require_admin)],
+             summary="Tandai umpan balik sudah ditinjau (data tetap tersimpan untuk statistik)")
+def mark_feedback_done(query_id: str, store: Store = Depends(get_store)):
+    if not store.mark_feedback_done(query_id):
+        raise HTTPException(404, "Umpan balik tidak ditemukan.")
     return OkResponse()
