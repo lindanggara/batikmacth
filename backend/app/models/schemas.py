@@ -72,6 +72,18 @@ class AdminStats(BaseModel):
     pencarian_tidak_dikenal: int
 
 
+class FeedbackItem(BaseModel):
+    query_id: str
+    cocok: bool
+    created_at: str
+    selesai: bool
+    motif_id: str | None = Field(None, description="Motif yang ditebak sistem")
+    motif_nama: str | None = None
+    skor: float | None = None
+    yakin: bool
+    model: str
+
+
 class MotifCreate(BaseModel):
     nama: str = Field(min_length=2, max_length=60)
     daerah: str = Field(min_length=2, max_length=80)

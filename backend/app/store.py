@@ -26,7 +26,8 @@ CREATE TABLE IF NOT EXISTS queries (
 CREATE TABLE IF NOT EXISTS feedback (
     query_id   TEXT PRIMARY KEY REFERENCES queries(id),
     cocok      INTEGER NOT NULL,
-    created_at TEXT NOT NULL
+    created_at TEXT NOT NULL,
+    selesai    INTEGER NOT NULL DEFAULT 0
 );
 CREATE TABLE IF NOT EXISTS custom_motifs (
     id         TEXT PRIMARY KEY,
@@ -57,6 +58,10 @@ class Store:
         self._lock = threading.Lock()
         with self._tx() as c:
             c.executescript(SCHEMA)
+            # Migrasi untuk database lama yang dibuat sebelum kolom `selesai` ada
+            cols = {r[1] for r in c.execute("PRAGMA table_info(feedback)")}
+            if "selesai" not in cols:
+                c.execute("ALTER TABLE feedback ADD COLUMN selesai INTEGER NOT NULL DEFAULT 0")
 
     @contextmanager
     def _tx(self):
@@ -87,10 +92,29 @@ class Store:
         """Satu umpan balik per pencarian; kalau dikirim ulang, jawaban terakhir yang dipakai."""
         with self._tx() as c:
             c.execute(
-                "INSERT INTO feedback VALUES (?, ?, ?) "
-                "ON CONFLICT(query_id) DO UPDATE SET cocok = excluded.cocok, created_at = excluded.created_at",
+                "INSERT INTO feedback (query_id, cocok, created_at) VALUES (?, ?, ?) "
+                "ON CONFLICT(query_id) DO UPDATE SET cocok = excluded.cocok, created_at = excluded.created_at, selesai = 0",
                 (query_id, int(cocok), _now()),
             )
+
+    def list_feedback(self, limit: int = 100, termasuk_selesai: bool = False) -> list[dict]:
+        """Umpan balik terbaru beserta hasil pencariannya (motif tebakan, skor, model)."""
+        where = "" if termasuk_selesai else "WHERE f.selesai = 0"
+        with self._tx() as c:
+            rows = c.execute(
+                f"SELECT f.query_id, f.cocok, f.created_at, f.selesai, q.tebakan, q.skor, q.model, q.yakin "
+                f"FROM feedback f JOIN queries q ON q.id = f.query_id {where} "
+                f"ORDER BY f.created_at DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        return [
+            {**dict(r), "cocok": bool(r["cocok"]), "selesai": bool(r["selesai"]), "yakin": bool(r["yakin"])}
+            for r in rows
+        ]
+
+    def mark_feedback_done(self, query_id: str) -> bool:
+        with self._tx() as c:
+            return c.execute("UPDATE feedback SET selesai = 1 WHERE query_id = ?", (query_id,)).rowcount > 0
 
     def stats(self) -> dict:
         with self._tx() as c:
