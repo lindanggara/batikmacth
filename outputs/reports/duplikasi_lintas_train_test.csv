@@ -1,0 +1,6 @@
+sha256,jumlah_file,label,file_train,file_test
+06142a77ce29ba826ab7e82dfcc6a0c978f0e0292387d4675a04fd294c119391,2,Batik Tambal,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\31.jpg,data\raw\DATASET\DATASET\TEST\Batik Tambal\75.jpg
+51a0e61312d081dde6870272606b171bfe0d08733d0acbab4946d87577e979fe,2,Batik Tambal,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\55.jpg,data\raw\DATASET\DATASET\TEST\Batik Tambal\86.jpg
+add20f4640fd664579bb74ab86a68b7b4210e951bb762f82188acb86932d6e25,2,Batik Tambal,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\9.jpg,data\raw\DATASET\DATASET\TEST\Batik Tambal\81.jpg
+f1972c1cbcd0a29ea109e067edf3a8e0639b105bf17b4a504316e1c6242549c1,2,Batik Cendrawasih,data\raw\DATASET\DATASET\TRAIN\Batik Cendrawasih\52.jpg,data\raw\DATASET\DATASET\TEST\Batik Cendrawasih\74.jpg
+f5938da1e3b47347ed5df0c06f7613a1da956a1a18a2d97eb0dc5740edd5bba4,2,Batik Ikat Celup,data\raw\DATASET\DATASET\TRAIN\Batik Ikat Celup\53.jpg,data\raw\DATASET\DATASET\TEST\Batik Ikat Celup\80.jpg

@@ -1,0 +1,25 @@
+split,label,filename,path,sha256,reason
+TRAIN,Batik Ikat Celup,20.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Ikat Celup\20.jpg,05999d20562b8d6ea2f2d7bdf387d7d639e6db54cbfd7e591adb80042d394c7e,Duplikat dalam TRAIN
+TRAIN,Batik Ikat Celup,49.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Ikat Celup\49.jpg,9f37b2c26055b18ae446937ca3fdd1908d580d8422602242896118b7843006d2,Duplikat dalam TRAIN
+TRAIN,Batik Ikat Celup,56.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Ikat Celup\56.jpg,3916569aa24bfa16bf54be54182e1f15344045cacb9f3cec7e0728b547c334fa,Duplikat dalam TRAIN
+TRAIN,Batik Ikat Celup,59.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Ikat Celup\59.jpg,29d3ad5846035810bdc85330a32b21fd4edc2b6cca67b3fc6cff2773705d49be,Duplikat dalam TRAIN
+TRAIN,Batik Ikat Celup,63.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Ikat Celup\63.jpg,05533218a3a2448662c8f69aafdfbbde06305ee98704dcd2c597784db1c99f96,Duplikat dalam TRAIN
+TRAIN,Batik Ikat Celup,67.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Ikat Celup\67.jpg,7364b2e15c972e8c8e9e27d7abf7ce056861eaa89b72f05e5b0b63fb65efe846,Duplikat dalam TRAIN
+TRAIN,Batik Lasem,40.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Lasem\40.jpg,835c44c3564ae7b4a3302d2ac1c010ef320fc43d54dcd3244c8fee9083b5ca04,Duplikat dalam TRAIN
+TRAIN,Batik Pala,51.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Pala\51.jpg,e326396e1e7268c0f93e9eb660abd7a0e3c43e4160d0d8680e60d0e64d769890,Duplikat dalam TRAIN
+TRAIN,Batik Pala,54.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Pala\54.jpg,2e64631663830c3ba6c150122a94fba2ba7673f1e664be106e0b3c9eb5eedbee,Duplikat dalam TRAIN
+TRAIN,Batik Sekar Jagad,57.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Sekar Jagad\57.jpg,ff228431aa0b1e16efef8650b00d8e382727b9a46b2cf7bbf91c1103067dea90,Duplikat dalam TRAIN
+TRAIN,Batik Sekar Jagad,59.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Sekar Jagad\59.jpg,4e64f65457abd154334375f202d02a4b34c717e81600f4d9f91764950114b702,Duplikat dalam TRAIN
+TRAIN,Batik Sekar Jagad,6.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Sekar Jagad\6.jpg,2b8669b3b5f9451cd3cee30fb1de593c2a38af6602b8a9bc98dd3e6d01dce4c3,Duplikat dalam TRAIN
+TRAIN,Batik Sekar Jagad,8.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Sekar Jagad\8.jpg,72b70c97a8143f68ad9a72871e2caee52d4d99ebfb0b44e4c248edb9d03cb784,Duplikat dalam TRAIN
+TRAIN,Batik Tambal,22.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\22.jpg,8d58753d12597694f38de0f67f3984a0176563bd5562efa538719d18ace32487,Duplikat dalam TRAIN
+TRAIN,Batik Tambal,29.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\29.jpg,2e648f9bdbf37eedebc4a6b3ca6b5d63804de39c43548dda00955c8bcb946260,Duplikat dalam TRAIN
+TRAIN,Batik Tambal,52.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\52.jpg,e6eb50c12d7ec3e07e45fb1f0e8fcfe19543399aef971d796ef2f013d5b45f2b,Duplikat dalam TRAIN
+TRAIN,Batik Tambal,58.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\58.jpg,db2dcca02b6cb323f3caaf1d5ac8ba071d033ad2625b8af5707f08662c0718a0,Duplikat dalam TRAIN
+TRAIN,Batik Tambal,6.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\6.jpg,f96163b97c339416375839bc985810d55d2fb00fc356b2a0056fdc2c0a16020f,Duplikat dalam TRAIN
+TRAIN,Batik Tambal,67.jpg,data\raw\DATASET\DATASET\TRAIN\Batik Tambal\67.jpg,e6eb50c12d7ec3e07e45fb1f0e8fcfe19543399aef971d796ef2f013d5b45f2b,Duplikat dalam TRAIN
+TEST,Batik Cendrawasih,74.jpg,data\raw\DATASET\DATASET\TEST\Batik Cendrawasih\74.jpg,f1972c1cbcd0a29ea109e067edf3a8e0639b105bf17b4a504316e1c6242549c1,Identik dengan gambar TRAIN
+TEST,Batik Ikat Celup,80.jpg,data\raw\DATASET\DATASET\TEST\Batik Ikat Celup\80.jpg,f5938da1e3b47347ed5df0c06f7613a1da956a1a18a2d97eb0dc5740edd5bba4,Identik dengan gambar TRAIN
+TEST,Batik Tambal,75.jpg,data\raw\DATASET\DATASET\TEST\Batik Tambal\75.jpg,06142a77ce29ba826ab7e82dfcc6a0c978f0e0292387d4675a04fd294c119391,Identik dengan gambar TRAIN
+TEST,Batik Tambal,81.jpg,data\raw\DATASET\DATASET\TEST\Batik Tambal\81.jpg,add20f4640fd664579bb74ab86a68b7b4210e951bb762f82188acb86932d6e25,Identik dengan gambar TRAIN
+TEST,Batik Tambal,86.jpg,data\raw\DATASET\DATASET\TEST\Batik Tambal\86.jpg,51a0e61312d081dde6870272606b171bfe0d08733d0acbab4946d87577e979fe,Identik dengan gambar TRAIN

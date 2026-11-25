@@ -1,0 +1,2951 @@
+query_filename,query_label,rank,retrieved_filename,retrieved_label,similarity,relevant
+70.jpg,Batik Bali,1,63.jpg,Batik Tambal,0.9611506462097168,0
+70.jpg,Batik Bali,2,66.jpg,Batik Bali,0.9568638801574707,1
+70.jpg,Batik Bali,3,56.jpg,Batik Kawung,0.9517030715942383,0
+70.jpg,Batik Bali,4,52.jpg,Batik Cendrawasih,0.9476947784423828,0
+70.jpg,Batik Bali,5,23.jpg,Batik Poleng,0.9472130537033081,0
+70.jpg,Batik Bali,6,7.jpg,Batik Tambal,0.9441238641738892,0
+70.jpg,Batik Bali,7,40.jpg,Batik Geblek Renteng,0.9425732493400574,0
+70.jpg,Batik Bali,8,0.jpg,Batik Dayak,0.9382773637771606,0
+70.jpg,Batik Bali,9,37.jpg,Batik Pala,0.9377162456512451,0
+70.jpg,Batik Bali,10,64.jpg,Batik Bali,0.936136782169342,1
+71.jpg,Batik Bali,1,41.jpg,Batik Geblek Renteng,0.9616283774375916,0
+71.jpg,Batik Bali,2,66.jpg,Batik Geblek Renteng,0.9604260921478271,0
+71.jpg,Batik Bali,3,4.jpg,Batik Sekar Jagad,0.9553907513618469,0
+71.jpg,Batik Bali,4,52.jpg,Batik Bali,0.9522216320037842,1
+71.jpg,Batik Bali,5,37.jpg,Batik Pala,0.9521833062171936,0
+71.jpg,Batik Bali,6,69.jpg,Batik Betawi,0.9501456618309021,0
+71.jpg,Batik Bali,7,68.jpg,Batik Sekar Jagad,0.9448151588439941,0
+71.jpg,Batik Bali,8,64.jpg,Batik Sekar Jagad,0.9445992708206177,0
+71.jpg,Batik Bali,9,36.jpg,Batik Ikat Celup,0.940788984298706,0
+71.jpg,Batik Bali,10,3.jpg,Batik Ikat Celup,0.9402810335159302,0
+72.jpg,Batik Bali,1,48.jpg,Batik Ikat Celup,0.9337480068206787,0
+72.jpg,Batik Bali,2,49.jpg,Batik Megamendung,0.9255779385566711,0
+72.jpg,Batik Bali,3,57.jpg,Batik Geblek Renteng,0.8809888958930969,0
+72.jpg,Batik Bali,4,43.jpg,Batik Megamendung,0.8362573981285095,0
+72.jpg,Batik Bali,5,13.jpg,Batik Megamendung,0.8328402042388916,0
+72.jpg,Batik Bali,6,36.jpg,Batik Insang,0.8323802351951599,0
+72.jpg,Batik Bali,7,24.jpg,Batik Ikat Celup,0.8317592740058899,0
+72.jpg,Batik Bali,8,62.jpg,Batik Megamendung,0.8289163708686829,0
+72.jpg,Batik Bali,9,40.jpg,Batik Megamendung,0.8265517354011536,0
+72.jpg,Batik Bali,10,11.jpg,Batik Geblek Renteng,0.8219934701919556,0
+73.jpg,Batik Bali,1,26.jpg,Batik Parang,0.958848774433136,0
+73.jpg,Batik Bali,2,27.jpg,Batik Sekar Jagad,0.9481175541877747,0
+73.jpg,Batik Bali,3,47.jpg,Batik Sekar Jagad,0.9455174207687378,0
+73.jpg,Batik Bali,4,52.jpg,Batik Cendrawasih,0.9445857405662537,0
+73.jpg,Batik Bali,5,15.jpg,Batik Sekar Jagad,0.9433051347732544,0
+73.jpg,Batik Bali,6,29.jpg,Batik Insang,0.9381521940231323,0
+73.jpg,Batik Bali,7,54.jpg,Batik Betawi,0.9349963068962097,0
+73.jpg,Batik Bali,8,57.jpg,Batik Poleng,0.9321141839027405,0
+73.jpg,Batik Bali,9,3.jpg,Batik Bali,0.9314501285552979,1
+73.jpg,Batik Bali,10,7.jpg,Batik Tambal,0.9280681014060974,0
+74.jpg,Batik Bali,1,45.jpg,Batik Kawung,0.9171171188354492,0
+74.jpg,Batik Bali,2,33.jpg,Batik Parang,0.9037609696388245,0
+74.jpg,Batik Bali,3,60.jpg,Batik Kawung,0.8972881436347961,0
+74.jpg,Batik Bali,4,17.jpg,Batik Ikat Celup,0.8922024369239807,0
+74.jpg,Batik Bali,5,42.jpg,Batik Parang,0.8909839987754822,0
+74.jpg,Batik Bali,6,40.jpg,Batik Kawung,0.8899608254432678,0
+74.jpg,Batik Bali,7,6.jpg,Batik Kawung,0.8883240818977356,0
+74.jpg,Batik Bali,8,1.jpg,Batik Kawung,0.8863674998283386,0
+74.jpg,Batik Bali,9,69.jpg,Batik Kawung,0.8842570185661316,0
+74.jpg,Batik Bali,10,8.jpg,Batik Kawung,0.8835614919662476,0
+75.jpg,Batik Bali,1,66.jpg,Batik Geblek Renteng,0.9679822325706482,0
+75.jpg,Batik Bali,2,52.jpg,Batik Bali,0.967181921005249,1
+75.jpg,Batik Bali,3,64.jpg,Batik Sekar Jagad,0.9622356295585632,0
+75.jpg,Batik Bali,4,62.jpg,Batik Bali,0.9620013236999512,1
+75.jpg,Batik Bali,5,20.jpg,Batik Betawi,0.9617487192153931,0
+75.jpg,Batik Bali,6,3.jpg,Batik Cendrawasih,0.9615190625190735,0
+75.jpg,Batik Bali,7,4.jpg,Batik Sekar Jagad,0.9611714482307434,0
+75.jpg,Batik Bali,8,2.jpg,Batik Geblek Renteng,0.9591370820999146,0
+75.jpg,Batik Bali,9,16.jpg,Batik Dayak,0.957141637802124,0
+75.jpg,Batik Bali,10,68.jpg,Batik Sekar Jagad,0.9570239186286926,0
+76.jpg,Batik Bali,1,11.jpg,Batik Poleng,0.9622818231582642,0
+76.jpg,Batik Bali,2,20.jpg,Batik Pala,0.9609377980232239,0
+76.jpg,Batik Bali,3,15.jpg,Batik Insang,0.955750048160553,0
+76.jpg,Batik Bali,4,67.jpg,Batik Cendrawasih,0.9541013240814209,0
+76.jpg,Batik Bali,5,54.jpg,Batik Dayak,0.9444727897644043,0
+76.jpg,Batik Bali,6,62.jpg,Batik Cendrawasih,0.9442224502563477,0
+76.jpg,Batik Bali,7,26.jpg,Batik Lasem,0.9430750608444214,0
+76.jpg,Batik Bali,8,56.jpg,Batik Poleng,0.9417882561683655,0
+76.jpg,Batik Bali,9,46.jpg,Batik Cendrawasih,0.9408971071243286,0
+76.jpg,Batik Bali,10,45.jpg,Batik Insang,0.9407867193222046,0
+77.jpg,Batik Bali,1,48.jpg,Batik Bali,0.9631333947181702,1
+77.jpg,Batik Bali,2,21.jpg,Batik Sekar Jagad,0.9538545608520508,0
+77.jpg,Batik Bali,3,56.jpg,Batik Dayak,0.9402607679367065,0
+77.jpg,Batik Bali,4,63.jpg,Batik Kawung,0.9376025199890137,0
+77.jpg,Batik Bali,5,41.jpg,Batik Cendrawasih,0.9363685250282288,0
+77.jpg,Batik Bali,6,11.jpg,Batik Parang,0.9361563920974731,0
+77.jpg,Batik Bali,7,26.jpg,Batik Parang,0.9351093769073486,0
+77.jpg,Batik Bali,8,52.jpg,Batik Betawi,0.9350661039352417,0
+77.jpg,Batik Bali,9,21.jpg,Batik Tambal,0.933871865272522,0
+77.jpg,Batik Bali,10,6.jpg,Batik Kawung,0.9296878576278687,0
+78.jpg,Batik Bali,1,42.jpg,Batik Ikat Celup,0.9634470343589783,0
+78.jpg,Batik Bali,2,53.jpg,Batik Sekar Jagad,0.961607038974762,0
+78.jpg,Batik Bali,3,63.jpg,Batik Bali,0.9566500186920166,1
+78.jpg,Batik Bali,4,58.jpg,Batik Sekar Jagad,0.9468114376068115,0
+78.jpg,Batik Bali,5,23.jpg,Batik Lasem,0.9279873967170715,0
+78.jpg,Batik Bali,6,65.jpg,Batik Dayak,0.925997257232666,0
+78.jpg,Batik Bali,7,65.jpg,Batik Insang,0.9239081144332886,0
+78.jpg,Batik Bali,8,12.jpg,Batik Sekar Jagad,0.9232388734817505,0
+78.jpg,Batik Bali,9,62.jpg,Batik Kawung,0.9199106097221375,0
+78.jpg,Batik Bali,10,48.jpg,Batik Kawung,0.9179753065109253,0
+79.jpg,Batik Bali,1,5.jpg,Batik Megamendung,0.8667497038841248,0
+79.jpg,Batik Bali,2,50.jpg,Batik Geblek Renteng,0.8465244174003601,0
+79.jpg,Batik Bali,3,0.jpg,Batik Geblek Renteng,0.8415171504020691,0
+79.jpg,Batik Bali,4,53.jpg,Batik Betawi,0.8346906900405884,0
+79.jpg,Batik Bali,5,7.jpg,Batik Megamendung,0.817400336265564,0
+79.jpg,Batik Bali,6,46.jpg,Batik Tambal,0.8085507750511169,0
+79.jpg,Batik Bali,7,51.jpg,Batik Dayak,0.8073722124099731,0
+79.jpg,Batik Bali,8,64.jpg,Batik Megamendung,0.8000461459159851,0
+79.jpg,Batik Bali,9,65.jpg,Batik Megamendung,0.7945016026496887,0
+79.jpg,Batik Bali,10,49.jpg,Batik Betawi,0.7933683395385742,0
+80.jpg,Batik Bali,1,27.jpg,Batik Dayak,0.9936336874961853,0
+80.jpg,Batik Bali,2,15.jpg,Batik Pala,0.9927432537078857,0
+80.jpg,Batik Bali,3,55.jpg,Batik Dayak,0.9913551807403564,0
+80.jpg,Batik Bali,4,32.jpg,Batik Tambal,0.9910208582878113,0
+80.jpg,Batik Bali,5,19.jpg,Batik Bali,0.9900185465812683,1
+80.jpg,Batik Bali,6,37.jpg,Batik Poleng,0.9863462448120117,0
+80.jpg,Batik Bali,7,34.jpg,Batik Poleng,0.9847384095191956,0
+80.jpg,Batik Bali,8,4.jpg,Batik Megamendung,0.9847241044044495,0
+80.jpg,Batik Bali,9,9.jpg,Batik Sekar Jagad,0.9830657243728638,0
+80.jpg,Batik Bali,10,24.jpg,Batik Poleng,0.9792766571044922,0
+81.jpg,Batik Bali,1,32.jpg,Batik Tambal,0.9884864687919617,0
+81.jpg,Batik Bali,2,55.jpg,Batik Dayak,0.9863668084144592,0
+81.jpg,Batik Bali,3,43.jpg,Batik Poleng,0.9853399395942688,0
+81.jpg,Batik Bali,4,11.jpg,Batik Cendrawasih,0.9853318333625793,0
+81.jpg,Batik Bali,5,9.jpg,Batik Sekar Jagad,0.9839581847190857,0
+81.jpg,Batik Bali,6,58.jpg,Batik Megamendung,0.9827524423599243,0
+81.jpg,Batik Bali,7,27.jpg,Batik Dayak,0.982542872428894,0
+81.jpg,Batik Bali,8,56.jpg,Batik Pala,0.9821279048919678,0
+81.jpg,Batik Bali,9,37.jpg,Batik Poleng,0.9791086316108704,0
+81.jpg,Batik Bali,10,19.jpg,Batik Bali,0.9788915514945984,1
+82.jpg,Batik Bali,1,36.jpg,Batik Parang,0.9467276334762573,0
+82.jpg,Batik Bali,2,56.jpg,Batik Dayak,0.9430242776870728,0
+82.jpg,Batik Bali,3,40.jpg,Batik Kawung,0.9394596815109253,0
+82.jpg,Batik Bali,4,41.jpg,Batik Cendrawasih,0.9390537738800049,0
+82.jpg,Batik Bali,5,35.jpg,Batik Parang,0.9364306330680847,0
+82.jpg,Batik Bali,6,60.jpg,Batik Kawung,0.9362704157829285,0
+82.jpg,Batik Bali,7,22.jpg,Batik Insang,0.933049201965332,0
+82.jpg,Batik Bali,8,46.jpg,Batik Betawi,0.9294919967651367,0
+82.jpg,Batik Bali,9,21.jpg,Batik Tambal,0.9293304681777954,0
+82.jpg,Batik Bali,10,65.jpg,Batik Lasem,0.9270060658454895,0
+83.jpg,Batik Bali,1,3.jpg,Batik Tambal,0.9811061024665833,0
+83.jpg,Batik Bali,2,54.jpg,Batik Dayak,0.9787977933883667,0
+83.jpg,Batik Bali,3,61.jpg,Batik Poleng,0.9687033295631409,0
+83.jpg,Batik Bali,4,26.jpg,Batik Tambal,0.9684016704559326,0
+83.jpg,Batik Bali,5,33.jpg,Batik Dayak,0.9682085514068604,0
+83.jpg,Batik Bali,6,32.jpg,Batik Poleng,0.9666615724563599,0
+83.jpg,Batik Bali,7,56.jpg,Batik Poleng,0.9624696373939514,0
+83.jpg,Batik Bali,8,20.jpg,Batik Cendrawasih,0.9613178968429565,0
+83.jpg,Batik Bali,9,38.jpg,Batik Parang,0.9602378010749817,0
+83.jpg,Batik Bali,10,30.jpg,Batik Dayak,0.9600595235824585,0
+84.jpg,Batik Bali,1,13.jpg,Batik Pala,0.9296070337295532,0
+84.jpg,Batik Bali,2,35.jpg,Batik Kawung,0.8809182047843933,0
+84.jpg,Batik Bali,3,32.jpg,Batik Kawung,0.8777810335159302,0
+84.jpg,Batik Bali,4,38.jpg,Batik Kawung,0.8710892200469971,0
+84.jpg,Batik Bali,5,67.jpg,Batik Bali,0.8660213351249695,1
+84.jpg,Batik Bali,6,14.jpg,Batik Sekar Jagad,0.8649553060531616,0
+84.jpg,Batik Bali,7,44.jpg,Batik Sekar Jagad,0.8616123795509338,0
+84.jpg,Batik Bali,8,43.jpg,Batik Sekar Jagad,0.8601197004318237,0
+84.jpg,Batik Bali,9,50.jpg,Batik Bali,0.8577856421470642,1
+84.jpg,Batik Bali,10,65.jpg,Batik Dayak,0.8543346524238586,0
+85.jpg,Batik Bali,1,65.jpg,Batik Sekar Jagad,0.9713102579116821,0
+85.jpg,Batik Bali,2,26.jpg,Batik Sekar Jagad,0.9620540142059326,0
+85.jpg,Batik Bali,3,10.jpg,Batik Geblek Renteng,0.9596615433692932,0
+85.jpg,Batik Bali,4,39.jpg,Batik Tambal,0.9582465291023254,0
+85.jpg,Batik Bali,5,58.jpg,Batik Bali,0.9582257866859436,1
+85.jpg,Batik Bali,6,37.jpg,Batik Sekar Jagad,0.9559034109115601,0
+85.jpg,Batik Bali,7,67.jpg,Batik Parang,0.9549060463905334,0
+85.jpg,Batik Bali,8,3.jpg,Batik Poleng,0.9523610472679138,0
+85.jpg,Batik Bali,9,48.jpg,Batik Parang,0.9464567303657532,0
+85.jpg,Batik Bali,10,9.jpg,Batik Tambal,0.9451310038566589,0
+86.jpg,Batik Bali,1,34.jpg,Batik Bali,0.9805073142051697,1
+86.jpg,Batik Bali,2,29.jpg,Batik Bali,0.9608737230300903,1
+86.jpg,Batik Bali,3,65.jpg,Batik Lasem,0.9482598304748535,0
+86.jpg,Batik Bali,4,46.jpg,Batik Betawi,0.9475889801979065,0
+86.jpg,Batik Bali,5,36.jpg,Batik Bali,0.9436914324760437,1
+86.jpg,Batik Bali,6,28.jpg,Batik Bali,0.9357709884643555,1
+86.jpg,Batik Bali,7,1.jpg,Batik Parang,0.9340395927429199,0
+86.jpg,Batik Bali,8,12.jpg,Batik Bali,0.9172039031982422,1
+86.jpg,Batik Bali,9,58.jpg,Batik Kawung,0.913201630115509,0
+86.jpg,Batik Bali,10,10.jpg,Batik Kawung,0.9127800464630127,0
+87.jpg,Batik Bali,1,24.jpg,Batik Bali,0.9945153594017029,1
+87.jpg,Batik Bali,2,36.jpg,Batik Bali,0.9164282083511353,1
+87.jpg,Batik Bali,3,63.jpg,Batik Parang,0.8941946029663086,0
+87.jpg,Batik Bali,4,61.jpg,Batik Parang,0.8797141313552856,0
+87.jpg,Batik Bali,5,33.jpg,Batik Parang,0.8736267685890198,0
+87.jpg,Batik Bali,6,1.jpg,Batik Bali,0.8627537488937378,1
+87.jpg,Batik Bali,7,60.jpg,Batik Kawung,0.8522531986236572,0
+87.jpg,Batik Bali,8,40.jpg,Batik Kawung,0.8450644612312317,0
+87.jpg,Batik Bali,9,37.jpg,Batik Kawung,0.8441721796989441,0
+87.jpg,Batik Bali,10,29.jpg,Batik Bali,0.8411888480186462,1
+88.jpg,Batik Bali,1,1.jpg,Batik Sekar Jagad,0.9337003827095032,0
+88.jpg,Batik Bali,2,48.jpg,Batik Lasem,0.914640486240387,0
+88.jpg,Batik Bali,3,2.jpg,Batik Sekar Jagad,0.9073640704154968,0
+88.jpg,Batik Bali,4,20.jpg,Batik Bali,0.9009625911712646,1
+88.jpg,Batik Bali,5,31.jpg,Batik Kawung,0.8939098715782166,0
+88.jpg,Batik Bali,6,1.jpg,Batik Parang,0.8877360224723816,0
+88.jpg,Batik Bali,7,41.jpg,Batik Sekar Jagad,0.8844959139823914,0
+88.jpg,Batik Bali,8,12.jpg,Batik Sekar Jagad,0.8816693425178528,0
+88.jpg,Batik Bali,9,36.jpg,Batik Sekar Jagad,0.876833438873291,0
+88.jpg,Batik Bali,10,10.jpg,Batik Bali,0.872663676738739,1
+89.jpg,Batik Bali,1,33.jpg,Batik Bali,0.999495267868042,1
+89.jpg,Batik Bali,2,60.jpg,Batik Betawi,0.8624157309532166,0
+89.jpg,Batik Bali,3,19.jpg,Batik Kawung,0.8326886296272278,0
+89.jpg,Batik Bali,4,19.jpg,Batik Megamendung,0.8238856792449951,0
+89.jpg,Batik Bali,5,16.jpg,Batik Kawung,0.8234211802482605,0
+89.jpg,Batik Bali,6,31.jpg,Batik Dayak,0.8133013844490051,0
+89.jpg,Batik Bali,7,8.jpg,Batik Tambal,0.8106915354728699,0
+89.jpg,Batik Bali,8,58.jpg,Batik Kawung,0.8059526085853577,0
+89.jpg,Batik Bali,9,63.jpg,Batik Parang,0.8020325303077698,0
+89.jpg,Batik Bali,10,23.jpg,Batik Bali,0.8002751469612122,1
+70.jpg,Batik Betawi,1,50.jpg,Batik Cendrawasih,0.9875845313072205,0
+70.jpg,Batik Betawi,2,69.jpg,Batik Bali,0.982503354549408,0
+70.jpg,Batik Betawi,3,47.jpg,Batik Cendrawasih,0.9769144654273987,0
+70.jpg,Batik Betawi,4,15.jpg,Batik Parang,0.9734047055244446,0
+70.jpg,Batik Betawi,5,65.jpg,Batik Cendrawasih,0.9673374891281128,0
+70.jpg,Batik Betawi,6,63.jpg,Batik Geblek Renteng,0.9665736556053162,0
+70.jpg,Batik Betawi,7,38.jpg,Batik Cendrawasih,0.9663165807723999,0
+70.jpg,Batik Betawi,8,43.jpg,Batik Geblek Renteng,0.9653304815292358,0
+70.jpg,Batik Betawi,9,13.jpg,Batik Geblek Renteng,0.9641389846801758,0
+70.jpg,Batik Betawi,10,65.jpg,Batik Betawi,0.9638086557388306,1
+71.jpg,Batik Betawi,1,37.jpg,Batik Tambal,0.9542313814163208,0
+71.jpg,Batik Betawi,2,8.jpg,Batik Dayak,0.9536473155021667,0
+71.jpg,Batik Betawi,3,0.jpg,Batik Dayak,0.9411500692367554,0
+71.jpg,Batik Betawi,4,30.jpg,Batik Dayak,0.9376733303070068,0
+71.jpg,Batik Betawi,5,29.jpg,Batik Ikat Celup,0.9312832355499268,0
+71.jpg,Batik Betawi,6,68.jpg,Batik Tambal,0.9264236688613892,0
+71.jpg,Batik Betawi,7,28.jpg,Batik Tambal,0.9263790845870972,0
+71.jpg,Batik Betawi,8,55.jpg,Batik Cendrawasih,0.9261362552642822,0
+71.jpg,Batik Betawi,9,34.jpg,Batik Betawi,0.921117901802063,1
+71.jpg,Batik Betawi,10,67.jpg,Batik Pala,0.920123815536499,0
+72.jpg,Batik Betawi,1,51.jpg,Batik Parang,0.8770237565040588,0
+72.jpg,Batik Betawi,2,8.jpg,Batik Dayak,0.8575158715248108,0
+72.jpg,Batik Betawi,3,24.jpg,Batik Parang,0.8536033630371094,0
+72.jpg,Batik Betawi,4,51.jpg,Batik Kawung,0.8375325202941895,0
+72.jpg,Batik Betawi,5,34.jpg,Batik Betawi,0.8349558711051941,1
+72.jpg,Batik Betawi,6,0.jpg,Batik Insang,0.830281138420105,0
+72.jpg,Batik Betawi,7,10.jpg,Batik Poleng,0.8291200399398804,0
+72.jpg,Batik Betawi,8,30.jpg,Batik Dayak,0.828027069568634,0
+72.jpg,Batik Betawi,9,7.jpg,Batik Insang,0.8259307742118835,0
+72.jpg,Batik Betawi,10,26.jpg,Batik Bali,0.8258619904518127,0
+73.jpg,Batik Betawi,1,44.jpg,Batik Lasem,0.9879724979400635,0
+73.jpg,Batik Betawi,2,18.jpg,Batik Lasem,0.9289131760597229,0
+73.jpg,Batik Betawi,3,47.jpg,Batik Sekar Jagad,0.920215368270874,0
+73.jpg,Batik Betawi,4,39.jpg,Batik Lasem,0.9018238186836243,0
+73.jpg,Batik Betawi,5,15.jpg,Batik Lasem,0.9011704325675964,0
+73.jpg,Batik Betawi,6,27.jpg,Batik Insang,0.8983127474784851,0
+73.jpg,Batik Betawi,7,18.jpg,Batik Dayak,0.8910077810287476,0
+73.jpg,Batik Betawi,8,41.jpg,Batik Tambal,0.8832436203956604,0
+73.jpg,Batik Betawi,9,25.jpg,Batik Megamendung,0.8830114006996155,0
+73.jpg,Batik Betawi,10,27.jpg,Batik Sekar Jagad,0.8829389214515686,0
+74.jpg,Batik Betawi,1,54.jpg,Batik Lasem,0.9653939008712769,0
+74.jpg,Batik Betawi,2,18.jpg,Batik Lasem,0.9590597152709961,0
+74.jpg,Batik Betawi,3,28.jpg,Batik Ikat Celup,0.9579593539237976,0
+74.jpg,Batik Betawi,4,6.jpg,Batik Pala,0.9564449787139893,0
+74.jpg,Batik Betawi,5,25.jpg,Batik Pala,0.9500789642333984,0
+74.jpg,Batik Betawi,6,64.jpg,Batik Lasem,0.9432488083839417,0
+74.jpg,Batik Betawi,7,57.jpg,Batik Lasem,0.9431650042533875,0
+74.jpg,Batik Betawi,8,0.jpg,Batik Lasem,0.9428725838661194,0
+74.jpg,Batik Betawi,9,59.jpg,Batik Geblek Renteng,0.9406872987747192,0
+74.jpg,Batik Betawi,10,64.jpg,Batik Geblek Renteng,0.9357237815856934,0
+75.jpg,Batik Betawi,1,62.jpg,Batik Cendrawasih,0.9518016576766968,0
+75.jpg,Batik Betawi,2,69.jpg,Batik Cendrawasih,0.936944842338562,0
+75.jpg,Batik Betawi,3,3.jpg,Batik Geblek Renteng,0.9352852702140808,0
+75.jpg,Batik Betawi,4,45.jpg,Batik Insang,0.93165522813797,0
+75.jpg,Batik Betawi,5,58.jpg,Batik Ikat Celup,0.931620180606842,0
+75.jpg,Batik Betawi,6,46.jpg,Batik Cendrawasih,0.9265119433403015,0
+75.jpg,Batik Betawi,7,18.jpg,Batik Insang,0.9222596287727356,0
+75.jpg,Batik Betawi,8,26.jpg,Batik Lasem,0.9210948348045349,0
+75.jpg,Batik Betawi,9,67.jpg,Batik Cendrawasih,0.9195799827575684,0
+75.jpg,Batik Betawi,10,11.jpg,Batik Poleng,0.9161968231201172,0
+76.jpg,Batik Betawi,1,24.jpg,Batik Parang,0.9801293611526489,0
+76.jpg,Batik Betawi,2,26.jpg,Batik Bali,0.9711904525756836,0
+76.jpg,Batik Betawi,3,43.jpg,Batik Betawi,0.9637320637702942,1
+76.jpg,Batik Betawi,4,41.jpg,Batik Ikat Celup,0.9586083292961121,0
+76.jpg,Batik Betawi,5,12.jpg,Batik Cendrawasih,0.9497026205062866,0
+76.jpg,Batik Betawi,6,24.jpg,Batik Dayak,0.949623703956604,0
+76.jpg,Batik Betawi,7,58.jpg,Batik Cendrawasih,0.9493200182914734,0
+76.jpg,Batik Betawi,8,32.jpg,Batik Poleng,0.9488182067871094,0
+76.jpg,Batik Betawi,9,56.jpg,Batik Betawi,0.9478263854980469,1
+76.jpg,Batik Betawi,10,31.jpg,Batik Tambal,0.9449272155761719,0
+77.jpg,Batik Betawi,1,63.jpg,Batik Betawi,0.994941771030426,1
+77.jpg,Batik Betawi,2,34.jpg,Batik Pala,0.8898422122001648,0
+77.jpg,Batik Betawi,3,27.jpg,Batik Pala,0.8891111612319946,0
+77.jpg,Batik Betawi,4,20.jpg,Batik Tambal,0.8733049035072327,0
+77.jpg,Batik Betawi,5,33.jpg,Batik Ikat Celup,0.8701721429824829,0
+77.jpg,Batik Betawi,6,47.jpg,Batik Lasem,0.8691709637641907,0
+77.jpg,Batik Betawi,7,38.jpg,Batik Lasem,0.8676889538764954,0
+77.jpg,Batik Betawi,8,7.jpg,Batik Bali,0.8628242611885071,0
+77.jpg,Batik Betawi,9,64.jpg,Batik Tambal,0.8611378073692322,0
+77.jpg,Batik Betawi,10,16.jpg,Batik Pala,0.8539152145385742,0
+78.jpg,Batik Betawi,1,58.jpg,Batik Betawi,0.9685654044151306,1
+78.jpg,Batik Betawi,2,26.jpg,Batik Pala,0.9465996026992798,0
+78.jpg,Batik Betawi,3,27.jpg,Batik Ikat Celup,0.942206084728241,0
+78.jpg,Batik Betawi,4,54.jpg,Batik Ikat Celup,0.9394994378089905,0
+78.jpg,Batik Betawi,5,61.jpg,Batik Ikat Celup,0.936799943447113,0
+78.jpg,Batik Betawi,6,65.jpg,Batik Ikat Celup,0.9355922937393188,0
+78.jpg,Batik Betawi,7,11.jpg,Batik Tambal,0.9327054619789124,0
+78.jpg,Batik Betawi,8,26.jpg,Batik Dayak,0.9228277802467346,0
+78.jpg,Batik Betawi,9,62.jpg,Batik Kawung,0.9220958948135376,0
+78.jpg,Batik Betawi,10,32.jpg,Batik Sekar Jagad,0.9211989045143127,0
+79.jpg,Batik Betawi,1,41.jpg,Batik Cendrawasih,0.9471265077590942,0
+79.jpg,Batik Betawi,2,48.jpg,Batik Bali,0.9340358972549438,0
+79.jpg,Batik Betawi,3,69.jpg,Batik Kawung,0.928566038608551,0
+79.jpg,Batik Betawi,4,22.jpg,Batik Insang,0.9251287579536438,0
+79.jpg,Batik Betawi,5,21.jpg,Batik Tambal,0.9184836745262146,0
+79.jpg,Batik Betawi,6,40.jpg,Batik Kawung,0.9178643822669983,0
+79.jpg,Batik Betawi,7,10.jpg,Batik Kawung,0.9143183827400208,0
+79.jpg,Batik Betawi,8,60.jpg,Batik Kawung,0.9108060598373413,0
+79.jpg,Batik Betawi,9,56.jpg,Batik Dayak,0.9094657301902771,0
+79.jpg,Batik Betawi,10,65.jpg,Batik Lasem,0.9046202301979065,0
+80.jpg,Batik Betawi,1,31.jpg,Batik Betawi,0.9345611929893494,1
+80.jpg,Batik Betawi,2,7.jpg,Batik Pala,0.9191769361495972,0
+80.jpg,Batik Betawi,3,43.jpg,Batik Cendrawasih,0.9049867987632751,0
+80.jpg,Batik Betawi,4,65.jpg,Batik Tambal,0.9039439558982849,0
+80.jpg,Batik Betawi,5,28.jpg,Batik Sekar Jagad,0.9031779170036316,0
+80.jpg,Batik Betawi,6,24.jpg,Batik Sekar Jagad,0.8942055106163025,0
+80.jpg,Batik Betawi,7,69.jpg,Batik Tambal,0.8888693451881409,0
+80.jpg,Batik Betawi,8,12.jpg,Batik Lasem,0.8841805458068848,0
+80.jpg,Batik Betawi,9,25.jpg,Batik Tambal,0.8820975422859192,0
+80.jpg,Batik Betawi,10,39.jpg,Batik Parang,0.8778645992279053,0
+81.jpg,Batik Betawi,1,65.jpg,Batik Insang,0.8892325162887573,0
+81.jpg,Batik Betawi,2,63.jpg,Batik Bali,0.8550304174423218,0
+81.jpg,Batik Betawi,3,55.jpg,Batik Sekar Jagad,0.8463659882545471,0
+81.jpg,Batik Betawi,4,65.jpg,Batik Dayak,0.8459765911102295,0
+81.jpg,Batik Betawi,5,53.jpg,Batik Sekar Jagad,0.8451870083808899,0
+81.jpg,Batik Betawi,6,50.jpg,Batik Sekar Jagad,0.8451727032661438,0
+81.jpg,Batik Betawi,7,43.jpg,Batik Insang,0.8413731455802917,0
+81.jpg,Batik Betawi,8,16.jpg,Batik Insang,0.8360655903816223,0
+81.jpg,Batik Betawi,9,13.jpg,Batik Pala,0.8349608182907104,0
+81.jpg,Batik Betawi,10,58.jpg,Batik Sekar Jagad,0.8234062790870667,0
+82.jpg,Batik Betawi,1,58.jpg,Batik Sekar Jagad,0.9632067084312439,0
+82.jpg,Batik Betawi,2,53.jpg,Batik Sekar Jagad,0.957032322883606,0
+82.jpg,Batik Betawi,3,23.jpg,Batik Lasem,0.9555729627609253,0
+82.jpg,Batik Betawi,4,63.jpg,Batik Lasem,0.9492031335830688,0
+82.jpg,Batik Betawi,5,55.jpg,Batik Sekar Jagad,0.9474179744720459,0
+82.jpg,Batik Betawi,6,50.jpg,Batik Sekar Jagad,0.938694179058075,0
+82.jpg,Batik Betawi,7,42.jpg,Batik Ikat Celup,0.9320729374885559,0
+82.jpg,Batik Betawi,8,51.jpg,Batik Sekar Jagad,0.929707944393158,0
+82.jpg,Batik Betawi,9,69.jpg,Batik Ikat Celup,0.9140567183494568,0
+82.jpg,Batik Betawi,10,15.jpg,Batik Sekar Jagad,0.9052407741546631,0
+83.jpg,Batik Betawi,1,60.jpg,Batik Insang,0.9339114427566528,0
+83.jpg,Batik Betawi,2,45.jpg,Batik Lasem,0.9188777208328247,0
+83.jpg,Batik Betawi,3,45.jpg,Batik Sekar Jagad,0.9051287770271301,0
+83.jpg,Batik Betawi,4,6.jpg,Batik Insang,0.8969032168388367,0
+83.jpg,Batik Betawi,5,2.jpg,Batik Bali,0.8950433731079102,0
+83.jpg,Batik Betawi,6,18.jpg,Batik Kawung,0.8898171186447144,0
+83.jpg,Batik Betawi,7,10.jpg,Batik Pala,0.8857861757278442,0
+83.jpg,Batik Betawi,8,45.jpg,Batik Bali,0.8802968859672546,0
+83.jpg,Batik Betawi,9,21.jpg,Batik Pala,0.8737595081329346,0
+83.jpg,Batik Betawi,10,14.jpg,Batik Cendrawasih,0.8712847828865051,0
+84.jpg,Batik Betawi,1,6.jpg,Batik Ikat Celup,0.9142840504646301,0
+84.jpg,Batik Betawi,2,60.jpg,Batik Bali,0.9138578772544861,0
+84.jpg,Batik Betawi,3,14.jpg,Batik Ikat Celup,0.9002810120582581,0
+84.jpg,Batik Betawi,4,59.jpg,Batik Cendrawasih,0.8967252969741821,0
+84.jpg,Batik Betawi,5,33.jpg,Batik Pala,0.8860167264938354,0
+84.jpg,Batik Betawi,6,51.jpg,Batik Cendrawasih,0.8840124011039734,0
+84.jpg,Batik Betawi,7,60.jpg,Batik Pala,0.8831862807273865,0
+84.jpg,Batik Betawi,8,38.jpg,Batik Geblek Renteng,0.8799371719360352,0
+84.jpg,Batik Betawi,9,57.jpg,Batik Insang,0.876991868019104,0
+84.jpg,Batik Betawi,10,50.jpg,Batik Ikat Celup,0.876434326171875,0
+85.jpg,Batik Betawi,1,10.jpg,Batik Ikat Celup,0.9464924335479736,0
+85.jpg,Batik Betawi,2,8.jpg,Batik Betawi,0.9445104598999023,1
+85.jpg,Batik Betawi,3,53.jpg,Batik Ikat Celup,0.9363507628440857,0
+85.jpg,Batik Betawi,4,14.jpg,Batik Insang,0.9165313839912415,0
+85.jpg,Batik Betawi,5,53.jpg,Batik Tambal,0.9116319417953491,0
+85.jpg,Batik Betawi,6,8.jpg,Batik Lasem,0.9013403058052063,0
+85.jpg,Batik Betawi,7,3.jpg,Batik Lasem,0.8973813056945801,0
+85.jpg,Batik Betawi,8,4.jpg,Batik Dayak,0.8967857360839844,0
+85.jpg,Batik Betawi,9,5.jpg,Batik Pala,0.8937653303146362,0
+85.jpg,Batik Betawi,10,19.jpg,Batik Dayak,0.8930696249008179,0
+86.jpg,Batik Betawi,1,64.jpg,Batik Betawi,0.9850425720214844,1
+86.jpg,Batik Betawi,2,34.jpg,Batik Parang,0.9738821387290955,0
+86.jpg,Batik Betawi,3,24.jpg,Batik Lasem,0.9671611189842224,0
+86.jpg,Batik Betawi,4,61.jpg,Batik Lasem,0.9670135974884033,0
+86.jpg,Batik Betawi,5,3.jpg,Batik Tambal,0.9666270017623901,0
+86.jpg,Batik Betawi,6,38.jpg,Batik Parang,0.9632518291473389,0
+86.jpg,Batik Betawi,7,54.jpg,Batik Dayak,0.9619907736778259,0
+86.jpg,Batik Betawi,8,56.jpg,Batik Poleng,0.9611601829528809,0
+86.jpg,Batik Betawi,9,56.jpg,Batik Kawung,0.9610950946807861,0
+86.jpg,Batik Betawi,10,0.jpg,Batik Cendrawasih,0.9604698419570923,0
+87.jpg,Batik Betawi,1,58.jpg,Batik Pala,0.9449155926704407,0
+87.jpg,Batik Betawi,2,45.jpg,Batik Ikat Celup,0.9308493137359619,0
+87.jpg,Batik Betawi,3,46.jpg,Batik Lasem,0.9189735054969788,0
+87.jpg,Batik Betawi,4,25.jpg,Batik Betawi,0.9119728803634644,1
+87.jpg,Batik Betawi,5,18.jpg,Batik Dayak,0.8948224782943726,0
+87.jpg,Batik Betawi,6,12.jpg,Batik Dayak,0.8849079608917236,0
+87.jpg,Batik Betawi,7,62.jpg,Batik Insang,0.8844212293624878,0
+87.jpg,Batik Betawi,8,5.jpg,Batik Cendrawasih,0.8825274705886841,0
+87.jpg,Batik Betawi,9,7.jpg,Batik Kawung,0.8782117366790771,0
+87.jpg,Batik Betawi,10,57.jpg,Batik Lasem,0.8766284584999084,0
+88.jpg,Batik Betawi,1,62.jpg,Batik Ikat Celup,0.9249972105026245,0
+88.jpg,Batik Betawi,2,57.jpg,Batik Megamendung,0.888649046421051,0
+88.jpg,Batik Betawi,3,14.jpg,Batik Poleng,0.8802061080932617,0
+88.jpg,Batik Betawi,4,65.jpg,Batik Megamendung,0.8786550760269165,0
+88.jpg,Batik Betawi,5,41.jpg,Batik Megamendung,0.8679102063179016,0
+88.jpg,Batik Betawi,6,9.jpg,Batik Megamendung,0.858979344367981,0
+88.jpg,Batik Betawi,7,22.jpg,Batik Kawung,0.8560283780097961,0
+88.jpg,Batik Betawi,8,42.jpg,Batik Megamendung,0.8452170491218567,0
+88.jpg,Batik Betawi,9,46.jpg,Batik Megamendung,0.8432366847991943,0
+88.jpg,Batik Betawi,10,17.jpg,Batik Megamendung,0.8416039943695068,0
+89.jpg,Batik Betawi,1,51.jpg,Batik Bali,0.9730826616287231,0
+89.jpg,Batik Betawi,2,13.jpg,Batik Megamendung,0.9666367173194885,0
+89.jpg,Batik Betawi,3,35.jpg,Batik Pala,0.9664892554283142,0
+89.jpg,Batik Betawi,4,34.jpg,Batik Geblek Renteng,0.9545287489891052,0
+89.jpg,Batik Betawi,5,32.jpg,Batik Megamendung,0.9540877938270569,0
+89.jpg,Batik Betawi,6,49.jpg,Batik Megamendung,0.9489543437957764,0
+89.jpg,Batik Betawi,7,57.jpg,Batik Cendrawasih,0.9475588202476501,0
+89.jpg,Batik Betawi,8,68.jpg,Batik Insang,0.9420738816261292,0
+89.jpg,Batik Betawi,9,62.jpg,Batik Geblek Renteng,0.9407305717468262,0
+89.jpg,Batik Betawi,10,30.jpg,Batik Poleng,0.934924840927124,0
+70.jpg,Batik Cendrawasih,1,10.jpg,Batik Parang,0.9642804861068726,0
+70.jpg,Batik Cendrawasih,2,44.jpg,Batik Parang,0.9547417759895325,0
+70.jpg,Batik Cendrawasih,3,57.jpg,Batik Kawung,0.9507963061332703,0
+70.jpg,Batik Cendrawasih,4,35.jpg,Batik Cendrawasih,0.9501714110374451,1
+70.jpg,Batik Cendrawasih,5,45.jpg,Batik Dayak,0.9477837681770325,0
+70.jpg,Batik Cendrawasih,6,59.jpg,Batik Tambal,0.9404372572898865,0
+70.jpg,Batik Cendrawasih,7,9.jpg,Batik Kawung,0.9361122250556946,0
+70.jpg,Batik Cendrawasih,8,20.jpg,Batik Kawung,0.9350473284721375,0
+70.jpg,Batik Cendrawasih,9,25.jpg,Batik Poleng,0.9345345497131348,0
+70.jpg,Batik Cendrawasih,10,46.jpg,Batik Sekar Jagad,0.9304938316345215,0
+71.jpg,Batik Cendrawasih,1,1.jpg,Batik Parang,0.9396985769271851,0
+71.jpg,Batik Cendrawasih,2,0.jpg,Batik Ikat Celup,0.9109935760498047,0
+71.jpg,Batik Cendrawasih,3,28.jpg,Batik Dayak,0.9092007875442505,0
+71.jpg,Batik Cendrawasih,4,65.jpg,Batik Lasem,0.8996274471282959,0
+71.jpg,Batik Cendrawasih,5,52.jpg,Batik Insang,0.8982332944869995,0
+71.jpg,Batik Cendrawasih,6,46.jpg,Batik Betawi,0.8935019373893738,0
+71.jpg,Batik Cendrawasih,7,33.jpg,Batik Tambal,0.8910191655158997,0
+71.jpg,Batik Cendrawasih,8,16.jpg,Batik Megamendung,0.8873795866966248,0
+71.jpg,Batik Cendrawasih,9,9.jpg,Batik Ikat Celup,0.8743357062339783,0
+71.jpg,Batik Cendrawasih,10,25.jpg,Batik Bali,0.874089241027832,0
+72.jpg,Batik Cendrawasih,1,67.jpg,Batik Lasem,0.9922515749931335,0
+72.jpg,Batik Cendrawasih,2,48.jpg,Batik Pala,0.9813305735588074,0
+72.jpg,Batik Cendrawasih,3,9.jpg,Batik Dayak,0.9793853759765625,0
+72.jpg,Batik Cendrawasih,4,22.jpg,Batik Sekar Jagad,0.9632022380828857,0
+72.jpg,Batik Cendrawasih,5,47.jpg,Batik Dayak,0.9600965976715088,0
+72.jpg,Batik Cendrawasih,6,10.jpg,Batik Geblek Renteng,0.9569506645202637,0
+72.jpg,Batik Cendrawasih,7,25.jpg,Batik Sekar Jagad,0.9556785821914673,0
+72.jpg,Batik Cendrawasih,8,66.jpg,Batik Sekar Jagad,0.9556593298912048,0
+72.jpg,Batik Cendrawasih,9,7.jpg,Batik Cendrawasih,0.9488115906715393,1
+72.jpg,Batik Cendrawasih,10,36.jpg,Batik Dayak,0.9444166421890259,0
+73.jpg,Batik Cendrawasih,1,66.jpg,Batik Cendrawasih,0.9391586184501648,1
+73.jpg,Batik Cendrawasih,2,29.jpg,Batik Megamendung,0.9322981238365173,0
+73.jpg,Batik Cendrawasih,3,49.jpg,Batik Betawi,0.9205619692802429,0
+73.jpg,Batik Cendrawasih,4,51.jpg,Batik Dayak,0.9139845967292786,0
+73.jpg,Batik Cendrawasih,5,46.jpg,Batik Megamendung,0.9046126008033752,0
+73.jpg,Batik Cendrawasih,6,13.jpg,Batik Betawi,0.8964129090309143,0
+73.jpg,Batik Cendrawasih,7,46.jpg,Batik Tambal,0.8892012238502502,0
+73.jpg,Batik Cendrawasih,8,30.jpg,Batik Tambal,0.8863089084625244,0
+73.jpg,Batik Cendrawasih,9,0.jpg,Batik Geblek Renteng,0.8819258809089661,0
+73.jpg,Batik Cendrawasih,10,1.jpg,Batik Insang,0.8778011798858643,0
+75.jpg,Batik Cendrawasih,1,39.jpg,Batik Lasem,0.9645192623138428,0
+75.jpg,Batik Cendrawasih,2,12.jpg,Batik Tambal,0.964145839214325,0
+75.jpg,Batik Cendrawasih,3,36.jpg,Batik Ikat Celup,0.961082935333252,0
+75.jpg,Batik Cendrawasih,4,35.jpg,Batik Tambal,0.960478663444519,0
+75.jpg,Batik Cendrawasih,5,34.jpg,Batik Sekar Jagad,0.9575710296630859,0
+75.jpg,Batik Cendrawasih,6,23.jpg,Batik Cendrawasih,0.9534613490104675,1
+75.jpg,Batik Cendrawasih,7,52.jpg,Batik Cendrawasih,0.9521092772483826,1
+75.jpg,Batik Cendrawasih,8,64.jpg,Batik Sekar Jagad,0.9478169083595276,0
+75.jpg,Batik Cendrawasih,9,62.jpg,Batik Kawung,0.9477729201316833,0
+75.jpg,Batik Cendrawasih,10,66.jpg,Batik Bali,0.945052444934845,0
+76.jpg,Batik Cendrawasih,1,36.jpg,Batik Pala,0.9330036044120789,0
+76.jpg,Batik Cendrawasih,2,46.jpg,Batik Sekar Jagad,0.9307280778884888,0
+76.jpg,Batik Cendrawasih,3,53.jpg,Batik Kawung,0.9264647960662842,0
+76.jpg,Batik Cendrawasih,4,5.jpg,Batik Dayak,0.9210493564605713,0
+76.jpg,Batik Cendrawasih,5,43.jpg,Batik Kawung,0.8986989259719849,0
+76.jpg,Batik Cendrawasih,6,40.jpg,Batik Dayak,0.8933835625648499,0
+76.jpg,Batik Cendrawasih,7,27.jpg,Batik Kawung,0.8909323811531067,0
+76.jpg,Batik Cendrawasih,8,56.jpg,Batik Dayak,0.8908988833427429,0
+76.jpg,Batik Cendrawasih,9,6.jpg,Batik Kawung,0.8868460059165955,0
+76.jpg,Batik Cendrawasih,10,20.jpg,Batik Dayak,0.8834702968597412,0
+77.jpg,Batik Cendrawasih,1,52.jpg,Batik Betawi,0.9699087738990784,0
+77.jpg,Batik Cendrawasih,2,20.jpg,Batik Dayak,0.9494695067405701,0
+77.jpg,Batik Cendrawasih,3,27.jpg,Batik Kawung,0.9491235017776489,0
+77.jpg,Batik Cendrawasih,4,11.jpg,Batik Parang,0.9464994072914124,0
+77.jpg,Batik Cendrawasih,5,11.jpg,Batik Pala,0.9430192708969116,0
+77.jpg,Batik Cendrawasih,6,0.jpg,Batik Dayak,0.9413556456565857,0
+77.jpg,Batik Cendrawasih,7,59.jpg,Batik Poleng,0.9389582276344299,0
+77.jpg,Batik Cendrawasih,8,21.jpg,Batik Parang,0.9373117685317993,0
+77.jpg,Batik Cendrawasih,9,43.jpg,Batik Kawung,0.937207818031311,0
+77.jpg,Batik Cendrawasih,10,59.jpg,Batik Tambal,0.9311830997467041,0
+78.jpg,Batik Cendrawasih,1,21.jpg,Batik Cendrawasih,0.9624237418174744,1
+78.jpg,Batik Cendrawasih,2,51.jpg,Batik Bali,0.9599519968032837,0
+78.jpg,Batik Cendrawasih,3,35.jpg,Batik Pala,0.9517090320587158,0
+78.jpg,Batik Cendrawasih,4,12.jpg,Batik Geblek Renteng,0.9516109228134155,0
+78.jpg,Batik Cendrawasih,5,6.jpg,Batik Geblek Renteng,0.9460713863372803,0
+78.jpg,Batik Cendrawasih,6,30.jpg,Batik Poleng,0.9415243864059448,0
+78.jpg,Batik Cendrawasih,7,35.jpg,Batik Bali,0.9377744197845459,0
+78.jpg,Batik Cendrawasih,8,39.jpg,Batik Bali,0.9376208186149597,0
+78.jpg,Batik Cendrawasih,9,48.jpg,Batik Insang,0.9372009038925171,0
+78.jpg,Batik Cendrawasih,10,65.jpg,Batik Betawi,0.9360948801040649,0
+79.jpg,Batik Cendrawasih,1,58.jpg,Batik Bali,0.976205050945282,0
+79.jpg,Batik Cendrawasih,2,67.jpg,Batik Parang,0.9699831008911133,0
+79.jpg,Batik Cendrawasih,3,19.jpg,Batik Sekar Jagad,0.9561821222305298,0
+79.jpg,Batik Cendrawasih,4,48.jpg,Batik Tambal,0.955213725566864,0
+79.jpg,Batik Cendrawasih,5,26.jpg,Batik Poleng,0.954057514667511,0
+79.jpg,Batik Cendrawasih,6,50.jpg,Batik Tambal,0.9531652331352234,0
+79.jpg,Batik Cendrawasih,7,56.jpg,Batik Sekar Jagad,0.953143835067749,0
+79.jpg,Batik Cendrawasih,8,9.jpg,Batik Tambal,0.9515050649642944,0
+79.jpg,Batik Cendrawasih,9,39.jpg,Batik Tambal,0.9505055546760559,0
+79.jpg,Batik Cendrawasih,10,20.jpg,Batik Pala,0.9497814178466797,0
+80.jpg,Batik Cendrawasih,1,62.jpg,Batik Bali,0.9704973101615906,0
+80.jpg,Batik Cendrawasih,2,64.jpg,Batik Sekar Jagad,0.9698376655578613,0
+80.jpg,Batik Cendrawasih,3,34.jpg,Batik Sekar Jagad,0.9660935401916504,0
+80.jpg,Batik Cendrawasih,4,20.jpg,Batik Betawi,0.9640403389930725,0
+80.jpg,Batik Cendrawasih,5,17.jpg,Batik Cendrawasih,0.9640282392501831,1
+80.jpg,Batik Cendrawasih,6,30.jpg,Batik Bali,0.9630094170570374,0
+80.jpg,Batik Cendrawasih,7,63.jpg,Batik Sekar Jagad,0.9626643061637878,0
+80.jpg,Batik Cendrawasih,8,52.jpg,Batik Cendrawasih,0.9600251913070679,1
+80.jpg,Batik Cendrawasih,9,21.jpg,Batik Bali,0.958304762840271,0
+80.jpg,Batik Cendrawasih,10,66.jpg,Batik Geblek Renteng,0.9571049213409424,0
+81.jpg,Batik Cendrawasih,1,34.jpg,Batik Cendrawasih,0.9729070067405701,1
+81.jpg,Batik Cendrawasih,2,0.jpg,Batik Poleng,0.9610979557037354,0
+81.jpg,Batik Cendrawasih,3,18.jpg,Batik Pala,0.9391105771064758,0
+81.jpg,Batik Cendrawasih,4,54.jpg,Batik Tambal,0.9313006401062012,0
+81.jpg,Batik Cendrawasih,5,25.jpg,Batik Poleng,0.9295864701271057,0
+81.jpg,Batik Cendrawasih,6,52.jpg,Batik Sekar Jagad,0.9284361004829407,0
+81.jpg,Batik Cendrawasih,7,55.jpg,Batik Bali,0.9258982539176941,0
+81.jpg,Batik Cendrawasih,8,65.jpg,Batik Bali,0.9203603863716125,0
+81.jpg,Batik Cendrawasih,9,36.jpg,Batik Pala,0.917938232421875,0
+81.jpg,Batik Cendrawasih,10,9.jpg,Batik Pala,0.9174569249153137,0
+82.jpg,Batik Cendrawasih,1,0.jpg,Batik Pala,0.932174801826477,0
+82.jpg,Batik Cendrawasih,2,69.jpg,Batik Cendrawasih,0.9310160875320435,1
+82.jpg,Batik Cendrawasih,3,62.jpg,Batik Cendrawasih,0.9269105792045593,1
+82.jpg,Batik Cendrawasih,4,58.jpg,Batik Ikat Celup,0.9197290539741516,0
+82.jpg,Batik Cendrawasih,5,45.jpg,Batik Insang,0.9142482876777649,0
+82.jpg,Batik Cendrawasih,6,46.jpg,Batik Cendrawasih,0.9133990406990051,1
+82.jpg,Batik Cendrawasih,7,30.jpg,Batik Poleng,0.909263014793396,0
+82.jpg,Batik Cendrawasih,8,3.jpg,Batik Geblek Renteng,0.904998779296875,0
+82.jpg,Batik Cendrawasih,9,56.jpg,Batik Parang,0.8997388482093811,0
+82.jpg,Batik Cendrawasih,10,61.jpg,Batik Poleng,0.8987012505531311,0
+83.jpg,Batik Cendrawasih,1,52.jpg,Batik Betawi,0.9592248797416687,0
+83.jpg,Batik Cendrawasih,2,11.jpg,Batik Parang,0.9388762712478638,0
+83.jpg,Batik Cendrawasih,3,1.jpg,Batik Insang,0.9341710805892944,0
+83.jpg,Batik Cendrawasih,4,3.jpg,Batik Bali,0.9330891370773315,0
+83.jpg,Batik Cendrawasih,5,19.jpg,Batik Parang,0.9305270910263062,0
+83.jpg,Batik Cendrawasih,6,0.jpg,Batik Dayak,0.9304344654083252,0
+83.jpg,Batik Cendrawasih,7,43.jpg,Batik Parang,0.9276477098464966,0
+83.jpg,Batik Cendrawasih,8,59.jpg,Batik Poleng,0.9273709058761597,0
+83.jpg,Batik Cendrawasih,9,61.jpg,Batik Lasem,0.9251932501792908,0
+83.jpg,Batik Cendrawasih,10,11.jpg,Batik Pala,0.9248308539390564,0
+84.jpg,Batik Cendrawasih,1,61.jpg,Batik Geblek Renteng,0.9741065502166748,0
+84.jpg,Batik Cendrawasih,2,54.jpg,Batik Dayak,0.9719786643981934,0
+84.jpg,Batik Cendrawasih,3,61.jpg,Batik Betawi,0.9715128540992737,0
+84.jpg,Batik Cendrawasih,4,39.jpg,Batik Betawi,0.9702021479606628,0
+84.jpg,Batik Cendrawasih,5,37.jpg,Batik Geblek Renteng,0.9686763882637024,0
+84.jpg,Batik Cendrawasih,6,2.jpg,Batik Geblek Renteng,0.9676865935325623,0
+84.jpg,Batik Cendrawasih,7,56.jpg,Batik Poleng,0.9675894379615784,0
+84.jpg,Batik Cendrawasih,8,22.jpg,Batik Dayak,0.9651461839675903,0
+84.jpg,Batik Cendrawasih,9,61.jpg,Batik Poleng,0.9641769528388977,0
+84.jpg,Batik Cendrawasih,10,44.jpg,Batik Poleng,0.9615573287010193,0
+85.jpg,Batik Cendrawasih,1,59.jpg,Batik Pala,0.9593138694763184,0
+85.jpg,Batik Cendrawasih,2,65.jpg,Batik Pala,0.9577635526657104,0
+85.jpg,Batik Cendrawasih,3,19.jpg,Batik Sekar Jagad,0.9472227692604065,0
+85.jpg,Batik Cendrawasih,4,48.jpg,Batik Tambal,0.9362154006958008,0
+85.jpg,Batik Cendrawasih,5,22.jpg,Batik Cendrawasih,0.9343306422233582,1
+85.jpg,Batik Cendrawasih,6,56.jpg,Batik Megamendung,0.9182246923446655,0
+85.jpg,Batik Cendrawasih,7,22.jpg,Batik Megamendung,0.9145771265029907,0
+85.jpg,Batik Cendrawasih,8,45.jpg,Batik Cendrawasih,0.9135113954544067,1
+85.jpg,Batik Cendrawasih,9,24.jpg,Batik Cendrawasih,0.9112257361412048,1
+85.jpg,Batik Cendrawasih,10,51.jpg,Batik Betawi,0.9110188484191895,0
+86.jpg,Batik Cendrawasih,1,24.jpg,Batik Parang,0.9795950651168823,0
+86.jpg,Batik Cendrawasih,2,6.jpg,Batik Cendrawasih,0.9712765216827393,1
+86.jpg,Batik Cendrawasih,3,41.jpg,Batik Ikat Celup,0.9615342020988464,0
+86.jpg,Batik Cendrawasih,4,56.jpg,Batik Betawi,0.9598617553710938,0
+86.jpg,Batik Cendrawasih,5,26.jpg,Batik Bali,0.9576451182365417,0
+86.jpg,Batik Cendrawasih,6,36.jpg,Batik Geblek Renteng,0.9568291306495667,0
+86.jpg,Batik Cendrawasih,7,12.jpg,Batik Cendrawasih,0.9542651176452637,1
+86.jpg,Batik Cendrawasih,8,28.jpg,Batik Betawi,0.9526742100715637,0
+86.jpg,Batik Cendrawasih,9,32.jpg,Batik Poleng,0.9488674402236938,0
+86.jpg,Batik Cendrawasih,10,16.jpg,Batik Ikat Celup,0.9466887712478638,0
+87.jpg,Batik Cendrawasih,1,48.jpg,Batik Cendrawasih,0.9507954716682434,1
+87.jpg,Batik Cendrawasih,2,11.jpg,Batik Ikat Celup,0.9495052695274353,0
+87.jpg,Batik Cendrawasih,3,36.jpg,Batik Pala,0.9400243759155273,0
+87.jpg,Batik Cendrawasih,4,10.jpg,Batik Parang,0.9396653771400452,0
+87.jpg,Batik Cendrawasih,5,33.jpg,Batik Cendrawasih,0.9373917579650879,1
+87.jpg,Batik Cendrawasih,6,6.jpg,Batik Kawung,0.9347989559173584,0
+87.jpg,Batik Cendrawasih,7,45.jpg,Batik Dayak,0.9336529970169067,0
+87.jpg,Batik Cendrawasih,8,16.jpg,Batik Sekar Jagad,0.9291825294494629,0
+87.jpg,Batik Cendrawasih,9,46.jpg,Batik Sekar Jagad,0.9267586469650269,0
+87.jpg,Batik Cendrawasih,10,58.jpg,Batik Parang,0.9253485202789307,0
+88.jpg,Batik Cendrawasih,1,12.jpg,Batik Megamendung,0.9517632722854614,0
+88.jpg,Batik Cendrawasih,2,0.jpg,Batik Lasem,0.9418133497238159,0
+88.jpg,Batik Cendrawasih,3,5.jpg,Batik Sekar Jagad,0.9371458292007446,0
+88.jpg,Batik Cendrawasih,4,54.jpg,Batik Lasem,0.9315422773361206,0
+88.jpg,Batik Cendrawasih,5,27.jpg,Batik Lasem,0.9281459450721741,0
+88.jpg,Batik Cendrawasih,6,64.jpg,Batik Geblek Renteng,0.9224827885627747,0
+88.jpg,Batik Cendrawasih,7,3.jpg,Batik Betawi,0.91803377866745,0
+88.jpg,Batik Cendrawasih,8,23.jpg,Batik Parang,0.9175525903701782,0
+88.jpg,Batik Cendrawasih,9,60.jpg,Batik Insang,0.9087775349617004,0
+88.jpg,Batik Cendrawasih,10,15.jpg,Batik Tambal,0.9086156487464905,0
+89.jpg,Batik Cendrawasih,1,68.jpg,Batik Lasem,0.9606437087059021,0
+89.jpg,Batik Cendrawasih,2,39.jpg,Batik Lasem,0.9416972994804382,0
+89.jpg,Batik Cendrawasih,3,19.jpg,Batik Parang,0.9391319751739502,0
+89.jpg,Batik Cendrawasih,4,11.jpg,Batik Tambal,0.9322357177734375,0
+89.jpg,Batik Cendrawasih,5,62.jpg,Batik Kawung,0.9312836527824402,0
+89.jpg,Batik Cendrawasih,6,13.jpg,Batik Lasem,0.9229864478111267,0
+89.jpg,Batik Cendrawasih,7,7.jpg,Batik Tambal,0.9227463006973267,0
+89.jpg,Batik Cendrawasih,8,62.jpg,Batik Betawi,0.92179274559021,0
+89.jpg,Batik Cendrawasih,9,43.jpg,Batik Parang,0.9175686240196228,0
+89.jpg,Batik Cendrawasih,10,59.jpg,Batik Parang,0.9161058068275452,0
+70.jpg,Batik Dayak,1,68.jpg,Batik Insang,0.9571521878242493,0
+70.jpg,Batik Dayak,2,58.jpg,Batik Cendrawasih,0.9541854858398438,0
+70.jpg,Batik Dayak,3,51.jpg,Batik Insang,0.9539863467216492,0
+70.jpg,Batik Dayak,4,51.jpg,Batik Bali,0.9516090750694275,0
+70.jpg,Batik Dayak,5,59.jpg,Batik Tambal,0.9499803781509399,0
+70.jpg,Batik Dayak,6,20.jpg,Batik Cendrawasih,0.9467294216156006,0
+70.jpg,Batik Dayak,7,35.jpg,Batik Pala,0.9456110000610352,0
+70.jpg,Batik Dayak,8,43.jpg,Batik Betawi,0.9406532049179077,0
+70.jpg,Batik Dayak,9,14.jpg,Batik Cendrawasih,0.9404089450836182,0
+70.jpg,Batik Dayak,10,17.jpg,Batik Dayak,0.9383091330528259,1
+71.jpg,Batik Dayak,1,37.jpg,Batik Sekar Jagad,0.975810170173645,0
+71.jpg,Batik Dayak,2,26.jpg,Batik Sekar Jagad,0.9702999591827393,0
+71.jpg,Batik Dayak,3,15.jpg,Batik Betawi,0.9693811535835266,0
+71.jpg,Batik Dayak,4,20.jpg,Batik Pala,0.9681156873703003,0
+71.jpg,Batik Dayak,5,47.jpg,Batik Dayak,0.9672621488571167,1
+71.jpg,Batik Dayak,6,3.jpg,Batik Geblek Renteng,0.9667179584503174,0
+71.jpg,Batik Dayak,7,67.jpg,Batik Cendrawasih,0.966681957244873,0
+71.jpg,Batik Dayak,8,68.jpg,Batik Tambal,0.9573609232902527,0
+71.jpg,Batik Dayak,9,54.jpg,Batik Cendrawasih,0.9572611451148987,0
+71.jpg,Batik Dayak,10,26.jpg,Batik Lasem,0.9566075205802917,0
+72.jpg,Batik Dayak,1,36.jpg,Batik Parang,0.9619148373603821,0
+72.jpg,Batik Dayak,2,60.jpg,Batik Kawung,0.9477568864822388,0
+72.jpg,Batik Dayak,3,56.jpg,Batik Dayak,0.9472270011901855,1
+72.jpg,Batik Dayak,4,40.jpg,Batik Kawung,0.945848286151886,0
+72.jpg,Batik Dayak,5,35.jpg,Batik Parang,0.9382456541061401,0
+72.jpg,Batik Dayak,6,8.jpg,Batik Kawung,0.936828076839447,0
+72.jpg,Batik Dayak,7,10.jpg,Batik Kawung,0.9309648871421814,0
+72.jpg,Batik Dayak,8,42.jpg,Batik Parang,0.9284015893936157,0
+72.jpg,Batik Dayak,9,5.jpg,Batik Bali,0.923216700553894,0
+72.jpg,Batik Dayak,10,6.jpg,Batik Kawung,0.9226787686347961,0
+73.jpg,Batik Dayak,1,9.jpg,Batik Cendrawasih,0.9820027947425842,0
+73.jpg,Batik Dayak,2,49.jpg,Batik Dayak,0.9743486642837524,1
+73.jpg,Batik Dayak,3,34.jpg,Batik Insang,0.9684641361236572,0
+73.jpg,Batik Dayak,4,50.jpg,Batik Poleng,0.9628227949142456,0
+73.jpg,Batik Dayak,5,46.jpg,Batik Dayak,0.9627670645713806,1
+73.jpg,Batik Dayak,6,39.jpg,Batik Kawung,0.9619321227073669,0
+73.jpg,Batik Dayak,7,21.jpg,Batik Megamendung,0.9587319493293762,0
+73.jpg,Batik Dayak,8,15.jpg,Batik Dayak,0.9496845602989197,1
+73.jpg,Batik Dayak,9,27.jpg,Batik Cendrawasih,0.9460917711257935,0
+73.jpg,Batik Dayak,10,65.jpg,Batik Poleng,0.9437206387519836,0
+74.jpg,Batik Dayak,1,24.jpg,Batik Dayak,0.9985867142677307,1
+74.jpg,Batik Dayak,2,12.jpg,Batik Cendrawasih,0.969093918800354,0
+74.jpg,Batik Dayak,3,10.jpg,Batik Poleng,0.9642594456672668,0
+74.jpg,Batik Dayak,4,17.jpg,Batik Dayak,0.9630411863327026,1
+74.jpg,Batik Dayak,5,58.jpg,Batik Cendrawasih,0.9599950909614563,0
+74.jpg,Batik Dayak,6,10.jpg,Batik Cendrawasih,0.9535388946533203,0
+74.jpg,Batik Dayak,7,41.jpg,Batik Ikat Celup,0.9525625705718994,0
+74.jpg,Batik Dayak,8,24.jpg,Batik Parang,0.9464386701583862,0
+74.jpg,Batik Dayak,9,43.jpg,Batik Betawi,0.9457975625991821,0
+74.jpg,Batik Dayak,10,8.jpg,Batik Cendrawasih,0.9407877922058105,0
+75.jpg,Batik Dayak,1,32.jpg,Batik Betawi,0.9279235601425171,0
+75.jpg,Batik Dayak,2,2.jpg,Batik Dayak,0.9220313429832458,1
+75.jpg,Batik Dayak,3,25.jpg,Batik Dayak,0.9170356392860413,1
+75.jpg,Batik Dayak,4,17.jpg,Batik Dayak,0.9170345067977905,1
+75.jpg,Batik Dayak,5,50.jpg,Batik Kawung,0.9033091068267822,0
+75.jpg,Batik Dayak,6,51.jpg,Batik Parang,0.8916664719581604,0
+75.jpg,Batik Dayak,7,31.jpg,Batik Tambal,0.890098512172699,0
+75.jpg,Batik Dayak,8,38.jpg,Batik Bali,0.8886203169822693,0
+75.jpg,Batik Dayak,9,5.jpg,Batik Parang,0.8885552883148193,0
+75.jpg,Batik Dayak,10,24.jpg,Batik Parang,0.8880229592323303,0
+76.jpg,Batik Dayak,1,65.jpg,Batik Sekar Jagad,0.9645581245422363,0
+76.jpg,Batik Dayak,2,10.jpg,Batik Geblek Renteng,0.9553775191307068,0
+76.jpg,Batik Dayak,3,66.jpg,Batik Insang,0.9551793932914734,0
+76.jpg,Batik Dayak,4,47.jpg,Batik Dayak,0.9509907960891724,1
+76.jpg,Batik Dayak,5,56.jpg,Batik Sekar Jagad,0.9458011984825134,0
+76.jpg,Batik Dayak,6,64.jpg,Batik Bali,0.9455918669700623,0
+76.jpg,Batik Dayak,7,36.jpg,Batik Dayak,0.9454735517501831,1
+76.jpg,Batik Dayak,8,37.jpg,Batik Dayak,0.9452531337738037,1
+76.jpg,Batik Dayak,9,48.jpg,Batik Pala,0.9451574683189392,0
+76.jpg,Batik Dayak,10,7.jpg,Batik Cendrawasih,0.9443836212158203,0
+77.jpg,Batik Dayak,1,1.jpg,Batik Insang,0.967788815498352,0
+77.jpg,Batik Dayak,2,9.jpg,Batik Geblek Renteng,0.9662176370620728,0
+77.jpg,Batik Dayak,3,53.jpg,Batik Dayak,0.9568834900856018,1
+77.jpg,Batik Dayak,4,22.jpg,Batik Ikat Celup,0.952393114566803,0
+77.jpg,Batik Dayak,5,4.jpg,Batik Parang,0.9505919218063354,0
+77.jpg,Batik Dayak,6,38.jpg,Batik Parang,0.9488751292228699,0
+77.jpg,Batik Dayak,7,64.jpg,Batik Betawi,0.9472656846046448,0
+77.jpg,Batik Dayak,8,39.jpg,Batik Betawi,0.944632351398468,0
+77.jpg,Batik Dayak,9,11.jpg,Batik Parang,0.9442731142044067,0
+77.jpg,Batik Dayak,10,19.jpg,Batik Geblek Renteng,0.9441036581993103,0
+78.jpg,Batik Dayak,1,6.jpg,Batik Kawung,0.9669544696807861,0
+78.jpg,Batik Dayak,2,53.jpg,Batik Cendrawasih,0.958824872970581,0
+78.jpg,Batik Dayak,3,52.jpg,Batik Megamendung,0.9582903981208801,0
+78.jpg,Batik Dayak,4,9.jpg,Batik Kawung,0.9561886787414551,0
+78.jpg,Batik Dayak,5,45.jpg,Batik Dayak,0.9558456540107727,1
+78.jpg,Batik Dayak,6,13.jpg,Batik Kawung,0.9540061354637146,0
+78.jpg,Batik Dayak,7,21.jpg,Batik Sekar Jagad,0.9537461996078491,0
+78.jpg,Batik Dayak,8,8.jpg,Batik Kawung,0.9485362768173218,0
+78.jpg,Batik Dayak,9,9.jpg,Batik Ikat Celup,0.9422025680541992,0
+78.jpg,Batik Dayak,10,16.jpg,Batik Sekar Jagad,0.9403212666511536,0
+79.jpg,Batik Dayak,1,43.jpg,Batik Poleng,0.9914696216583252,0
+79.jpg,Batik Dayak,2,32.jpg,Batik Tambal,0.9900915622711182,0
+79.jpg,Batik Dayak,3,27.jpg,Batik Dayak,0.9891210198402405,1
+79.jpg,Batik Dayak,4,42.jpg,Batik Poleng,0.9889383316040039,0
+79.jpg,Batik Dayak,5,34.jpg,Batik Dayak,0.9875237941741943,1
+79.jpg,Batik Dayak,6,24.jpg,Batik Poleng,0.9873101115226746,0
+79.jpg,Batik Dayak,7,0.jpg,Batik Tambal,0.9831871390342712,0
+79.jpg,Batik Dayak,8,9.jpg,Batik Sekar Jagad,0.983160138130188,0
+79.jpg,Batik Dayak,9,31.jpg,Batik Dayak,0.982934832572937,1
+79.jpg,Batik Dayak,10,15.jpg,Batik Megamendung,0.9828513860702515,0
+80.jpg,Batik Dayak,1,38.jpg,Batik Bali,0.965376079082489,0
+80.jpg,Batik Dayak,2,3.jpg,Batik Dayak,0.9631218314170837,1
+80.jpg,Batik Dayak,3,17.jpg,Batik Dayak,0.9513176083564758,1
+80.jpg,Batik Dayak,4,35.jpg,Batik Bali,0.9456633925437927,0
+80.jpg,Batik Dayak,5,59.jpg,Batik Tambal,0.9419070482254028,0
+80.jpg,Batik Dayak,6,32.jpg,Batik Betawi,0.9410824775695801,0
+80.jpg,Batik Dayak,7,8.jpg,Batik Betawi,0.940179705619812,0
+80.jpg,Batik Dayak,8,39.jpg,Batik Parang,0.938071072101593,0
+80.jpg,Batik Dayak,9,10.jpg,Batik Ikat Celup,0.9365028142929077,0
+80.jpg,Batik Dayak,10,25.jpg,Batik Dayak,0.9359239935874939,1
+81.jpg,Batik Dayak,1,58.jpg,Batik Dayak,0.9971867203712463,1
+81.jpg,Batik Dayak,2,49.jpg,Batik Dayak,0.9307695627212524,1
+81.jpg,Batik Dayak,3,39.jpg,Batik Pala,0.9236965179443359,0
+81.jpg,Batik Dayak,4,50.jpg,Batik Lasem,0.9008662104606628,0
+81.jpg,Batik Dayak,5,5.jpg,Batik Poleng,0.8762580156326294,0
+81.jpg,Batik Dayak,6,29.jpg,Batik Lasem,0.875680685043335,0
+81.jpg,Batik Dayak,7,37.jpg,Batik Lasem,0.8707637190818787,0
+81.jpg,Batik Dayak,8,9.jpg,Batik Cendrawasih,0.8649789690971375,0
+81.jpg,Batik Dayak,9,20.jpg,Batik Kawung,0.8631756901741028,0
+81.jpg,Batik Dayak,10,57.jpg,Batik Kawung,0.8592658638954163,0
+82.jpg,Batik Dayak,1,69.jpg,Batik Bali,0.9894736409187317,0
+82.jpg,Batik Dayak,2,15.jpg,Batik Parang,0.9876469969749451,0
+82.jpg,Batik Dayak,3,38.jpg,Batik Cendrawasih,0.9865302443504333,0
+82.jpg,Batik Dayak,4,68.jpg,Batik Dayak,0.9830340147018433,1
+82.jpg,Batik Dayak,5,62.jpg,Batik Tambal,0.9828218221664429,0
+82.jpg,Batik Dayak,6,47.jpg,Batik Cendrawasih,0.9805522561073303,0
+82.jpg,Batik Dayak,7,43.jpg,Batik Geblek Renteng,0.9766541719436646,0
+82.jpg,Batik Dayak,8,36.jpg,Batik Megamendung,0.9759521484375,0
+82.jpg,Batik Dayak,9,13.jpg,Batik Geblek Renteng,0.9726244211196899,0
+82.jpg,Batik Dayak,10,39.jpg,Batik Cendrawasih,0.9724491834640503,0
+83.jpg,Batik Dayak,1,35.jpg,Batik Cendrawasih,0.9575518369674683,0
+83.jpg,Batik Dayak,2,57.jpg,Batik Kawung,0.9570289850234985,0
+83.jpg,Batik Dayak,3,45.jpg,Batik Dayak,0.9502986073493958,1
+83.jpg,Batik Dayak,4,44.jpg,Batik Parang,0.9464756846427917,0
+83.jpg,Batik Dayak,5,59.jpg,Batik Tambal,0.9392234086990356,0
+83.jpg,Batik Dayak,6,10.jpg,Batik Parang,0.9365249872207642,0
+83.jpg,Batik Dayak,7,20.jpg,Batik Kawung,0.9311380982398987,0
+83.jpg,Batik Dayak,8,9.jpg,Batik Kawung,0.9290965795516968,0
+83.jpg,Batik Dayak,9,12.jpg,Batik Cendrawasih,0.9214537739753723,0
+83.jpg,Batik Dayak,10,25.jpg,Batik Poleng,0.9196165800094604,0
+84.jpg,Batik Dayak,1,49.jpg,Batik Dayak,0.9930369257926941,1
+84.jpg,Batik Dayak,2,21.jpg,Batik Megamendung,0.9719545841217041,0
+84.jpg,Batik Dayak,3,9.jpg,Batik Cendrawasih,0.970096230506897,0
+84.jpg,Batik Dayak,4,27.jpg,Batik Cendrawasih,0.964817464351654,0
+84.jpg,Batik Dayak,5,29.jpg,Batik Cendrawasih,0.9640495181083679,0
+84.jpg,Batik Dayak,6,56.jpg,Batik Cendrawasih,0.9639536738395691,0
+84.jpg,Batik Dayak,7,15.jpg,Batik Dayak,0.9621239900588989,1
+84.jpg,Batik Dayak,8,54.jpg,Batik Insang,0.949380099773407,0
+84.jpg,Batik Dayak,9,46.jpg,Batik Dayak,0.948397159576416,1
+84.jpg,Batik Dayak,10,30.jpg,Batik Kawung,0.9472189545631409,0
+85.jpg,Batik Dayak,1,16.jpg,Batik Geblek Renteng,0.9510458707809448,0
+85.jpg,Batik Dayak,2,18.jpg,Batik Lasem,0.9285578727722168,0
+85.jpg,Batik Dayak,3,34.jpg,Batik Pala,0.9245586395263672,0
+85.jpg,Batik Dayak,4,14.jpg,Batik Cendrawasih,0.9203827977180481,0
+85.jpg,Batik Dayak,5,33.jpg,Batik Ikat Celup,0.9185569286346436,0
+85.jpg,Batik Dayak,6,12.jpg,Batik Megamendung,0.9120797514915466,0
+85.jpg,Batik Dayak,7,37.jpg,Batik Tambal,0.9119982719421387,0
+85.jpg,Batik Dayak,8,32.jpg,Batik Ikat Celup,0.9085923433303833,0
+85.jpg,Batik Dayak,9,43.jpg,Batik Ikat Celup,0.9075661301612854,0
+85.jpg,Batik Dayak,10,8.jpg,Batik Megamendung,0.8985024690628052,0
+86.jpg,Batik Dayak,1,9.jpg,Batik Cendrawasih,0.9893844723701477,0
+86.jpg,Batik Dayak,2,34.jpg,Batik Insang,0.9816678762435913,0
+86.jpg,Batik Dayak,3,68.jpg,Batik Megamendung,0.9712945818901062,0
+86.jpg,Batik Dayak,4,39.jpg,Batik Kawung,0.9711142778396606,0
+86.jpg,Batik Dayak,5,21.jpg,Batik Megamendung,0.9700055718421936,0
+86.jpg,Batik Dayak,6,46.jpg,Batik Dayak,0.9649312496185303,1
+86.jpg,Batik Dayak,7,49.jpg,Batik Dayak,0.963303804397583,1
+86.jpg,Batik Dayak,8,50.jpg,Batik Poleng,0.9621443152427673,0
+86.jpg,Batik Dayak,9,54.jpg,Batik Insang,0.9570116996765137,0
+86.jpg,Batik Dayak,10,15.jpg,Batik Dayak,0.956449568271637,1
+87.jpg,Batik Dayak,1,44.jpg,Batik Tambal,0.965778112411499,0
+87.jpg,Batik Dayak,2,57.jpg,Batik Insang,0.9653996825218201,0
+87.jpg,Batik Dayak,3,36.jpg,Batik Dayak,0.9575110673904419,1
+87.jpg,Batik Dayak,4,26.jpg,Batik Betawi,0.9461556077003479,0
+87.jpg,Batik Dayak,5,10.jpg,Batik Geblek Renteng,0.9432744383811951,0
+87.jpg,Batik Dayak,6,48.jpg,Batik Pala,0.9384083151817322,0
+87.jpg,Batik Dayak,7,67.jpg,Batik Lasem,0.9375161528587341,0
+87.jpg,Batik Dayak,8,9.jpg,Batik Dayak,0.9362431168556213,1
+87.jpg,Batik Dayak,9,8.jpg,Batik Poleng,0.935537576675415,0
+87.jpg,Batik Dayak,10,47.jpg,Batik Dayak,0.9339489936828613,1
+88.jpg,Batik Dayak,1,11.jpg,Batik Pala,0.9636955261230469,0
+88.jpg,Batik Dayak,2,48.jpg,Batik Poleng,0.9475972056388855,0
+88.jpg,Batik Dayak,3,4.jpg,Batik Parang,0.9437830448150635,0
+88.jpg,Batik Dayak,4,59.jpg,Batik Poleng,0.9433000683784485,0
+88.jpg,Batik Dayak,5,53.jpg,Batik Dayak,0.9417783617973328,1
+88.jpg,Batik Dayak,6,11.jpg,Batik Dayak,0.9370744824409485,1
+88.jpg,Batik Dayak,7,32.jpg,Batik Poleng,0.9301862716674805,0
+88.jpg,Batik Dayak,8,36.jpg,Batik Geblek Renteng,0.9293066263198853,0
+88.jpg,Batik Dayak,9,26.jpg,Batik Bali,0.9287446737289429,0
+88.jpg,Batik Dayak,10,16.jpg,Batik Ikat Celup,0.927560031414032,0
+89.jpg,Batik Dayak,1,62.jpg,Batik Poleng,0.971197247505188,0
+89.jpg,Batik Dayak,2,7.jpg,Batik Poleng,0.9482583999633789,0
+89.jpg,Batik Dayak,3,52.jpg,Batik Pala,0.9387819170951843,0
+89.jpg,Batik Dayak,4,19.jpg,Batik Poleng,0.9180903434753418,0
+89.jpg,Batik Dayak,5,42.jpg,Batik Cendrawasih,0.9100141525268555,0
+89.jpg,Batik Dayak,6,64.jpg,Batik Poleng,0.9015879034996033,0
+89.jpg,Batik Dayak,7,11.jpg,Batik Dayak,0.8964660167694092,1
+89.jpg,Batik Dayak,8,9.jpg,Batik Parang,0.8891451954841614,0
+89.jpg,Batik Dayak,9,26.jpg,Batik Kawung,0.8869311213493347,0
+89.jpg,Batik Dayak,10,60.jpg,Batik Dayak,0.8868301510810852,1
+70.jpg,Batik Geblek Renteng,1,32.jpg,Batik Megamendung,0.9638774991035461,0
+70.jpg,Batik Geblek Renteng,2,57.jpg,Batik Cendrawasih,0.9602025747299194,0
+70.jpg,Batik Geblek Renteng,3,21.jpg,Batik Poleng,0.9447734951972961,0
+70.jpg,Batik Geblek Renteng,4,13.jpg,Batik Megamendung,0.9446885585784912,0
+70.jpg,Batik Geblek Renteng,5,57.jpg,Batik Bali,0.9435710310935974,0
+70.jpg,Batik Geblek Renteng,6,48.jpg,Batik Ikat Celup,0.9364035129547119,0
+70.jpg,Batik Geblek Renteng,7,9.jpg,Batik Poleng,0.9349204301834106,0
+70.jpg,Batik Geblek Renteng,8,26.jpg,Batik Megamendung,0.9339855909347534,0
+70.jpg,Batik Geblek Renteng,9,33.jpg,Batik Poleng,0.9324797987937927,0
+70.jpg,Batik Geblek Renteng,10,35.jpg,Batik Pala,0.9314234852790833,0
+71.jpg,Batik Geblek Renteng,1,7.jpg,Batik Pala,0.9678623676300049,0
+71.jpg,Batik Geblek Renteng,2,15.jpg,Batik Geblek Renteng,0.9634907841682434,1
+71.jpg,Batik Geblek Renteng,3,43.jpg,Batik Cendrawasih,0.958474338054657,0
+71.jpg,Batik Geblek Renteng,4,36.jpg,Batik Megamendung,0.9393744468688965,0
+71.jpg,Batik Geblek Renteng,5,31.jpg,Batik Betawi,0.9295180439949036,0
+71.jpg,Batik Geblek Renteng,6,61.jpg,Batik Dayak,0.9282387495040894,0
+71.jpg,Batik Geblek Renteng,7,12.jpg,Batik Geblek Renteng,0.9265775084495544,1
+71.jpg,Batik Geblek Renteng,8,50.jpg,Batik Parang,0.9251421093940735,0
+71.jpg,Batik Geblek Renteng,9,25.jpg,Batik Dayak,0.9247093200683594,0
+71.jpg,Batik Geblek Renteng,10,62.jpg,Batik Tambal,0.9234506487846375,0
+72.jpg,Batik Geblek Renteng,1,15.jpg,Batik Geblek Renteng,0.9587854146957397,1
+72.jpg,Batik Geblek Renteng,2,12.jpg,Batik Geblek Renteng,0.9551246762275696,1
+72.jpg,Batik Geblek Renteng,3,39.jpg,Batik Bali,0.9451395869255066,0
+72.jpg,Batik Geblek Renteng,4,29.jpg,Batik Dayak,0.9383401870727539,0
+72.jpg,Batik Geblek Renteng,5,36.jpg,Batik Megamendung,0.9362726807594299,0
+72.jpg,Batik Geblek Renteng,6,32.jpg,Batik Geblek Renteng,0.9353546500205994,1
+72.jpg,Batik Geblek Renteng,7,43.jpg,Batik Cendrawasih,0.9345577955245972,0
+72.jpg,Batik Geblek Renteng,8,43.jpg,Batik Geblek Renteng,0.9339420795440674,1
+72.jpg,Batik Geblek Renteng,9,50.jpg,Batik Parang,0.9293976426124573,0
+72.jpg,Batik Geblek Renteng,10,6.jpg,Batik Geblek Renteng,0.9269938468933105,1
+73.jpg,Batik Geblek Renteng,1,4.jpg,Batik Geblek Renteng,0.9899842739105225,1
+73.jpg,Batik Geblek Renteng,2,62.jpg,Batik Geblek Renteng,0.89794921875,1
+73.jpg,Batik Geblek Renteng,3,46.jpg,Batik Cendrawasih,0.8918629288673401,0
+73.jpg,Batik Geblek Renteng,4,58.jpg,Batik Ikat Celup,0.8751783967018127,0
+73.jpg,Batik Geblek Renteng,5,26.jpg,Batik Megamendung,0.8743705749511719,0
+73.jpg,Batik Geblek Renteng,6,32.jpg,Batik Megamendung,0.8681954145431519,0
+73.jpg,Batik Geblek Renteng,7,45.jpg,Batik Insang,0.8674386739730835,0
+73.jpg,Batik Geblek Renteng,8,34.jpg,Batik Geblek Renteng,0.8650846481323242,1
+73.jpg,Batik Geblek Renteng,9,57.jpg,Batik Bali,0.8624723553657532,0
+73.jpg,Batik Geblek Renteng,10,21.jpg,Batik Poleng,0.862238347530365,0
+74.jpg,Batik Geblek Renteng,1,26.jpg,Batik Lasem,0.9672644138336182,0
+74.jpg,Batik Geblek Renteng,2,37.jpg,Batik Sekar Jagad,0.9583964347839355,0
+74.jpg,Batik Geblek Renteng,3,48.jpg,Batik Sekar Jagad,0.9576990008354187,0
+74.jpg,Batik Geblek Renteng,4,12.jpg,Batik Pala,0.9557756185531616,0
+74.jpg,Batik Geblek Renteng,5,42.jpg,Batik Geblek Renteng,0.9502713084220886,1
+74.jpg,Batik Geblek Renteng,6,24.jpg,Batik Sekar Jagad,0.9488984942436218,0
+74.jpg,Batik Geblek Renteng,7,28.jpg,Batik Sekar Jagad,0.9480385184288025,0
+74.jpg,Batik Geblek Renteng,8,26.jpg,Batik Sekar Jagad,0.9475938677787781,0
+74.jpg,Batik Geblek Renteng,9,15.jpg,Batik Betawi,0.9418584704399109,0
+74.jpg,Batik Geblek Renteng,10,34.jpg,Batik Pala,0.9404474496841431,0
+75.jpg,Batik Geblek Renteng,1,55.jpg,Batik Tambal,0.9780896902084351,0
+75.jpg,Batik Geblek Renteng,2,15.jpg,Batik Tambal,0.9620401263237,0
+75.jpg,Batik Geblek Renteng,3,55.jpg,Batik Insang,0.9570604562759399,0
+75.jpg,Batik Geblek Renteng,4,12.jpg,Batik Pala,0.9535939693450928,0
+75.jpg,Batik Geblek Renteng,5,24.jpg,Batik Lasem,0.9529664516448975,0
+75.jpg,Batik Geblek Renteng,6,10.jpg,Batik Tambal,0.9483903050422668,0
+75.jpg,Batik Geblek Renteng,7,53.jpg,Batik Insang,0.9478897452354431,0
+75.jpg,Batik Geblek Renteng,8,37.jpg,Batik Geblek Renteng,0.9464274048805237,1
+75.jpg,Batik Geblek Renteng,9,26.jpg,Batik Lasem,0.9458960294723511,0
+75.jpg,Batik Geblek Renteng,10,61.jpg,Batik Poleng,0.9458314776420593,0
+76.jpg,Batik Geblek Renteng,1,45.jpg,Batik Insang,0.9805104732513428,0
+76.jpg,Batik Geblek Renteng,2,62.jpg,Batik Geblek Renteng,0.97864830493927,1
+76.jpg,Batik Geblek Renteng,3,46.jpg,Batik Cendrawasih,0.9714165925979614,0
+76.jpg,Batik Geblek Renteng,4,21.jpg,Batik Poleng,0.9679585695266724,0
+76.jpg,Batik Geblek Renteng,5,34.jpg,Batik Geblek Renteng,0.9675408601760864,1
+76.jpg,Batik Geblek Renteng,6,58.jpg,Batik Ikat Celup,0.9667525887489319,0
+76.jpg,Batik Geblek Renteng,7,62.jpg,Batik Cendrawasih,0.9628127217292786,0
+76.jpg,Batik Geblek Renteng,8,69.jpg,Batik Parang,0.9577932953834534,0
+76.jpg,Batik Geblek Renteng,9,42.jpg,Batik Geblek Renteng,0.9556825757026672,1
+76.jpg,Batik Geblek Renteng,10,11.jpg,Batik Poleng,0.9552521705627441,0
+77.jpg,Batik Geblek Renteng,1,64.jpg,Batik Betawi,0.9595717787742615,0
+77.jpg,Batik Geblek Renteng,2,65.jpg,Batik Kawung,0.9594857692718506,0
+77.jpg,Batik Geblek Renteng,3,58.jpg,Batik Poleng,0.9578755497932434,0
+77.jpg,Batik Geblek Renteng,4,52.jpg,Batik Betawi,0.9577725529670715,0
+77.jpg,Batik Geblek Renteng,5,0.jpg,Batik Dayak,0.9573231339454651,0
+77.jpg,Batik Geblek Renteng,6,43.jpg,Batik Parang,0.9570611119270325,0
+77.jpg,Batik Geblek Renteng,7,45.jpg,Batik Poleng,0.9562433958053589,0
+77.jpg,Batik Geblek Renteng,8,59.jpg,Batik Parang,0.9551789164543152,0
+77.jpg,Batik Geblek Renteng,9,3.jpg,Batik Bali,0.9497173428535461,0
+77.jpg,Batik Geblek Renteng,10,56.jpg,Batik Kawung,0.9496034383773804,0
+78.jpg,Batik Geblek Renteng,1,39.jpg,Batik Insang,0.9902549982070923,0
+78.jpg,Batik Geblek Renteng,2,0.jpg,Batik Megamendung,0.988762617111206,0
+78.jpg,Batik Geblek Renteng,3,9.jpg,Batik Sekar Jagad,0.9772219061851501,0
+78.jpg,Batik Geblek Renteng,4,27.jpg,Batik Dayak,0.9770416021347046,0
+78.jpg,Batik Geblek Renteng,5,34.jpg,Batik Dayak,0.976675808429718,0
+78.jpg,Batik Geblek Renteng,6,19.jpg,Batik Bali,0.9735538959503174,0
+78.jpg,Batik Geblek Renteng,7,42.jpg,Batik Poleng,0.9733508229255676,0
+78.jpg,Batik Geblek Renteng,8,54.jpg,Batik Insang,0.9716896414756775,0
+78.jpg,Batik Geblek Renteng,9,4.jpg,Batik Megamendung,0.9695393443107605,0
+78.jpg,Batik Geblek Renteng,10,42.jpg,Batik Dayak,0.9692550897598267,0
+79.jpg,Batik Geblek Renteng,1,51.jpg,Batik Geblek Renteng,0.971487283706665,1
+79.jpg,Batik Geblek Renteng,2,17.jpg,Batik Cendrawasih,0.9601161479949951,0
+79.jpg,Batik Geblek Renteng,3,42.jpg,Batik Tambal,0.9595073461532593,0
+79.jpg,Batik Geblek Renteng,4,26.jpg,Batik Poleng,0.9522756934165955,0
+79.jpg,Batik Geblek Renteng,5,62.jpg,Batik Bali,0.946829617023468,0
+79.jpg,Batik Geblek Renteng,6,51.jpg,Batik Tambal,0.9446356296539307,0
+79.jpg,Batik Geblek Renteng,7,67.jpg,Batik Geblek Renteng,0.9416863918304443,1
+79.jpg,Batik Geblek Renteng,8,2.jpg,Batik Geblek Renteng,0.9395481944084167,1
+79.jpg,Batik Geblek Renteng,9,55.jpg,Batik Pala,0.9395368695259094,0
+79.jpg,Batik Geblek Renteng,10,27.jpg,Batik Bali,0.9372609853744507,0
+80.jpg,Batik Geblek Renteng,1,26.jpg,Batik Sekar Jagad,0.9880720376968384,0
+80.jpg,Batik Geblek Renteng,2,37.jpg,Batik Sekar Jagad,0.9873901605606079,0
+80.jpg,Batik Geblek Renteng,3,65.jpg,Batik Sekar Jagad,0.9740387797355652,0
+80.jpg,Batik Geblek Renteng,4,26.jpg,Batik Lasem,0.9651927351951599,0
+80.jpg,Batik Geblek Renteng,5,68.jpg,Batik Tambal,0.9628603458404541,0
+80.jpg,Batik Geblek Renteng,6,28.jpg,Batik Tambal,0.9566147327423096,0
+80.jpg,Batik Geblek Renteng,7,20.jpg,Batik Pala,0.9564067721366882,0
+80.jpg,Batik Geblek Renteng,8,61.jpg,Batik Poleng,0.9562494158744812,0
+80.jpg,Batik Geblek Renteng,9,15.jpg,Batik Betawi,0.9560155868530273,0
+80.jpg,Batik Geblek Renteng,10,27.jpg,Batik Geblek Renteng,0.9546429514884949,1
+81.jpg,Batik Geblek Renteng,1,11.jpg,Batik Insang,0.9626967906951904,0
+81.jpg,Batik Geblek Renteng,2,24.jpg,Batik Sekar Jagad,0.955711305141449,0
+81.jpg,Batik Geblek Renteng,3,34.jpg,Batik Geblek Renteng,0.9516329169273376,1
+81.jpg,Batik Geblek Renteng,4,32.jpg,Batik Geblek Renteng,0.9446431994438171,1
+81.jpg,Batik Geblek Renteng,5,39.jpg,Batik Parang,0.9434416890144348,0
+81.jpg,Batik Geblek Renteng,6,42.jpg,Batik Geblek Renteng,0.9317777156829834,1
+81.jpg,Batik Geblek Renteng,7,50.jpg,Batik Kawung,0.9284498691558838,0
+81.jpg,Batik Geblek Renteng,8,5.jpg,Batik Pala,0.9283879399299622,0
+81.jpg,Batik Geblek Renteng,9,35.jpg,Batik Bali,0.9262715578079224,0
+81.jpg,Batik Geblek Renteng,10,4.jpg,Batik Dayak,0.9237769842147827,0
+82.jpg,Batik Geblek Renteng,1,52.jpg,Batik Lasem,0.9884318113327026,0
+82.jpg,Batik Geblek Renteng,2,13.jpg,Batik Tambal,0.9858955144882202,0
+82.jpg,Batik Geblek Renteng,3,56.jpg,Batik Sekar Jagad,0.983002781867981,0
+82.jpg,Batik Geblek Renteng,4,10.jpg,Batik Tambal,0.9792824387550354,0
+82.jpg,Batik Geblek Renteng,5,50.jpg,Batik Tambal,0.9779402613639832,0
+82.jpg,Batik Geblek Renteng,6,45.jpg,Batik Geblek Renteng,0.976462185382843,1
+82.jpg,Batik Geblek Renteng,7,27.jpg,Batik Bali,0.9759435653686523,0
+82.jpg,Batik Geblek Renteng,8,9.jpg,Batik Tambal,0.9721078276634216,0
+82.jpg,Batik Geblek Renteng,9,28.jpg,Batik Ikat Celup,0.964955747127533,0
+82.jpg,Batik Geblek Renteng,10,25.jpg,Batik Lasem,0.9601473808288574,0
+83.jpg,Batik Geblek Renteng,1,17.jpg,Batik Cendrawasih,0.9523431062698364,0
+83.jpg,Batik Geblek Renteng,2,26.jpg,Batik Cendrawasih,0.9381059408187866,0
+83.jpg,Batik Geblek Renteng,3,66.jpg,Batik Geblek Renteng,0.9272188544273376,1
+83.jpg,Batik Geblek Renteng,4,30.jpg,Batik Bali,0.913359522819519,0
+83.jpg,Batik Geblek Renteng,5,62.jpg,Batik Bali,0.9132882356643677,0
+83.jpg,Batik Geblek Renteng,6,49.jpg,Batik Pala,0.9088794589042664,0
+83.jpg,Batik Geblek Renteng,7,37.jpg,Batik Pala,0.9046618342399597,0
+83.jpg,Batik Geblek Renteng,8,42.jpg,Batik Tambal,0.903791606426239,0
+83.jpg,Batik Geblek Renteng,9,41.jpg,Batik Geblek Renteng,0.9035238027572632,1
+83.jpg,Batik Geblek Renteng,10,15.jpg,Batik Bali,0.9033710956573486,0
+84.jpg,Batik Geblek Renteng,1,15.jpg,Batik Kawung,0.961431622505188,0
+84.jpg,Batik Geblek Renteng,2,60.jpg,Batik Kawung,0.9406312704086304,0
+84.jpg,Batik Geblek Renteng,3,37.jpg,Batik Kawung,0.9386841654777527,0
+84.jpg,Batik Geblek Renteng,4,40.jpg,Batik Kawung,0.9377936720848083,0
+84.jpg,Batik Geblek Renteng,5,24.jpg,Batik Bali,0.9234504699707031,0
+84.jpg,Batik Geblek Renteng,6,56.jpg,Batik Tambal,0.9228416085243225,0
+84.jpg,Batik Geblek Renteng,7,69.jpg,Batik Kawung,0.9091395735740662,0
+84.jpg,Batik Geblek Renteng,8,42.jpg,Batik Parang,0.9011140465736389,0
+84.jpg,Batik Geblek Renteng,9,38.jpg,Batik Sekar Jagad,0.90008944272995,0
+84.jpg,Batik Geblek Renteng,10,22.jpg,Batik Insang,0.8980206251144409,0
+85.jpg,Batik Geblek Renteng,1,44.jpg,Batik Ikat Celup,0.9700096249580383,0
+85.jpg,Batik Geblek Renteng,2,23.jpg,Batik Megamendung,0.9307979345321655,0
+85.jpg,Batik Geblek Renteng,3,17.jpg,Batik Poleng,0.9189761877059937,0
+85.jpg,Batik Geblek Renteng,4,64.jpg,Batik Megamendung,0.9022005200386047,0
+85.jpg,Batik Geblek Renteng,5,19.jpg,Batik Ikat Celup,0.8962488174438477,0
+85.jpg,Batik Geblek Renteng,6,44.jpg,Batik Parang,0.8945655822753906,0
+85.jpg,Batik Geblek Renteng,7,38.jpg,Batik Dayak,0.8938099145889282,0
+85.jpg,Batik Geblek Renteng,8,53.jpg,Batik Megamendung,0.884544849395752,0
+85.jpg,Batik Geblek Renteng,9,43.jpg,Batik Dayak,0.8806055784225464,0
+85.jpg,Batik Geblek Renteng,10,22.jpg,Batik Pala,0.8804322481155396,0
+86.jpg,Batik Geblek Renteng,1,32.jpg,Batik Megamendung,0.9698747992515564,0
+86.jpg,Batik Geblek Renteng,2,57.jpg,Batik Cendrawasih,0.9651888608932495,0
+86.jpg,Batik Geblek Renteng,3,57.jpg,Batik Bali,0.9594099521636963,0
+86.jpg,Batik Geblek Renteng,4,13.jpg,Batik Megamendung,0.9569015502929688,0
+86.jpg,Batik Geblek Renteng,5,21.jpg,Batik Poleng,0.9548636078834534,0
+86.jpg,Batik Geblek Renteng,6,62.jpg,Batik Geblek Renteng,0.9415202140808105,1
+86.jpg,Batik Geblek Renteng,7,17.jpg,Batik Pala,0.9375116229057312,0
+86.jpg,Batik Geblek Renteng,8,26.jpg,Batik Megamendung,0.935799241065979,0
+86.jpg,Batik Geblek Renteng,9,46.jpg,Batik Cendrawasih,0.9337902665138245,0
+86.jpg,Batik Geblek Renteng,10,45.jpg,Batik Insang,0.9321484565734863,0
+87.jpg,Batik Geblek Renteng,1,9.jpg,Batik Poleng,0.9497394561767578,0
+87.jpg,Batik Geblek Renteng,2,6.jpg,Batik Ikat Celup,0.8987326622009277,0
+87.jpg,Batik Geblek Renteng,3,32.jpg,Batik Geblek Renteng,0.8986871838569641,1
+87.jpg,Batik Geblek Renteng,4,37.jpg,Batik Cendrawasih,0.8815539479255676,0
+87.jpg,Batik Geblek Renteng,5,57.jpg,Batik Pala,0.8767828941345215,0
+87.jpg,Batik Geblek Renteng,6,24.jpg,Batik Sekar Jagad,0.876293957233429,0
+87.jpg,Batik Geblek Renteng,7,57.jpg,Batik Geblek Renteng,0.8698495030403137,1
+87.jpg,Batik Geblek Renteng,8,53.jpg,Batik Kawung,0.8678039312362671,0
+87.jpg,Batik Geblek Renteng,9,48.jpg,Batik Sekar Jagad,0.8671771287918091,0
+87.jpg,Batik Geblek Renteng,10,43.jpg,Batik Dayak,0.8665063381195068,0
+88.jpg,Batik Geblek Renteng,1,5.jpg,Batik Sekar Jagad,0.93700110912323,0
+88.jpg,Batik Geblek Renteng,2,19.jpg,Batik Lasem,0.9342799186706543,0
+88.jpg,Batik Geblek Renteng,3,44.jpg,Batik Lasem,0.9339917898178101,0
+88.jpg,Batik Geblek Renteng,4,23.jpg,Batik Insang,0.933695912361145,0
+88.jpg,Batik Geblek Renteng,5,18.jpg,Batik Dayak,0.9336612820625305,0
+88.jpg,Batik Geblek Renteng,6,64.jpg,Batik Geblek Renteng,0.9327923655509949,1
+88.jpg,Batik Geblek Renteng,7,39.jpg,Batik Lasem,0.9321770668029785,0
+88.jpg,Batik Geblek Renteng,8,55.jpg,Batik Kawung,0.9306782484054565,0
+88.jpg,Batik Geblek Renteng,9,18.jpg,Batik Lasem,0.9286930561065674,0
+88.jpg,Batik Geblek Renteng,10,14.jpg,Batik Megamendung,0.9211688041687012,0
+89.jpg,Batik Geblek Renteng,1,9.jpg,Batik Dayak,0.9840438961982727,0
+89.jpg,Batik Geblek Renteng,2,10.jpg,Batik Geblek Renteng,0.976433515548706,1
+89.jpg,Batik Geblek Renteng,3,48.jpg,Batik Pala,0.9709200859069824,0
+89.jpg,Batik Geblek Renteng,4,65.jpg,Batik Sekar Jagad,0.9682706594467163,0
+89.jpg,Batik Geblek Renteng,5,67.jpg,Batik Lasem,0.9668393731117249,0
+89.jpg,Batik Geblek Renteng,6,25.jpg,Batik Sekar Jagad,0.9653177857398987,0
+89.jpg,Batik Geblek Renteng,7,47.jpg,Batik Dayak,0.9652023315429688,0
+89.jpg,Batik Geblek Renteng,8,22.jpg,Batik Sekar Jagad,0.9645063877105713,0
+89.jpg,Batik Geblek Renteng,9,7.jpg,Batik Cendrawasih,0.9642808437347412,0
+89.jpg,Batik Geblek Renteng,10,56.jpg,Batik Insang,0.9509754180908203,0
+70.jpg,Batik Ikat Celup,1,1.jpg,Batik Lasem,0.9666194319725037,0
+70.jpg,Batik Ikat Celup,2,0.jpg,Batik Lasem,0.9548930525779724,0
+70.jpg,Batik Ikat Celup,3,20.jpg,Batik Lasem,0.948369026184082,0
+70.jpg,Batik Ikat Celup,4,59.jpg,Batik Geblek Renteng,0.9437817931175232,0
+70.jpg,Batik Ikat Celup,5,25.jpg,Batik Pala,0.9411580562591553,0
+70.jpg,Batik Ikat Celup,6,6.jpg,Batik Pala,0.937229573726654,0
+70.jpg,Batik Ikat Celup,7,28.jpg,Batik Ikat Celup,0.9338940978050232,1
+70.jpg,Batik Ikat Celup,8,64.jpg,Batik Lasem,0.9276105165481567,0
+70.jpg,Batik Ikat Celup,9,19.jpg,Batik Pala,0.9267598390579224,0
+70.jpg,Batik Ikat Celup,10,27.jpg,Batik Lasem,0.9237970113754272,0
+71.jpg,Batik Ikat Celup,1,22.jpg,Batik Megamendung,0.93384850025177,0
+71.jpg,Batik Ikat Celup,2,60.jpg,Batik Pala,0.9104829430580139,0
+71.jpg,Batik Ikat Celup,3,57.jpg,Batik Tambal,0.9060466885566711,0
+71.jpg,Batik Ikat Celup,4,45.jpg,Batik Cendrawasih,0.905713677406311,0
+71.jpg,Batik Ikat Celup,5,38.jpg,Batik Tambal,0.9044948220252991,0
+71.jpg,Batik Ikat Celup,6,60.jpg,Batik Bali,0.9035071134567261,0
+71.jpg,Batik Ikat Celup,7,18.jpg,Batik Megamendung,0.9007093906402588,0
+71.jpg,Batik Ikat Celup,8,58.jpg,Batik Bali,0.8965845704078674,0
+71.jpg,Batik Ikat Celup,9,46.jpg,Batik Cendrawasih,0.8905991911888123,0
+71.jpg,Batik Ikat Celup,10,4.jpg,Batik Pala,0.8903008103370667,0
+72.jpg,Batik Ikat Celup,1,11.jpg,Batik Tambal,0.9692309498786926,0
+72.jpg,Batik Ikat Celup,2,26.jpg,Batik Kawung,0.9657943248748779,0
+72.jpg,Batik Ikat Celup,3,65.jpg,Batik Geblek Renteng,0.9595633745193481,0
+72.jpg,Batik Ikat Celup,4,23.jpg,Batik Kawung,0.9555307030677795,0
+72.jpg,Batik Ikat Celup,5,5.jpg,Batik Kawung,0.9537192583084106,0
+72.jpg,Batik Ikat Celup,6,31.jpg,Batik Kawung,0.9499757885932922,0
+72.jpg,Batik Ikat Celup,7,59.jpg,Batik Parang,0.949739933013916,0
+72.jpg,Batik Ikat Celup,8,67.jpg,Batik Kawung,0.945758581161499,0
+72.jpg,Batik Ikat Celup,9,20.jpg,Batik Bali,0.9439085721969604,0
+72.jpg,Batik Ikat Celup,10,62.jpg,Batik Kawung,0.9427008628845215,0
+73.jpg,Batik Ikat Celup,1,47.jpg,Batik Megamendung,0.9201890826225281,0
+73.jpg,Batik Ikat Celup,2,44.jpg,Batik Ikat Celup,0.8805813789367676,1
+73.jpg,Batik Ikat Celup,3,10.jpg,Batik Megamendung,0.8804882764816284,0
+73.jpg,Batik Ikat Celup,4,38.jpg,Batik Dayak,0.8795878887176514,0
+73.jpg,Batik Ikat Celup,5,47.jpg,Batik Geblek Renteng,0.8756663799285889,0
+73.jpg,Batik Ikat Celup,6,57.jpg,Batik Betawi,0.8746414184570312,0
+73.jpg,Batik Ikat Celup,7,2.jpg,Batik Megamendung,0.8686015009880066,0
+73.jpg,Batik Ikat Celup,8,23.jpg,Batik Megamendung,0.8585860133171082,0
+73.jpg,Batik Ikat Celup,9,33.jpg,Batik Poleng,0.8447732925415039,0
+73.jpg,Batik Ikat Celup,10,17.jpg,Batik Poleng,0.8423615097999573,0
+74.jpg,Batik Ikat Celup,1,39.jpg,Batik Ikat Celup,0.9963472485542297,1
+74.jpg,Batik Ikat Celup,2,15.jpg,Batik Sekar Jagad,0.9524626731872559,0
+74.jpg,Batik Ikat Celup,3,29.jpg,Batik Insang,0.9523628950119019,0
+74.jpg,Batik Ikat Celup,4,45.jpg,Batik Tambal,0.9463679790496826,0
+74.jpg,Batik Ikat Celup,5,62.jpg,Batik Kawung,0.9447155594825745,0
+74.jpg,Batik Ikat Celup,6,29.jpg,Batik Geblek Renteng,0.9426949620246887,0
+74.jpg,Batik Ikat Celup,7,36.jpg,Batik Sekar Jagad,0.9380542039871216,0
+74.jpg,Batik Ikat Celup,8,26.jpg,Batik Parang,0.9350813627243042,0
+74.jpg,Batik Ikat Celup,9,23.jpg,Batik Insang,0.9293639063835144,0
+74.jpg,Batik Ikat Celup,10,23.jpg,Batik Lasem,0.9277265667915344,0
+75.jpg,Batik Ikat Celup,1,16.jpg,Batik Ikat Celup,0.9424951076507568,1
+75.jpg,Batik Ikat Celup,2,36.jpg,Batik Geblek Renteng,0.9394646883010864,0
+75.jpg,Batik Ikat Celup,3,6.jpg,Batik Cendrawasih,0.9377602934837341,0
+75.jpg,Batik Ikat Celup,4,41.jpg,Batik Ikat Celup,0.9368813037872314,1
+75.jpg,Batik Ikat Celup,5,24.jpg,Batik Dayak,0.9285154938697815,0
+75.jpg,Batik Ikat Celup,6,13.jpg,Batik Dayak,0.9216261506080627,0
+75.jpg,Batik Ikat Celup,7,56.jpg,Batik Betawi,0.9200558066368103,0
+75.jpg,Batik Ikat Celup,8,24.jpg,Batik Parang,0.9146937727928162,0
+75.jpg,Batik Ikat Celup,9,26.jpg,Batik Bali,0.9103390574455261,0
+75.jpg,Batik Ikat Celup,10,50.jpg,Batik Cendrawasih,0.9093261957168579,0
+76.jpg,Batik Ikat Celup,1,9.jpg,Batik Ikat Celup,0.9479069709777832,1
+76.jpg,Batik Ikat Celup,2,41.jpg,Batik Poleng,0.9457843899726868,0
+76.jpg,Batik Ikat Celup,3,59.jpg,Batik Bali,0.9437235593795776,0
+76.jpg,Batik Ikat Celup,4,44.jpg,Batik Pala,0.9405224323272705,0
+76.jpg,Batik Ikat Celup,5,38.jpg,Batik Sekar Jagad,0.9394350051879883,0
+76.jpg,Batik Ikat Celup,6,32.jpg,Batik Dayak,0.9393656849861145,0
+76.jpg,Batik Ikat Celup,7,33.jpg,Batik Geblek Renteng,0.9390166401863098,0
+76.jpg,Batik Ikat Celup,8,19.jpg,Batik Tambal,0.9365517497062683,0
+76.jpg,Batik Ikat Celup,9,53.jpg,Batik Megamendung,0.9329303503036499,0
+76.jpg,Batik Ikat Celup,10,68.jpg,Batik Poleng,0.9318782687187195,0
+77.jpg,Batik Ikat Celup,1,58.jpg,Batik Insang,0.9517917633056641,0
+77.jpg,Batik Ikat Celup,2,39.jpg,Batik Lasem,0.9487895965576172,0
+77.jpg,Batik Ikat Celup,3,37.jpg,Batik Tambal,0.9429830312728882,0
+77.jpg,Batik Ikat Celup,4,4.jpg,Batik Tambal,0.9415177702903748,0
+77.jpg,Batik Ikat Celup,5,55.jpg,Batik Cendrawasih,0.9389193058013916,0
+77.jpg,Batik Ikat Celup,6,47.jpg,Batik Sekar Jagad,0.9373620748519897,0
+77.jpg,Batik Ikat Celup,7,28.jpg,Batik Ikat Celup,0.9351509213447571,1
+77.jpg,Batik Ikat Celup,8,21.jpg,Batik Insang,0.9338361024856567,0
+77.jpg,Batik Ikat Celup,9,18.jpg,Batik Dayak,0.932280421257019,0
+77.jpg,Batik Ikat Celup,10,29.jpg,Batik Ikat Celup,0.9309637546539307,1
+78.jpg,Batik Ikat Celup,1,40.jpg,Batik Ikat Celup,0.9869126677513123,1
+78.jpg,Batik Ikat Celup,2,68.jpg,Batik Poleng,0.9842974543571472,0
+78.jpg,Batik Ikat Celup,3,43.jpg,Batik Poleng,0.9808491468429565,0
+78.jpg,Batik Ikat Celup,4,31.jpg,Batik Dayak,0.980279803276062,0
+78.jpg,Batik Ikat Celup,5,24.jpg,Batik Poleng,0.9792885184288025,0
+78.jpg,Batik Ikat Celup,6,0.jpg,Batik Tambal,0.9772493243217468,0
+78.jpg,Batik Ikat Celup,7,8.jpg,Batik Ikat Celup,0.9765370488166809,1
+78.jpg,Batik Ikat Celup,8,23.jpg,Batik Pala,0.975028932094574,0
+78.jpg,Batik Ikat Celup,9,60.jpg,Batik Cendrawasih,0.9748054146766663,0
+78.jpg,Batik Ikat Celup,10,59.jpg,Batik Bali,0.974294900894165,0
+79.jpg,Batik Ikat Celup,1,45.jpg,Batik Bali,0.924071192741394,0
+79.jpg,Batik Ikat Celup,2,30.jpg,Batik Betawi,0.9014120101928711,0
+79.jpg,Batik Ikat Celup,3,7.jpg,Batik Insang,0.8453917503356934,0
+79.jpg,Batik Ikat Celup,4,13.jpg,Batik Ikat Celup,0.8323639035224915,1
+79.jpg,Batik Ikat Celup,5,14.jpg,Batik Cendrawasih,0.828433632850647,0
+79.jpg,Batik Ikat Celup,6,18.jpg,Batik Betawi,0.8256894946098328,0
+79.jpg,Batik Ikat Celup,7,39.jpg,Batik Pala,0.825639009475708,0
+79.jpg,Batik Ikat Celup,8,34.jpg,Batik Betawi,0.8215240240097046,0
+79.jpg,Batik Ikat Celup,9,50.jpg,Batik Lasem,0.8203080892562866,0
+79.jpg,Batik Ikat Celup,10,51.jpg,Batik Kawung,0.8193337917327881,0
+81.jpg,Batik Ikat Celup,1,68.jpg,Batik Bali,0.9523268938064575,0
+81.jpg,Batik Ikat Celup,2,40.jpg,Batik Geblek Renteng,0.9397426843643188,0
+81.jpg,Batik Ikat Celup,3,64.jpg,Batik Sekar Jagad,0.9364647269248962,0
+81.jpg,Batik Ikat Celup,4,19.jpg,Batik Cendrawasih,0.931584358215332,0
+81.jpg,Batik Ikat Celup,5,63.jpg,Batik Sekar Jagad,0.9282649159431458,0
+81.jpg,Batik Ikat Celup,6,42.jpg,Batik Tambal,0.9256935119628906,0
+81.jpg,Batik Ikat Celup,7,17.jpg,Batik Cendrawasih,0.924359917640686,0
+81.jpg,Batik Ikat Celup,8,21.jpg,Batik Betawi,0.9238564968109131,0
+81.jpg,Batik Ikat Celup,9,16.jpg,Batik Dayak,0.9208880662918091,0
+81.jpg,Batik Ikat Celup,10,68.jpg,Batik Sekar Jagad,0.9204957485198975,0
+82.jpg,Batik Ikat Celup,1,21.jpg,Batik Sekar Jagad,0.884222686290741,0
+82.jpg,Batik Ikat Celup,2,19.jpg,Batik Ikat Celup,0.881199061870575,1
+82.jpg,Batik Ikat Celup,3,34.jpg,Batik Ikat Celup,0.8787557482719421,1
+82.jpg,Batik Ikat Celup,4,17.jpg,Batik Bali,0.8750966787338257,0
+82.jpg,Batik Ikat Celup,5,58.jpg,Batik Kawung,0.8737951517105103,0
+82.jpg,Batik Ikat Celup,6,52.jpg,Batik Megamendung,0.8725371956825256,0
+82.jpg,Batik Ikat Celup,7,19.jpg,Batik Kawung,0.8709424734115601,0
+82.jpg,Batik Ikat Celup,8,10.jpg,Batik Kawung,0.8677595853805542,0
+82.jpg,Batik Ikat Celup,9,18.jpg,Batik Parang,0.8664248585700989,0
+82.jpg,Batik Ikat Celup,10,8.jpg,Batik Kawung,0.8661461472511292,0
+83.jpg,Batik Ikat Celup,1,45.jpg,Batik Ikat Celup,0.999022901058197,1
+83.jpg,Batik Ikat Celup,2,65.jpg,Batik Lasem,0.9352714419364929,0
+83.jpg,Batik Ikat Celup,3,46.jpg,Batik Betawi,0.9329847693443298,0
+83.jpg,Batik Ikat Celup,4,5.jpg,Batik Bali,0.9276815056800842,0
+83.jpg,Batik Ikat Celup,5,18.jpg,Batik Tambal,0.9235326647758484,0
+83.jpg,Batik Ikat Celup,6,21.jpg,Batik Sekar Jagad,0.9146803021430969,0
+83.jpg,Batik Ikat Celup,7,21.jpg,Batik Tambal,0.912172794342041,0
+83.jpg,Batik Ikat Celup,8,35.jpg,Batik Ikat Celup,0.9103888273239136,1
+83.jpg,Batik Ikat Celup,9,56.jpg,Batik Dayak,0.905979573726654,0
+83.jpg,Batik Ikat Celup,10,41.jpg,Batik Cendrawasih,0.8985474705696106,0
+84.jpg,Batik Ikat Celup,1,22.jpg,Batik Dayak,0.9363770484924316,0
+84.jpg,Batik Ikat Celup,2,40.jpg,Batik Geblek Renteng,0.9284787178039551,0
+84.jpg,Batik Ikat Celup,3,24.jpg,Batik Betawi,0.9167597889900208,0
+84.jpg,Batik Ikat Celup,4,56.jpg,Batik Kawung,0.9154379963874817,0
+84.jpg,Batik Ikat Celup,5,0.jpg,Batik Cendrawasih,0.9133337140083313,0
+84.jpg,Batik Ikat Celup,6,53.jpg,Batik Geblek Renteng,0.9104000329971313,0
+84.jpg,Batik Ikat Celup,7,66.jpg,Batik Bali,0.9094433188438416,0
+84.jpg,Batik Ikat Celup,8,63.jpg,Batik Tambal,0.9088664650917053,0
+84.jpg,Batik Ikat Celup,9,34.jpg,Batik Parang,0.9079156517982483,0
+84.jpg,Batik Ikat Celup,10,61.jpg,Batik Geblek Renteng,0.9075741767883301,0
+85.jpg,Batik Ikat Celup,1,36.jpg,Batik Geblek Renteng,0.980589747428894,0
+85.jpg,Batik Ikat Celup,2,6.jpg,Batik Cendrawasih,0.9402411580085754,0
+85.jpg,Batik Ikat Celup,3,4.jpg,Batik Parang,0.9381884932518005,0
+85.jpg,Batik Ikat Celup,4,41.jpg,Batik Ikat Celup,0.9331419467926025,1
+85.jpg,Batik Ikat Celup,5,10.jpg,Batik Ikat Celup,0.9314877986907959,1
+85.jpg,Batik Ikat Celup,6,48.jpg,Batik Poleng,0.9236880540847778,0
+85.jpg,Batik Ikat Celup,7,12.jpg,Batik Cendrawasih,0.9179179668426514,0
+85.jpg,Batik Ikat Celup,8,26.jpg,Batik Bali,0.9174044728279114,0
+85.jpg,Batik Ikat Celup,9,59.jpg,Batik Poleng,0.9167499542236328,0
+85.jpg,Batik Ikat Celup,10,32.jpg,Batik Poleng,0.9150135517120361,0
+86.jpg,Batik Ikat Celup,1,52.jpg,Batik Bali,0.9778837561607361,0
+86.jpg,Batik Ikat Celup,2,68.jpg,Batik Sekar Jagad,0.9773804545402527,0
+86.jpg,Batik Ikat Celup,3,64.jpg,Batik Sekar Jagad,0.976993203163147,0
+86.jpg,Batik Ikat Celup,4,54.jpg,Batik Betawi,0.9745914340019226,0
+86.jpg,Batik Ikat Celup,5,4.jpg,Batik Sekar Jagad,0.9745432138442993,0
+86.jpg,Batik Ikat Celup,6,45.jpg,Batik Geblek Renteng,0.9690760970115662,0
+86.jpg,Batik Ikat Celup,7,68.jpg,Batik Cendrawasih,0.9669946432113647,0
+86.jpg,Batik Ikat Celup,8,24.jpg,Batik Betawi,0.9656133055686951,0
+86.jpg,Batik Ikat Celup,9,4.jpg,Batik Bali,0.9646850228309631,0
+86.jpg,Batik Ikat Celup,10,24.jpg,Batik Cendrawasih,0.9625843167304993,0
+87.jpg,Batik Ikat Celup,1,28.jpg,Batik Betawi,0.9773378372192383,0
+87.jpg,Batik Ikat Celup,2,41.jpg,Batik Ikat Celup,0.9768049716949463,1
+87.jpg,Batik Ikat Celup,3,56.jpg,Batik Betawi,0.9761614203453064,0
+87.jpg,Batik Ikat Celup,4,69.jpg,Batik Bali,0.9715830087661743,0
+87.jpg,Batik Ikat Celup,5,50.jpg,Batik Cendrawasih,0.9661934971809387,0
+87.jpg,Batik Ikat Celup,6,65.jpg,Batik Betawi,0.9646021127700806,0
+87.jpg,Batik Ikat Celup,7,31.jpg,Batik Tambal,0.9638576507568359,0
+87.jpg,Batik Ikat Celup,8,42.jpg,Batik Bali,0.962792158126831,0
+87.jpg,Batik Ikat Celup,9,15.jpg,Batik Parang,0.9599613547325134,0
+87.jpg,Batik Ikat Celup,10,3.jpg,Batik Dayak,0.9588623642921448,0
+88.jpg,Batik Ikat Celup,1,60.jpg,Batik Pala,0.9250239729881287,0
+88.jpg,Batik Ikat Celup,2,37.jpg,Batik Parang,0.9217841625213623,0
+88.jpg,Batik Ikat Celup,3,4.jpg,Batik Betawi,0.9179782271385193,0
+88.jpg,Batik Ikat Celup,4,39.jpg,Batik Megamendung,0.9070665836334229,0
+88.jpg,Batik Ikat Celup,5,22.jpg,Batik Megamendung,0.9060761332511902,0
+88.jpg,Batik Ikat Celup,6,57.jpg,Batik Tambal,0.9003530144691467,0
+88.jpg,Batik Ikat Celup,7,54.jpg,Batik Megamendung,0.8971117734909058,0
+88.jpg,Batik Ikat Celup,8,38.jpg,Batik Megamendung,0.8901670575141907,0
+88.jpg,Batik Ikat Celup,9,35.jpg,Batik Betawi,0.8874828219413757,0
+88.jpg,Batik Ikat Celup,10,33.jpg,Batik Megamendung,0.8863727450370789,0
+89.jpg,Batik Ikat Celup,1,4.jpg,Batik Tambal,0.9513410329818726,0
+89.jpg,Batik Ikat Celup,2,58.jpg,Batik Insang,0.9442405700683594,0
+89.jpg,Batik Ikat Celup,3,26.jpg,Batik Sekar Jagad,0.9390360713005066,0
+89.jpg,Batik Ikat Celup,4,56.jpg,Batik Sekar Jagad,0.9386349320411682,0
+89.jpg,Batik Ikat Celup,5,17.jpg,Batik Sekar Jagad,0.9370625615119934,0
+89.jpg,Batik Ikat Celup,6,10.jpg,Batik Tambal,0.9369077682495117,0
+89.jpg,Batik Ikat Celup,7,37.jpg,Batik Sekar Jagad,0.9362149238586426,0
+89.jpg,Batik Ikat Celup,8,40.jpg,Batik Sekar Jagad,0.935723066329956,0
+89.jpg,Batik Ikat Celup,9,65.jpg,Batik Bali,0.9351247549057007,0
+89.jpg,Batik Ikat Celup,10,36.jpg,Batik Lasem,0.9339552521705627,0
+70.jpg,Batik Insang,1,68.jpg,Batik Lasem,0.9674157500267029,0
+70.jpg,Batik Insang,2,65.jpg,Batik Ikat Celup,0.9538832306861877,0
+70.jpg,Batik Insang,3,39.jpg,Batik Lasem,0.9520775079727173,0
+70.jpg,Batik Insang,4,61.jpg,Batik Ikat Celup,0.9503192901611328,0
+70.jpg,Batik Insang,5,34.jpg,Batik Tambal,0.9497665762901306,0
+70.jpg,Batik Insang,6,59.jpg,Batik Parang,0.9491101503372192,0
+70.jpg,Batik Insang,7,17.jpg,Batik Lasem,0.9477936029434204,0
+70.jpg,Batik Insang,8,52.jpg,Batik Ikat Celup,0.9469977021217346,0
+70.jpg,Batik Insang,9,11.jpg,Batik Tambal,0.9469020962715149,0
+70.jpg,Batik Insang,10,7.jpg,Batik Tambal,0.9414566159248352,0
+71.jpg,Batik Insang,1,17.jpg,Batik Insang,0.9650383591651917,1
+71.jpg,Batik Insang,2,7.jpg,Batik Cendrawasih,0.9526886343955994,0
+71.jpg,Batik Insang,3,56.jpg,Batik Insang,0.9509473443031311,1
+71.jpg,Batik Insang,4,4.jpg,Batik Tambal,0.9494211077690125,0
+71.jpg,Batik Insang,5,11.jpg,Batik Sekar Jagad,0.9488083124160767,0
+71.jpg,Batik Insang,6,2.jpg,Batik Poleng,0.9468201994895935,0
+71.jpg,Batik Insang,7,20.jpg,Batik Insang,0.9461207985877991,1
+71.jpg,Batik Insang,8,66.jpg,Batik Insang,0.9375874996185303,1
+71.jpg,Batik Insang,9,64.jpg,Batik Bali,0.9357648491859436,0
+71.jpg,Batik Insang,10,37.jpg,Batik Dayak,0.9352848529815674,0
+72.jpg,Batik Insang,1,62.jpg,Batik Cendrawasih,0.9351889491081238,0
+72.jpg,Batik Insang,2,57.jpg,Batik Pala,0.9343386292457581,0
+72.jpg,Batik Insang,3,67.jpg,Batik Cendrawasih,0.9317226409912109,0
+72.jpg,Batik Insang,4,24.jpg,Batik Sekar Jagad,0.9297001957893372,0
+72.jpg,Batik Insang,5,42.jpg,Batik Geblek Renteng,0.9242294430732727,0
+72.jpg,Batik Insang,6,28.jpg,Batik Sekar Jagad,0.9237775802612305,0
+72.jpg,Batik Insang,7,62.jpg,Batik Geblek Renteng,0.9184974431991577,0
+72.jpg,Batik Insang,8,48.jpg,Batik Sekar Jagad,0.9178541302680969,0
+72.jpg,Batik Insang,9,47.jpg,Batik Dayak,0.9175099730491638,0
+72.jpg,Batik Insang,10,22.jpg,Batik Lasem,0.913663923740387,0
+73.jpg,Batik Insang,1,22.jpg,Batik Insang,0.9858235120773315,1
+73.jpg,Batik Insang,2,52.jpg,Batik Insang,0.9734123945236206,1
+73.jpg,Batik Insang,3,69.jpg,Batik Kawung,0.9628052711486816,0
+73.jpg,Batik Insang,4,41.jpg,Batik Cendrawasih,0.9571363925933838,0
+73.jpg,Batik Insang,5,38.jpg,Batik Sekar Jagad,0.9534892439842224,0
+73.jpg,Batik Insang,6,65.jpg,Batik Lasem,0.9521552324295044,0
+73.jpg,Batik Insang,7,8.jpg,Batik Kawung,0.9519012570381165,0
+73.jpg,Batik Insang,8,40.jpg,Batik Kawung,0.9510771632194519,0
+73.jpg,Batik Insang,9,46.jpg,Batik Betawi,0.9504287838935852,0
+73.jpg,Batik Insang,10,9.jpg,Batik Ikat Celup,0.9457577466964722,0
+74.jpg,Batik Insang,1,42.jpg,Batik Ikat Celup,0.9601627588272095,0
+74.jpg,Batik Insang,2,62.jpg,Batik Kawung,0.958915650844574,0
+74.jpg,Batik Insang,3,65.jpg,Batik Dayak,0.9585854411125183,0
+74.jpg,Batik Insang,4,53.jpg,Batik Sekar Jagad,0.9567227959632874,0
+74.jpg,Batik Insang,5,58.jpg,Batik Sekar Jagad,0.9538682699203491,0
+74.jpg,Batik Insang,6,63.jpg,Batik Bali,0.9531632661819458,0
+74.jpg,Batik Insang,7,11.jpg,Batik Lasem,0.9517072439193726,0
+74.jpg,Batik Insang,8,21.jpg,Batik Lasem,0.9499171376228333,0
+74.jpg,Batik Insang,9,5.jpg,Batik Lasem,0.9492190480232239,0
+74.jpg,Batik Insang,10,11.jpg,Batik Tambal,0.9425296187400818,0
+75.jpg,Batik Insang,1,12.jpg,Batik Insang,0.9412294030189514,1
+75.jpg,Batik Insang,2,62.jpg,Batik Poleng,0.9052104353904724,0
+75.jpg,Batik Insang,3,14.jpg,Batik Insang,0.8825467228889465,1
+75.jpg,Batik Insang,4,52.jpg,Batik Parang,0.8765674829483032,0
+75.jpg,Batik Insang,5,26.jpg,Batik Bali,0.8734514117240906,0
+75.jpg,Batik Insang,6,28.jpg,Batik Betawi,0.8461390137672424,0
+75.jpg,Batik Insang,7,59.jpg,Batik Poleng,0.8400136232376099,0
+75.jpg,Batik Insang,8,24.jpg,Batik Parang,0.8399804830551147,0
+75.jpg,Batik Insang,9,36.jpg,Batik Geblek Renteng,0.8347923159599304,0
+75.jpg,Batik Insang,10,41.jpg,Batik Ikat Celup,0.8347837328910828,0
+76.jpg,Batik Insang,1,33.jpg,Batik Tambal,0.9671056270599365,0
+76.jpg,Batik Insang,2,28.jpg,Batik Dayak,0.9358864426612854,0
+76.jpg,Batik Insang,3,32.jpg,Batik Dayak,0.9320990443229675,0
+76.jpg,Batik Insang,4,29.jpg,Batik Insang,0.9280651211738586,1
+76.jpg,Batik Insang,5,57.jpg,Batik Parang,0.9278749823570251,0
+76.jpg,Batik Insang,6,41.jpg,Batik Poleng,0.9235008955001831,0
+76.jpg,Batik Insang,7,26.jpg,Batik Parang,0.9231163263320923,0
+76.jpg,Batik Insang,8,9.jpg,Batik Ikat Celup,0.9224416017532349,0
+76.jpg,Batik Insang,9,26.jpg,Batik Insang,0.9213660359382629,1
+76.jpg,Batik Insang,10,9.jpg,Batik Kawung,0.9126680493354797,0
+77.jpg,Batik Insang,1,22.jpg,Batik Sekar Jagad,0.8792111277580261,0
+77.jpg,Batik Insang,2,67.jpg,Batik Lasem,0.8758730292320251,0
+77.jpg,Batik Insang,3,25.jpg,Batik Sekar Jagad,0.8749443292617798,0
+77.jpg,Batik Insang,4,66.jpg,Batik Sekar Jagad,0.8677526116371155,0
+77.jpg,Batik Insang,5,9.jpg,Batik Dayak,0.8619044423103333,0
+77.jpg,Batik Insang,6,48.jpg,Batik Pala,0.8587947487831116,0
+77.jpg,Batik Insang,7,44.jpg,Batik Betawi,0.8452300429344177,0
+77.jpg,Batik Insang,8,57.jpg,Batik Insang,0.8376980423927307,1
+77.jpg,Batik Insang,9,7.jpg,Batik Cendrawasih,0.8356797099113464,0
+77.jpg,Batik Insang,10,44.jpg,Batik Tambal,0.833150327205658,0
+78.jpg,Batik Insang,1,34.jpg,Batik Insang,0.9768994450569153,1
+78.jpg,Batik Insang,2,15.jpg,Batik Dayak,0.9703007340431213,0
+78.jpg,Batik Insang,3,50.jpg,Batik Poleng,0.9693710207939148,0
+78.jpg,Batik Insang,4,39.jpg,Batik Kawung,0.9690344929695129,0
+78.jpg,Batik Insang,5,46.jpg,Batik Dayak,0.9683150053024292,0
+78.jpg,Batik Insang,6,68.jpg,Batik Megamendung,0.9681028127670288,0
+78.jpg,Batik Insang,7,9.jpg,Batik Cendrawasih,0.9672752618789673,0
+78.jpg,Batik Insang,8,21.jpg,Batik Megamendung,0.9517993330955505,0
+78.jpg,Batik Insang,9,54.jpg,Batik Insang,0.9449306726455688,1
+78.jpg,Batik Insang,10,15.jpg,Batik Poleng,0.9438349008560181,0
+79.jpg,Batik Insang,1,4.jpg,Batik Tambal,0.9692354202270508,0
+79.jpg,Batik Insang,2,36.jpg,Batik Ikat Celup,0.9650296568870544,0
+79.jpg,Batik Insang,3,17.jpg,Batik Insang,0.9505882263183594,1
+79.jpg,Batik Insang,4,45.jpg,Batik Geblek Renteng,0.9502204060554504,0
+79.jpg,Batik Insang,5,44.jpg,Batik Poleng,0.950133740901947,0
+79.jpg,Batik Insang,6,67.jpg,Batik Betawi,0.9477745890617371,0
+79.jpg,Batik Insang,7,11.jpg,Batik Sekar Jagad,0.9469689726829529,0
+79.jpg,Batik Insang,8,68.jpg,Batik Cendrawasih,0.9450391530990601,0
+79.jpg,Batik Insang,9,36.jpg,Batik Lasem,0.9446726441383362,0
+79.jpg,Batik Insang,10,7.jpg,Batik Tambal,0.9431372284889221,0
+80.jpg,Batik Insang,1,54.jpg,Batik Megamendung,0.934811532497406,0
+80.jpg,Batik Insang,2,44.jpg,Batik Megamendung,0.934009850025177,0
+80.jpg,Batik Insang,3,30.jpg,Batik Tambal,0.933186411857605,0
+80.jpg,Batik Insang,4,39.jpg,Batik Megamendung,0.9307339191436768,0
+80.jpg,Batik Insang,5,50.jpg,Batik Betawi,0.9284260869026184,0
+80.jpg,Batik Insang,6,61.jpg,Batik Bali,0.9231996536254883,0
+80.jpg,Batik Insang,7,52.jpg,Batik Bali,0.919017493724823,0
+80.jpg,Batik Insang,8,62.jpg,Batik Sekar Jagad,0.9159641861915588,0
+80.jpg,Batik Insang,9,60.jpg,Batik Sekar Jagad,0.9146789312362671,0
+80.jpg,Batik Insang,10,13.jpg,Batik Lasem,0.9113027453422546,0
+81.jpg,Batik Insang,1,37.jpg,Batik Betawi,0.9245737195014954,0
+81.jpg,Batik Insang,2,47.jpg,Batik Geblek Renteng,0.9240909218788147,0
+81.jpg,Batik Insang,3,16.jpg,Batik Poleng,0.9196677207946777,0
+81.jpg,Batik Insang,4,9.jpg,Batik Geblek Renteng,0.9182440638542175,0
+81.jpg,Batik Insang,5,19.jpg,Batik Geblek Renteng,0.913754940032959,0
+81.jpg,Batik Insang,6,56.jpg,Batik Bali,0.9133931994438171,0
+81.jpg,Batik Insang,7,22.jpg,Batik Pala,0.9126644730567932,0
+81.jpg,Batik Insang,8,17.jpg,Batik Insang,0.9073728919029236,1
+81.jpg,Batik Insang,9,55.jpg,Batik Megamendung,0.9044806361198425,0
+81.jpg,Batik Insang,10,22.jpg,Batik Megamendung,0.9034109115600586,0
+82.jpg,Batik Insang,1,68.jpg,Batik Lasem,0.95550537109375,0
+82.jpg,Batik Insang,2,60.jpg,Batik Sekar Jagad,0.9512351751327515,0
+82.jpg,Batik Insang,3,59.jpg,Batik Parang,0.9500373005867004,0
+82.jpg,Batik Insang,4,11.jpg,Batik Tambal,0.9477472901344299,0
+82.jpg,Batik Insang,5,23.jpg,Batik Kawung,0.9456380605697632,0
+82.jpg,Batik Insang,6,17.jpg,Batik Lasem,0.9415670037269592,0
+82.jpg,Batik Insang,7,45.jpg,Batik Poleng,0.9363763332366943,0
+82.jpg,Batik Insang,8,26.jpg,Batik Kawung,0.9361839890480042,0
+82.jpg,Batik Insang,9,13.jpg,Batik Lasem,0.9352954030036926,0
+82.jpg,Batik Insang,10,5.jpg,Batik Kawung,0.9285714030265808,0
+83.jpg,Batik Insang,1,54.jpg,Batik Ikat Celup,0.8118637800216675,0
+83.jpg,Batik Insang,2,26.jpg,Batik Cendrawasih,0.8085456490516663,0
+83.jpg,Batik Insang,3,52.jpg,Batik Cendrawasih,0.7955965995788574,0
+83.jpg,Batik Insang,4,38.jpg,Batik Geblek Renteng,0.7917847037315369,0
+83.jpg,Batik Insang,5,4.jpg,Batik Pala,0.7760589718818665,0
+83.jpg,Batik Insang,6,66.jpg,Batik Geblek Renteng,0.772526204586029,0
+83.jpg,Batik Insang,7,4.jpg,Batik Insang,0.7690901160240173,1
+83.jpg,Batik Insang,8,51.jpg,Batik Betawi,0.7677626013755798,0
+83.jpg,Batik Insang,9,41.jpg,Batik Geblek Renteng,0.7675492763519287,0
+83.jpg,Batik Insang,10,28.jpg,Batik Parang,0.7657696008682251,0
+84.jpg,Batik Insang,1,61.jpg,Batik Poleng,0.979651689529419,0
+84.jpg,Batik Insang,2,26.jpg,Batik Lasem,0.9778199195861816,0
+84.jpg,Batik Insang,3,15.jpg,Batik Tambal,0.9727374315261841,0
+84.jpg,Batik Insang,4,20.jpg,Batik Pala,0.9713711738586426,0
+84.jpg,Batik Insang,5,15.jpg,Batik Betawi,0.9709222316741943,0
+84.jpg,Batik Insang,6,68.jpg,Batik Tambal,0.9705374240875244,0
+84.jpg,Batik Insang,7,28.jpg,Batik Tambal,0.9692049026489258,0
+84.jpg,Batik Insang,8,54.jpg,Batik Cendrawasih,0.9681420922279358,0
+84.jpg,Batik Insang,9,37.jpg,Batik Geblek Renteng,0.9656835198402405,0
+84.jpg,Batik Insang,10,15.jpg,Batik Insang,0.9640185236930847,1
+85.jpg,Batik Insang,1,25.jpg,Batik Poleng,0.9700763821601868,0
+85.jpg,Batik Insang,2,9.jpg,Batik Kawung,0.9600276947021484,0
+85.jpg,Batik Insang,3,40.jpg,Batik Poleng,0.9564163088798523,0
+85.jpg,Batik Insang,4,53.jpg,Batik Cendrawasih,0.9543601870536804,0
+85.jpg,Batik Insang,5,11.jpg,Batik Ikat Celup,0.9437789916992188,0
+85.jpg,Batik Insang,6,9.jpg,Batik Ikat Celup,0.9420046806335449,0
+85.jpg,Batik Insang,7,29.jpg,Batik Cendrawasih,0.9406825304031372,0
+85.jpg,Batik Insang,8,26.jpg,Batik Insang,0.9378682374954224,1
+85.jpg,Batik Insang,9,56.jpg,Batik Cendrawasih,0.9338846206665039,0
+85.jpg,Batik Insang,10,45.jpg,Batik Dayak,0.931087851524353,0
+86.jpg,Batik Insang,1,3.jpg,Batik Dayak,0.955874502658844,0
+86.jpg,Batik Insang,2,38.jpg,Batik Bali,0.9485450387001038,0
+86.jpg,Batik Insang,3,30.jpg,Batik Poleng,0.9465838670730591,0
+86.jpg,Batik Insang,4,16.jpg,Batik Betawi,0.9440199136734009,0
+86.jpg,Batik Insang,5,39.jpg,Batik Parang,0.943926215171814,0
+86.jpg,Batik Insang,6,20.jpg,Batik Cendrawasih,0.9426736831665039,0
+86.jpg,Batik Insang,7,30.jpg,Batik Dayak,0.9419965147972107,0
+86.jpg,Batik Insang,8,25.jpg,Batik Dayak,0.9391992688179016,0
+86.jpg,Batik Insang,9,41.jpg,Batik Ikat Celup,0.9353635311126709,0
+86.jpg,Batik Insang,10,17.jpg,Batik Dayak,0.9332513213157654,0
+87.jpg,Batik Insang,1,17.jpg,Batik Lasem,0.8933783769607544,0
+87.jpg,Batik Insang,2,9.jpg,Batik Insang,0.8775993585586548,1
+87.jpg,Batik Insang,3,43.jpg,Batik Parang,0.8740196824073792,0
+87.jpg,Batik Insang,4,34.jpg,Batik Tambal,0.8718788623809814,0
+87.jpg,Batik Insang,5,68.jpg,Batik Lasem,0.8660100698471069,0
+87.jpg,Batik Insang,6,58.jpg,Batik Poleng,0.8594084978103638,0
+87.jpg,Batik Insang,7,24.jpg,Batik Pala,0.8590672016143799,0
+87.jpg,Batik Insang,8,7.jpg,Batik Tambal,0.8510909080505371,0
+87.jpg,Batik Insang,9,13.jpg,Batik Lasem,0.84962397813797,0
+87.jpg,Batik Insang,10,59.jpg,Batik Parang,0.8485032916069031,0
+88.jpg,Batik Insang,1,39.jpg,Batik Bali,0.9801671504974365,0
+88.jpg,Batik Insang,2,12.jpg,Batik Geblek Renteng,0.9773334264755249,0
+88.jpg,Batik Insang,3,29.jpg,Batik Dayak,0.9693849086761475,0
+88.jpg,Batik Insang,4,6.jpg,Batik Geblek Renteng,0.9686024785041809,0
+88.jpg,Batik Insang,5,11.jpg,Batik Geblek Renteng,0.968116283416748,0
+88.jpg,Batik Insang,6,21.jpg,Batik Cendrawasih,0.9658400416374207,0
+88.jpg,Batik Insang,7,65.jpg,Batik Betawi,0.9651387333869934,0
+88.jpg,Batik Insang,8,39.jpg,Batik Cendrawasih,0.9636070728302002,0
+88.jpg,Batik Insang,9,62.jpg,Batik Megamendung,0.9622841477394104,0
+88.jpg,Batik Insang,10,48.jpg,Batik Insang,0.9575969576835632,1
+89.jpg,Batik Insang,1,25.jpg,Batik Poleng,0.9915228486061096,0
+89.jpg,Batik Insang,2,9.jpg,Batik Kawung,0.9720578193664551,0
+89.jpg,Batik Insang,3,53.jpg,Batik Cendrawasih,0.9651750922203064,0
+89.jpg,Batik Insang,4,11.jpg,Batik Ikat Celup,0.9621815085411072,0
+89.jpg,Batik Insang,5,40.jpg,Batik Poleng,0.9603368639945984,0
+89.jpg,Batik Insang,6,64.jpg,Batik Pala,0.9541065692901611,0
+89.jpg,Batik Insang,7,1.jpg,Batik Kawung,0.9532155394554138,0
+89.jpg,Batik Insang,8,9.jpg,Batik Ikat Celup,0.9521543979644775,0
+89.jpg,Batik Insang,9,52.jpg,Batik Sekar Jagad,0.9509597420692444,0
+89.jpg,Batik Insang,10,6.jpg,Batik Megamendung,0.950630247592926,0
+70.jpg,Batik Kawung,1,54.jpg,Batik Kawung,0.997555673122406,1
+70.jpg,Batik Kawung,2,36.jpg,Batik Kawung,0.9962618350982666,1
+70.jpg,Batik Kawung,3,3.jpg,Batik Parang,0.9184128046035767,0
+70.jpg,Batik Kawung,4,1.jpg,Batik Poleng,0.8983187675476074,0
+70.jpg,Batik Kawung,5,47.jpg,Batik Insang,0.8034310936927795,0
+70.jpg,Batik Kawung,6,19.jpg,Batik Parang,0.7918538451194763,0
+70.jpg,Batik Kawung,7,5.jpg,Batik Betawi,0.7876079678535461,0
+70.jpg,Batik Kawung,8,49.jpg,Batik Parang,0.78403240442276,0
+70.jpg,Batik Kawung,9,30.jpg,Batik Cendrawasih,0.7819235920906067,0
+70.jpg,Batik Kawung,10,5.jpg,Batik Bali,0.7765825390815735,0
+71.jpg,Batik Kawung,1,52.jpg,Batik Pala,0.9434399604797363,0
+71.jpg,Batik Kawung,2,7.jpg,Batik Poleng,0.9414952993392944,0
+71.jpg,Batik Kawung,3,66.jpg,Batik Lasem,0.9381026029586792,0
+71.jpg,Batik Kawung,4,60.jpg,Batik Dayak,0.9172500371932983,0
+71.jpg,Batik Kawung,5,26.jpg,Batik Kawung,0.9000512957572937,1
+71.jpg,Batik Kawung,6,17.jpg,Batik Kawung,0.8980770707130432,1
+71.jpg,Batik Kawung,7,19.jpg,Batik Poleng,0.8971996307373047,0
+71.jpg,Batik Kawung,8,67.jpg,Batik Kawung,0.8826849460601807,1
+71.jpg,Batik Kawung,9,45.jpg,Batik Pala,0.8823954463005066,0
+71.jpg,Batik Kawung,10,5.jpg,Batik Kawung,0.8739524483680725,1
+72.jpg,Batik Kawung,1,25.jpg,Batik Poleng,0.9594370126724243,0
+72.jpg,Batik Kawung,2,34.jpg,Batik Cendrawasih,0.952941358089447,0
+72.jpg,Batik Kawung,3,65.jpg,Batik Bali,0.947397768497467,0
+72.jpg,Batik Kawung,4,33.jpg,Batik Cendrawasih,0.9466559886932373,0
+72.jpg,Batik Kawung,5,45.jpg,Batik Kawung,0.9442890286445618,1
+72.jpg,Batik Kawung,6,64.jpg,Batik Pala,0.9429599046707153,0
+72.jpg,Batik Kawung,7,6.jpg,Batik Megamendung,0.9387350082397461,0
+72.jpg,Batik Kawung,8,11.jpg,Batik Ikat Celup,0.935513436794281,0
+72.jpg,Batik Kawung,9,21.jpg,Batik Geblek Renteng,0.9345419406890869,0
+72.jpg,Batik Kawung,10,36.jpg,Batik Pala,0.9328827857971191,0
+73.jpg,Batik Kawung,1,64.jpg,Batik Tambal,0.9659170508384705,0
+73.jpg,Batik Kawung,2,3.jpg,Batik Poleng,0.9369654655456543,0
+73.jpg,Batik Kawung,3,65.jpg,Batik Bali,0.9294225573539734,0
+73.jpg,Batik Kawung,4,17.jpg,Batik Sekar Jagad,0.9276831746101379,0
+73.jpg,Batik Kawung,5,58.jpg,Batik Insang,0.9273161888122559,0
+73.jpg,Batik Kawung,6,10.jpg,Batik Tambal,0.9267829060554504,0
+73.jpg,Batik Kawung,7,40.jpg,Batik Sekar Jagad,0.9252511262893677,0
+73.jpg,Batik Kawung,8,26.jpg,Batik Sekar Jagad,0.9239897131919861,0
+73.jpg,Batik Kawung,9,7.jpg,Batik Bali,0.9239760637283325,0
+73.jpg,Batik Kawung,10,9.jpg,Batik Tambal,0.9203779101371765,0
+74.jpg,Batik Kawung,1,37.jpg,Batik Betawi,0.9544199109077454,0
+74.jpg,Batik Kawung,2,13.jpg,Batik Betawi,0.92556232213974,0
+74.jpg,Batik Kawung,3,20.jpg,Batik Bali,0.9201949834823608,0
+74.jpg,Batik Kawung,4,1.jpg,Batik Tambal,0.9177436232566833,0
+74.jpg,Batik Kawung,5,3.jpg,Batik Cendrawasih,0.9166426658630371,0
+74.jpg,Batik Kawung,6,51.jpg,Batik Dayak,0.9162822365760803,0
+74.jpg,Batik Kawung,7,49.jpg,Batik Betawi,0.9153308868408203,0
+74.jpg,Batik Kawung,8,30.jpg,Batik Tambal,0.9126124382019043,0
+74.jpg,Batik Kawung,9,64.jpg,Batik Dayak,0.9112824201583862,0
+74.jpg,Batik Kawung,10,33.jpg,Batik Megamendung,0.9077902436256409,0
+75.jpg,Batik Kawung,1,26.jpg,Batik Parang,0.9545902013778687,0
+75.jpg,Batik Kawung,2,41.jpg,Batik Tambal,0.9428473114967346,0
+75.jpg,Batik Kawung,3,52.jpg,Batik Sekar Jagad,0.9341321587562561,0
+75.jpg,Batik Kawung,4,25.jpg,Batik Kawung,0.9270830154418945,1
+75.jpg,Batik Kawung,5,35.jpg,Batik Sekar Jagad,0.9264800548553467,0
+75.jpg,Batik Kawung,6,9.jpg,Batik Kawung,0.9254195094108582,1
+75.jpg,Batik Kawung,7,21.jpg,Batik Sekar Jagad,0.9231564402580261,0
+75.jpg,Batik Kawung,8,29.jpg,Batik Insang,0.9219469428062439,0
+75.jpg,Batik Kawung,9,53.jpg,Batik Cendrawasih,0.9214630722999573,0
+75.jpg,Batik Kawung,10,49.jpg,Batik Tambal,0.915555477142334,0
+76.jpg,Batik Kawung,1,50.jpg,Batik Ikat Celup,0.9816189408302307,0
+76.jpg,Batik Kawung,2,26.jpg,Batik Sekar Jagad,0.9749270081520081,0
+76.jpg,Batik Kawung,3,20.jpg,Batik Tambal,0.9702616930007935,0
+76.jpg,Batik Kawung,4,37.jpg,Batik Sekar Jagad,0.9668772220611572,0
+76.jpg,Batik Kawung,5,3.jpg,Batik Poleng,0.9668186902999878,0
+76.jpg,Batik Kawung,6,10.jpg,Batik Geblek Renteng,0.9634464979171753,0
+76.jpg,Batik Kawung,7,20.jpg,Batik Pala,0.9631399512290955,0
+76.jpg,Batik Kawung,8,9.jpg,Batik Tambal,0.9627031087875366,0
+76.jpg,Batik Kawung,9,50.jpg,Batik Tambal,0.9619542360305786,0
+76.jpg,Batik Kawung,10,26.jpg,Batik Lasem,0.9608146548271179,0
+77.jpg,Batik Kawung,1,43.jpg,Batik Geblek Renteng,0.9942219257354736,0
+77.jpg,Batik Kawung,2,13.jpg,Batik Geblek Renteng,0.9916006326675415,0
+77.jpg,Batik Kawung,3,62.jpg,Batik Tambal,0.9890542030334473,0
+77.jpg,Batik Kawung,4,47.jpg,Batik Cendrawasih,0.9842686653137207,0
+77.jpg,Batik Kawung,5,36.jpg,Batik Megamendung,0.9797993302345276,0
+77.jpg,Batik Kawung,6,38.jpg,Batik Cendrawasih,0.9782090783119202,0
+77.jpg,Batik Kawung,7,11.jpg,Batik Geblek Renteng,0.9775977730751038,0
+77.jpg,Batik Kawung,8,69.jpg,Batik Bali,0.9750029444694519,0
+77.jpg,Batik Kawung,9,65.jpg,Batik Cendrawasih,0.9748400449752808,0
+77.jpg,Batik Kawung,10,12.jpg,Batik Geblek Renteng,0.9737915992736816,0
+78.jpg,Batik Kawung,1,1.jpg,Batik Parang,0.9659301042556763,0
+78.jpg,Batik Kawung,2,65.jpg,Batik Lasem,0.938583493232727,0
+78.jpg,Batik Kawung,3,46.jpg,Batik Betawi,0.9362492561340332,0
+78.jpg,Batik Kawung,4,52.jpg,Batik Insang,0.9358109831809998,0
+78.jpg,Batik Kawung,5,25.jpg,Batik Bali,0.9228164553642273,0
+78.jpg,Batik Kawung,6,28.jpg,Batik Bali,0.9219267964363098,0
+78.jpg,Batik Kawung,7,38.jpg,Batik Sekar Jagad,0.9101866483688354,0
+78.jpg,Batik Kawung,8,22.jpg,Batik Insang,0.9083693027496338,0
+78.jpg,Batik Kawung,9,37.jpg,Batik Bali,0.9078529477119446,0
+78.jpg,Batik Kawung,10,16.jpg,Batik Kawung,0.9049903154373169,1
+79.jpg,Batik Kawung,1,58.jpg,Batik Parang,0.9546769857406616,0
+79.jpg,Batik Kawung,2,52.jpg,Batik Betawi,0.952779233455658,0
+79.jpg,Batik Kawung,3,6.jpg,Batik Kawung,0.9526820778846741,1
+79.jpg,Batik Kawung,4,53.jpg,Batik Kawung,0.9364720582962036,1
+79.jpg,Batik Kawung,5,27.jpg,Batik Kawung,0.9351762533187866,1
+79.jpg,Batik Kawung,6,45.jpg,Batik Dayak,0.9339116215705872,0
+79.jpg,Batik Kawung,7,43.jpg,Batik Kawung,0.9324337840080261,1
+79.jpg,Batik Kawung,8,8.jpg,Batik Kawung,0.9307307600975037,1
+79.jpg,Batik Kawung,9,52.jpg,Batik Megamendung,0.928280770778656,0
+79.jpg,Batik Kawung,10,42.jpg,Batik Parang,0.924310564994812,0
+80.jpg,Batik Kawung,1,21.jpg,Batik Geblek Renteng,0.9763718843460083,0
+80.jpg,Batik Kawung,2,5.jpg,Batik Geblek Renteng,0.9756543040275574,0
+80.jpg,Batik Kawung,3,59.jpg,Batik Bali,0.9612441658973694,0
+80.jpg,Batik Kawung,4,19.jpg,Batik Tambal,0.9589749574661255,0
+80.jpg,Batik Kawung,5,33.jpg,Batik Parang,0.9571473002433777,0
+80.jpg,Batik Kawung,6,64.jpg,Batik Pala,0.9542320370674133,0
+80.jpg,Batik Kawung,7,33.jpg,Batik Geblek Renteng,0.9502933621406555,0
+80.jpg,Batik Kawung,8,28.jpg,Batik Pala,0.9482507705688477,0
+80.jpg,Batik Kawung,9,69.jpg,Batik Kawung,0.9456124305725098,1
+80.jpg,Batik Kawung,10,63.jpg,Batik Poleng,0.9405754804611206,0
+81.jpg,Batik Kawung,1,19.jpg,Batik Tambal,0.9925041198730469,0
+81.jpg,Batik Kawung,2,59.jpg,Batik Bali,0.9787088632583618,0
+81.jpg,Batik Kawung,3,5.jpg,Batik Geblek Renteng,0.9724454283714294,0
+81.jpg,Batik Kawung,4,21.jpg,Batik Geblek Renteng,0.9674779176712036,0
+81.jpg,Batik Kawung,5,44.jpg,Batik Pala,0.9655130505561829,0
+81.jpg,Batik Kawung,6,43.jpg,Batik Poleng,0.9535264372825623,0
+81.jpg,Batik Kawung,7,33.jpg,Batik Parang,0.9525063037872314,0
+81.jpg,Batik Kawung,8,28.jpg,Batik Pala,0.9523971676826477,0
+81.jpg,Batik Kawung,9,64.jpg,Batik Pala,0.9510740637779236,0
+81.jpg,Batik Kawung,10,33.jpg,Batik Geblek Renteng,0.9448975324630737,0
+82.jpg,Batik Kawung,1,23.jpg,Batik Geblek Renteng,0.9515814781188965,0
+82.jpg,Batik Kawung,2,40.jpg,Batik Cendrawasih,0.9504057168960571,0
+82.jpg,Batik Kawung,3,24.jpg,Batik Betawi,0.9457658529281616,0
+82.jpg,Batik Kawung,4,5.jpg,Batik Sekar Jagad,0.9441825747489929,0
+82.jpg,Batik Kawung,5,24.jpg,Batik Lasem,0.9412968754768372,0
+82.jpg,Batik Kawung,6,0.jpg,Batik Cendrawasih,0.9404079914093018,0
+82.jpg,Batik Kawung,7,47.jpg,Batik Kawung,0.9389131665229797,1
+82.jpg,Batik Kawung,8,31.jpg,Batik Megamendung,0.9349963068962097,0
+82.jpg,Batik Kawung,9,34.jpg,Batik Parang,0.9348732233047485,0
+82.jpg,Batik Kawung,10,63.jpg,Batik Tambal,0.9317307472229004,0
+83.jpg,Batik Kawung,1,9.jpg,Batik Ikat Celup,0.9555936455726624,0
+83.jpg,Batik Kawung,2,41.jpg,Batik Poleng,0.9387045502662659,0
+83.jpg,Batik Kawung,3,69.jpg,Batik Kawung,0.9337239265441895,1
+83.jpg,Batik Kawung,4,38.jpg,Batik Sekar Jagad,0.9318545460700989,0
+83.jpg,Batik Kawung,5,62.jpg,Batik Dayak,0.9296441078186035,0
+83.jpg,Batik Kawung,6,22.jpg,Batik Insang,0.9210013747215271,0
+83.jpg,Batik Kawung,7,33.jpg,Batik Geblek Renteng,0.9204397201538086,0
+83.jpg,Batik Kawung,8,40.jpg,Batik Kawung,0.9192522764205933,1
+83.jpg,Batik Kawung,9,48.jpg,Batik Bali,0.918609619140625,0
+83.jpg,Batik Kawung,10,52.jpg,Batik Insang,0.9133146405220032,0
+84.jpg,Batik Kawung,1,62.jpg,Batik Lasem,0.9666563868522644,0
+84.jpg,Batik Kawung,2,34.jpg,Batik Sekar Jagad,0.9602717757225037,0
+84.jpg,Batik Kawung,3,16.jpg,Batik Tambal,0.9577219486236572,0
+84.jpg,Batik Kawung,4,67.jpg,Batik Sekar Jagad,0.9570919275283813,0
+84.jpg,Batik Kawung,5,52.jpg,Batik Lasem,0.9524560570716858,0
+84.jpg,Batik Kawung,6,67.jpg,Batik Parang,0.945746123790741,0
+84.jpg,Batik Kawung,7,45.jpg,Batik Geblek Renteng,0.9443532228469849,0
+84.jpg,Batik Kawung,8,10.jpg,Batik Tambal,0.9399535059928894,0
+84.jpg,Batik Kawung,9,13.jpg,Batik Tambal,0.93874591588974,0
+84.jpg,Batik Kawung,10,36.jpg,Batik Ikat Celup,0.9368497729301453,0
+85.jpg,Batik Kawung,1,2.jpg,Batik Insang,0.8687729835510254,0
+85.jpg,Batik Kawung,2,34.jpg,Batik Kawung,0.8641337156295776,1
+85.jpg,Batik Kawung,3,8.jpg,Batik Dayak,0.8499769568443298,0
+85.jpg,Batik Kawung,4,51.jpg,Batik Insang,0.8223116397857666,0
+85.jpg,Batik Kawung,5,26.jpg,Batik Cendrawasih,0.820777952671051,0
+85.jpg,Batik Kawung,6,3.jpg,Batik Ikat Celup,0.8024144172668457,0
+85.jpg,Batik Kawung,7,26.jpg,Batik Insang,0.8012030124664307,0
+85.jpg,Batik Kawung,8,0.jpg,Batik Dayak,0.7883065342903137,0
+85.jpg,Batik Kawung,9,27.jpg,Batik Kawung,0.7870137691497803,1
+85.jpg,Batik Kawung,10,43.jpg,Batik Kawung,0.7857043743133545,1
+86.jpg,Batik Kawung,1,30.jpg,Batik Kawung,0.974206805229187,1
+86.jpg,Batik Kawung,2,27.jpg,Batik Cendrawasih,0.968873143196106,0
+86.jpg,Batik Kawung,3,57.jpg,Batik Kawung,0.9604142308235168,1
+86.jpg,Batik Kawung,4,15.jpg,Batik Dayak,0.9578075408935547,0
+86.jpg,Batik Kawung,5,21.jpg,Batik Megamendung,0.9548347592353821,0
+86.jpg,Batik Kawung,6,20.jpg,Batik Kawung,0.9519646167755127,1
+86.jpg,Batik Kawung,7,49.jpg,Batik Dayak,0.9311339259147644,0
+86.jpg,Batik Kawung,8,67.jpg,Batik Insang,0.9308979511260986,0
+86.jpg,Batik Kawung,9,15.jpg,Batik Poleng,0.9293519854545593,0
+86.jpg,Batik Kawung,10,60.jpg,Batik Kawung,0.927789568901062,1
+87.jpg,Batik Kawung,1,59.jpg,Batik Dayak,0.9596524238586426,0
+87.jpg,Batik Kawung,2,49.jpg,Batik Parang,0.9493489265441895,0
+87.jpg,Batik Kawung,3,12.jpg,Batik Bali,0.9428068995475769,0
+87.jpg,Batik Kawung,4,35.jpg,Batik Parang,0.9375904202461243,0
+87.jpg,Batik Kawung,5,36.jpg,Batik Parang,0.9355766773223877,0
+87.jpg,Batik Kawung,6,5.jpg,Batik Bali,0.9333752393722534,0
+87.jpg,Batik Kawung,7,34.jpg,Batik Bali,0.9329483509063721,0
+87.jpg,Batik Kawung,8,45.jpg,Batik Pala,0.9248723983764648,0
+87.jpg,Batik Kawung,9,46.jpg,Batik Betawi,0.9215041399002075,0
+87.jpg,Batik Kawung,10,27.jpg,Batik Megamendung,0.9203686118125916,0
+88.jpg,Batik Kawung,1,17.jpg,Batik Poleng,0.8899295926094055,0
+88.jpg,Batik Kawung,2,7.jpg,Batik Betawi,0.8896341323852539,0
+88.jpg,Batik Kawung,3,1.jpg,Batik Betawi,0.8840542435646057,0
+88.jpg,Batik Kawung,4,43.jpg,Batik Dayak,0.877865195274353,0
+88.jpg,Batik Kawung,5,44.jpg,Batik Ikat Celup,0.8698103427886963,0
+88.jpg,Batik Kawung,6,17.jpg,Batik Megamendung,0.8405892848968506,0
+88.jpg,Batik Kawung,7,0.jpg,Batik Poleng,0.8363750576972961,0
+88.jpg,Batik Kawung,8,57.jpg,Batik Geblek Renteng,0.8353410363197327,0
+88.jpg,Batik Kawung,9,33.jpg,Batik Poleng,0.8338677883148193,0
+88.jpg,Batik Kawung,10,48.jpg,Batik Ikat Celup,0.8260141015052795,0
+89.jpg,Batik Kawung,1,29.jpg,Batik Kawung,0.9853525757789612,1
+89.jpg,Batik Kawung,2,40.jpg,Batik Ikat Celup,0.9830601811408997,0
+89.jpg,Batik Kawung,3,59.jpg,Batik Bali,0.9770954847335815,0
+89.jpg,Batik Kawung,4,0.jpg,Batik Tambal,0.9734679460525513,0
+89.jpg,Batik Kawung,5,68.jpg,Batik Poleng,0.9679608941078186,0
+89.jpg,Batik Kawung,6,24.jpg,Batik Poleng,0.9654574394226074,0
+89.jpg,Batik Kawung,7,31.jpg,Batik Dayak,0.9650751948356628,0
+89.jpg,Batik Kawung,8,43.jpg,Batik Poleng,0.9650278687477112,0
+89.jpg,Batik Kawung,9,38.jpg,Batik Sekar Jagad,0.9647822380065918,0
+89.jpg,Batik Kawung,10,8.jpg,Batik Ikat Celup,0.9630577564239502,0
+70.jpg,Batik Lasem,1,64.jpg,Batik Poleng,0.9548581838607788,0
+70.jpg,Batik Lasem,2,7.jpg,Batik Poleng,0.9352172613143921,0
+70.jpg,Batik Lasem,3,66.jpg,Batik Lasem,0.9350259304046631,1
+70.jpg,Batik Lasem,4,52.jpg,Batik Pala,0.9207305908203125,0
+70.jpg,Batik Lasem,5,31.jpg,Batik Geblek Renteng,0.9044620394706726,0
+70.jpg,Batik Lasem,6,59.jpg,Batik Dayak,0.9032220840454102,0
+70.jpg,Batik Lasem,7,36.jpg,Batik Parang,0.8952088356018066,0
+70.jpg,Batik Lasem,8,62.jpg,Batik Poleng,0.8889688849449158,0
+70.jpg,Batik Lasem,9,32.jpg,Batik Insang,0.8886552453041077,0
+70.jpg,Batik Lasem,10,18.jpg,Batik Ikat Celup,0.8864802122116089,0
+71.jpg,Batik Lasem,1,27.jpg,Batik Sekar Jagad,0.8637340068817139,0
+71.jpg,Batik Lasem,2,14.jpg,Batik Sekar Jagad,0.8386253714561462,0
+71.jpg,Batik Lasem,3,43.jpg,Batik Sekar Jagad,0.8300052285194397,0
+71.jpg,Batik Lasem,4,14.jpg,Batik Lasem,0.8217195272445679,1
+71.jpg,Batik Lasem,5,46.jpg,Batik Lasem,0.8166448473930359,1
+71.jpg,Batik Lasem,6,30.jpg,Batik Lasem,0.8050844669342041,1
+71.jpg,Batik Lasem,7,31.jpg,Batik Insang,0.80190110206604,0
+71.jpg,Batik Lasem,8,57.jpg,Batik Lasem,0.7958474159240723,1
+71.jpg,Batik Lasem,9,55.jpg,Batik Lasem,0.7920382618904114,1
+71.jpg,Batik Lasem,10,12.jpg,Batik Dayak,0.7915019989013672,0
+72.jpg,Batik Lasem,1,19.jpg,Batik Lasem,0.9754026532173157,1
+72.jpg,Batik Lasem,2,55.jpg,Batik Kawung,0.9750354886054993,0
+72.jpg,Batik Lasem,3,13.jpg,Batik Tambal,0.9611520171165466,0
+72.jpg,Batik Lasem,4,54.jpg,Batik Geblek Renteng,0.9569088220596313,0
+72.jpg,Batik Lasem,5,7.jpg,Batik Bali,0.9505933523178101,0
+72.jpg,Batik Lasem,6,10.jpg,Batik Tambal,0.9453715682029724,0
+72.jpg,Batik Lasem,7,45.jpg,Batik Geblek Renteng,0.9398806095123291,0
+72.jpg,Batik Lasem,8,43.jpg,Batik Lasem,0.9344767928123474,1
+72.jpg,Batik Lasem,9,52.jpg,Batik Lasem,0.9319530129432678,1
+72.jpg,Batik Lasem,10,23.jpg,Batik Geblek Renteng,0.9226292371749878,0
+73.jpg,Batik Lasem,1,46.jpg,Batik Lasem,0.999984085559845,1
+73.jpg,Batik Lasem,2,32.jpg,Batik Cendrawasih,0.9397973418235779,0
+73.jpg,Batik Lasem,3,57.jpg,Batik Lasem,0.9381378293037415,1
+73.jpg,Batik Lasem,4,12.jpg,Batik Dayak,0.9309449195861816,0
+73.jpg,Batik Lasem,5,16.jpg,Batik Lasem,0.930433988571167,1
+73.jpg,Batik Lasem,6,6.jpg,Batik Lasem,0.9197776913642883,1
+73.jpg,Batik Lasem,7,49.jpg,Batik Tambal,0.9193437099456787,0
+73.jpg,Batik Lasem,8,41.jpg,Batik Tambal,0.9153095483779907,0
+73.jpg,Batik Lasem,9,45.jpg,Batik Bali,0.9114808440208435,0
+73.jpg,Batik Lasem,10,5.jpg,Batik Cendrawasih,0.9111448526382446,0
+74.jpg,Batik Lasem,1,45.jpg,Batik Tambal,0.9655525088310242,0
+74.jpg,Batik Lasem,2,15.jpg,Batik Sekar Jagad,0.9633094072341919,0
+74.jpg,Batik Lasem,3,23.jpg,Batik Lasem,0.9515808820724487,1
+74.jpg,Batik Lasem,4,29.jpg,Batik Insang,0.9500350952148438,0
+74.jpg,Batik Lasem,5,39.jpg,Batik Ikat Celup,0.9369020462036133,0
+74.jpg,Batik Lasem,6,53.jpg,Batik Sekar Jagad,0.9351063966751099,0
+74.jpg,Batik Lasem,7,65.jpg,Batik Dayak,0.9347835779190063,0
+74.jpg,Batik Lasem,8,58.jpg,Batik Sekar Jagad,0.9347321391105652,0
+74.jpg,Batik Lasem,9,48.jpg,Batik Lasem,0.9281606078147888,1
+74.jpg,Batik Lasem,10,26.jpg,Batik Parang,0.9221128225326538,0
+75.jpg,Batik Lasem,1,40.jpg,Batik Tambal,0.9223324060440063,0
+75.jpg,Batik Lasem,2,7.jpg,Batik Bali,0.9054287672042847,0
+75.jpg,Batik Lasem,3,13.jpg,Batik Tambal,0.899440348148346,0
+75.jpg,Batik Lasem,4,47.jpg,Batik Lasem,0.8971048593521118,1
+75.jpg,Batik Lasem,5,43.jpg,Batik Lasem,0.8947728276252747,1
+75.jpg,Batik Lasem,6,38.jpg,Batik Lasem,0.893195390701294,1
+75.jpg,Batik Lasem,7,64.jpg,Batik Tambal,0.8899538516998291,0
+75.jpg,Batik Lasem,8,24.jpg,Batik Tambal,0.8875371813774109,0
+75.jpg,Batik Lasem,9,23.jpg,Batik Sekar Jagad,0.883388102054596,0
+75.jpg,Batik Lasem,10,37.jpg,Batik Ikat Celup,0.8809980750083923,0
+76.jpg,Batik Lasem,1,32.jpg,Batik Poleng,0.9565656781196594,0
+76.jpg,Batik Lasem,2,10.jpg,Batik Ikat Celup,0.9564943909645081,0
+76.jpg,Batik Lasem,3,48.jpg,Batik Poleng,0.946997344493866,0
+76.jpg,Batik Lasem,4,34.jpg,Batik Parang,0.9406037926673889,0
+76.jpg,Batik Lasem,5,33.jpg,Batik Dayak,0.9391504526138306,0
+76.jpg,Batik Lasem,6,4.jpg,Batik Parang,0.9378044009208679,0
+76.jpg,Batik Lasem,7,40.jpg,Batik Pala,0.9341570138931274,0
+76.jpg,Batik Lasem,8,39.jpg,Batik Betawi,0.9335689544677734,0
+76.jpg,Batik Lasem,9,64.jpg,Batik Betawi,0.9320517778396606,0
+76.jpg,Batik Lasem,10,61.jpg,Batik Betawi,0.9302111268043518,0
+77.jpg,Batik Lasem,1,60.jpg,Batik Insang,0.9530786275863647,0
+77.jpg,Batik Lasem,2,13.jpg,Batik Cendrawasih,0.9515092372894287,0
+77.jpg,Batik Lasem,3,67.jpg,Batik Bali,0.9372962713241577,0
+77.jpg,Batik Lasem,4,45.jpg,Batik Sekar Jagad,0.9369205832481384,0
+77.jpg,Batik Lasem,5,18.jpg,Batik Kawung,0.9369122385978699,0
+77.jpg,Batik Lasem,6,43.jpg,Batik Sekar Jagad,0.931000292301178,0
+77.jpg,Batik Lasem,7,64.jpg,Batik Cendrawasih,0.9291645884513855,0
+77.jpg,Batik Lasem,8,14.jpg,Batik Sekar Jagad,0.9229724407196045,0
+77.jpg,Batik Lasem,9,14.jpg,Batik Bali,0.9227891564369202,0
+77.jpg,Batik Lasem,10,44.jpg,Batik Sekar Jagad,0.9183261394500732,0
+78.jpg,Batik Lasem,1,23.jpg,Batik Cendrawasih,0.9781569838523865,0
+78.jpg,Batik Lasem,2,35.jpg,Batik Tambal,0.9709240794181824,0
+78.jpg,Batik Lasem,3,63.jpg,Batik Tambal,0.9707772135734558,0
+78.jpg,Batik Lasem,4,24.jpg,Batik Lasem,0.9609726071357727,1
+78.jpg,Batik Lasem,5,66.jpg,Batik Bali,0.9589452147483826,0
+78.jpg,Batik Lasem,6,64.jpg,Batik Bali,0.9529252648353577,0
+78.jpg,Batik Lasem,7,31.jpg,Batik Megamendung,0.9525055885314941,0
+78.jpg,Batik Lasem,8,45.jpg,Batik Geblek Renteng,0.9523415565490723,0
+78.jpg,Batik Lasem,9,15.jpg,Batik Tambal,0.9445701241493225,0
+78.jpg,Batik Lasem,10,68.jpg,Batik Cendrawasih,0.9393680691719055,0
+79.jpg,Batik Lasem,1,8.jpg,Batik Betawi,0.9514563679695129,0
+79.jpg,Batik Lasem,2,3.jpg,Batik Lasem,0.9326170086860657,1
+79.jpg,Batik Lasem,3,5.jpg,Batik Pala,0.9287598133087158,0
+79.jpg,Batik Lasem,4,19.jpg,Batik Dayak,0.9187495112419128,0
+79.jpg,Batik Lasem,5,12.jpg,Batik Lasem,0.9139492511749268,1
+79.jpg,Batik Lasem,6,53.jpg,Batik Tambal,0.9055628776550293,0
+79.jpg,Batik Lasem,7,38.jpg,Batik Bali,0.903661847114563,0
+79.jpg,Batik Lasem,8,7.jpg,Batik Pala,0.8909119963645935,0
+79.jpg,Batik Lasem,9,17.jpg,Batik Tambal,0.8829712867736816,0
+79.jpg,Batik Lasem,10,43.jpg,Batik Cendrawasih,0.8768311142921448,0
+80.jpg,Batik Lasem,1,33.jpg,Batik Ikat Celup,0.9582723379135132,0
+80.jpg,Batik Lasem,2,12.jpg,Batik Pala,0.9539319276809692,0
+80.jpg,Batik Lasem,3,26.jpg,Batik Lasem,0.9400668144226074,1
+80.jpg,Batik Lasem,4,30.jpg,Batik Sekar Jagad,0.9375239610671997,0
+80.jpg,Batik Lasem,5,34.jpg,Batik Pala,0.9350641369819641,0
+80.jpg,Batik Lasem,6,47.jpg,Batik Lasem,0.9320403337478638,1
+80.jpg,Batik Lasem,7,35.jpg,Batik Geblek Renteng,0.930065929889679,0
+80.jpg,Batik Lasem,8,5.jpg,Batik Pala,0.9275881052017212,0
+80.jpg,Batik Lasem,9,38.jpg,Batik Lasem,0.9273751974105835,1
+80.jpg,Batik Lasem,10,40.jpg,Batik Sekar Jagad,0.9262306094169617,0
+81.jpg,Batik Lasem,1,55.jpg,Batik Lasem,0.9633757472038269,1
+81.jpg,Batik Lasem,2,34.jpg,Batik Sekar Jagad,0.9618872404098511,0
+81.jpg,Batik Lasem,3,3.jpg,Batik Betawi,0.9560977220535278,0
+81.jpg,Batik Lasem,4,16.jpg,Batik Tambal,0.9553778767585754,0
+81.jpg,Batik Lasem,5,43.jpg,Batik Sekar Jagad,0.9552133083343506,0
+81.jpg,Batik Lasem,6,54.jpg,Batik Lasem,0.9493470191955566,1
+81.jpg,Batik Lasem,7,14.jpg,Batik Sekar Jagad,0.9480234980583191,0
+81.jpg,Batik Lasem,8,25.jpg,Batik Lasem,0.9469547271728516,1
+81.jpg,Batik Lasem,9,13.jpg,Batik Cendrawasih,0.9455975890159607,0
+81.jpg,Batik Lasem,10,32.jpg,Batik Lasem,0.9434207677841187,1
+82.jpg,Batik Lasem,1,16.jpg,Batik Geblek Renteng,0.9270026087760925,0
+82.jpg,Batik Lasem,2,32.jpg,Batik Ikat Celup,0.9168936610221863,0
+82.jpg,Batik Lasem,3,68.jpg,Batik Betawi,0.9150333404541016,0
+82.jpg,Batik Lasem,4,12.jpg,Batik Megamendung,0.9149342775344849,0
+82.jpg,Batik Lasem,5,8.jpg,Batik Megamendung,0.9061619639396667,0
+82.jpg,Batik Lasem,6,29.jpg,Batik Lasem,0.8960825204849243,1
+82.jpg,Batik Lasem,7,25.jpg,Batik Betawi,0.8859783411026001,0
+82.jpg,Batik Lasem,8,62.jpg,Batik Insang,0.8615081906318665,0
+82.jpg,Batik Lasem,9,44.jpg,Batik Lasem,0.860069990158081,1
+82.jpg,Batik Lasem,10,33.jpg,Batik Ikat Celup,0.8561443090438843,0
+83.jpg,Batik Lasem,1,58.jpg,Batik Pala,0.9306877851486206,0
+83.jpg,Batik Lasem,2,45.jpg,Batik Ikat Celup,0.9103491306304932,0
+83.jpg,Batik Lasem,3,5.jpg,Batik Cendrawasih,0.8998275995254517,0
+83.jpg,Batik Lasem,4,12.jpg,Batik Dayak,0.8945207595825195,0
+83.jpg,Batik Lasem,5,44.jpg,Batik Lasem,0.8930395841598511,1
+83.jpg,Batik Lasem,6,25.jpg,Batik Megamendung,0.8909999132156372,0
+83.jpg,Batik Lasem,7,55.jpg,Batik Geblek Renteng,0.8895382285118103,0
+83.jpg,Batik Lasem,8,46.jpg,Batik Lasem,0.8861575722694397,1
+83.jpg,Batik Lasem,9,21.jpg,Batik Sekar Jagad,0.8835400938987732,0
+83.jpg,Batik Lasem,10,52.jpg,Batik Ikat Celup,0.8792809844017029,0
+84.jpg,Batik Lasem,1,30.jpg,Batik Sekar Jagad,0.9293877482414246,0
+84.jpg,Batik Lasem,2,23.jpg,Batik Sekar Jagad,0.9274117350578308,0
+84.jpg,Batik Lasem,3,42.jpg,Batik Geblek Renteng,0.9242239594459534,0
+84.jpg,Batik Lasem,4,13.jpg,Batik Ikat Celup,0.9231523275375366,0
+84.jpg,Batik Lasem,5,27.jpg,Batik Pala,0.9190620183944702,0
+84.jpg,Batik Lasem,6,35.jpg,Batik Geblek Renteng,0.91795814037323,0
+84.jpg,Batik Lasem,7,10.jpg,Batik Lasem,0.9141075015068054,1
+84.jpg,Batik Lasem,8,28.jpg,Batik Sekar Jagad,0.9080409407615662,0
+84.jpg,Batik Lasem,9,2.jpg,Batik Tambal,0.9073631763458252,0
+84.jpg,Batik Lasem,10,21.jpg,Batik Parang,0.9054995179176331,0
+85.jpg,Batik Lasem,1,47.jpg,Batik Pala,0.9247879981994629,0
+85.jpg,Batik Lasem,2,29.jpg,Batik Ikat Celup,0.914295494556427,0
+85.jpg,Batik Lasem,3,34.jpg,Batik Ikat Celup,0.9070807695388794,0
+85.jpg,Batik Lasem,4,37.jpg,Batik Sekar Jagad,0.9013239741325378,0
+85.jpg,Batik Lasem,5,26.jpg,Batik Sekar Jagad,0.8963934779167175,0
+85.jpg,Batik Lasem,6,37.jpg,Batik Tambal,0.8942556977272034,0
+85.jpg,Batik Lasem,7,21.jpg,Batik Insang,0.892907977104187,0
+85.jpg,Batik Lasem,8,30.jpg,Batik Insang,0.8881831765174866,0
+85.jpg,Batik Lasem,9,18.jpg,Batik Pala,0.8822336792945862,0
+85.jpg,Batik Lasem,10,28.jpg,Batik Ikat Celup,0.8821508288383484,0
+86.jpg,Batik Lasem,1,16.jpg,Batik Lasem,0.8952510952949524,1
+86.jpg,Batik Lasem,2,41.jpg,Batik Dayak,0.8947129249572754,0
+86.jpg,Batik Lasem,3,6.jpg,Batik Lasem,0.8806582689285278,1
+86.jpg,Batik Lasem,4,38.jpg,Batik Insang,0.8468114733695984,0
+86.jpg,Batik Lasem,5,47.jpg,Batik Pala,0.8319078087806702,0
+86.jpg,Batik Lasem,6,39.jpg,Batik Pala,0.8292781114578247,0
+86.jpg,Batik Lasem,7,61.jpg,Batik Cendrawasih,0.8247792720794678,0
+86.jpg,Batik Lasem,8,51.jpg,Batik Lasem,0.8197295665740967,1
+86.jpg,Batik Lasem,9,42.jpg,Batik Kawung,0.8195171356201172,0
+86.jpg,Batik Lasem,10,19.jpg,Batik Pala,0.8190104961395264,0
+87.jpg,Batik Lasem,1,30.jpg,Batik Poleng,0.974039614200592,0
+87.jpg,Batik Lasem,2,39.jpg,Batik Parang,0.9606993198394775,0
+87.jpg,Batik Lasem,3,62.jpg,Batik Cendrawasih,0.9575324654579163,0
+87.jpg,Batik Lasem,4,8.jpg,Batik Cendrawasih,0.9557123184204102,0
+87.jpg,Batik Lasem,5,48.jpg,Batik Insang,0.9517810940742493,0
+87.jpg,Batik Lasem,6,20.jpg,Batik Cendrawasih,0.9516268372535706,0
+87.jpg,Batik Lasem,7,11.jpg,Batik Insang,0.9496276378631592,0
+87.jpg,Batik Lasem,8,45.jpg,Batik Insang,0.9484754800796509,0
+87.jpg,Batik Lasem,9,3.jpg,Batik Tambal,0.9481337070465088,0
+87.jpg,Batik Lasem,10,26.jpg,Batik Tambal,0.946480929851532,0
+88.jpg,Batik Lasem,1,12.jpg,Batik Pala,0.9287469983100891,0
+88.jpg,Batik Lasem,2,20.jpg,Batik Tambal,0.928321897983551,0
+88.jpg,Batik Lasem,3,26.jpg,Batik Lasem,0.9217059016227722,1
+88.jpg,Batik Lasem,4,26.jpg,Batik Sekar Jagad,0.9209002256393433,0
+88.jpg,Batik Lasem,5,34.jpg,Batik Pala,0.9206442832946777,0
+88.jpg,Batik Lasem,6,6.jpg,Batik Pala,0.9111120700836182,0
+88.jpg,Batik Lasem,7,37.jpg,Batik Sekar Jagad,0.9109531044960022,0
+88.jpg,Batik Lasem,8,37.jpg,Batik Ikat Celup,0.9105793833732605,0
+88.jpg,Batik Lasem,9,17.jpg,Batik Sekar Jagad,0.906746506690979,0
+88.jpg,Batik Lasem,10,40.jpg,Batik Sekar Jagad,0.9064056277275085,0
+89.jpg,Batik Lasem,1,38.jpg,Batik Lasem,0.9505847096443176,1
+89.jpg,Batik Lasem,2,53.jpg,Batik Lasem,0.949120044708252,1
+89.jpg,Batik Lasem,3,47.jpg,Batik Lasem,0.9445134997367859,1
+89.jpg,Batik Lasem,4,33.jpg,Batik Ikat Celup,0.9227051734924316,0
+89.jpg,Batik Lasem,5,4.jpg,Batik Dayak,0.9205233454704285,0
+89.jpg,Batik Lasem,6,24.jpg,Batik Sekar Jagad,0.9051666855812073,0
+89.jpg,Batik Lasem,7,53.jpg,Batik Tambal,0.8848730325698853,0
+89.jpg,Batik Lasem,8,28.jpg,Batik Sekar Jagad,0.880416214466095,0
+89.jpg,Batik Lasem,9,16.jpg,Batik Pala,0.8802051544189453,0
+89.jpg,Batik Lasem,10,5.jpg,Batik Pala,0.8789608478546143,0
+70.jpg,Batik Megamendung,1,31.jpg,Batik Cendrawasih,0.9357368350028992,0
+70.jpg,Batik Megamendung,2,51.jpg,Batik Cendrawasih,0.934895932674408,0
+70.jpg,Batik Megamendung,3,10.jpg,Batik Dayak,0.9139694571495056,0
+70.jpg,Batik Megamendung,4,14.jpg,Batik Pala,0.9097997546195984,0
+70.jpg,Batik Megamendung,5,61.jpg,Batik Kawung,0.9083724021911621,0
+70.jpg,Batik Megamendung,6,42.jpg,Batik Sekar Jagad,0.9081211686134338,0
+70.jpg,Batik Megamendung,7,33.jpg,Batik Kawung,0.9047974348068237,0
+70.jpg,Batik Megamendung,8,39.jpg,Batik Geblek Renteng,0.9041140079498291,0
+70.jpg,Batik Megamendung,9,28.jpg,Batik Cendrawasih,0.9008877277374268,0
+70.jpg,Batik Megamendung,10,12.jpg,Batik Poleng,0.8917372226715088,0
+71.jpg,Batik Megamendung,1,47.jpg,Batik Megamendung,0.9909974932670593,1
+71.jpg,Batik Megamendung,2,65.jpg,Batik Megamendung,0.9571629762649536,1
+71.jpg,Batik Megamendung,3,57.jpg,Batik Megamendung,0.9494495391845703,1
+71.jpg,Batik Megamendung,4,10.jpg,Batik Megamendung,0.9402239918708801,1
+71.jpg,Batik Megamendung,5,64.jpg,Batik Megamendung,0.9230554699897766,1
+71.jpg,Batik Megamendung,6,41.jpg,Batik Megamendung,0.9144194722175598,1
+71.jpg,Batik Megamendung,7,9.jpg,Batik Megamendung,0.9120368957519531,1
+71.jpg,Batik Megamendung,8,23.jpg,Batik Megamendung,0.909583568572998,1
+71.jpg,Batik Megamendung,9,42.jpg,Batik Megamendung,0.9042661786079407,1
+71.jpg,Batik Megamendung,10,19.jpg,Batik Ikat Celup,0.900077223777771,0
+72.jpg,Batik Megamendung,1,49.jpg,Batik Insang,0.9279414415359497,0
+72.jpg,Batik Megamendung,2,41.jpg,Batik Poleng,0.8794175386428833,0
+72.jpg,Batik Megamendung,3,19.jpg,Batik Tambal,0.8575474619865417,0
+72.jpg,Batik Megamendung,4,64.jpg,Batik Pala,0.8562033772468567,0
+72.jpg,Batik Megamendung,5,25.jpg,Batik Poleng,0.847487211227417,0
+72.jpg,Batik Megamendung,6,9.jpg,Batik Ikat Celup,0.8428727388381958,0
+72.jpg,Batik Megamendung,7,1.jpg,Batik Kawung,0.8418482542037964,0
+72.jpg,Batik Megamendung,8,32.jpg,Batik Dayak,0.8372051119804382,0
+72.jpg,Batik Megamendung,9,9.jpg,Batik Lasem,0.8363621234893799,0
+72.jpg,Batik Megamendung,10,52.jpg,Batik Insang,0.8347386121749878,0
+73.jpg,Batik Megamendung,1,10.jpg,Batik Megamendung,0.9404471516609192,1
+73.jpg,Batik Megamendung,2,19.jpg,Batik Ikat Celup,0.9049749374389648,0
+73.jpg,Batik Megamendung,3,65.jpg,Batik Megamendung,0.8917803764343262,1
+73.jpg,Batik Megamendung,4,57.jpg,Batik Megamendung,0.891720175743103,1
+73.jpg,Batik Megamendung,5,47.jpg,Batik Megamendung,0.8846778273582458,1
+73.jpg,Batik Megamendung,6,23.jpg,Batik Megamendung,0.8722168207168579,1
+73.jpg,Batik Megamendung,7,64.jpg,Batik Megamendung,0.8694916367530823,1
+73.jpg,Batik Megamendung,8,9.jpg,Batik Megamendung,0.8663078546524048,1
+73.jpg,Batik Megamendung,9,44.jpg,Batik Ikat Celup,0.8612499237060547,0
+73.jpg,Batik Megamendung,10,17.jpg,Batik Poleng,0.8556431531906128,0
+74.jpg,Batik Megamendung,1,11.jpg,Batik Sekar Jagad,0.9569555521011353,0
+74.jpg,Batik Megamendung,2,10.jpg,Batik Geblek Renteng,0.9450711607933044,0
+74.jpg,Batik Megamendung,3,36.jpg,Batik Dayak,0.9409725069999695,0
+74.jpg,Batik Megamendung,4,60.jpg,Batik Bali,0.9400179386138916,0
+74.jpg,Batik Megamendung,5,51.jpg,Batik Betawi,0.9392322897911072,0
+74.jpg,Batik Megamendung,6,37.jpg,Batik Dayak,0.9391007423400879,0
+74.jpg,Batik Megamendung,7,66.jpg,Batik Insang,0.9342480301856995,0
+74.jpg,Batik Megamendung,8,56.jpg,Batik Insang,0.9308062791824341,0
+74.jpg,Batik Megamendung,9,4.jpg,Batik Tambal,0.9299768209457397,0
+74.jpg,Batik Megamendung,10,17.jpg,Batik Insang,0.9282492995262146,0
+75.jpg,Batik Megamendung,1,51.jpg,Batik Tambal,0.9425735473632812,0
+75.jpg,Batik Megamendung,2,62.jpg,Batik Parang,0.9385145902633667,0
+75.jpg,Batik Megamendung,3,42.jpg,Batik Tambal,0.9354718327522278,0
+75.jpg,Batik Megamendung,4,23.jpg,Batik Tambal,0.9271335005760193,0
+75.jpg,Batik Megamendung,5,60.jpg,Batik Tambal,0.9126825332641602,0
+75.jpg,Batik Megamendung,6,62.jpg,Batik Bali,0.9087631106376648,0
+75.jpg,Batik Megamendung,7,64.jpg,Batik Parang,0.9033319354057312,0
+75.jpg,Batik Megamendung,8,16.jpg,Batik Dayak,0.8938150405883789,0
+75.jpg,Batik Megamendung,9,29.jpg,Batik Pala,0.8883378505706787,0
+75.jpg,Batik Megamendung,10,68.jpg,Batik Bali,0.882944643497467,0
+76.jpg,Batik Megamendung,1,29.jpg,Batik Parang,0.9360446929931641,0
+76.jpg,Batik Megamendung,2,37.jpg,Batik Kawung,0.9267644286155701,0
+76.jpg,Batik Megamendung,3,23.jpg,Batik Bali,0.91644686460495,0
+76.jpg,Batik Megamendung,4,31.jpg,Batik Dayak,0.8985393643379211,0
+76.jpg,Batik Megamendung,5,24.jpg,Batik Bali,0.8961415886878967,0
+76.jpg,Batik Megamendung,6,40.jpg,Batik Ikat Celup,0.894008457660675,0
+76.jpg,Batik Megamendung,7,56.jpg,Batik Tambal,0.8930116891860962,0
+76.jpg,Batik Megamendung,8,25.jpg,Batik Parang,0.8877422213554382,0
+76.jpg,Batik Megamendung,9,59.jpg,Batik Bali,0.8868650794029236,0
+76.jpg,Batik Megamendung,10,33.jpg,Batik Parang,0.8840603232383728,0
+77.jpg,Batik Megamendung,1,21.jpg,Batik Tambal,0.9498084187507629,0
+77.jpg,Batik Megamendung,2,41.jpg,Batik Sekar Jagad,0.9473515152931213,0
+77.jpg,Batik Megamendung,3,5.jpg,Batik Kawung,0.9392026662826538,0
+77.jpg,Batik Megamendung,4,27.jpg,Batik Megamendung,0.9364947080612183,1
+77.jpg,Batik Megamendung,5,1.jpg,Batik Parang,0.933626651763916,0
+77.jpg,Batik Megamendung,6,20.jpg,Batik Bali,0.9323248267173767,0
+77.jpg,Batik Megamendung,7,11.jpg,Batik Tambal,0.9316455125808716,0
+77.jpg,Batik Megamendung,8,31.jpg,Batik Kawung,0.931149959564209,0
+77.jpg,Batik Megamendung,9,19.jpg,Batik Parang,0.928074836730957,0
+77.jpg,Batik Megamendung,10,10.jpg,Batik Bali,0.9255617260932922,0
+78.jpg,Batik Megamendung,1,60.jpg,Batik Bali,0.9709016680717468,0
+78.jpg,Batik Megamendung,2,4.jpg,Batik Pala,0.9408421516418457,0
+78.jpg,Batik Megamendung,3,58.jpg,Batik Bali,0.9323985576629639,0
+78.jpg,Batik Megamendung,4,22.jpg,Batik Megamendung,0.9315153360366821,1
+78.jpg,Batik Megamendung,5,38.jpg,Batik Tambal,0.9286571741104126,0
+78.jpg,Batik Megamendung,6,64.jpg,Batik Ikat Celup,0.9269009828567505,0
+78.jpg,Batik Megamendung,7,65.jpg,Batik Pala,0.9250046610832214,0
+78.jpg,Batik Megamendung,8,14.jpg,Batik Ikat Celup,0.9226179122924805,0
+78.jpg,Batik Megamendung,9,57.jpg,Batik Tambal,0.921947181224823,0
+78.jpg,Batik Megamendung,10,51.jpg,Batik Betawi,0.9154309630393982,0
+79.jpg,Batik Megamendung,1,59.jpg,Batik Megamendung,0.9558902382850647,1
+79.jpg,Batik Megamendung,2,28.jpg,Batik Megamendung,0.9184455275535583,1
+79.jpg,Batik Megamendung,3,38.jpg,Batik Pala,0.9005069136619568,0
+79.jpg,Batik Megamendung,4,53.jpg,Batik Betawi,0.8711512088775635,0
+79.jpg,Batik Megamendung,5,60.jpg,Batik Megamendung,0.8705191612243652,1
+79.jpg,Batik Megamendung,6,51.jpg,Batik Dayak,0.8476163744926453,0
+79.jpg,Batik Megamendung,7,30.jpg,Batik Pala,0.8397318720817566,0
+79.jpg,Batik Megamendung,8,18.jpg,Batik Sekar Jagad,0.838065505027771,0
+79.jpg,Batik Megamendung,9,13.jpg,Batik Dayak,0.8306576609611511,0
+79.jpg,Batik Megamendung,10,41.jpg,Batik Bali,0.8304117321968079,0
+80.jpg,Batik Megamendung,1,16.jpg,Batik Ikat Celup,0.9260098934173584,0
+80.jpg,Batik Megamendung,2,36.jpg,Batik Insang,0.9254826903343201,0
+80.jpg,Batik Megamendung,3,13.jpg,Batik Dayak,0.9110941886901855,0
+80.jpg,Batik Megamendung,4,17.jpg,Batik Poleng,0.9028842449188232,0
+80.jpg,Batik Megamendung,5,62.jpg,Batik Megamendung,0.9017471671104431,1
+80.jpg,Batik Megamendung,6,8.jpg,Batik Cendrawasih,0.8958390355110168,0
+80.jpg,Batik Megamendung,7,13.jpg,Batik Parang,0.8945034146308899,0
+80.jpg,Batik Megamendung,8,32.jpg,Batik Bali,0.8931562900543213,0
+80.jpg,Batik Megamendung,9,65.jpg,Batik Betawi,0.89231938123703,0
+80.jpg,Batik Megamendung,10,13.jpg,Batik Megamendung,0.8907333612442017,1
+81.jpg,Batik Megamendung,1,65.jpg,Batik Poleng,0.9772833585739136,0
+81.jpg,Batik Megamendung,2,21.jpg,Batik Megamendung,0.9736152291297913,1
+81.jpg,Batik Megamendung,3,12.jpg,Batik Parang,0.9670838117599487,0
+81.jpg,Batik Megamendung,4,56.jpg,Batik Cendrawasih,0.9653539061546326,0
+81.jpg,Batik Megamendung,5,19.jpg,Batik Bali,0.9602062106132507,0
+81.jpg,Batik Megamendung,6,54.jpg,Batik Insang,0.9566716551780701,0
+81.jpg,Batik Megamendung,7,11.jpg,Batik Cendrawasih,0.9556789994239807,0
+81.jpg,Batik Megamendung,8,69.jpg,Batik Geblek Renteng,0.9556512832641602,0
+81.jpg,Batik Megamendung,9,34.jpg,Batik Dayak,0.9536254405975342,0
+81.jpg,Batik Megamendung,10,42.jpg,Batik Poleng,0.9489870071411133,0
+82.jpg,Batik Megamendung,1,49.jpg,Batik Pala,0.9081209301948547,0
+82.jpg,Batik Megamendung,2,33.jpg,Batik Betawi,0.9001567959785461,0
+82.jpg,Batik Megamendung,3,20.jpg,Batik Parang,0.8762192726135254,0
+82.jpg,Batik Megamendung,4,12.jpg,Batik Tambal,0.8740289211273193,0
+82.jpg,Batik Megamendung,5,2.jpg,Batik Kawung,0.8670678734779358,0
+82.jpg,Batik Megamendung,6,0.jpg,Batik Bali,0.866409420967102,0
+82.jpg,Batik Megamendung,7,49.jpg,Batik Sekar Jagad,0.8616401553153992,0
+82.jpg,Batik Megamendung,8,23.jpg,Batik Cendrawasih,0.8571643829345703,0
+82.jpg,Batik Megamendung,9,54.jpg,Batik Geblek Renteng,0.8520467281341553,0
+82.jpg,Batik Megamendung,10,67.jpg,Batik Bali,0.8505657315254211,0
+83.jpg,Batik Megamendung,1,10.jpg,Batik Megamendung,0.9940227270126343,1
+83.jpg,Batik Megamendung,2,65.jpg,Batik Megamendung,0.9567211866378784,1
+83.jpg,Batik Megamendung,3,57.jpg,Batik Megamendung,0.9566053152084351,1
+83.jpg,Batik Megamendung,4,47.jpg,Batik Megamendung,0.932518482208252,1
+83.jpg,Batik Megamendung,5,41.jpg,Batik Megamendung,0.8986570835113525,1
+83.jpg,Batik Megamendung,6,9.jpg,Batik Megamendung,0.8972055912017822,1
+83.jpg,Batik Megamendung,7,43.jpg,Batik Megamendung,0.8955066800117493,1
+83.jpg,Batik Megamendung,8,17.jpg,Batik Megamendung,0.8821811079978943,1
+83.jpg,Batik Megamendung,9,42.jpg,Batik Megamendung,0.8810139894485474,1
+83.jpg,Batik Megamendung,10,40.jpg,Batik Megamendung,0.8804857730865479,1
+84.jpg,Batik Megamendung,1,5.jpg,Batik Lasem,0.9581987261772156,0
+84.jpg,Batik Megamendung,2,51.jpg,Batik Ikat Celup,0.9552478194236755,0
+84.jpg,Batik Megamendung,3,0.jpg,Batik Bali,0.9549323916435242,0
+84.jpg,Batik Megamendung,4,47.jpg,Batik Kawung,0.9512990117073059,0
+84.jpg,Batik Megamendung,5,62.jpg,Batik Kawung,0.9500811696052551,0
+84.jpg,Batik Megamendung,6,20.jpg,Batik Sekar Jagad,0.9495357275009155,0
+84.jpg,Batik Megamendung,7,29.jpg,Batik Geblek Renteng,0.9474842548370361,0
+84.jpg,Batik Megamendung,8,20.jpg,Batik Bali,0.9452641010284424,0
+84.jpg,Batik Megamendung,9,0.jpg,Batik Betawi,0.9364321827888489,0
+84.jpg,Batik Megamendung,10,66.jpg,Batik Kawung,0.9352443814277649,0
+85.jpg,Batik Megamendung,1,49.jpg,Batik Megamendung,0.9839382767677307,1
+85.jpg,Batik Megamendung,2,48.jpg,Batik Ikat Celup,0.9232617020606995,0
+85.jpg,Batik Megamendung,3,17.jpg,Batik Poleng,0.9213045239448547,0
+85.jpg,Batik Megamendung,4,13.jpg,Batik Megamendung,0.9177619218826294,1
+85.jpg,Batik Megamendung,5,62.jpg,Batik Megamendung,0.9110100865364075,1
+85.jpg,Batik Megamendung,6,40.jpg,Batik Megamendung,0.9086775779724121,1
+85.jpg,Batik Megamendung,7,43.jpg,Batik Megamendung,0.9076682329177856,1
+85.jpg,Batik Megamendung,8,57.jpg,Batik Geblek Renteng,0.9026340842247009,0
+85.jpg,Batik Megamendung,9,32.jpg,Batik Megamendung,0.899619460105896,1
+85.jpg,Batik Megamendung,10,51.jpg,Batik Bali,0.8988537788391113,0
+86.jpg,Batik Megamendung,1,34.jpg,Batik Megamendung,0.9312534928321838,1
+86.jpg,Batik Megamendung,2,6.jpg,Batik Betawi,0.904424786567688,0
+86.jpg,Batik Megamendung,3,18.jpg,Batik Megamendung,0.8844082951545715,1
+86.jpg,Batik Megamendung,4,55.jpg,Batik Megamendung,0.875129222869873,1
+86.jpg,Batik Megamendung,5,1.jpg,Batik Betawi,0.8717993497848511,0
+86.jpg,Batik Megamendung,6,47.jpg,Batik Geblek Renteng,0.8707873225212097,0
+86.jpg,Batik Megamendung,7,7.jpg,Batik Betawi,0.8702924847602844,0
+86.jpg,Batik Megamendung,8,35.jpg,Batik Megamendung,0.8690075278282166,1
+86.jpg,Batik Megamendung,9,67.jpg,Batik Megamendung,0.8623700737953186,1
+86.jpg,Batik Megamendung,10,2.jpg,Batik Megamendung,0.859321653842926,1
+87.jpg,Batik Megamendung,1,57.jpg,Batik Megamendung,0.9583022594451904,1
+87.jpg,Batik Megamendung,2,65.jpg,Batik Megamendung,0.9547431468963623,1
+87.jpg,Batik Megamendung,3,61.jpg,Batik Bali,0.9378203749656677,0
+87.jpg,Batik Megamendung,4,19.jpg,Batik Geblek Renteng,0.9309444427490234,0
+87.jpg,Batik Megamendung,5,22.jpg,Batik Pala,0.9303891658782959,0
+87.jpg,Batik Megamendung,6,62.jpg,Batik Sekar Jagad,0.9298450946807861,0
+87.jpg,Batik Megamendung,7,11.jpg,Batik Parang,0.9284975528717041,0
+87.jpg,Batik Megamendung,8,13.jpg,Batik Betawi,0.9267885088920593,0
+87.jpg,Batik Megamendung,9,53.jpg,Batik Dayak,0.9246619343757629,0
+87.jpg,Batik Megamendung,10,1.jpg,Batik Tambal,0.9231202602386475,0
+88.jpg,Batik Megamendung,1,17.jpg,Batik Dayak,0.9544870257377625,0
+88.jpg,Batik Megamendung,2,31.jpg,Batik Tambal,0.949729859828949,0
+88.jpg,Batik Megamendung,3,24.jpg,Batik Parang,0.9489823579788208,0
+88.jpg,Batik Megamendung,4,26.jpg,Batik Bali,0.944359540939331,0
+88.jpg,Batik Megamendung,5,41.jpg,Batik Ikat Celup,0.9435731768608093,0
+88.jpg,Batik Megamendung,6,24.jpg,Batik Dayak,0.9429522752761841,0
+88.jpg,Batik Megamendung,7,66.jpg,Batik Dayak,0.9422025084495544,0
+88.jpg,Batik Megamendung,8,58.jpg,Batik Cendrawasih,0.9371415972709656,0
+88.jpg,Batik Megamendung,9,3.jpg,Batik Dayak,0.9341027736663818,0
+88.jpg,Batik Megamendung,10,28.jpg,Batik Betawi,0.9336538910865784,0
+89.jpg,Batik Megamendung,1,59.jpg,Batik Tambal,0.9201487302780151,0
+89.jpg,Batik Megamendung,2,14.jpg,Batik Cendrawasih,0.9133642911911011,0
+89.jpg,Batik Megamendung,3,4.jpg,Batik Dayak,0.9052320122718811,0
+89.jpg,Batik Megamendung,4,32.jpg,Batik Betawi,0.9041648507118225,0
+89.jpg,Batik Megamendung,5,27.jpg,Batik Pala,0.9035760164260864,0
+89.jpg,Batik Megamendung,6,45.jpg,Batik Lasem,0.9014735221862793,0
+89.jpg,Batik Megamendung,7,38.jpg,Batik Bali,0.9005827307701111,0
+89.jpg,Batik Megamendung,8,47.jpg,Batik Parang,0.8994361758232117,0
+89.jpg,Batik Megamendung,9,50.jpg,Batik Kawung,0.8966180682182312,0
+89.jpg,Batik Megamendung,10,18.jpg,Batik Dayak,0.8965315818786621,0
+70.jpg,Batik Pala,1,34.jpg,Batik Lasem,0.963516116142273,0
+70.jpg,Batik Pala,2,19.jpg,Batik Pala,0.8992195725440979,1
+70.jpg,Batik Pala,3,40.jpg,Batik Tambal,0.8687882423400879,0
+70.jpg,Batik Pala,4,20.jpg,Batik Lasem,0.8523531556129456,0
+70.jpg,Batik Pala,5,59.jpg,Batik Lasem,0.846764862537384,0
+70.jpg,Batik Pala,6,61.jpg,Batik Cendrawasih,0.8397912383079529,0
+70.jpg,Batik Pala,7,7.jpg,Batik Bali,0.8303908109664917,0
+70.jpg,Batik Pala,8,42.jpg,Batik Pala,0.8231728672981262,1
+70.jpg,Batik Pala,9,6.jpg,Batik Pala,0.8229297995567322,1
+70.jpg,Batik Pala,10,2.jpg,Batik Lasem,0.8221378326416016,0
+71.jpg,Batik Pala,1,30.jpg,Batik Tambal,0.9414005279541016,0
+71.jpg,Batik Pala,2,39.jpg,Batik Megamendung,0.9357436299324036,0
+71.jpg,Batik Pala,3,32.jpg,Batik Sekar Jagad,0.9345849752426147,0
+71.jpg,Batik Pala,4,54.jpg,Batik Megamendung,0.9321027398109436,0
+71.jpg,Batik Pala,5,50.jpg,Batik Insang,0.9303370714187622,0
+71.jpg,Batik Pala,6,50.jpg,Batik Ikat Celup,0.9300205707550049,0
+71.jpg,Batik Pala,7,11.jpg,Batik Parang,0.9299311637878418,0
+71.jpg,Batik Pala,8,1.jpg,Batik Tambal,0.9261675477027893,0
+71.jpg,Batik Pala,9,53.jpg,Batik Dayak,0.9260194301605225,0
+71.jpg,Batik Pala,10,57.jpg,Batik Tambal,0.9247483611106873,0
+72.jpg,Batik Pala,1,69.jpg,Batik Parang,0.9827394485473633,0
+72.jpg,Batik Pala,2,22.jpg,Batik Lasem,0.9695419669151306,0
+72.jpg,Batik Pala,3,42.jpg,Batik Geblek Renteng,0.9670935273170471,0
+72.jpg,Batik Pala,4,62.jpg,Batik Cendrawasih,0.9647707343101501,0
+72.jpg,Batik Pala,5,3.jpg,Batik Geblek Renteng,0.9624363780021667,0
+72.jpg,Batik Pala,6,44.jpg,Batik Betawi,0.958404004573822,0
+72.jpg,Batik Pala,7,67.jpg,Batik Cendrawasih,0.9551388621330261,0
+72.jpg,Batik Pala,8,11.jpg,Batik Poleng,0.9525108337402344,0
+72.jpg,Batik Pala,9,58.jpg,Batik Ikat Celup,0.9488289952278137,0
+72.jpg,Batik Pala,10,45.jpg,Batik Insang,0.9475677013397217,0
+73.jpg,Batik Pala,1,2.jpg,Batik Geblek Renteng,0.9140929579734802,0
+73.jpg,Batik Pala,2,67.jpg,Batik Geblek Renteng,0.903643786907196,0
+73.jpg,Batik Pala,3,69.jpg,Batik Cendrawasih,0.897753894329071,0
+73.jpg,Batik Pala,4,50.jpg,Batik Ikat Celup,0.8931515216827393,0
+73.jpg,Batik Pala,5,45.jpg,Batik Megamendung,0.892432451248169,0
+73.jpg,Batik Pala,6,54.jpg,Batik Dayak,0.8921953439712524,0
+73.jpg,Batik Pala,7,26.jpg,Batik Poleng,0.8870017528533936,0
+73.jpg,Batik Pala,8,53.jpg,Batik Geblek Renteng,0.8844278454780579,0
+73.jpg,Batik Pala,9,46.jpg,Batik Cendrawasih,0.8818771839141846,0
+73.jpg,Batik Pala,10,24.jpg,Batik Cendrawasih,0.8802118897438049,0
+74.jpg,Batik Pala,1,15.jpg,Batik Cendrawasih,0.9467660784721375,0
+74.jpg,Batik Pala,2,69.jpg,Batik Sekar Jagad,0.9283349514007568,0
+74.jpg,Batik Pala,3,1.jpg,Batik Cendrawasih,0.9238062500953674,0
+74.jpg,Batik Pala,4,47.jpg,Batik Kawung,0.9220834970474243,0
+74.jpg,Batik Pala,5,11.jpg,Batik Lasem,0.9092551469802856,0
+74.jpg,Batik Pala,6,21.jpg,Batik Lasem,0.9046573042869568,0
+74.jpg,Batik Pala,7,47.jpg,Batik Tambal,0.8997424244880676,0
+74.jpg,Batik Pala,8,13.jpg,Batik Bali,0.8977277874946594,0
+74.jpg,Batik Pala,9,48.jpg,Batik Lasem,0.8905920386314392,0
+74.jpg,Batik Pala,10,5.jpg,Batik Lasem,0.8872244358062744,0
+75.jpg,Batik Pala,1,6.jpg,Batik Lasem,0.8956575393676758,0
+75.jpg,Batik Pala,2,16.jpg,Batik Lasem,0.8909181952476501,0
+75.jpg,Batik Pala,3,47.jpg,Batik Pala,0.8840319514274597,1
+75.jpg,Batik Pala,4,30.jpg,Batik Insang,0.8567468523979187,0
+75.jpg,Batik Pala,5,25.jpg,Batik Pala,0.8439357280731201,1
+75.jpg,Batik Pala,6,5.jpg,Batik Cendrawasih,0.837138831615448,0
+75.jpg,Batik Pala,7,12.jpg,Batik Dayak,0.8328803777694702,0
+75.jpg,Batik Pala,8,59.jpg,Batik Geblek Renteng,0.8132509589195251,0
+75.jpg,Batik Pala,9,25.jpg,Batik Betawi,0.812664270401001,0
+75.jpg,Batik Pala,10,57.jpg,Batik Lasem,0.811846911907196,0
+76.jpg,Batik Pala,1,51.jpg,Batik Tambal,0.9847572445869446,0
+76.jpg,Batik Pala,2,67.jpg,Batik Geblek Renteng,0.9738724827766418,0
+76.jpg,Batik Pala,3,42.jpg,Batik Tambal,0.972719669342041,0
+76.jpg,Batik Pala,4,62.jpg,Batik Bali,0.9637476801872253,0
+76.jpg,Batik Pala,5,17.jpg,Batik Cendrawasih,0.9585601687431335,0
+76.jpg,Batik Pala,6,39.jpg,Batik Geblek Renteng,0.9583033919334412,0
+76.jpg,Batik Pala,7,2.jpg,Batik Geblek Renteng,0.9573127031326294,0
+76.jpg,Batik Pala,8,23.jpg,Batik Tambal,0.9571349620819092,0
+76.jpg,Batik Pala,9,62.jpg,Batik Parang,0.9548574686050415,0
+76.jpg,Batik Pala,10,55.jpg,Batik Betawi,0.9510065317153931,0
+77.jpg,Batik Pala,1,61.jpg,Batik Lasem,0.97694331407547,0
+77.jpg,Batik Pala,2,0.jpg,Batik Cendrawasih,0.9756535887718201,0
+77.jpg,Batik Pala,3,66.jpg,Batik Bali,0.9738988876342773,0
+77.jpg,Batik Pala,4,56.jpg,Batik Kawung,0.9675344228744507,0
+77.jpg,Batik Pala,5,3.jpg,Batik Bali,0.9671765565872192,0
+77.jpg,Batik Pala,6,37.jpg,Batik Pala,0.9668382406234741,1
+77.jpg,Batik Pala,7,40.jpg,Batik Geblek Renteng,0.9642400741577148,0
+77.jpg,Batik Pala,8,64.jpg,Batik Sekar Jagad,0.963966965675354,0
+77.jpg,Batik Pala,9,24.jpg,Batik Betawi,0.9638585448265076,0
+77.jpg,Batik Pala,10,4.jpg,Batik Bali,0.9633265137672424,0
+78.jpg,Batik Pala,1,36.jpg,Batik Insang,0.8826479911804199,0
+78.jpg,Batik Pala,2,17.jpg,Batik Poleng,0.8497315049171448,0
+78.jpg,Batik Pala,3,62.jpg,Batik Pala,0.8445706963539124,1
+78.jpg,Batik Pala,4,9.jpg,Batik Geblek Renteng,0.8433424234390259,0
+78.jpg,Batik Pala,5,22.jpg,Batik Cendrawasih,0.8393692374229431,0
+78.jpg,Batik Pala,6,30.jpg,Batik Pala,0.838309645652771,1
+78.jpg,Batik Pala,7,7.jpg,Batik Megamendung,0.8369302153587341,0
+78.jpg,Batik Pala,8,19.jpg,Batik Ikat Celup,0.8253688216209412,0
+78.jpg,Batik Pala,9,22.jpg,Batik Pala,0.8174310326576233,1
+78.jpg,Batik Pala,10,56.jpg,Batik Megamendung,0.8148242831230164,0
+79.jpg,Batik Pala,1,37.jpg,Batik Pala,0.9963135719299316,1
+79.jpg,Batik Pala,2,15.jpg,Batik Tambal,0.9742885231971741,0
+79.jpg,Batik Pala,3,37.jpg,Batik Geblek Renteng,0.9685296416282654,0
+79.jpg,Batik Pala,4,68.jpg,Batik Cendrawasih,0.9644381403923035,0
+79.jpg,Batik Pala,5,23.jpg,Batik Poleng,0.9527689218521118,0
+79.jpg,Batik Pala,6,25.jpg,Batik Lasem,0.9514757394790649,0
+79.jpg,Batik Pala,7,52.jpg,Batik Cendrawasih,0.9483234882354736,0
+79.jpg,Batik Pala,8,24.jpg,Batik Betawi,0.9478694200515747,0
+79.jpg,Batik Pala,9,64.jpg,Batik Bali,0.9474714398384094,0
+79.jpg,Batik Pala,10,61.jpg,Batik Geblek Renteng,0.9470929503440857,0
+80.jpg,Batik Pala,1,17.jpg,Batik Pala,0.9305059909820557,1
+80.jpg,Batik Pala,2,48.jpg,Batik Ikat Celup,0.9293320775032043,0
+80.jpg,Batik Pala,3,33.jpg,Batik Poleng,0.9233893156051636,0
+80.jpg,Batik Pala,4,56.jpg,Batik Megamendung,0.9187354445457458,0
+80.jpg,Batik Pala,5,17.jpg,Batik Bali,0.9166300296783447,0
+80.jpg,Batik Pala,6,57.jpg,Batik Cendrawasih,0.9163492918014526,0
+80.jpg,Batik Pala,7,43.jpg,Batik Ikat Celup,0.9146822690963745,0
+80.jpg,Batik Pala,8,55.jpg,Batik Megamendung,0.91194087266922,0
+80.jpg,Batik Pala,9,9.jpg,Batik Geblek Renteng,0.9110367298126221,0
+80.jpg,Batik Pala,10,63.jpg,Batik Megamendung,0.9093124866485596,0
+81.jpg,Batik Pala,1,62.jpg,Batik Dayak,0.9656137824058533,0
+81.jpg,Batik Pala,2,9.jpg,Batik Ikat Celup,0.9589986205101013,0
+81.jpg,Batik Pala,3,38.jpg,Batik Sekar Jagad,0.9515148401260376,0
+81.jpg,Batik Pala,4,40.jpg,Batik Kawung,0.9510709643363953,0
+81.jpg,Batik Pala,5,22.jpg,Batik Insang,0.9480822086334229,0
+81.jpg,Batik Pala,6,67.jpg,Batik Insang,0.9452100396156311,0
+81.jpg,Batik Pala,7,69.jpg,Batik Kawung,0.9445770978927612,0
+81.jpg,Batik Pala,8,60.jpg,Batik Kawung,0.9432826638221741,0
+81.jpg,Batik Pala,9,52.jpg,Batik Insang,0.9370591044425964,0
+81.jpg,Batik Pala,10,8.jpg,Batik Kawung,0.9282341003417969,0
+82.jpg,Batik Pala,1,50.jpg,Batik Tambal,0.9906494617462158,0
+82.jpg,Batik Pala,2,9.jpg,Batik Tambal,0.9878230690956116,0
+82.jpg,Batik Pala,3,55.jpg,Batik Betawi,0.9736068844795227,0
+82.jpg,Batik Pala,4,10.jpg,Batik Tambal,0.9724656939506531,0
+82.jpg,Batik Pala,5,26.jpg,Batik Poleng,0.9706374406814575,0
+82.jpg,Batik Pala,6,67.jpg,Batik Parang,0.969370424747467,0
+82.jpg,Batik Pala,7,27.jpg,Batik Bali,0.9693615436553955,0
+82.jpg,Batik Pala,8,13.jpg,Batik Tambal,0.966863214969635,0
+82.jpg,Batik Pala,9,67.jpg,Batik Betawi,0.9641149640083313,0
+82.jpg,Batik Pala,10,39.jpg,Batik Sekar Jagad,0.9598642587661743,0
+83.jpg,Batik Pala,1,63.jpg,Batik Pala,0.9914231300354004,1
+83.jpg,Batik Pala,2,54.jpg,Batik Lasem,0.9308896064758301,0
+83.jpg,Batik Pala,3,1.jpg,Batik Lasem,0.9274957180023193,0
+83.jpg,Batik Pala,4,59.jpg,Batik Geblek Renteng,0.9270618557929993,0
+83.jpg,Batik Pala,5,1.jpg,Batik Pala,0.9152020812034607,1
+83.jpg,Batik Pala,6,55.jpg,Batik Lasem,0.9000320434570312,0
+83.jpg,Batik Pala,7,25.jpg,Batik Pala,0.8934741020202637,1
+83.jpg,Batik Pala,8,0.jpg,Batik Lasem,0.8833031058311462,0
+83.jpg,Batik Pala,9,28.jpg,Batik Ikat Celup,0.8772139549255371,0
+83.jpg,Batik Pala,10,61.jpg,Batik Pala,0.8754409551620483,1
+84.jpg,Batik Pala,1,4.jpg,Batik Sekar Jagad,0.981002926826477,0
+84.jpg,Batik Pala,2,68.jpg,Batik Sekar Jagad,0.9796736240386963,0
+84.jpg,Batik Pala,3,64.jpg,Batik Sekar Jagad,0.9770164489746094,0
+84.jpg,Batik Pala,4,52.jpg,Batik Bali,0.9758449196815491,0
+84.jpg,Batik Pala,5,45.jpg,Batik Geblek Renteng,0.9716705679893494,0
+84.jpg,Batik Pala,6,62.jpg,Batik Bali,0.9699134230613708,0
+84.jpg,Batik Pala,7,31.jpg,Batik Megamendung,0.9659303426742554,0
+84.jpg,Batik Pala,8,20.jpg,Batik Betawi,0.9652195572853088,0
+84.jpg,Batik Pala,9,66.jpg,Batik Geblek Renteng,0.964972972869873,0
+84.jpg,Batik Pala,10,16.jpg,Batik Dayak,0.9647331237792969,0
+85.jpg,Batik Pala,1,55.jpg,Batik Dayak,0.9929541945457458,0
+85.jpg,Batik Pala,2,56.jpg,Batik Pala,0.9917970299720764,1
+85.jpg,Batik Pala,3,9.jpg,Batik Sekar Jagad,0.9914520978927612,0
+85.jpg,Batik Pala,4,37.jpg,Batik Poleng,0.9904760122299194,0
+85.jpg,Batik Pala,5,15.jpg,Batik Pala,0.9877133369445801,1
+85.jpg,Batik Pala,6,32.jpg,Batik Tambal,0.9858452081680298,0
+85.jpg,Batik Pala,7,34.jpg,Batik Poleng,0.9823125600814819,0
+85.jpg,Batik Pala,8,19.jpg,Batik Bali,0.981849730014801,0
+85.jpg,Batik Pala,9,24.jpg,Batik Poleng,0.9810069799423218,0
+85.jpg,Batik Pala,10,15.jpg,Batik Megamendung,0.9807904362678528,0
+86.jpg,Batik Pala,1,2.jpg,Batik Insang,0.9008401036262512,0
+86.jpg,Batik Pala,2,66.jpg,Batik Ikat Celup,0.8967239260673523,0
+86.jpg,Batik Pala,3,13.jpg,Batik Sekar Jagad,0.894871175289154,0
+86.jpg,Batik Pala,4,68.jpg,Batik Tambal,0.893805980682373,0
+86.jpg,Batik Pala,5,15.jpg,Batik Insang,0.8932265043258667,0
+86.jpg,Batik Pala,6,28.jpg,Batik Tambal,0.8891158699989319,0
+86.jpg,Batik Pala,7,0.jpg,Batik Pala,0.8842231631278992,1
+86.jpg,Batik Pala,8,67.jpg,Batik Parang,0.8819193243980408,0
+86.jpg,Batik Pala,9,18.jpg,Batik Pala,0.8792523741722107,1
+86.jpg,Batik Pala,10,64.jpg,Batik Cendrawasih,0.8768234848976135,0
+87.jpg,Batik Pala,1,9.jpg,Batik Geblek Renteng,0.9672263860702515,0
+87.jpg,Batik Pala,2,19.jpg,Batik Sekar Jagad,0.9558837413787842,0
+87.jpg,Batik Pala,3,48.jpg,Batik Tambal,0.9535971879959106,0
+87.jpg,Batik Pala,4,37.jpg,Batik Geblek Renteng,0.9501476883888245,0
+87.jpg,Batik Pala,5,21.jpg,Batik Poleng,0.9501034617424011,0
+87.jpg,Batik Pala,6,61.jpg,Batik Geblek Renteng,0.9497462511062622,0
+87.jpg,Batik Pala,7,59.jpg,Batik Pala,0.9476228356361389,1
+87.jpg,Batik Pala,8,20.jpg,Batik Pala,0.9469639658927917,1
+87.jpg,Batik Pala,9,31.jpg,Batik Bali,0.9452047348022461,0
+87.jpg,Batik Pala,10,11.jpg,Batik Parang,0.942719578742981,0
+88.jpg,Batik Pala,1,31.jpg,Batik Pala,0.7863970398902893,1
+88.jpg,Batik Pala,2,2.jpg,Batik Betawi,0.7264423370361328,0
+88.jpg,Batik Pala,3,32.jpg,Batik Pala,0.7214843034744263,1
+88.jpg,Batik Pala,4,21.jpg,Batik Ikat Celup,0.7180870771408081,0
+88.jpg,Batik Pala,5,0.jpg,Batik Sekar Jagad,0.7155510187149048,0
+88.jpg,Batik Pala,6,15.jpg,Batik Bali,0.7138702869415283,0
+88.jpg,Batik Pala,7,54.jpg,Batik Ikat Celup,0.7037901878356934,0
+88.jpg,Batik Pala,8,3.jpg,Batik Sekar Jagad,0.690180242061615,0
+88.jpg,Batik Pala,9,61.jpg,Batik Sekar Jagad,0.677203893661499,0
+88.jpg,Batik Pala,10,20.jpg,Batik Geblek Renteng,0.6748371720314026,0
+89.jpg,Batik Pala,1,66.jpg,Batik Bali,0.978905439376831,0
+89.jpg,Batik Pala,2,37.jpg,Batik Pala,0.9749378561973572,1
+89.jpg,Batik Pala,3,0.jpg,Batik Cendrawasih,0.9728302955627441,0
+89.jpg,Batik Pala,4,40.jpg,Batik Geblek Renteng,0.9673385620117188,0
+89.jpg,Batik Pala,5,64.jpg,Batik Sekar Jagad,0.9659733772277832,0
+89.jpg,Batik Pala,6,61.jpg,Batik Lasem,0.9656676054000854,0
+89.jpg,Batik Pala,7,23.jpg,Batik Poleng,0.9646002054214478,0
+89.jpg,Batik Pala,8,52.jpg,Batik Cendrawasih,0.9641589522361755,0
+89.jpg,Batik Pala,9,24.jpg,Batik Betawi,0.9640370607376099,0
+89.jpg,Batik Pala,10,56.jpg,Batik Kawung,0.9633936882019043,0
+70.jpg,Batik Parang,1,45.jpg,Batik Parang,0.9547770023345947,1
+70.jpg,Batik Parang,2,2.jpg,Batik Bali,0.9302817583084106,0
+70.jpg,Batik Parang,3,29.jpg,Batik Sekar Jagad,0.9285071492195129,0
+70.jpg,Batik Parang,4,56.jpg,Batik Parang,0.9026395678520203,1
+70.jpg,Batik Parang,5,23.jpg,Batik Sekar Jagad,0.8717325925827026,0
+70.jpg,Batik Parang,6,45.jpg,Batik Lasem,0.8709263205528259,0
+70.jpg,Batik Parang,7,21.jpg,Batik Pala,0.8706766963005066,0
+70.jpg,Batik Parang,8,30.jpg,Batik Sekar Jagad,0.8704028725624084,0
+70.jpg,Batik Parang,9,35.jpg,Batik Geblek Renteng,0.8687312006950378,0
+70.jpg,Batik Parang,10,7.jpg,Batik Parang,0.8645683526992798,1
+71.jpg,Batik Parang,1,25.jpg,Batik Parang,0.9905239343643188,1
+71.jpg,Batik Parang,2,43.jpg,Batik Poleng,0.9713460803031921,0
+71.jpg,Batik Parang,3,54.jpg,Batik Insang,0.9666198492050171,0
+71.jpg,Batik Parang,4,15.jpg,Batik Poleng,0.9660574793815613,0
+71.jpg,Batik Parang,5,29.jpg,Batik Cendrawasih,0.9657255411148071,0
+71.jpg,Batik Parang,6,34.jpg,Batik Dayak,0.9629648327827454,0
+71.jpg,Batik Parang,7,42.jpg,Batik Poleng,0.9605425596237183,0
+71.jpg,Batik Parang,8,59.jpg,Batik Bali,0.9585187435150146,0
+71.jpg,Batik Parang,9,27.jpg,Batik Cendrawasih,0.9581071734428406,0
+71.jpg,Batik Parang,10,23.jpg,Batik Pala,0.9577311277389526,0
+72.jpg,Batik Parang,1,52.jpg,Batik Parang,0.9885995388031006,1
+72.jpg,Batik Parang,2,42.jpg,Batik Cendrawasih,0.9584662318229675,0
+72.jpg,Batik Parang,3,67.jpg,Batik Kawung,0.9294068813323975,0
+72.jpg,Batik Parang,4,66.jpg,Batik Pala,0.917141318321228,0
+72.jpg,Batik Parang,5,44.jpg,Batik Bali,0.9039132595062256,0
+72.jpg,Batik Parang,6,43.jpg,Batik Tambal,0.901531457901001,0
+72.jpg,Batik Parang,7,26.jpg,Batik Kawung,0.8931465744972229,0
+72.jpg,Batik Parang,8,16.jpg,Batik Poleng,0.8917009830474854,0
+72.jpg,Batik Parang,9,44.jpg,Batik Insang,0.8911772966384888,0
+72.jpg,Batik Parang,10,5.jpg,Batik Kawung,0.8842201232910156,0
+73.jpg,Batik Parang,1,41.jpg,Batik Parang,0.9759414196014404,1
+73.jpg,Batik Parang,2,39.jpg,Batik Parang,0.9715589880943298,1
+73.jpg,Batik Parang,3,3.jpg,Batik Tambal,0.9529399871826172,0
+73.jpg,Batik Parang,4,30.jpg,Batik Dayak,0.9508846402168274,0
+73.jpg,Batik Parang,5,35.jpg,Batik Bali,0.9491084218025208,0
+73.jpg,Batik Parang,6,68.jpg,Batik Insang,0.9484230875968933,0
+73.jpg,Batik Parang,7,26.jpg,Batik Tambal,0.9464333057403564,0
+73.jpg,Batik Parang,8,30.jpg,Batik Poleng,0.9462707042694092,0
+73.jpg,Batik Parang,9,3.jpg,Batik Dayak,0.9455975294113159,0
+73.jpg,Batik Parang,10,48.jpg,Batik Poleng,0.9451259970664978,0
+74.jpg,Batik Parang,1,44.jpg,Batik Tambal,0.95128333568573,0
+74.jpg,Batik Parang,2,36.jpg,Batik Pala,0.9400848150253296,0
+74.jpg,Batik Parang,3,65.jpg,Batik Bali,0.9398856163024902,0
+74.jpg,Batik Parang,4,48.jpg,Batik Sekar Jagad,0.9375633001327515,0
+74.jpg,Batik Parang,5,18.jpg,Batik Pala,0.9365622401237488,0
+74.jpg,Batik Parang,6,2.jpg,Batik Poleng,0.9326832294464111,0
+74.jpg,Batik Parang,7,36.jpg,Batik Dayak,0.9274131655693054,0
+74.jpg,Batik Parang,8,16.jpg,Batik Sekar Jagad,0.9246355891227722,0
+74.jpg,Batik Parang,9,47.jpg,Batik Dayak,0.9230482578277588,0
+74.jpg,Batik Parang,10,3.jpg,Batik Geblek Renteng,0.9225589036941528,0
+75.jpg,Batik Parang,1,45.jpg,Batik Geblek Renteng,0.9755226969718933,0
+75.jpg,Batik Parang,2,68.jpg,Batik Sekar Jagad,0.9733529090881348,0
+75.jpg,Batik Parang,3,31.jpg,Batik Megamendung,0.9725648164749146,0
+75.jpg,Batik Parang,4,23.jpg,Batik Geblek Renteng,0.9666868448257446,0
+75.jpg,Batik Parang,5,0.jpg,Batik Betawi,0.9640485644340515,0
+75.jpg,Batik Parang,6,23.jpg,Batik Cendrawasih,0.9631739854812622,0
+75.jpg,Batik Parang,7,35.jpg,Batik Tambal,0.9623111486434937,0
+75.jpg,Batik Parang,8,36.jpg,Batik Ikat Celup,0.95970219373703,0
+75.jpg,Batik Parang,9,34.jpg,Batik Sekar Jagad,0.9591594338417053,0
+75.jpg,Batik Parang,10,64.jpg,Batik Sekar Jagad,0.957033634185791,0
+76.jpg,Batik Parang,1,64.jpg,Batik Tambal,0.9426857829093933,0
+76.jpg,Batik Parang,2,16.jpg,Batik Sekar Jagad,0.9365816116333008,0
+76.jpg,Batik Parang,3,65.jpg,Batik Bali,0.9317016005516052,0
+76.jpg,Batik Parang,4,17.jpg,Batik Sekar Jagad,0.9217941761016846,0
+76.jpg,Batik Parang,5,40.jpg,Batik Sekar Jagad,0.9202263951301575,0
+76.jpg,Batik Parang,6,63.jpg,Batik Kawung,0.9122632741928101,0
+76.jpg,Batik Parang,7,58.jpg,Batik Insang,0.9116182923316956,0
+76.jpg,Batik Parang,8,48.jpg,Batik Cendrawasih,0.9101160168647766,0
+76.jpg,Batik Parang,9,10.jpg,Batik Tambal,0.9093024134635925,0
+76.jpg,Batik Parang,10,43.jpg,Batik Kawung,0.9031786918640137,0
+77.jpg,Batik Parang,1,0.jpg,Batik Parang,0.9826356768608093,1
+77.jpg,Batik Parang,2,56.jpg,Batik Parang,0.9757090210914612,1
+77.jpg,Batik Parang,3,45.jpg,Batik Lasem,0.9617149829864502,0
+77.jpg,Batik Parang,4,23.jpg,Batik Parang,0.9406478404998779,1
+77.jpg,Batik Parang,5,29.jpg,Batik Sekar Jagad,0.9393336772918701,0
+77.jpg,Batik Parang,6,2.jpg,Batik Tambal,0.9387677311897278,0
+77.jpg,Batik Parang,7,35.jpg,Batik Geblek Renteng,0.9237619638442993,0
+77.jpg,Batik Parang,8,64.jpg,Batik Cendrawasih,0.9231800436973572,0
+77.jpg,Batik Parang,9,7.jpg,Batik Parang,0.921434760093689,1
+77.jpg,Batik Parang,10,45.jpg,Batik Sekar Jagad,0.9202737808227539,0
+78.jpg,Batik Parang,1,20.jpg,Batik Kawung,0.9857836961746216,0
+78.jpg,Batik Parang,2,57.jpg,Batik Kawung,0.9838169813156128,0
+78.jpg,Batik Parang,3,45.jpg,Batik Dayak,0.9599986672401428,0
+78.jpg,Batik Parang,4,30.jpg,Batik Kawung,0.958685040473938,0
+78.jpg,Batik Parang,5,67.jpg,Batik Insang,0.9503239989280701,0
+78.jpg,Batik Parang,6,46.jpg,Batik Sekar Jagad,0.9492982029914856,0
+78.jpg,Batik Parang,7,45.jpg,Batik Kawung,0.9488141536712646,0
+78.jpg,Batik Parang,8,27.jpg,Batik Cendrawasih,0.9423365592956543,0
+78.jpg,Batik Parang,9,17.jpg,Batik Ikat Celup,0.9404155015945435,0
+78.jpg,Batik Parang,10,9.jpg,Batik Kawung,0.9401253461837769,0
+79.jpg,Batik Parang,1,54.jpg,Batik Geblek Renteng,0.9165647625923157,0
+79.jpg,Batik Parang,2,43.jpg,Batik Lasem,0.9012824296951294,0
+79.jpg,Batik Parang,3,13.jpg,Batik Tambal,0.8996302485466003,0
+79.jpg,Batik Parang,4,16.jpg,Batik Tambal,0.8922029733657837,0
+79.jpg,Batik Parang,5,67.jpg,Batik Sekar Jagad,0.8903688192367554,0
+79.jpg,Batik Parang,6,19.jpg,Batik Lasem,0.8901840448379517,0
+79.jpg,Batik Parang,7,55.jpg,Batik Kawung,0.8887346982955933,0
+79.jpg,Batik Parang,8,49.jpg,Batik Cendrawasih,0.8775138258934021,0
+79.jpg,Batik Parang,9,40.jpg,Batik Tambal,0.8771832585334778,0
+79.jpg,Batik Parang,10,10.jpg,Batik Tambal,0.877153217792511,0
+80.jpg,Batik Parang,1,40.jpg,Batik Tambal,0.9129561185836792,0
+80.jpg,Batik Parang,2,13.jpg,Batik Tambal,0.9128429889678955,0
+80.jpg,Batik Parang,3,30.jpg,Batik Sekar Jagad,0.9077426791191101,0
+80.jpg,Batik Parang,4,7.jpg,Batik Bali,0.9059837460517883,0
+80.jpg,Batik Parang,5,23.jpg,Batik Sekar Jagad,0.8986437916755676,0
+80.jpg,Batik Parang,6,55.jpg,Batik Kawung,0.8968705534934998,0
+80.jpg,Batik Parang,7,10.jpg,Batik Tambal,0.8962944746017456,0
+80.jpg,Batik Parang,8,19.jpg,Batik Lasem,0.8956081867218018,0
+80.jpg,Batik Parang,9,54.jpg,Batik Geblek Renteng,0.8938417434692383,0
+80.jpg,Batik Parang,10,43.jpg,Batik Lasem,0.88959801197052,0
+81.jpg,Batik Parang,1,29.jpg,Batik Sekar Jagad,0.9387340545654297,0
+81.jpg,Batik Parang,2,40.jpg,Batik Tambal,0.933168351650238,0
+81.jpg,Batik Parang,3,24.jpg,Batik Tambal,0.9306544065475464,0
+81.jpg,Batik Parang,4,13.jpg,Batik Sekar Jagad,0.9178565740585327,0
+81.jpg,Batik Parang,5,48.jpg,Batik Parang,0.9175785779953003,1
+81.jpg,Batik Parang,6,45.jpg,Batik Sekar Jagad,0.9120404720306396,0
+81.jpg,Batik Parang,7,7.jpg,Batik Parang,0.9099175333976746,1
+81.jpg,Batik Parang,8,5.jpg,Batik Tambal,0.9083900451660156,0
+81.jpg,Batik Parang,9,13.jpg,Batik Cendrawasih,0.9025466442108154,0
+81.jpg,Batik Parang,10,23.jpg,Batik Parang,0.8994693160057068,1
+82.jpg,Batik Parang,1,56.jpg,Batik Parang,0.9745727181434631,1
+82.jpg,Batik Parang,2,0.jpg,Batik Parang,0.9535491466522217,1
+82.jpg,Batik Parang,3,29.jpg,Batik Sekar Jagad,0.9528684020042419,0
+82.jpg,Batik Parang,4,45.jpg,Batik Lasem,0.949585497379303,0
+82.jpg,Batik Parang,5,23.jpg,Batik Parang,0.9411848187446594,1
+82.jpg,Batik Parang,6,8.jpg,Batik Betawi,0.9397081732749939,0
+82.jpg,Batik Parang,7,19.jpg,Batik Dayak,0.9387004375457764,0
+82.jpg,Batik Parang,8,38.jpg,Batik Bali,0.936795711517334,0
+82.jpg,Batik Parang,9,2.jpg,Batik Tambal,0.9342294931411743,0
+82.jpg,Batik Parang,10,12.jpg,Batik Lasem,0.9326121807098389,0
+83.jpg,Batik Parang,1,11.jpg,Batik Kawung,0.9815199375152588,0
+83.jpg,Batik Parang,2,21.jpg,Batik Tambal,0.9683768153190613,0
+83.jpg,Batik Parang,3,42.jpg,Batik Parang,0.9652848243713379,1
+83.jpg,Batik Parang,4,56.jpg,Batik Dayak,0.9622809886932373,0
+83.jpg,Batik Parang,5,48.jpg,Batik Bali,0.9548879861831665,0
+83.jpg,Batik Parang,6,41.jpg,Batik Cendrawasih,0.9545328617095947,0
+83.jpg,Batik Parang,7,10.jpg,Batik Kawung,0.9499369263648987,0
+83.jpg,Batik Parang,8,6.jpg,Batik Kawung,0.9320783615112305,0
+83.jpg,Batik Parang,9,63.jpg,Batik Kawung,0.931414783000946,0
+83.jpg,Batik Parang,10,21.jpg,Batik Sekar Jagad,0.9303483366966248,0
+84.jpg,Batik Parang,1,37.jpg,Batik Sekar Jagad,0.974985659122467,0
+84.jpg,Batik Parang,2,26.jpg,Batik Sekar Jagad,0.9698222875595093,0
+84.jpg,Batik Parang,3,26.jpg,Batik Lasem,0.9678897857666016,0
+84.jpg,Batik Parang,4,27.jpg,Batik Geblek Renteng,0.9566558599472046,0
+84.jpg,Batik Parang,5,58.jpg,Batik Ikat Celup,0.9555390477180481,0
+84.jpg,Batik Parang,6,50.jpg,Batik Ikat Celup,0.9549236297607422,0
+84.jpg,Batik Parang,7,20.jpg,Batik Tambal,0.9535312652587891,0
+84.jpg,Batik Parang,8,15.jpg,Batik Betawi,0.9527067542076111,0
+84.jpg,Batik Parang,9,53.jpg,Batik Insang,0.9485384225845337,0
+84.jpg,Batik Parang,10,46.jpg,Batik Cendrawasih,0.9484161734580994,0
+85.jpg,Batik Parang,1,8.jpg,Batik Tambal,0.9761129021644592,0
+85.jpg,Batik Parang,2,17.jpg,Batik Ikat Celup,0.9634960889816284,0
+85.jpg,Batik Parang,3,8.jpg,Batik Kawung,0.9599932432174683,0
+85.jpg,Batik Parang,4,45.jpg,Batik Dayak,0.9595432877540588,0
+85.jpg,Batik Parang,5,9.jpg,Batik Kawung,0.9574589729309082,0
+85.jpg,Batik Parang,6,67.jpg,Batik Insang,0.9465341567993164,0
+85.jpg,Batik Parang,7,52.jpg,Batik Megamendung,0.9429000020027161,0
+85.jpg,Batik Parang,8,40.jpg,Batik Kawung,0.9398913979530334,0
+85.jpg,Batik Parang,9,64.jpg,Batik Pala,0.9391969442367554,0
+85.jpg,Batik Parang,10,9.jpg,Batik Ikat Celup,0.9389475584030151,0
+86.jpg,Batik Parang,1,62.jpg,Batik Parang,0.9973108172416687,1
+86.jpg,Batik Parang,2,42.jpg,Batik Tambal,0.9840605854988098,0
+86.jpg,Batik Parang,3,53.jpg,Batik Parang,0.982220470905304,1
+86.jpg,Batik Parang,4,62.jpg,Batik Bali,0.9765220880508423,0
+86.jpg,Batik Parang,5,17.jpg,Batik Cendrawasih,0.9717235565185547,0
+86.jpg,Batik Parang,6,67.jpg,Batik Sekar Jagad,0.9681410193443298,0
+86.jpg,Batik Parang,7,27.jpg,Batik Bali,0.9610708355903625,0
+86.jpg,Batik Parang,8,30.jpg,Batik Bali,0.9573094248771667,0
+86.jpg,Batik Parang,9,51.jpg,Batik Tambal,0.9500216841697693,0
+86.jpg,Batik Parang,10,39.jpg,Batik Sekar Jagad,0.9466159343719482,0
+87.jpg,Batik Parang,1,46.jpg,Batik Sekar Jagad,0.9591867327690125,0
+87.jpg,Batik Parang,2,58.jpg,Batik Parang,0.9420710802078247,1
+87.jpg,Batik Parang,3,22.jpg,Batik Poleng,0.9345697164535522,0
+87.jpg,Batik Parang,4,60.jpg,Batik Kawung,0.9328938126564026,0
+87.jpg,Batik Parang,5,40.jpg,Batik Kawung,0.9220466613769531,0
+87.jpg,Batik Parang,6,8.jpg,Batik Kawung,0.9201101064682007,0
+87.jpg,Batik Parang,7,6.jpg,Batik Kawung,0.9167092442512512,0
+87.jpg,Batik Parang,8,42.jpg,Batik Parang,0.9096508026123047,1
+87.jpg,Batik Parang,9,45.jpg,Batik Dayak,0.9079489707946777,0
+87.jpg,Batik Parang,10,57.jpg,Batik Kawung,0.9033942222595215,0
+88.jpg,Batik Parang,1,46.jpg,Batik Parang,0.9995083212852478,1
+88.jpg,Batik Parang,2,25.jpg,Batik Kawung,0.8740634918212891,0
+88.jpg,Batik Parang,3,61.jpg,Batik Insang,0.8195751905441284,0
+88.jpg,Batik Parang,4,18.jpg,Batik Parang,0.80414879322052,1
+88.jpg,Batik Parang,5,9.jpg,Batik Bali,0.8006175756454468,0
+88.jpg,Batik Parang,6,68.jpg,Batik Kawung,0.7931209802627563,0
+88.jpg,Batik Parang,7,49.jpg,Batik Kawung,0.7882446050643921,0
+88.jpg,Batik Parang,8,34.jpg,Batik Kawung,0.7851259708404541,0
+88.jpg,Batik Parang,9,62.jpg,Batik Betawi,0.7817091345787048,0
+88.jpg,Batik Parang,10,58.jpg,Batik Pala,0.7815981507301331,0
+89.jpg,Batik Parang,1,52.jpg,Batik Parang,0.970976710319519,1
+89.jpg,Batik Parang,2,42.jpg,Batik Cendrawasih,0.9463326334953308,0
+89.jpg,Batik Parang,3,67.jpg,Batik Kawung,0.918815553188324,0
+89.jpg,Batik Parang,4,66.jpg,Batik Pala,0.9021332263946533,0
+89.jpg,Batik Parang,5,62.jpg,Batik Poleng,0.8940034508705139,0
+89.jpg,Batik Parang,6,19.jpg,Batik Poleng,0.8886348009109497,0
+89.jpg,Batik Parang,7,26.jpg,Batik Kawung,0.8779041767120361,0
+89.jpg,Batik Parang,8,44.jpg,Batik Bali,0.8732948303222656,0
+89.jpg,Batik Parang,9,16.jpg,Batik Poleng,0.869077205657959,0
+89.jpg,Batik Parang,10,43.jpg,Batik Tambal,0.8617514967918396,0
+70.jpg,Batik Poleng,1,67.jpg,Batik Insang,0.9694193005561829,0
+70.jpg,Batik Poleng,2,62.jpg,Batik Dayak,0.9398431777954102,0
+70.jpg,Batik Poleng,3,30.jpg,Batik Kawung,0.9388875961303711,0
+70.jpg,Batik Poleng,4,45.jpg,Batik Dayak,0.936872661113739,0
+70.jpg,Batik Poleng,5,27.jpg,Batik Cendrawasih,0.9325589537620544,0
+70.jpg,Batik Poleng,6,57.jpg,Batik Kawung,0.9323616027832031,0
+70.jpg,Batik Poleng,7,46.jpg,Batik Sekar Jagad,0.9230183362960815,0
+70.jpg,Batik Poleng,8,8.jpg,Batik Kawung,0.9227309226989746,0
+70.jpg,Batik Poleng,9,53.jpg,Batik Cendrawasih,0.920546293258667,0
+70.jpg,Batik Poleng,10,8.jpg,Batik Tambal,0.9183593988418579,0
+71.jpg,Batik Poleng,1,5.jpg,Batik Pala,0.9012343883514404,0
+71.jpg,Batik Poleng,2,3.jpg,Batik Dayak,0.8893746733665466,0
+71.jpg,Batik Poleng,3,35.jpg,Batik Bali,0.8887443542480469,0
+71.jpg,Batik Poleng,4,59.jpg,Batik Tambal,0.8878413438796997,0
+71.jpg,Batik Poleng,5,7.jpg,Batik Pala,0.8851599097251892,0
+71.jpg,Batik Poleng,6,3.jpg,Batik Lasem,0.8833203315734863,0
+71.jpg,Batik Poleng,7,12.jpg,Batik Cendrawasih,0.8819732666015625,0
+71.jpg,Batik Poleng,8,11.jpg,Batik Insang,0.8789501190185547,0
+71.jpg,Batik Poleng,9,32.jpg,Batik Betawi,0.8785877823829651,0
+71.jpg,Batik Poleng,10,38.jpg,Batik Bali,0.8766648173332214,0
+72.jpg,Batik Poleng,1,23.jpg,Batik Pala,0.9422745704650879,0
+72.jpg,Batik Poleng,2,28.jpg,Batik Pala,0.941670835018158,0
+72.jpg,Batik Poleng,3,56.jpg,Batik Pala,0.9304068684577942,0
+72.jpg,Batik Poleng,4,15.jpg,Batik Poleng,0.9268891215324402,1
+72.jpg,Batik Poleng,5,43.jpg,Batik Poleng,0.9263198375701904,1
+72.jpg,Batik Poleng,6,19.jpg,Batik Bali,0.9169524908065796,0
+72.jpg,Batik Poleng,7,54.jpg,Batik Insang,0.9151453971862793,0
+72.jpg,Batik Poleng,8,60.jpg,Batik Cendrawasih,0.9142295122146606,0
+72.jpg,Batik Poleng,9,27.jpg,Batik Cendrawasih,0.9116179347038269,0
+72.jpg,Batik Poleng,10,11.jpg,Batik Cendrawasih,0.9101964235305786,0
+73.jpg,Batik Poleng,1,33.jpg,Batik Geblek Renteng,0.9605485200881958,0
+73.jpg,Batik Poleng,2,40.jpg,Batik Dayak,0.9591150283813477,0
+73.jpg,Batik Poleng,3,63.jpg,Batik Poleng,0.9571061134338379,1
+73.jpg,Batik Poleng,4,21.jpg,Batik Geblek Renteng,0.9501457810401917,0
+73.jpg,Batik Poleng,5,52.jpg,Batik Megamendung,0.94730144739151,0
+73.jpg,Batik Poleng,6,6.jpg,Batik Kawung,0.9471201300621033,0
+73.jpg,Batik Poleng,7,7.jpg,Batik Sekar Jagad,0.9444195628166199,0
+73.jpg,Batik Poleng,8,8.jpg,Batik Kawung,0.9441341161727905,0
+73.jpg,Batik Poleng,9,5.jpg,Batik Geblek Renteng,0.9418536424636841,0
+73.jpg,Batik Poleng,10,69.jpg,Batik Kawung,0.9410374164581299,0
+74.jpg,Batik Poleng,1,38.jpg,Batik Poleng,0.961286187171936,1
+74.jpg,Batik Poleng,2,7.jpg,Batik Poleng,0.9416056275367737,1
+74.jpg,Batik Poleng,3,6.jpg,Batik Poleng,0.9230971336364746,1
+74.jpg,Batik Poleng,4,52.jpg,Batik Pala,0.9152064919471741,0
+74.jpg,Batik Poleng,5,19.jpg,Batik Poleng,0.8942302465438843,1
+74.jpg,Batik Poleng,6,27.jpg,Batik Parang,0.8732565641403198,0
+74.jpg,Batik Poleng,7,26.jpg,Batik Kawung,0.8689519762992859,0
+74.jpg,Batik Poleng,8,17.jpg,Batik Lasem,0.8682084083557129,0
+74.jpg,Batik Poleng,9,56.jpg,Batik Dayak,0.868094265460968,0
+74.jpg,Batik Poleng,10,11.jpg,Batik Pala,0.8649629354476929,0
+75.jpg,Batik Poleng,1,25.jpg,Batik Poleng,0.995685338973999,1
+75.jpg,Batik Poleng,2,9.jpg,Batik Kawung,0.9712995886802673,0
+75.jpg,Batik Poleng,3,53.jpg,Batik Cendrawasih,0.9644436240196228,0
+75.jpg,Batik Poleng,4,40.jpg,Batik Poleng,0.9626048803329468,1
+75.jpg,Batik Poleng,5,52.jpg,Batik Sekar Jagad,0.9614224433898926,0
+75.jpg,Batik Poleng,6,44.jpg,Batik Parang,0.9601544737815857,0
+75.jpg,Batik Poleng,7,26.jpg,Batik Insang,0.9570009112358093,0
+75.jpg,Batik Poleng,8,34.jpg,Batik Cendrawasih,0.9548487067222595,0
+75.jpg,Batik Poleng,9,9.jpg,Batik Ikat Celup,0.9519900679588318,0
+75.jpg,Batik Poleng,10,41.jpg,Batik Poleng,0.9488953948020935,1
+76.jpg,Batik Poleng,1,15.jpg,Batik Poleng,0.999666154384613,1
+76.jpg,Batik Poleng,2,54.jpg,Batik Insang,0.9895374178886414,0
+76.jpg,Batik Poleng,3,15.jpg,Batik Dayak,0.981893002986908,0
+76.jpg,Batik Poleng,4,34.jpg,Batik Dayak,0.9816586375236511,0
+76.jpg,Batik Poleng,5,43.jpg,Batik Poleng,0.9806323647499084,1
+76.jpg,Batik Poleng,6,42.jpg,Batik Poleng,0.977674663066864,1
+76.jpg,Batik Poleng,7,27.jpg,Batik Dayak,0.9752951264381409,0
+76.jpg,Batik Poleng,8,27.jpg,Batik Cendrawasih,0.972270667552948,0
+76.jpg,Batik Poleng,9,23.jpg,Batik Pala,0.9698804616928101,0
+76.jpg,Batik Poleng,10,31.jpg,Batik Dayak,0.9696794748306274,0
+77.jpg,Batik Poleng,1,67.jpg,Batik Parang,0.9593448638916016,0
+77.jpg,Batik Poleng,2,26.jpg,Batik Poleng,0.9511660933494568,1
+77.jpg,Batik Poleng,3,13.jpg,Batik Sekar Jagad,0.9430332779884338,0
+77.jpg,Batik Poleng,4,39.jpg,Batik Sekar Jagad,0.9415947794914246,0
+77.jpg,Batik Poleng,5,14.jpg,Batik Tambal,0.9382991194725037,0
+77.jpg,Batik Poleng,6,10.jpg,Batik Tambal,0.9350928664207458,0
+77.jpg,Batik Poleng,7,28.jpg,Batik Tambal,0.9302314519882202,0
+77.jpg,Batik Poleng,8,55.jpg,Batik Tambal,0.9287725687026978,0
+77.jpg,Batik Poleng,9,17.jpg,Batik Sekar Jagad,0.9277311563491821,0
+77.jpg,Batik Poleng,10,67.jpg,Batik Betawi,0.927495539188385,0
+78.jpg,Batik Poleng,1,18.jpg,Batik Sekar Jagad,0.9220575094223022,0
+78.jpg,Batik Poleng,2,30.jpg,Batik Megamendung,0.8823339939117432,0
+78.jpg,Batik Poleng,3,21.jpg,Batik Tambal,0.8758501410484314,0
+78.jpg,Batik Poleng,4,5.jpg,Batik Ikat Celup,0.8676422238349915,0
+78.jpg,Batik Poleng,5,48.jpg,Batik Bali,0.865778923034668,0
+78.jpg,Batik Poleng,6,35.jpg,Batik Parang,0.8642045259475708,0
+78.jpg,Batik Poleng,7,41.jpg,Batik Cendrawasih,0.8574317097663879,0
+78.jpg,Batik Poleng,8,18.jpg,Batik Ikat Celup,0.8557614088058472,0
+78.jpg,Batik Poleng,9,56.jpg,Batik Dayak,0.8552252054214478,0
+78.jpg,Batik Poleng,10,52.jpg,Batik Ikat Celup,0.8549768328666687,0
+79.jpg,Batik Poleng,1,40.jpg,Batik Poleng,0.9792951941490173,1
+79.jpg,Batik Poleng,2,9.jpg,Batik Kawung,0.9745691418647766,0
+79.jpg,Batik Poleng,3,9.jpg,Batik Ikat Celup,0.9727093577384949,0
+79.jpg,Batik Poleng,4,41.jpg,Batik Poleng,0.9666722416877747,1
+79.jpg,Batik Poleng,5,44.jpg,Batik Parang,0.9641286134719849,0
+79.jpg,Batik Poleng,6,25.jpg,Batik Poleng,0.9610618352890015,1
+79.jpg,Batik Poleng,7,57.jpg,Batik Kawung,0.9554868936538696,0
+79.jpg,Batik Poleng,8,53.jpg,Batik Cendrawasih,0.954059898853302,0
+79.jpg,Batik Poleng,9,53.jpg,Batik Megamendung,0.946156919002533,0
+79.jpg,Batik Poleng,10,30.jpg,Batik Kawung,0.94553542137146,0
+80.jpg,Batik Poleng,1,25.jpg,Batik Poleng,0.9952242970466614,1
+80.jpg,Batik Poleng,2,9.jpg,Batik Kawung,0.9765713810920715,0
+80.jpg,Batik Poleng,3,53.jpg,Batik Cendrawasih,0.9745097160339355,0
+80.jpg,Batik Poleng,4,9.jpg,Batik Ikat Celup,0.9678504467010498,0
+80.jpg,Batik Poleng,5,40.jpg,Batik Poleng,0.9640913009643555,1
+80.jpg,Batik Poleng,6,1.jpg,Batik Kawung,0.9624893069267273,0
+80.jpg,Batik Poleng,7,41.jpg,Batik Poleng,0.9589940309524536,1
+80.jpg,Batik Poleng,8,64.jpg,Batik Pala,0.9582706689834595,0
+80.jpg,Batik Poleng,9,45.jpg,Batik Dayak,0.9538974165916443,0
+80.jpg,Batik Poleng,10,44.jpg,Batik Parang,0.9489409923553467,0
+81.jpg,Batik Poleng,1,22.jpg,Batik Poleng,0.9616402983665466,1
+81.jpg,Batik Poleng,2,46.jpg,Batik Poleng,0.9029190540313721,1
+81.jpg,Batik Poleng,3,8.jpg,Batik Parang,0.8951432108879089,0
+81.jpg,Batik Poleng,4,26.jpg,Batik Geblek Renteng,0.8902096748352051,0
+81.jpg,Batik Poleng,5,21.jpg,Batik Kawung,0.8745408058166504,0
+81.jpg,Batik Poleng,6,10.jpg,Batik Poleng,0.871363639831543,1
+81.jpg,Batik Poleng,7,30.jpg,Batik Kawung,0.8601127862930298,0
+81.jpg,Batik Poleng,8,1.jpg,Batik Dayak,0.8567389249801636,0
+81.jpg,Batik Poleng,9,24.jpg,Batik Dayak,0.8545365929603577,0
+81.jpg,Batik Poleng,10,68.jpg,Batik Parang,0.8515951633453369,0
+82.jpg,Batik Poleng,1,7.jpg,Batik Poleng,0.9998668432235718,1
+82.jpg,Batik Poleng,2,52.jpg,Batik Pala,0.9658485651016235,0
+82.jpg,Batik Poleng,3,19.jpg,Batik Poleng,0.9465628266334534,1
+82.jpg,Batik Poleng,4,26.jpg,Batik Kawung,0.9405609369277954,0
+82.jpg,Batik Poleng,5,66.jpg,Batik Lasem,0.9331540465354919,0
+82.jpg,Batik Poleng,6,38.jpg,Batik Poleng,0.9300045371055603,1
+82.jpg,Batik Poleng,7,23.jpg,Batik Kawung,0.9258520603179932,0
+82.jpg,Batik Poleng,8,5.jpg,Batik Kawung,0.9218264222145081,0
+82.jpg,Batik Poleng,9,60.jpg,Batik Parang,0.9187601804733276,0
+82.jpg,Batik Poleng,10,60.jpg,Batik Dayak,0.9094169735908508,0
+83.jpg,Batik Poleng,1,59.jpg,Batik Tambal,0.9349545240402222,0
+83.jpg,Batik Poleng,2,36.jpg,Batik Geblek Renteng,0.9255713820457458,0
+83.jpg,Batik Poleng,3,8.jpg,Batik Lasem,0.9185029864311218,0
+83.jpg,Batik Poleng,4,52.jpg,Batik Betawi,0.9184182286262512,0
+83.jpg,Batik Poleng,5,0.jpg,Batik Dayak,0.9172746539115906,0
+83.jpg,Batik Poleng,6,59.jpg,Batik Poleng,0.909460186958313,1
+83.jpg,Batik Poleng,7,3.jpg,Batik Tambal,0.908974826335907,0
+83.jpg,Batik Poleng,8,5.jpg,Batik Parang,0.9084760546684265,0
+83.jpg,Batik Poleng,9,64.jpg,Batik Betawi,0.9072365164756775,0
+83.jpg,Batik Poleng,10,32.jpg,Batik Poleng,0.9063263535499573,1
+84.jpg,Batik Poleng,1,31.jpg,Batik Tambal,0.9456889629364014,0
+84.jpg,Batik Poleng,2,17.jpg,Batik Dayak,0.9379807710647583,0
+84.jpg,Batik Poleng,3,50.jpg,Batik Parang,0.9314680695533752,0
+84.jpg,Batik Poleng,4,12.jpg,Batik Betawi,0.9292464256286621,0
+84.jpg,Batik Poleng,5,3.jpg,Batik Dayak,0.9261369109153748,0
+84.jpg,Batik Poleng,6,50.jpg,Batik Kawung,0.919153094291687,0
+84.jpg,Batik Poleng,7,59.jpg,Batik Poleng,0.9183823466300964,1
+84.jpg,Batik Poleng,8,41.jpg,Batik Ikat Celup,0.9174167513847351,0
+84.jpg,Batik Poleng,9,48.jpg,Batik Poleng,0.9170842170715332,1
+84.jpg,Batik Poleng,10,35.jpg,Batik Bali,0.9155880808830261,0
+85.jpg,Batik Poleng,1,21.jpg,Batik Kawung,0.9661036133766174,0
+85.jpg,Batik Poleng,2,35.jpg,Batik Insang,0.9364088177680969,0
+85.jpg,Batik Poleng,3,64.jpg,Batik Poleng,0.8997698426246643,1
+85.jpg,Batik Poleng,4,32.jpg,Batik Insang,0.8853550553321838,0
+85.jpg,Batik Poleng,5,35.jpg,Batik Parang,0.8821393847465515,0
+85.jpg,Batik Poleng,6,8.jpg,Batik Parang,0.8746359944343567,0
+85.jpg,Batik Poleng,7,52.jpg,Batik Kawung,0.8665896654129028,0
+85.jpg,Batik Poleng,8,30.jpg,Batik Cendrawasih,0.8656029105186462,0
+85.jpg,Batik Poleng,9,68.jpg,Batik Parang,0.856853187084198,0
+85.jpg,Batik Poleng,10,59.jpg,Batik Dayak,0.8491096496582031,0
+86.jpg,Batik Poleng,1,28.jpg,Batik Poleng,0.9232400059700012,1
+86.jpg,Batik Poleng,2,18.jpg,Batik Poleng,0.9205502271652222,1
+86.jpg,Batik Poleng,3,13.jpg,Batik Kawung,0.8645318746566772,0
+86.jpg,Batik Poleng,4,11.jpg,Batik Poleng,0.8562572002410889,1
+86.jpg,Batik Poleng,5,11.jpg,Batik Parang,0.8480772376060486,0
+86.jpg,Batik Poleng,6,40.jpg,Batik Pala,0.84583580493927,0
+86.jpg,Batik Poleng,7,66.jpg,Batik Ikat Celup,0.8457701206207275,0
+86.jpg,Batik Poleng,8,56.jpg,Batik Bali,0.8452873826026917,0
+86.jpg,Batik Poleng,9,15.jpg,Batik Insang,0.8442593216896057,0
+86.jpg,Batik Poleng,10,67.jpg,Batik Poleng,0.841579258441925,1
+87.jpg,Batik Poleng,1,34.jpg,Batik Parang,0.9546313285827637,0
+87.jpg,Batik Poleng,2,40.jpg,Batik Pala,0.9496024250984192,0
+87.jpg,Batik Poleng,3,4.jpg,Batik Parang,0.9423326253890991,0
+87.jpg,Batik Poleng,4,39.jpg,Batik Betawi,0.9422694444656372,0
+87.jpg,Batik Poleng,5,61.jpg,Batik Betawi,0.9397678971290588,0
+87.jpg,Batik Poleng,6,32.jpg,Batik Poleng,0.9352449774742126,1
+87.jpg,Batik Poleng,7,33.jpg,Batik Dayak,0.9330400228500366,0
+87.jpg,Batik Poleng,8,64.jpg,Batik Betawi,0.9324462413787842,0
+87.jpg,Batik Poleng,9,36.jpg,Batik Geblek Renteng,0.9293468594551086,0
+87.jpg,Batik Poleng,10,1.jpg,Batik Insang,0.9289113879203796,0
+88.jpg,Batik Poleng,1,36.jpg,Batik Cendrawasih,0.9816865921020508,0
+88.jpg,Batik Poleng,2,0.jpg,Batik Cendrawasih,0.9811632633209229,0
+88.jpg,Batik Poleng,3,56.jpg,Batik Kawung,0.975709080696106,0
+88.jpg,Batik Poleng,4,44.jpg,Batik Poleng,0.9740075469017029,1
+88.jpg,Batik Poleng,5,64.jpg,Batik Dayak,0.9731269478797913,0
+88.jpg,Batik Poleng,6,40.jpg,Batik Cendrawasih,0.9682769775390625,0
+88.jpg,Batik Poleng,7,24.jpg,Batik Lasem,0.9682710766792297,0
+88.jpg,Batik Poleng,8,3.jpg,Batik Cendrawasih,0.966133177280426,0
+88.jpg,Batik Poleng,9,4.jpg,Batik Bali,0.965010941028595,0
+88.jpg,Batik Poleng,10,68.jpg,Batik Sekar Jagad,0.9638354778289795,0
+89.jpg,Batik Poleng,1,24.jpg,Batik Dayak,0.9650094509124756,0
+89.jpg,Batik Poleng,2,12.jpg,Batik Cendrawasih,0.9498173594474792,0
+89.jpg,Batik Poleng,3,17.jpg,Batik Dayak,0.9460124373435974,0
+89.jpg,Batik Poleng,4,26.jpg,Batik Geblek Renteng,0.9458205103874207,0
+89.jpg,Batik Poleng,5,50.jpg,Batik Kawung,0.9400673508644104,0
+89.jpg,Batik Poleng,6,10.jpg,Batik Cendrawasih,0.9329741597175598,0
+89.jpg,Batik Poleng,7,41.jpg,Batik Ikat Celup,0.9328663349151611,0
+89.jpg,Batik Poleng,8,10.jpg,Batik Poleng,0.9290443062782288,1
+89.jpg,Batik Poleng,9,12.jpg,Batik Betawi,0.9273890256881714,0
+89.jpg,Batik Poleng,10,56.jpg,Batik Betawi,0.9272911548614502,0
+70.jpg,Batik Sekar Jagad,1,53.jpg,Batik Sekar Jagad,0.9963058233261108,1
+70.jpg,Batik Sekar Jagad,2,58.jpg,Batik Sekar Jagad,0.9945749640464783,1
+70.jpg,Batik Sekar Jagad,3,55.jpg,Batik Sekar Jagad,0.9742569327354431,1
+70.jpg,Batik Sekar Jagad,4,23.jpg,Batik Lasem,0.9700366258621216,0
+70.jpg,Batik Sekar Jagad,5,50.jpg,Batik Sekar Jagad,0.9669885039329529,1
+70.jpg,Batik Sekar Jagad,6,42.jpg,Batik Ikat Celup,0.965954601764679,0
+70.jpg,Batik Sekar Jagad,7,65.jpg,Batik Dayak,0.9552344679832458,0
+70.jpg,Batik Sekar Jagad,8,63.jpg,Batik Bali,0.9497262239456177,0
+70.jpg,Batik Sekar Jagad,9,51.jpg,Batik Sekar Jagad,0.949445366859436,1
+70.jpg,Batik Sekar Jagad,10,13.jpg,Batik Bali,0.9442736506462097,0
+71.jpg,Batik Sekar Jagad,1,15.jpg,Batik Megamendung,0.983783483505249,0
+71.jpg,Batik Sekar Jagad,2,0.jpg,Batik Tambal,0.9826989769935608,0
+71.jpg,Batik Sekar Jagad,3,31.jpg,Batik Dayak,0.9817407727241516,0
+71.jpg,Batik Sekar Jagad,4,23.jpg,Batik Bali,0.9813677072525024,0
+71.jpg,Batik Sekar Jagad,5,24.jpg,Batik Poleng,0.9787502288818359,0
+71.jpg,Batik Sekar Jagad,6,32.jpg,Batik Tambal,0.9777003526687622,0
+71.jpg,Batik Sekar Jagad,7,60.jpg,Batik Cendrawasih,0.9747175574302673,0
+71.jpg,Batik Sekar Jagad,8,40.jpg,Batik Ikat Celup,0.9733110070228577,0
+71.jpg,Batik Sekar Jagad,9,56.jpg,Batik Pala,0.9724634289741516,0
+71.jpg,Batik Sekar Jagad,10,43.jpg,Batik Poleng,0.9696804285049438,0
+72.jpg,Batik Sekar Jagad,1,50.jpg,Batik Sekar Jagad,0.9999315142631531,1
+72.jpg,Batik Sekar Jagad,2,55.jpg,Batik Sekar Jagad,0.9982802271842957,1
+72.jpg,Batik Sekar Jagad,3,51.jpg,Batik Sekar Jagad,0.9791548848152161,1
+72.jpg,Batik Sekar Jagad,4,53.jpg,Batik Sekar Jagad,0.969846785068512,1
+72.jpg,Batik Sekar Jagad,5,58.jpg,Batik Sekar Jagad,0.9533740282058716,1
+72.jpg,Batik Sekar Jagad,6,42.jpg,Batik Ikat Celup,0.9418063163757324,0
+72.jpg,Batik Sekar Jagad,7,23.jpg,Batik Lasem,0.9410077333450317,0
+72.jpg,Batik Sekar Jagad,8,65.jpg,Batik Insang,0.919241726398468,0
+72.jpg,Batik Sekar Jagad,9,65.jpg,Batik Dayak,0.9187745451927185,0
+72.jpg,Batik Sekar Jagad,10,63.jpg,Batik Bali,0.9165520668029785,0
+73.jpg,Batik Sekar Jagad,1,5.jpg,Batik Sekar Jagad,0.9995530247688293,1
+73.jpg,Batik Sekar Jagad,2,19.jpg,Batik Lasem,0.9493796825408936,0
+73.jpg,Batik Sekar Jagad,3,55.jpg,Batik Kawung,0.9429640173912048,0
+73.jpg,Batik Sekar Jagad,4,68.jpg,Batik Cendrawasih,0.9417542815208435,0
+73.jpg,Batik Sekar Jagad,5,56.jpg,Batik Lasem,0.9385675191879272,0
+73.jpg,Batik Sekar Jagad,6,8.jpg,Batik Lasem,0.9376454949378967,0
+73.jpg,Batik Sekar Jagad,7,23.jpg,Batik Poleng,0.9373060464859009,0
+73.jpg,Batik Sekar Jagad,8,17.jpg,Batik Betawi,0.9369020462036133,0
+73.jpg,Batik Sekar Jagad,9,25.jpg,Batik Lasem,0.9357700943946838,0
+73.jpg,Batik Sekar Jagad,10,15.jpg,Batik Tambal,0.9354457259178162,0
+74.jpg,Batik Sekar Jagad,1,63.jpg,Batik Bali,0.9615976810455322,0
+74.jpg,Batik Sekar Jagad,2,5.jpg,Batik Lasem,0.9558681845664978,0
+74.jpg,Batik Sekar Jagad,3,65.jpg,Batik Dayak,0.9515261650085449,0
+74.jpg,Batik Sekar Jagad,4,33.jpg,Batik Betawi,0.9438990354537964,0
+74.jpg,Batik Sekar Jagad,5,12.jpg,Batik Tambal,0.9302846193313599,0
+74.jpg,Batik Sekar Jagad,6,62.jpg,Batik Kawung,0.9289520382881165,0
+74.jpg,Batik Sekar Jagad,7,0.jpg,Batik Bali,0.9248086810112,0
+74.jpg,Batik Sekar Jagad,8,69.jpg,Batik Sekar Jagad,0.9230913519859314,1
+74.jpg,Batik Sekar Jagad,9,11.jpg,Batik Lasem,0.9206307530403137,0
+74.jpg,Batik Sekar Jagad,10,49.jpg,Batik Sekar Jagad,0.9202185869216919,1
+75.jpg,Batik Sekar Jagad,1,15.jpg,Batik Sekar Jagad,0.905791163444519,1
+75.jpg,Batik Sekar Jagad,2,27.jpg,Batik Sekar Jagad,0.8989079594612122,1
+75.jpg,Batik Sekar Jagad,3,53.jpg,Batik Bali,0.8884027004241943,0
+75.jpg,Batik Sekar Jagad,4,31.jpg,Batik Insang,0.8863840699195862,0
+75.jpg,Batik Sekar Jagad,5,69.jpg,Batik Sekar Jagad,0.8824341893196106,1
+75.jpg,Batik Sekar Jagad,6,60.jpg,Batik Tambal,0.8792679309844971,0
+75.jpg,Batik Sekar Jagad,7,47.jpg,Batik Bali,0.8749528527259827,0
+75.jpg,Batik Sekar Jagad,8,64.jpg,Batik Sekar Jagad,0.8626683950424194,1
+75.jpg,Batik Sekar Jagad,9,35.jpg,Batik Lasem,0.8623006343841553,0
+75.jpg,Batik Sekar Jagad,10,16.jpg,Batik Dayak,0.86212557554245,0
+76.jpg,Batik Sekar Jagad,1,43.jpg,Batik Sekar Jagad,0.9457825422286987,1
+76.jpg,Batik Sekar Jagad,2,44.jpg,Batik Sekar Jagad,0.9427956938743591,1
+76.jpg,Batik Sekar Jagad,3,55.jpg,Batik Lasem,0.9416986107826233,0
+76.jpg,Batik Sekar Jagad,4,14.jpg,Batik Sekar Jagad,0.9360517263412476,1
+76.jpg,Batik Sekar Jagad,5,1.jpg,Batik Lasem,0.9259307384490967,0
+76.jpg,Batik Sekar Jagad,6,32.jpg,Batik Lasem,0.9236798286437988,0
+76.jpg,Batik Sekar Jagad,7,64.jpg,Batik Lasem,0.9213240146636963,0
+76.jpg,Batik Sekar Jagad,8,63.jpg,Batik Sekar Jagad,0.921249508857727,1
+76.jpg,Batik Sekar Jagad,9,13.jpg,Batik Cendrawasih,0.9212449193000793,0
+76.jpg,Batik Sekar Jagad,10,34.jpg,Batik Sekar Jagad,0.9183664321899414,1
+77.jpg,Batik Sekar Jagad,1,3.jpg,Batik Cendrawasih,0.9744914770126343,0
+77.jpg,Batik Sekar Jagad,2,36.jpg,Batik Cendrawasih,0.9741984605789185,0
+77.jpg,Batik Sekar Jagad,3,52.jpg,Batik Bali,0.972029447555542,0
+77.jpg,Batik Sekar Jagad,4,50.jpg,Batik Insang,0.9676101207733154,0
+77.jpg,Batik Sekar Jagad,5,55.jpg,Batik Pala,0.9662289023399353,0
+77.jpg,Batik Sekar Jagad,6,2.jpg,Batik Geblek Renteng,0.9639446139335632,0
+77.jpg,Batik Sekar Jagad,7,44.jpg,Batik Poleng,0.9637059569358826,0
+77.jpg,Batik Sekar Jagad,8,4.jpg,Batik Sekar Jagad,0.9610655903816223,1
+77.jpg,Batik Sekar Jagad,9,45.jpg,Batik Megamendung,0.9582340121269226,0
+77.jpg,Batik Sekar Jagad,10,24.jpg,Batik Cendrawasih,0.957115113735199,0
+78.jpg,Batik Sekar Jagad,1,13.jpg,Batik Tambal,0.9799340963363647,0
+78.jpg,Batik Sekar Jagad,2,10.jpg,Batik Tambal,0.9776648879051208,0
+78.jpg,Batik Sekar Jagad,3,39.jpg,Batik Sekar Jagad,0.9731371402740479,1
+78.jpg,Batik Sekar Jagad,4,55.jpg,Batik Tambal,0.9691678285598755,0
+78.jpg,Batik Sekar Jagad,5,27.jpg,Batik Bali,0.9629316926002502,0
+78.jpg,Batik Sekar Jagad,6,49.jpg,Batik Geblek Renteng,0.9579914212226868,0
+78.jpg,Batik Sekar Jagad,7,67.jpg,Batik Sekar Jagad,0.9578038454055786,1
+78.jpg,Batik Sekar Jagad,8,62.jpg,Batik Lasem,0.9573708176612854,0
+78.jpg,Batik Sekar Jagad,9,53.jpg,Batik Parang,0.9515372514724731,0
+78.jpg,Batik Sekar Jagad,10,67.jpg,Batik Betawi,0.9496890306472778,0
+79.jpg,Batik Sekar Jagad,1,13.jpg,Batik Lasem,0.9700875282287598,0
+79.jpg,Batik Sekar Jagad,2,36.jpg,Batik Ikat Celup,0.964779257774353,0
+79.jpg,Batik Sekar Jagad,3,64.jpg,Batik Sekar Jagad,0.960379958152771,1
+79.jpg,Batik Sekar Jagad,4,45.jpg,Batik Geblek Renteng,0.9584493041038513,0
+79.jpg,Batik Sekar Jagad,5,68.jpg,Batik Sekar Jagad,0.9549385905265808,1
+79.jpg,Batik Sekar Jagad,6,34.jpg,Batik Sekar Jagad,0.9508051872253418,1
+79.jpg,Batik Sekar Jagad,7,31.jpg,Batik Megamendung,0.9503806233406067,0
+79.jpg,Batik Sekar Jagad,8,12.jpg,Batik Tambal,0.9503037333488464,0
+79.jpg,Batik Sekar Jagad,9,35.jpg,Batik Tambal,0.9493895173072815,0
+79.jpg,Batik Sekar Jagad,10,0.jpg,Batik Betawi,0.9490219354629517,0
+80.jpg,Batik Sekar Jagad,1,40.jpg,Batik Cendrawasih,0.9750376343727112,0
+80.jpg,Batik Sekar Jagad,2,61.jpg,Batik Sekar Jagad,0.9746997356414795,1
+80.jpg,Batik Sekar Jagad,3,24.jpg,Batik Betawi,0.957866907119751,0
+80.jpg,Batik Sekar Jagad,4,64.jpg,Batik Dayak,0.9536992907524109,0
+80.jpg,Batik Sekar Jagad,5,3.jpg,Batik Cendrawasih,0.9513704180717468,0
+80.jpg,Batik Sekar Jagad,6,68.jpg,Batik Sekar Jagad,0.9500548839569092,1
+80.jpg,Batik Sekar Jagad,7,16.jpg,Batik Dayak,0.9488646388053894,0
+80.jpg,Batik Sekar Jagad,8,60.jpg,Batik Tambal,0.947877049446106,0
+80.jpg,Batik Sekar Jagad,9,33.jpg,Batik Sekar Jagad,0.9477514028549194,1
+80.jpg,Batik Sekar Jagad,10,2.jpg,Batik Geblek Renteng,0.9449065923690796,0
+81.jpg,Batik Sekar Jagad,1,33.jpg,Batik Poleng,0.9412033557891846,0
+81.jpg,Batik Sekar Jagad,2,44.jpg,Batik Ikat Celup,0.917445182800293,0
+81.jpg,Batik Sekar Jagad,3,18.jpg,Batik Megamendung,0.9155299067497253,0
+81.jpg,Batik Sekar Jagad,4,36.jpg,Batik Pala,0.9010800123214722,0
+81.jpg,Batik Sekar Jagad,5,18.jpg,Batik Pala,0.9010571837425232,0
+81.jpg,Batik Sekar Jagad,6,17.jpg,Batik Poleng,0.901046872138977,0
+81.jpg,Batik Sekar Jagad,7,0.jpg,Batik Poleng,0.896025538444519,0
+81.jpg,Batik Sekar Jagad,8,17.jpg,Batik Megamendung,0.8953690528869629,0
+81.jpg,Batik Sekar Jagad,9,65.jpg,Batik Bali,0.8944152593612671,0
+81.jpg,Batik Sekar Jagad,10,9.jpg,Batik Geblek Renteng,0.8935125470161438,0
+82.jpg,Batik Sekar Jagad,1,9.jpg,Batik Tambal,0.9932698011398315,0
+82.jpg,Batik Sekar Jagad,2,50.jpg,Batik Tambal,0.9879024624824524,0
+82.jpg,Batik Sekar Jagad,3,12.jpg,Batik Poleng,0.9744548797607422,0
+82.jpg,Batik Sekar Jagad,4,55.jpg,Batik Betawi,0.9688019156455994,0
+82.jpg,Batik Sekar Jagad,5,67.jpg,Batik Parang,0.9552558660507202,0
+82.jpg,Batik Sekar Jagad,6,3.jpg,Batik Poleng,0.9551630616188049,0
+82.jpg,Batik Sekar Jagad,7,28.jpg,Batik Cendrawasih,0.9517526030540466,0
+82.jpg,Batik Sekar Jagad,8,10.jpg,Batik Tambal,0.9474983215332031,0
+82.jpg,Batik Sekar Jagad,9,20.jpg,Batik Tambal,0.9444761276245117,0
+82.jpg,Batik Sekar Jagad,10,58.jpg,Batik Bali,0.943861186504364,0
+83.jpg,Batik Sekar Jagad,1,32.jpg,Batik Dayak,0.9764573574066162,0
+83.jpg,Batik Sekar Jagad,2,19.jpg,Batik Tambal,0.9506375789642334,0
+83.jpg,Batik Sekar Jagad,3,22.jpg,Batik Geblek Renteng,0.9468909502029419,0
+83.jpg,Batik Sekar Jagad,4,0.jpg,Batik Tambal,0.943098247051239,0
+83.jpg,Batik Sekar Jagad,5,25.jpg,Batik Poleng,0.9393020868301392,0
+83.jpg,Batik Sekar Jagad,6,33.jpg,Batik Tambal,0.9383460879325867,0
+83.jpg,Batik Sekar Jagad,7,26.jpg,Batik Insang,0.93634432554245,0
+83.jpg,Batik Sekar Jagad,8,44.jpg,Batik Cendrawasih,0.9337924718856812,0
+83.jpg,Batik Sekar Jagad,9,1.jpg,Batik Kawung,0.9328945875167847,0
+83.jpg,Batik Sekar Jagad,10,29.jpg,Batik Cendrawasih,0.9305385947227478,0
+84.jpg,Batik Sekar Jagad,1,11.jpg,Batik Parang,0.9911237359046936,0
+84.jpg,Batik Sekar Jagad,2,3.jpg,Batik Bali,0.9901431202888489,0
+84.jpg,Batik Sekar Jagad,3,64.jpg,Batik Betawi,0.9656181335449219,0
+84.jpg,Batik Sekar Jagad,4,37.jpg,Batik Geblek Renteng,0.9641741514205933,0
+84.jpg,Batik Sekar Jagad,5,19.jpg,Batik Geblek Renteng,0.9629993438720703,0
+84.jpg,Batik Sekar Jagad,6,53.jpg,Batik Dayak,0.962992787361145,0
+84.jpg,Batik Sekar Jagad,7,59.jpg,Batik Parang,0.9623419046401978,0
+84.jpg,Batik Sekar Jagad,8,0.jpg,Batik Cendrawasih,0.9622477889060974,0
+84.jpg,Batik Sekar Jagad,9,38.jpg,Batik Parang,0.9619106650352478,0
+84.jpg,Batik Sekar Jagad,10,56.jpg,Batik Kawung,0.9581955671310425,0
+85.jpg,Batik Sekar Jagad,1,69.jpg,Batik Sekar Jagad,0.9986209273338318,1
+85.jpg,Batik Sekar Jagad,2,53.jpg,Batik Bali,0.967417299747467,0
+85.jpg,Batik Sekar Jagad,3,13.jpg,Batik Bali,0.961764395236969,0
+85.jpg,Batik Sekar Jagad,4,1.jpg,Batik Cendrawasih,0.9571672677993774,0
+85.jpg,Batik Sekar Jagad,5,47.jpg,Batik Tambal,0.9533852338790894,0
+85.jpg,Batik Sekar Jagad,6,47.jpg,Batik Bali,0.9532662630081177,0
+85.jpg,Batik Sekar Jagad,7,0.jpg,Batik Bali,0.9532160758972168,0
+85.jpg,Batik Sekar Jagad,8,15.jpg,Batik Cendrawasih,0.9519174098968506,0
+85.jpg,Batik Sekar Jagad,9,11.jpg,Batik Lasem,0.9492166638374329,0
+85.jpg,Batik Sekar Jagad,10,5.jpg,Batik Lasem,0.9486622214317322,0
+86.jpg,Batik Sekar Jagad,1,36.jpg,Batik Sekar Jagad,0.9965400099754333,1
+86.jpg,Batik Sekar Jagad,2,66.jpg,Batik Betawi,0.9473617672920227,0
+86.jpg,Batik Sekar Jagad,3,39.jpg,Batik Ikat Celup,0.9461128115653992,0
+86.jpg,Batik Sekar Jagad,4,23.jpg,Batik Lasem,0.9453284740447998,0
+86.jpg,Batik Sekar Jagad,5,27.jpg,Batik Betawi,0.9415516257286072,0
+86.jpg,Batik Sekar Jagad,6,12.jpg,Batik Kawung,0.9288991093635559,0
+86.jpg,Batik Sekar Jagad,7,31.jpg,Batik Kawung,0.9286865592002869,0
+86.jpg,Batik Sekar Jagad,8,45.jpg,Batik Tambal,0.9280432462692261,0
+86.jpg,Batik Sekar Jagad,9,15.jpg,Batik Sekar Jagad,0.9275966882705688,1
+86.jpg,Batik Sekar Jagad,10,12.jpg,Batik Sekar Jagad,0.9248000383377075,1
+87.jpg,Batik Sekar Jagad,1,69.jpg,Batik Sekar Jagad,0.9819487929344177,1
+87.jpg,Batik Sekar Jagad,2,13.jpg,Batik Bali,0.9764391779899597,0
+87.jpg,Batik Sekar Jagad,3,1.jpg,Batik Cendrawasih,0.9620280265808105,0
+87.jpg,Batik Sekar Jagad,4,20.jpg,Batik Parang,0.9601119160652161,0
+87.jpg,Batik Sekar Jagad,5,47.jpg,Batik Tambal,0.9597731828689575,0
+87.jpg,Batik Sekar Jagad,6,0.jpg,Batik Bali,0.9578458666801453,0
+87.jpg,Batik Sekar Jagad,7,47.jpg,Batik Kawung,0.9562973976135254,0
+87.jpg,Batik Sekar Jagad,8,53.jpg,Batik Bali,0.9526469111442566,0
+87.jpg,Batik Sekar Jagad,9,5.jpg,Batik Lasem,0.9514862298965454,0
+87.jpg,Batik Sekar Jagad,10,16.jpg,Batik Dayak,0.94537752866745,0
+88.jpg,Batik Sekar Jagad,1,41.jpg,Batik Cendrawasih,0.9345652461051941,0
+88.jpg,Batik Sekar Jagad,2,57.jpg,Batik Parang,0.9275906682014465,0
+88.jpg,Batik Sekar Jagad,3,35.jpg,Batik Poleng,0.9172518849372864,0
+88.jpg,Batik Sekar Jagad,4,69.jpg,Batik Kawung,0.9056735634803772,0
+88.jpg,Batik Sekar Jagad,5,16.jpg,Batik Sekar Jagad,0.9054128527641296,1
+88.jpg,Batik Sekar Jagad,6,50.jpg,Batik Pala,0.9048149585723877,0
+88.jpg,Batik Sekar Jagad,7,40.jpg,Batik Dayak,0.9030095338821411,0
+88.jpg,Batik Sekar Jagad,8,8.jpg,Batik Kawung,0.9014871120452881,0
+88.jpg,Batik Sekar Jagad,9,48.jpg,Batik Bali,0.9005715847015381,0
+88.jpg,Batik Sekar Jagad,10,6.jpg,Batik Kawung,0.9004610776901245,0
+89.jpg,Batik Sekar Jagad,1,41.jpg,Batik Geblek Renteng,0.9297171235084534,0
+89.jpg,Batik Sekar Jagad,2,64.jpg,Batik Sekar Jagad,0.9246533513069153,1
+89.jpg,Batik Sekar Jagad,3,20.jpg,Batik Geblek Renteng,0.9230310320854187,0
+89.jpg,Batik Sekar Jagad,4,15.jpg,Batik Bali,0.9217392802238464,0
+89.jpg,Batik Sekar Jagad,5,55.jpg,Batik Pala,0.9199035167694092,0
+89.jpg,Batik Sekar Jagad,6,61.jpg,Batik Sekar Jagad,0.9174677133560181,1
+89.jpg,Batik Sekar Jagad,7,33.jpg,Batik Sekar Jagad,0.9142963290214539,1
+89.jpg,Batik Sekar Jagad,8,47.jpg,Batik Tambal,0.9120253324508667,0
+89.jpg,Batik Sekar Jagad,9,3.jpg,Batik Cendrawasih,0.9115484952926636,0
+89.jpg,Batik Sekar Jagad,10,52.jpg,Batik Bali,0.9114516377449036,0
+70.jpg,Batik Tambal,1,55.jpg,Batik Betawi,0.9846084713935852,0
+70.jpg,Batik Tambal,2,31.jpg,Batik Cendrawasih,0.9804767966270447,0
+70.jpg,Batik Tambal,3,58.jpg,Batik Bali,0.959791898727417,0
+70.jpg,Batik Tambal,4,50.jpg,Batik Tambal,0.9541009664535522,1
+70.jpg,Batik Tambal,5,67.jpg,Batik Parang,0.9505849480628967,0
+70.jpg,Batik Tambal,6,9.jpg,Batik Tambal,0.9500938653945923,1
+70.jpg,Batik Tambal,7,62.jpg,Batik Bali,0.9500634670257568,0
+70.jpg,Batik Tambal,8,27.jpg,Batik Bali,0.9493560194969177,0
+70.jpg,Batik Tambal,9,28.jpg,Batik Cendrawasih,0.9493299722671509,0
+70.jpg,Batik Tambal,10,67.jpg,Batik Sekar Jagad,0.9470903277397156,0
+71.jpg,Batik Tambal,1,2.jpg,Batik Tambal,0.9875932335853577,1
+71.jpg,Batik Tambal,2,39.jpg,Batik Parang,0.965536892414093,0
+71.jpg,Batik Tambal,3,20.jpg,Batik Cendrawasih,0.9653838276863098,0
+71.jpg,Batik Tambal,4,42.jpg,Batik Geblek Renteng,0.9600949287414551,0
+71.jpg,Batik Tambal,5,37.jpg,Batik Tambal,0.9591127038002014,1
+71.jpg,Batik Tambal,6,30.jpg,Batik Dayak,0.9587808847427368,0
+71.jpg,Batik Tambal,7,38.jpg,Batik Bali,0.9585373401641846,0
+71.jpg,Batik Tambal,8,15.jpg,Batik Betawi,0.9575232863426208,0
+71.jpg,Batik Tambal,9,29.jpg,Batik Ikat Celup,0.957316517829895,0
+71.jpg,Batik Tambal,10,62.jpg,Batik Cendrawasih,0.9560338854789734,0
+72.jpg,Batik Tambal,1,61.jpg,Batik Poleng,0.9830577373504639,0
+72.jpg,Batik Tambal,2,26.jpg,Batik Lasem,0.9804293513298035,0
+72.jpg,Batik Tambal,3,2.jpg,Batik Tambal,0.9766069054603577,1
+72.jpg,Batik Tambal,4,15.jpg,Batik Betawi,0.9742773175239563,0
+72.jpg,Batik Tambal,5,37.jpg,Batik Sekar Jagad,0.9723296165466309,0
+72.jpg,Batik Tambal,6,55.jpg,Batik Tambal,0.9667384028434753,1
+72.jpg,Batik Tambal,7,56.jpg,Batik Poleng,0.9666887521743774,0
+72.jpg,Batik Tambal,8,35.jpg,Batik Geblek Renteng,0.9665462970733643,0
+72.jpg,Batik Tambal,9,26.jpg,Batik Sekar Jagad,0.9658039212226868,0
+72.jpg,Batik Tambal,10,53.jpg,Batik Insang,0.965735673904419,0
+73.jpg,Batik Tambal,1,21.jpg,Batik Bali,0.9782118797302246,0
+73.jpg,Batik Tambal,2,62.jpg,Batik Bali,0.9731512069702148,0
+73.jpg,Batik Tambal,3,4.jpg,Batik Sekar Jagad,0.972504198551178,0
+73.jpg,Batik Tambal,4,44.jpg,Batik Poleng,0.9715972542762756,0
+73.jpg,Batik Tambal,5,45.jpg,Batik Geblek Renteng,0.9707909226417542,0
+73.jpg,Batik Tambal,6,68.jpg,Batik Sekar Jagad,0.9675065279006958,0
+73.jpg,Batik Tambal,7,20.jpg,Batik Betawi,0.9667540788650513,0
+73.jpg,Batik Tambal,8,52.jpg,Batik Bali,0.9650751948356628,0
+73.jpg,Batik Tambal,9,68.jpg,Batik Cendrawasih,0.9648851752281189,0
+73.jpg,Batik Tambal,10,17.jpg,Batik Cendrawasih,0.9637675285339355,0
+74.jpg,Batik Tambal,1,69.jpg,Batik Cendrawasih,0.9789049625396729,0
+74.jpg,Batik Tambal,2,54.jpg,Batik Dayak,0.9664329886436462,0
+74.jpg,Batik Tambal,3,61.jpg,Batik Poleng,0.9608523845672607,0
+74.jpg,Batik Tambal,4,15.jpg,Batik Betawi,0.950343668460846,0
+74.jpg,Batik Tambal,5,15.jpg,Batik Tambal,0.9497895240783691,1
+74.jpg,Batik Tambal,6,26.jpg,Batik Lasem,0.9473098516464233,0
+74.jpg,Batik Tambal,7,55.jpg,Batik Tambal,0.9428462982177734,1
+74.jpg,Batik Tambal,8,56.jpg,Batik Poleng,0.9416670203208923,0
+74.jpg,Batik Tambal,9,26.jpg,Batik Poleng,0.9403039216995239,0
+74.jpg,Batik Tambal,10,20.jpg,Batik Pala,0.9397898316383362,0
+76.jpg,Batik Tambal,1,45.jpg,Batik Insang,0.9841145873069763,0
+76.jpg,Batik Tambal,2,42.jpg,Batik Geblek Renteng,0.9831476807594299,0
+76.jpg,Batik Tambal,3,11.jpg,Batik Insang,0.9820011258125305,0
+76.jpg,Batik Tambal,4,62.jpg,Batik Cendrawasih,0.98109370470047,0
+76.jpg,Batik Tambal,5,20.jpg,Batik Cendrawasih,0.9805963039398193,0
+76.jpg,Batik Tambal,6,21.jpg,Batik Poleng,0.9782972931861877,0
+76.jpg,Batik Tambal,7,34.jpg,Batik Geblek Renteng,0.9759111404418945,0
+76.jpg,Batik Tambal,8,39.jpg,Batik Parang,0.9758332967758179,0
+76.jpg,Batik Tambal,9,58.jpg,Batik Ikat Celup,0.9757848381996155,0
+76.jpg,Batik Tambal,10,30.jpg,Batik Poleng,0.9737920165061951,0
+77.jpg,Batik Tambal,1,17.jpg,Batik Sekar Jagad,0.9573488235473633,0
+77.jpg,Batik Tambal,2,29.jpg,Batik Ikat Celup,0.9567518830299377,0
+77.jpg,Batik Tambal,3,40.jpg,Batik Sekar Jagad,0.9563348889350891,0
+77.jpg,Batik Tambal,4,20.jpg,Batik Dayak,0.9537780284881592,0
+77.jpg,Batik Tambal,5,58.jpg,Batik Insang,0.9485753178596497,0
+77.jpg,Batik Tambal,6,37.jpg,Batik Tambal,0.9450896978378296,1
+77.jpg,Batik Tambal,7,35.jpg,Batik Geblek Renteng,0.9447855949401855,0
+77.jpg,Batik Tambal,8,37.jpg,Batik Sekar Jagad,0.9419049024581909,0
+77.jpg,Batik Tambal,9,21.jpg,Batik Parang,0.939639687538147,0
+77.jpg,Batik Tambal,10,26.jpg,Batik Sekar Jagad,0.9387844800949097,0
+78.jpg,Batik Tambal,1,11.jpg,Batik Cendrawasih,0.9830657243728638,0
+78.jpg,Batik Tambal,2,42.jpg,Batik Dayak,0.9807590842247009,0
+78.jpg,Batik Tambal,3,69.jpg,Batik Geblek Renteng,0.9786009192466736,0
+78.jpg,Batik Tambal,4,19.jpg,Batik Bali,0.9763335585594177,0
+78.jpg,Batik Tambal,5,56.jpg,Batik Cendrawasih,0.9704144597053528,0
+78.jpg,Batik Tambal,6,34.jpg,Batik Dayak,0.968667209148407,0
+78.jpg,Batik Tambal,7,0.jpg,Batik Megamendung,0.967373788356781,0
+78.jpg,Batik Tambal,8,29.jpg,Batik Cendrawasih,0.9670782089233398,0
+78.jpg,Batik Tambal,9,54.jpg,Batik Insang,0.9638631939888,0
+78.jpg,Batik Tambal,10,42.jpg,Batik Poleng,0.9638432264328003,0
+79.jpg,Batik Tambal,1,43.jpg,Batik Ikat Celup,0.9654770493507385,0
+79.jpg,Batik Tambal,2,20.jpg,Batik Pala,0.9646817445755005,0
+79.jpg,Batik Tambal,3,68.jpg,Batik Tambal,0.9535971879959106,1
+79.jpg,Batik Tambal,4,29.jpg,Batik Ikat Celup,0.9495904445648193,0
+79.jpg,Batik Tambal,5,37.jpg,Batik Sekar Jagad,0.9495500922203064,0
+79.jpg,Batik Tambal,6,37.jpg,Batik Tambal,0.9469380378723145,1
+79.jpg,Batik Tambal,7,28.jpg,Batik Tambal,0.9456531405448914,1
+79.jpg,Batik Tambal,8,67.jpg,Batik Cendrawasih,0.9405956268310547,0
+79.jpg,Batik Tambal,9,57.jpg,Batik Cendrawasih,0.9393558502197266,0
+79.jpg,Batik Tambal,10,26.jpg,Batik Sekar Jagad,0.938508152961731,0
+80.jpg,Batik Tambal,1,64.jpg,Batik Sekar Jagad,0.9891506433486938,0
+80.jpg,Batik Tambal,2,68.jpg,Batik Sekar Jagad,0.9775433540344238,0
+80.jpg,Batik Tambal,3,40.jpg,Batik Geblek Renteng,0.9726311564445496,0
+80.jpg,Batik Tambal,4,13.jpg,Batik Lasem,0.9718021750450134,0
+80.jpg,Batik Tambal,5,36.jpg,Batik Ikat Celup,0.9716739058494568,0
+80.jpg,Batik Tambal,6,0.jpg,Batik Betawi,0.9689157009124756,0
+80.jpg,Batik Tambal,7,0.jpg,Batik Cendrawasih,0.9667812585830688,0
+80.jpg,Batik Tambal,8,16.jpg,Batik Dayak,0.9654067158699036,0
+80.jpg,Batik Tambal,9,31.jpg,Batik Megamendung,0.9648190140724182,0
+80.jpg,Batik Tambal,10,12.jpg,Batik Tambal,0.9643673896789551,1
+82.jpg,Batik Tambal,1,38.jpg,Batik Bali,0.9817387461662292,0
+82.jpg,Batik Tambal,2,12.jpg,Batik Lasem,0.979777455329895,0
+82.jpg,Batik Tambal,3,17.jpg,Batik Tambal,0.9777253866195679,1
+82.jpg,Batik Tambal,4,39.jpg,Batik Parang,0.9687567353248596,0
+82.jpg,Batik Tambal,5,65.jpg,Batik Tambal,0.9650617837905884,1
+82.jpg,Batik Tambal,6,50.jpg,Batik Kawung,0.954462468624115,0
+82.jpg,Batik Tambal,7,51.jpg,Batik Kawung,0.9461265802383423,0
+82.jpg,Batik Tambal,8,3.jpg,Batik Dayak,0.9442574381828308,0
+82.jpg,Batik Tambal,9,25.jpg,Batik Tambal,0.9433056712150574,1
+82.jpg,Batik Tambal,10,56.jpg,Batik Parang,0.9422664642333984,0
+83.jpg,Batik Tambal,1,64.jpg,Batik Tambal,0.9996416568756104,1
+83.jpg,Batik Tambal,2,7.jpg,Batik Bali,0.9495079517364502,0
+83.jpg,Batik Tambal,3,3.jpg,Batik Poleng,0.9487789869308472,0
+83.jpg,Batik Tambal,4,9.jpg,Batik Tambal,0.9446123838424683,1
+83.jpg,Batik Tambal,5,56.jpg,Batik Sekar Jagad,0.9372103214263916,0
+83.jpg,Batik Tambal,6,50.jpg,Batik Tambal,0.9347568154335022,1
+83.jpg,Batik Tambal,7,13.jpg,Batik Tambal,0.9326752424240112,1
+83.jpg,Batik Tambal,8,10.jpg,Batik Tambal,0.9313164949417114,1
+83.jpg,Batik Tambal,9,26.jpg,Batik Sekar Jagad,0.9234037399291992,0
+83.jpg,Batik Tambal,10,39.jpg,Batik Tambal,0.9194269776344299,1
+84.jpg,Batik Tambal,1,63.jpg,Batik Sekar Jagad,0.9334677457809448,0
+84.jpg,Batik Tambal,2,42.jpg,Batik Sekar Jagad,0.9272923469543457,0
+84.jpg,Batik Tambal,3,68.jpg,Batik Bali,0.9267470240592957,0
+84.jpg,Batik Tambal,4,22.jpg,Batik Bali,0.9244751930236816,0
+84.jpg,Batik Tambal,5,1.jpg,Batik Pala,0.9231321811676025,0
+84.jpg,Batik Tambal,6,47.jpg,Batik Bali,0.9134722352027893,0
+84.jpg,Batik Tambal,7,62.jpg,Batik Bali,0.9129053950309753,0
+84.jpg,Batik Tambal,8,20.jpg,Batik Betawi,0.9128699898719788,0
+84.jpg,Batik Tambal,9,64.jpg,Batik Sekar Jagad,0.9121909141540527,0
+84.jpg,Batik Tambal,10,53.jpg,Batik Bali,0.9119065999984741,0
+85.jpg,Batik Tambal,1,61.jpg,Batik Poleng,0.9787058234214783,0
+85.jpg,Batik Tambal,2,2.jpg,Batik Tambal,0.9773876667022705,1
+85.jpg,Batik Tambal,3,26.jpg,Batik Lasem,0.9719085693359375,0
+85.jpg,Batik Tambal,4,35.jpg,Batik Geblek Renteng,0.9689375758171082,0
+85.jpg,Batik Tambal,5,15.jpg,Batik Betawi,0.9673895835876465,0
+85.jpg,Batik Tambal,6,37.jpg,Batik Sekar Jagad,0.9651119709014893,0
+85.jpg,Batik Tambal,7,56.jpg,Batik Poleng,0.9634312987327576,0
+85.jpg,Batik Tambal,8,58.jpg,Batik Ikat Celup,0.9634004831314087,0
+85.jpg,Batik Tambal,9,55.jpg,Batik Tambal,0.9623493552207947,1
+85.jpg,Batik Tambal,10,62.jpg,Batik Cendrawasih,0.9622064232826233,0
+87.jpg,Batik Tambal,1,11.jpg,Batik Kawung,0.956331729888916,0
+87.jpg,Batik Tambal,2,42.jpg,Batik Parang,0.9553909301757812,0
+87.jpg,Batik Tambal,3,56.jpg,Batik Dayak,0.9517939686775208,0
+87.jpg,Batik Tambal,4,6.jpg,Batik Kawung,0.948911726474762,0
+87.jpg,Batik Tambal,5,10.jpg,Batik Kawung,0.9380162954330444,0
+87.jpg,Batik Tambal,6,41.jpg,Batik Cendrawasih,0.9323192834854126,0
+87.jpg,Batik Tambal,7,8.jpg,Batik Kawung,0.9305109977722168,0
+87.jpg,Batik Tambal,8,63.jpg,Batik Kawung,0.9299812912940979,0
+87.jpg,Batik Tambal,9,27.jpg,Batik Parang,0.9299561381340027,0
+87.jpg,Batik Tambal,10,48.jpg,Batik Bali,0.9259852170944214,0
+88.jpg,Batik Tambal,1,41.jpg,Batik Tambal,0.9889078140258789,1
+88.jpg,Batik Tambal,2,32.jpg,Batik Cendrawasih,0.968238353729248,0
+88.jpg,Batik Tambal,3,49.jpg,Batik Tambal,0.9662665128707886,1
+88.jpg,Batik Tambal,4,52.jpg,Batik Cendrawasih,0.9349940419197083,0
+88.jpg,Batik Tambal,5,21.jpg,Batik Insang,0.9341617822647095,0
+88.jpg,Batik Tambal,6,31.jpg,Batik Parang,0.9338778257369995,0
+88.jpg,Batik Tambal,7,47.jpg,Batik Sekar Jagad,0.9304620623588562,0
+88.jpg,Batik Tambal,8,48.jpg,Batik Kawung,0.9298756122589111,0
+88.jpg,Batik Tambal,9,67.jpg,Batik Bali,0.9232670664787292,0
+88.jpg,Batik Tambal,10,66.jpg,Batik Bali,0.9205496907234192,0
+89.jpg,Batik Tambal,1,16.jpg,Batik Dayak,0.9815815687179565,0
+89.jpg,Batik Tambal,2,60.jpg,Batik Tambal,0.9702383279800415,1
+89.jpg,Batik Tambal,3,0.jpg,Batik Betawi,0.9699475765228271,0
+89.jpg,Batik Tambal,4,0.jpg,Batik Bali,0.9668373465538025,0
+89.jpg,Batik Tambal,5,51.jpg,Batik Ikat Celup,0.9603686332702637,0
+89.jpg,Batik Tambal,6,68.jpg,Batik Bali,0.9585423469543457,0
+89.jpg,Batik Tambal,7,40.jpg,Batik Cendrawasih,0.9564436674118042,0
+89.jpg,Batik Tambal,8,47.jpg,Batik Kawung,0.9549208283424377,0
+89.jpg,Batik Tambal,9,61.jpg,Batik Sekar Jagad,0.9447120428085327,0
+89.jpg,Batik Tambal,10,3.jpg,Batik Sekar Jagad,0.9444723725318909,0

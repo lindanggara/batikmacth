@@ -1,0 +1,46 @@
+{
+    "total_train_awal": 1050,
+    "total_test_awal": 300,
+    "total_train_bersih": 1031,
+    "total_test_bersih": 295,
+    "train_dikeluarkan": 19,
+    "test_dikeluarkan": 5,
+    "total_gambar_bersih": 1326,
+    "jumlah_kelas": 15,
+    "distribusi": {
+        "TRAIN": {
+            "Batik Bali": 70,
+            "Batik Betawi": 70,
+            "Batik Cendrawasih": 70,
+            "Batik Dayak": 70,
+            "Batik Geblek Renteng": 70,
+            "Batik Ikat Celup": 64,
+            "Batik Insang": 70,
+            "Batik Kawung": 70,
+            "Batik Lasem": 69,
+            "Batik Megamendung": 70,
+            "Batik Pala": 68,
+            "Batik Parang": 70,
+            "Batik Poleng": 70,
+            "Batik Sekar Jagad": 66,
+            "Batik Tambal": 64
+        },
+        "TEST": {
+            "Batik Bali": 20,
+            "Batik Betawi": 20,
+            "Batik Cendrawasih": 19,
+            "Batik Dayak": 20,
+            "Batik Geblek Renteng": 20,
+            "Batik Ikat Celup": 19,
+            "Batik Insang": 20,
+            "Batik Kawung": 20,
+            "Batik Lasem": 20,
+            "Batik Megamendung": 20,
+            "Batik Pala": 20,
+            "Batik Parang": 20,
+            "Batik Poleng": 20,
+            "Batik Sekar Jagad": 20,
+            "Batik Tambal": 17
+        }
+    }
+}
