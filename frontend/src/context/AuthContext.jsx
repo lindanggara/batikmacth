@@ -1,28 +1,61 @@
-import { createContext, useState } from 'react'
+import { createContext, useContext, useState } from "react";
 
-export const AuthContext = createContext(null)
+const KUNCI_AUTH = "batikmatch_auth_v1";
+const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
-  const [token, setToken] = useState(() => localStorage.getItem('batiklens_admin_token'))
-  const [username, setUsername] = useState(() => localStorage.getItem('batiklens_admin_user') || '')
+  const [user, setUser] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem(KUNCI_AUTH) || "null");
+    } catch {
+      return null;
+    }
+  });
 
-  const login = (newToken, user) => {
-    localStorage.setItem('batiklens_admin_token', newToken)
-    localStorage.setItem('batiklens_admin_user', user)
-    setToken(newToken)
-    setUsername(user)
+  function login({ email, role = "admin", nama }) {
+    const sesi = {
+      email: email || "kurator@batikmatch.id",
+      nama: nama || (role === "admin" ? "Kurator Wastra" : "Kolektor Batik"),
+      role,
+      token: `mock-jwt-${role}-${Date.now()}`,
+    };
+    localStorage.setItem(KUNCI_AUTH, JSON.stringify(sesi));
+    setUser(sesi);
+    return sesi;
   }
 
-  const logout = () => {
-    localStorage.removeItem('batiklens_admin_token')
-    localStorage.removeItem('batiklens_admin_user')
-    setToken(null)
-    setUsername('')
+  function logout() {
+    localStorage.removeItem(KUNCI_AUTH);
+    setUser(null);
   }
 
   return (
-    <AuthContext.Provider value={{ token, username, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        role: user?.role || "guest",
+        isAuthenticated: Boolean(user),
+        isAdmin: user?.role === "admin",
+        login,
+        logout,
+      }}
+    >
       {children}
     </AuthContext.Provider>
-  )
+  );
+}
+
+export function useAuth() {
+  const ctx = useContext(AuthContext);
+  if (!ctx) {
+    return {
+      user: null,
+      role: "guest",
+      isAuthenticated: false,
+      isAdmin: false,
+      login: () => null,
+      logout: () => {},
+    };
+  }
+  return ctx;
 }

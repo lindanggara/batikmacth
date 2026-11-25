@@ -554,3 +554,44 @@ body {
     animation: none !important;
   }
 }
+/* LANDING_SHOWCASE_V25 */
+@keyframes laserScan {
+  0%, 100% {
+    top: 8%;
+    opacity: 0.35;
+  }
+  50% {
+    top: 88%;
+    opacity: 1;
+  }
+}
+
+@keyframes pitaBerjalan {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.laser-beam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #F3F1ED, #C59C8A, #F3F1ED, transparent);
+  box-shadow: 0 0 16px 3px rgba(197, 156, 138, 0.85);
+  animation: laserScan 3.4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: pitaBerjalan 34s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}

@@ -95,7 +95,7 @@ export default function KartuMotifBaru({ motif, favorit, onToggle, label }) {
 
         <div className="mt-3 flex flex-wrap gap-1.5">
           <span className="rounded-full border border-white/15 bg-white/10 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
-            {isPesisir ? "Corak Pesisir" : "Corak Pedalaman"}
+            {motif?.aliran || (isPesisir ? "Corak Pesisir" : "Corak Pedalaman")}
           </span>
           <span className="rounded-full border border-white/15 bg-white/10 px-2.5 py-0.5 text-[10px] font-medium text-[#C59C8A] backdrop-blur-md">
             Wastra Asli

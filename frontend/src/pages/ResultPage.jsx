@@ -7,38 +7,12 @@ import { simpanKeRiwayat } from "./HistoryPage";
 
 const HATI = "M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z";
 
-const DETAIL_MOTIF = {
-  parang: {
-    gaya: "Pedalaman Keraton",
-    filosofi: "Melambangkan keteguhan hati, semangat pantang menyerah seperti ombak samudra, serta jalinan persaudaraan yang tak terputus.",
-    pemakaian: "Upacara adat keraton, pernikahan resmi, dan acara kenegaraan.",
-  },
-  kawung: {
-    gaya: "Pedalaman Keraton",
-    filosofi: "Terinspirasi dari buah aren (kolang-kaling) yang dibelah empat, melambangkan kesucian hati, pengendalian diri, dan keadilan.",
-    pemakaian: "Busana resmi kerajaan, abdi dalem, hingga acara formal modern.",
-  },
-  megamendung: {
-    gaya: "Pesisir Cirebon",
-    filosofi: "Melambangkan kesabaran, keteduhan jiwa, dan kemampuan meredam amarah layaknya awan mendung yang membawa kesejukan.",
-    pemakaian: "Acara semi-formal, busana kerja kreatif, dan cendera mata khas pesisir.",
-  },
-  ceplok: {
-    gaya: "Pedalaman Klasik",
-    filosofi: "Mencerminkan keteraturan hidup, keseimbangan kosmos, serta harapan agar pemakainya memiliki kepribadian yang berwibawa.",
-    pemakaian: "Pertemuan resmi, acara adat, dan busana sehari-hari.",
-  },
-  sidomukti: {
-    gaya: "Pedalaman Solo",
-    filosofi: "Berasal dari kata 'Sido' (terwujud) dan 'Mukti' (mulia/sejahtera), menjadi doa agar pemakainya mencapai kemuliaan lahir batin.",
-    pemakaian: "Busana pengantin adat Jawa pada prosesi akad maupun panggih.",
-  },
-  truntum: {
-    gaya: "Pedalaman Surakarta",
-    filosofi: "Bermakna cinta kasih yang bersemi kembali (tumaruntum) serta ketulusan bimbingan orang tua kepada putra-putrinya.",
-    pemakaian: "Dikenakan orang tua mempelai dalam upacara pernikahan adat Jawa.",
-  },
-};
+const TAB_ENSIKLOPEDIA = [
+  { id: "filosofi", label: "Filosofi & Makna" },
+  { id: "sejarah", label: "Sejarah & Asal" },
+  { id: "anatomi", label: "Anatomi & Isen" },
+  { id: "pakem", label: "Pakem & Busana" },
+];
 
 export default function ResultPage() {
   const { state } = useLocation();
@@ -50,6 +24,7 @@ export default function ResultPage() {
   const [hasil, setHasil] = useState(null);
   const [error, setError] = useState("");
   const [nilai, setNilai] = useState(null);
+  const [tabAktif, setTabAktif] = useState("filosofi");
 
   useEffect(() => {
     if (!file) return;
@@ -64,6 +39,7 @@ export default function ResultPage() {
     setHasil(null);
     setError("");
     setNilai(null);
+    setTabAktif("filosofi");
     cariMotif({ file, contohId })
       .then((h) => {
         if (!batal) {
@@ -79,13 +55,13 @@ export default function ResultPage() {
     return () => { batal = true; };
   }, [file, contohId]);
 
-  if (!file && !contohId) return <Navigate to="/" replace />;
+  if (!file && !contohId) return <Navigate to="/studio" replace />;
 
   if (error) {
     return (
       <div className="glass-panel mx-auto max-w-md rounded-[28px] p-8 text-center">
         <p role="alert" className="text-sm font-bold text-red-800">{error}</p>
-        <Link to="/" className="mt-5 inline-flex h-11 items-center rounded-full bg-[#AD7559] px-7 text-xs font-bold text-white">
+        <Link to="/studio" className="mt-5 inline-flex h-11 items-center rounded-full bg-[#AD7559] px-7 text-xs font-bold text-white">
           Coba lagi
         </Link>
       </div>
@@ -104,17 +80,12 @@ export default function ResultPage() {
   const t = hasil.tebakan;
   const favorit = fav.ada(t.id);
   const skor = hasil.skor ? Math.round(hasil.skor * 100) : hasil.yakin ? 94 : 76;
-  const extra = DETAIL_MOTIF[(t.id || "").toLowerCase()] || {
-    gaya: `Batik ${t.daerah}`,
-    filosofi: `Warisan wastra khas ${t.daerah} yang mencerminkan kearifan lokal, keselarasan alam, dan ketekunan perajin batik Nusantara.`,
-    pemakaian: "Busana formal, acara adat daerah, serta pelestarian budaya.",
-  };
 
   return (
     <div className="space-y-8">
       <div className="grid items-start gap-8 lg:grid-cols-[370px_1fr]">
         {/* KARTU KIRI: Full-Bleed Card + Frosted Glass Sheet */}
-        <div className="card-motion motion-reveal relative flex min-h-[490px] flex-col justify-between overflow-hidden rounded-[32px] border border-white/35 bg-[#432912] text-white shadow-[0_24px_50px_rgba(67,41,18,0.22)] lg:sticky lg:top-8">
+        <div className="card-motion motion-reveal relative flex min-h-[500px] flex-col justify-between overflow-hidden rounded-[32px] border border-white/35 bg-[#432912] text-white shadow-[0_24px_50px_rgba(67,41,18,0.22)] lg:sticky lg:top-8">
           <LingkaranFotoBatik motif={t} srcManual={fotoUrl} className="absolute inset-0 h-full w-full" />
 
           <div
@@ -172,12 +143,12 @@ export default function ResultPage() {
                 {t.daerah}
               </span>
               <span className="rounded-full border border-white/15 bg-white/12 px-3 py-1 text-[11px] font-semibold text-[#C59C8A] backdrop-blur-md">
-                {extra.gaya}
+                {t.aliran || "Wastra Nusantara"}
               </span>
             </div>
 
             <Link
-              to="/"
+              to="/studio"
               className="mt-5 flex h-12 w-full items-center justify-center rounded-full bg-white text-xs font-bold text-[#432912] shadow-lg transition hover:scale-[1.02]"
             >
               Pindai Foto Lain
@@ -185,19 +156,87 @@ export default function ResultPage() {
           </div>
         </div>
 
-        {/* KOLOM KANAN: Teks Bersih & Kartu Metadata Warm Latte Glass */}
+        {/* KOLOM KANAN: Ensiklopedia Lengkap 4 Tab + Metadata */}
         <div className="space-y-7 pt-1">
-          <div className="border-b border-[#432912]/10 pb-6">
+          <div className="glass-panel rounded-[32px] p-6 sm:p-7">
             <span className="text-[11px] font-bold tracking-widest text-[#AD7559] uppercase">
-              Hasil Identifikasi Wastra
+              Ensiklopedia Wastra Nusantara
             </span>
             <h2 className="mt-1 text-2xl font-bold text-[#432912]">
-              Filosofi &amp; Karakteristik {t.nama}
+              Mengenal Lebih Dalam {t.nama}
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-[#432912]/80">
-              {extra.filosofi}
-            </p>
 
+            {/* Navigasi 4 Tab Ensiklopedia */}
+            <div className="mt-4 flex flex-wrap gap-2 border-b border-[#432912]/10 pb-4">
+              {TAB_ENSIKLOPEDIA.map((tab) => {
+                const aktif = tabAktif === tab.id;
+                return (
+                  <button
+                    key={tab.id}
+                    type="button"
+                    onClick={() => setTabAktif(tab.id)}
+                    className={`rounded-full px-4 py-1.5 text-xs font-bold transition ${
+                      aktif
+                        ? "bg-[#AD7559] text-white shadow-sm"
+                        : "bg-white/65 text-[#432912]/70 hover:bg-white hover:text-[#432912]"
+                    }`}
+                  >
+                    {tab.label}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Konten Tab Aktif */}
+            <div className="mt-4 min-h-[96px]">
+              {tabAktif === "filosofi" && (
+                <div>
+                  <h3 className="text-sm font-bold text-[#85522F]">Nilai Simbolis &amp; Makna Budaya</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-[#432912]/85">
+                    {t.filosofi || t.ciri}
+                  </p>
+                </div>
+              )}
+
+              {tabAktif === "sejarah" && (
+                <div>
+                  <h3 className="text-sm font-bold text-[#85522F]">Latar Belakang Sejarah &amp; Perkembangan</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-[#432912]/85">
+                    {t.sejarah || `Warisan seni batik tradisional yang berakar kuat dari kebudayaan ${t.daerah}.`}
+                  </p>
+                </div>
+              )}
+
+              {tabAktif === "anatomi" && (
+                <div>
+                  <h3 className="text-sm font-bold text-[#85522F]">Struktur Ornamen &amp; Isen-Isen</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-[#432912]/85">
+                    {t.anatomi || t.ciri}
+                  </p>
+                </div>
+              )}
+
+              {tabAktif === "pakem" && (
+                <div className="space-y-2.5">
+                  <div>
+                    <h3 className="text-sm font-bold text-[#85522F]">Pakem &amp; Aturan Adat</h3>
+                    <p className="mt-1 text-xs leading-relaxed text-[#432912]/85 sm:text-sm">
+                      {t.pakem || "Dapat dikenakan dalam berbagai acara resmi maupun perayaan budaya."}
+                    </p>
+                  </div>
+                  <div className="rounded-2xl bg-[#AD7559]/12 p-3">
+                    <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">
+                      Rekomendasi Padu Padan Busana
+                    </span>
+                    <p className="mt-0.5 text-xs font-semibold text-[#432912]">
+                      {t.busana || "Kemeja formal, kebaya klasik, maupun busana modern."}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* 3 Kartu Metadata Warm Latte Glass */}
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="card-motion motion-breath motion-reveal glass-latte rounded-2xl p-4">
                 <div className="flex items-center gap-1.5">
@@ -210,36 +249,37 @@ export default function ResultPage() {
               <div className="card-motion motion-breath motion-reveal glass-latte rounded-2xl p-4">
                 <div className="flex items-center gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#AD7559]" />
-                  <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Gaya Wastra</span>
+                  <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Aliran Wastra</span>
                 </div>
-                <p className="mt-1.5 text-sm font-bold text-[#432912]">{extra.gaya}</p>
+                <p className="mt-1.5 text-sm font-bold text-[#432912]">{t.aliran || "Klasik Nusantara"}</p>
               </div>
 
               <div className="card-motion motion-breath motion-reveal glass-latte rounded-2xl p-4">
                 <div className="flex items-center gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#AD7559]" />
-                  <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Penggunaan</span>
+                  <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Skor Kemiripan</span>
                 </div>
-                <p className="mt-1.5 line-clamp-2 text-xs font-semibold leading-snug text-[#432912]">{extra.pemakaian}</p>
+                <p className="mt-1.5 text-sm font-bold text-[#432912]">{skor}% Cosine Match</p>
               </div>
             </div>
 
-            <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+            {/* Evaluasi Pengguna */}
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-[#432912]/10 pt-4">
               <span className="text-xs font-semibold text-[#432912]/70">
-                Apakah hasil tebakan ini sesuai?
+                Apakah hasil identifikasi ini akurat?
               </span>
               {nilai === null ? (
                 <div className="flex items-center gap-2">
                   <button
                     type="button"
-                    onClick={() => setNilai("ya")}
+                    onClick={() => { setNilai("ya"); try { const l = JSON.parse(localStorage.getItem("batikmatch_feedback_v1") || "[]"); localStorage.setItem("batikmatch_feedback_v1", JSON.stringify([{ id: Date.now(), motif: t.nama, status: "Akurat", waktu: new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }) }, ...l])); } catch {} }}
                     className="rounded-full bg-[#AD7559] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:brightness-105"
                   >
                     Ya, Akurat
                   </button>
                   <button
                     type="button"
-                    onClick={() => setNilai("tidak")}
+                    onClick={() => { setNilai("tidak"); try { const l = JSON.parse(localStorage.getItem("batikmatch_feedback_v1") || "[]"); localStorage.setItem("batikmatch_feedback_v1", JSON.stringify([{ id: Date.now(), motif: t.nama, status: "Kurang Tepat", waktu: new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }) }, ...l])); } catch {} }}
                     className="rounded-full border border-white/80 bg-white/70 px-5 py-2 text-xs font-bold text-[#432912]/80 backdrop-blur-md transition hover:bg-white"
                   >
                     Kurang Tepat
@@ -251,6 +291,7 @@ export default function ResultPage() {
             </div>
           </div>
 
+          {/* 3 Motif Kerabat Terdekat */}
           {hasil.mirip?.length > 0 && (
             <div className="space-y-4">
               <div>
