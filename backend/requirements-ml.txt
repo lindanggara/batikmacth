@@ -1,0 +1,4 @@
+# Tambahan untuk menjalankan model CNN dari ml/embedding.py
+-r requirements.txt
+torch
+torchvision
