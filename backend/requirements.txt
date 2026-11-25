@@ -1,9 +1,7 @@
-﻿fastapi
+# Inti backend (cukup untuk menjalankan API dengan model baseline histogram)
+fastapi>=0.110
 uvicorn[standard]
 python-multipart
 python-dotenv
-torch
-torchvision
 numpy
 pillow
-scikit-learn
