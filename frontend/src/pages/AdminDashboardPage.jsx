@@ -22,7 +22,7 @@ export default function AdminDashboardPage() {
       return [
         { id: 1, motif: "Batik Kawung", status: "Akurat", waktu: "14:10" },
         { id: 2, motif: "Batik Megamendung", status: "Akurat", waktu: "13:45" },
-        { id: 3, motif: "Batik Sidoluhur", status: "Kurang Tepat", waktu: "12:20" },
+        { id: 3, motif: "Batik Poleng", status: "Kurang Tepat", waktu: "12:20" },
       ];
     } catch {
       return [];
