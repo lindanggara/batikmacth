@@ -1,0 +1,1032 @@
+path,class,split
+TRAIN/Batik Bali/0.jpg,Batik Bali,train
+TRAIN/Batik Bali/1.jpg,Batik Bali,train
+TRAIN/Batik Bali/10.jpg,Batik Bali,train
+TRAIN/Batik Bali/11.jpg,Batik Bali,train
+TRAIN/Batik Bali/12.jpg,Batik Bali,train
+TRAIN/Batik Bali/13.jpg,Batik Bali,train
+TRAIN/Batik Bali/14.jpg,Batik Bali,train
+TRAIN/Batik Bali/15.jpg,Batik Bali,train
+TRAIN/Batik Bali/16.jpg,Batik Bali,train
+TRAIN/Batik Bali/17.jpg,Batik Bali,train
+TRAIN/Batik Bali/18.jpg,Batik Bali,train
+TRAIN/Batik Bali/19.jpg,Batik Bali,train
+TRAIN/Batik Bali/2.jpg,Batik Bali,train
+TRAIN/Batik Bali/20.jpg,Batik Bali,train
+TRAIN/Batik Bali/21.jpg,Batik Bali,train
+TRAIN/Batik Bali/22.jpg,Batik Bali,train
+TRAIN/Batik Bali/23.jpg,Batik Bali,train
+TRAIN/Batik Bali/24.jpg,Batik Bali,train
+TRAIN/Batik Bali/25.jpg,Batik Bali,train
+TRAIN/Batik Bali/26.jpg,Batik Bali,train
+TRAIN/Batik Bali/27.jpg,Batik Bali,train
+TRAIN/Batik Bali/28.jpg,Batik Bali,train
+TRAIN/Batik Bali/29.jpg,Batik Bali,train
+TRAIN/Batik Bali/3.jpg,Batik Bali,train
+TRAIN/Batik Bali/30.jpg,Batik Bali,train
+TRAIN/Batik Bali/31.jpg,Batik Bali,train
+TRAIN/Batik Bali/32.jpg,Batik Bali,train
+TRAIN/Batik Bali/33.jpg,Batik Bali,train
+TRAIN/Batik Bali/34.jpg,Batik Bali,train
+TRAIN/Batik Bali/35.jpg,Batik Bali,train
+TRAIN/Batik Bali/36.jpg,Batik Bali,train
+TRAIN/Batik Bali/37.jpg,Batik Bali,train
+TRAIN/Batik Bali/38.jpg,Batik Bali,train
+TRAIN/Batik Bali/39.jpg,Batik Bali,train
+TRAIN/Batik Bali/4.jpg,Batik Bali,train
+TRAIN/Batik Bali/40.jpg,Batik Bali,train
+TRAIN/Batik Bali/41.jpg,Batik Bali,train
+TRAIN/Batik Bali/42.jpg,Batik Bali,train
+TRAIN/Batik Bali/43.jpg,Batik Bali,train
+TRAIN/Batik Bali/44.jpg,Batik Bali,train
+TRAIN/Batik Bali/45.jpg,Batik Bali,train
+TRAIN/Batik Bali/46.jpg,Batik Bali,train
+TRAIN/Batik Bali/47.jpg,Batik Bali,train
+TRAIN/Batik Bali/48.jpg,Batik Bali,train
+TRAIN/Batik Bali/49.jpg,Batik Bali,train
+TRAIN/Batik Bali/5.jpg,Batik Bali,train
+TRAIN/Batik Bali/50.jpg,Batik Bali,train
+TRAIN/Batik Bali/51.jpg,Batik Bali,train
+TRAIN/Batik Bali/52.jpg,Batik Bali,train
+TRAIN/Batik Bali/53.jpg,Batik Bali,train
+TRAIN/Batik Bali/54.jpg,Batik Bali,train
+TRAIN/Batik Bali/55.jpg,Batik Bali,train
+TRAIN/Batik Bali/56.jpg,Batik Bali,train
+TRAIN/Batik Bali/57.jpg,Batik Bali,train
+TRAIN/Batik Bali/58.jpg,Batik Bali,train
+TRAIN/Batik Bali/59.jpg,Batik Bali,train
+TRAIN/Batik Bali/6.jpg,Batik Bali,train
+TRAIN/Batik Bali/60.jpg,Batik Bali,train
+TRAIN/Batik Bali/61.jpg,Batik Bali,train
+TRAIN/Batik Bali/62.jpg,Batik Bali,train
+TRAIN/Batik Bali/63.jpg,Batik Bali,train
+TRAIN/Batik Bali/64.jpg,Batik Bali,train
+TRAIN/Batik Bali/65.jpg,Batik Bali,train
+TRAIN/Batik Bali/66.jpg,Batik Bali,train
+TRAIN/Batik Bali/67.jpg,Batik Bali,train
+TRAIN/Batik Bali/68.jpg,Batik Bali,train
+TRAIN/Batik Bali/69.jpg,Batik Bali,train
+TRAIN/Batik Bali/7.jpg,Batik Bali,train
+TRAIN/Batik Bali/8.jpg,Batik Bali,train
+TRAIN/Batik Bali/9.jpg,Batik Bali,train
+TRAIN/Batik Betawi/0.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/1.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/10.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/11.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/12.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/13.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/14.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/15.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/16.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/17.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/18.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/19.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/2.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/20.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/21.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/22.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/23.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/24.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/25.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/26.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/27.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/28.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/29.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/3.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/30.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/31.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/32.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/33.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/34.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/35.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/36.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/37.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/38.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/39.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/4.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/40.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/41.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/42.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/43.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/44.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/45.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/46.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/47.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/48.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/49.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/5.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/50.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/51.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/52.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/53.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/54.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/55.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/56.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/57.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/58.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/59.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/6.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/60.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/61.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/62.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/63.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/64.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/65.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/66.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/67.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/68.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/69.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/7.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/8.jpg,Batik Betawi,train
+TRAIN/Batik Betawi/9.jpg,Batik Betawi,train
+TRAIN/Batik Cendrawasih/0.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/1.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/10.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/11.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/12.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/13.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/14.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/15.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/16.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/17.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/18.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/19.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/2.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/20.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/21.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/22.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/23.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/24.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/25.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/26.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/27.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/28.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/29.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/3.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/30.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/31.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/32.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/33.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/34.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/35.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/36.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/37.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/38.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/39.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/4.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/40.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/41.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/42.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/43.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/44.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/45.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/46.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/47.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/48.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/49.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/5.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/50.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/51.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/52.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/53.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/54.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/55.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/56.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/57.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/58.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/59.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/6.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/60.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/61.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/62.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/63.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/64.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/65.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/66.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/67.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/68.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/69.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/7.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/8.jpg,Batik Cendrawasih,train
+TRAIN/Batik Cendrawasih/9.jpg,Batik Cendrawasih,train
+TRAIN/Batik Dayak/0.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/1.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/10.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/11.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/12.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/13.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/14.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/15.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/16.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/17.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/18.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/19.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/2.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/20.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/21.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/22.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/23.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/24.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/25.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/26.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/27.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/28.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/29.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/3.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/30.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/31.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/32.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/33.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/34.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/35.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/36.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/37.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/38.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/39.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/4.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/40.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/41.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/42.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/43.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/44.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/45.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/46.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/47.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/48.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/49.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/5.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/50.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/51.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/52.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/53.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/54.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/55.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/56.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/57.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/58.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/59.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/6.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/60.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/61.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/62.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/63.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/64.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/65.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/66.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/67.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/68.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/69.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/7.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/8.jpg,Batik Dayak,train
+TRAIN/Batik Dayak/9.jpg,Batik Dayak,train
+TRAIN/Batik Geblek Renteng/0.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/1.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/10.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/11.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/12.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/13.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/14.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/15.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/16.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/17.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/18.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/19.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/2.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/20.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/21.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/22.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/23.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/24.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/25.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/26.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/27.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/28.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/29.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/3.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/30.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/31.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/32.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/33.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/34.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/35.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/36.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/37.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/38.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/39.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/4.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/40.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/41.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/42.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/43.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/44.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/45.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/46.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/47.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/48.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/49.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/5.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/50.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/51.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/52.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/53.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/54.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/55.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/56.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/57.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/58.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/59.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/6.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/60.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/61.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/62.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/63.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/64.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/65.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/66.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/67.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/68.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/69.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/7.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/8.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Geblek Renteng/9.jpg,Batik Geblek Renteng,train
+TRAIN/Batik Ikat Celup/0.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/1.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/10.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/11.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/12.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/13.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/14.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/15.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/16.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/17.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/18.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/19.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/2.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/21.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/22.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/23.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/24.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/25.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/26.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/27.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/28.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/29.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/3.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/30.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/31.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/32.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/33.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/34.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/35.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/36.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/37.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/38.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/39.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/4.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/40.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/41.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/42.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/43.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/44.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/45.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/46.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/47.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/48.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/5.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/50.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/51.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/52.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/53.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/54.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/55.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/57.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/58.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/6.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/60.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/61.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/62.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/64.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/65.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/66.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/68.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/69.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/7.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/8.jpg,Batik Ikat Celup,train
+TRAIN/Batik Ikat Celup/9.jpg,Batik Ikat Celup,train
+TRAIN/Batik Insang/0.jpg,Batik Insang,train
+TRAIN/Batik Insang/1.jpg,Batik Insang,train
+TRAIN/Batik Insang/10.jpg,Batik Insang,train
+TRAIN/Batik Insang/11.jpg,Batik Insang,train
+TRAIN/Batik Insang/12.jpg,Batik Insang,train
+TRAIN/Batik Insang/13.jpg,Batik Insang,train
+TRAIN/Batik Insang/14.jpg,Batik Insang,train
+TRAIN/Batik Insang/15.jpg,Batik Insang,train
+TRAIN/Batik Insang/16.jpg,Batik Insang,train
+TRAIN/Batik Insang/17.jpg,Batik Insang,train
+TRAIN/Batik Insang/18.jpg,Batik Insang,train
+TRAIN/Batik Insang/19.jpg,Batik Insang,train
+TRAIN/Batik Insang/2.jpg,Batik Insang,train
+TRAIN/Batik Insang/20.jpg,Batik Insang,train
+TRAIN/Batik Insang/21.jpg,Batik Insang,train
+TRAIN/Batik Insang/22.jpg,Batik Insang,train
+TRAIN/Batik Insang/23.jpg,Batik Insang,train
+TRAIN/Batik Insang/24.jpg,Batik Insang,train
+TRAIN/Batik Insang/25.jpg,Batik Insang,train
+TRAIN/Batik Insang/26.jpg,Batik Insang,train
+TRAIN/Batik Insang/27.jpg,Batik Insang,train
+TRAIN/Batik Insang/28.jpg,Batik Insang,train
+TRAIN/Batik Insang/29.jpg,Batik Insang,train
+TRAIN/Batik Insang/3.jpg,Batik Insang,train
+TRAIN/Batik Insang/30.jpg,Batik Insang,train
+TRAIN/Batik Insang/31.jpg,Batik Insang,train
+TRAIN/Batik Insang/32.jpg,Batik Insang,train
+TRAIN/Batik Insang/33.jpg,Batik Insang,train
+TRAIN/Batik Insang/34.jpg,Batik Insang,train
+TRAIN/Batik Insang/35.jpg,Batik Insang,train
+TRAIN/Batik Insang/36.jpg,Batik Insang,train
+TRAIN/Batik Insang/37.jpg,Batik Insang,train
+TRAIN/Batik Insang/38.jpg,Batik Insang,train
+TRAIN/Batik Insang/39.jpg,Batik Insang,train
+TRAIN/Batik Insang/4.jpg,Batik Insang,train
+TRAIN/Batik Insang/40.jpg,Batik Insang,train
+TRAIN/Batik Insang/41.jpg,Batik Insang,train
+TRAIN/Batik Insang/42.jpg,Batik Insang,train
+TRAIN/Batik Insang/43.jpg,Batik Insang,train
+TRAIN/Batik Insang/44.jpg,Batik Insang,train
+TRAIN/Batik Insang/45.jpg,Batik Insang,train
+TRAIN/Batik Insang/46.jpg,Batik Insang,train
+TRAIN/Batik Insang/47.jpg,Batik Insang,train
+TRAIN/Batik Insang/48.jpg,Batik Insang,train
+TRAIN/Batik Insang/49.jpg,Batik Insang,train
+TRAIN/Batik Insang/5.jpg,Batik Insang,train
+TRAIN/Batik Insang/50.jpg,Batik Insang,train
+TRAIN/Batik Insang/51.jpg,Batik Insang,train
+TRAIN/Batik Insang/52.jpg,Batik Insang,train
+TRAIN/Batik Insang/53.jpg,Batik Insang,train
+TRAIN/Batik Insang/54.jpg,Batik Insang,train
+TRAIN/Batik Insang/55.jpg,Batik Insang,train
+TRAIN/Batik Insang/56.jpg,Batik Insang,train
+TRAIN/Batik Insang/57.jpg,Batik Insang,train
+TRAIN/Batik Insang/58.jpg,Batik Insang,train
+TRAIN/Batik Insang/59.jpg,Batik Insang,train
+TRAIN/Batik Insang/6.jpg,Batik Insang,train
+TRAIN/Batik Insang/60.jpg,Batik Insang,train
+TRAIN/Batik Insang/61.jpg,Batik Insang,train
+TRAIN/Batik Insang/62.jpg,Batik Insang,train
+TRAIN/Batik Insang/63.jpg,Batik Insang,train
+TRAIN/Batik Insang/64.jpg,Batik Insang,train
+TRAIN/Batik Insang/65.jpg,Batik Insang,train
+TRAIN/Batik Insang/66.jpg,Batik Insang,train
+TRAIN/Batik Insang/67.jpg,Batik Insang,train
+TRAIN/Batik Insang/68.jpg,Batik Insang,train
+TRAIN/Batik Insang/69.jpg,Batik Insang,train
+TRAIN/Batik Insang/7.jpg,Batik Insang,train
+TRAIN/Batik Insang/8.jpg,Batik Insang,train
+TRAIN/Batik Insang/9.jpg,Batik Insang,train
+TRAIN/Batik Kawung/0.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/1.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/10.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/11.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/12.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/13.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/14.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/15.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/16.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/17.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/18.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/19.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/2.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/20.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/21.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/22.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/23.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/24.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/25.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/26.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/27.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/28.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/29.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/3.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/30.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/31.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/32.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/33.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/34.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/35.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/36.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/37.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/38.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/39.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/4.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/40.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/41.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/42.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/43.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/44.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/45.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/46.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/47.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/48.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/49.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/5.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/50.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/51.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/52.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/53.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/54.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/55.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/56.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/57.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/58.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/59.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/6.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/60.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/61.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/62.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/63.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/64.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/65.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/66.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/67.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/68.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/69.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/7.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/8.jpg,Batik Kawung,train
+TRAIN/Batik Kawung/9.jpg,Batik Kawung,train
+TRAIN/Batik Lasem/0.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/1.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/10.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/11.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/12.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/13.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/14.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/15.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/16.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/17.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/18.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/19.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/2.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/20.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/21.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/22.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/23.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/24.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/25.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/26.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/27.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/28.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/29.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/3.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/30.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/31.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/32.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/33.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/34.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/35.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/36.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/37.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/38.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/39.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/4.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/41.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/42.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/43.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/44.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/45.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/46.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/47.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/48.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/49.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/5.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/50.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/51.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/52.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/53.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/54.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/55.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/56.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/57.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/58.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/59.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/6.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/60.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/61.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/62.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/63.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/64.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/65.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/66.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/67.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/68.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/69.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/7.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/8.jpg,Batik Lasem,train
+TRAIN/Batik Lasem/9.jpg,Batik Lasem,train
+TRAIN/Batik Megamendung/0.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/1.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/10.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/11.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/12.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/13.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/14.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/15.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/16.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/17.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/18.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/19.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/2.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/20.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/21.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/22.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/23.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/24.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/25.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/26.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/27.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/28.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/29.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/3.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/30.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/31.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/32.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/33.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/34.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/35.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/36.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/37.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/38.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/39.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/4.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/40.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/41.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/42.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/43.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/44.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/45.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/46.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/47.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/48.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/49.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/5.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/50.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/51.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/52.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/53.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/54.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/55.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/56.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/57.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/58.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/59.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/6.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/60.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/61.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/62.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/63.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/64.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/65.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/66.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/67.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/68.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/69.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/7.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/8.jpg,Batik Megamendung,train
+TRAIN/Batik Megamendung/9.jpg,Batik Megamendung,train
+TRAIN/Batik Pala/0.jpg,Batik Pala,train
+TRAIN/Batik Pala/1.jpg,Batik Pala,train
+TRAIN/Batik Pala/10.jpg,Batik Pala,train
+TRAIN/Batik Pala/11.jpg,Batik Pala,train
+TRAIN/Batik Pala/12.jpg,Batik Pala,train
+TRAIN/Batik Pala/13.jpg,Batik Pala,train
+TRAIN/Batik Pala/14.jpg,Batik Pala,train
+TRAIN/Batik Pala/15.jpg,Batik Pala,train
+TRAIN/Batik Pala/16.jpg,Batik Pala,train
+TRAIN/Batik Pala/17.jpg,Batik Pala,train
+TRAIN/Batik Pala/18.jpg,Batik Pala,train
+TRAIN/Batik Pala/19.jpg,Batik Pala,train
+TRAIN/Batik Pala/2.jpg,Batik Pala,train
+TRAIN/Batik Pala/20.jpg,Batik Pala,train
+TRAIN/Batik Pala/21.jpg,Batik Pala,train
+TRAIN/Batik Pala/22.jpg,Batik Pala,train
+TRAIN/Batik Pala/23.jpg,Batik Pala,train
+TRAIN/Batik Pala/24.jpg,Batik Pala,train
+TRAIN/Batik Pala/25.jpg,Batik Pala,train
+TRAIN/Batik Pala/26.jpg,Batik Pala,train
+TRAIN/Batik Pala/27.jpg,Batik Pala,train
+TRAIN/Batik Pala/28.jpg,Batik Pala,train
+TRAIN/Batik Pala/29.jpg,Batik Pala,train
+TRAIN/Batik Pala/3.jpg,Batik Pala,train
+TRAIN/Batik Pala/30.jpg,Batik Pala,train
+TRAIN/Batik Pala/31.jpg,Batik Pala,train
+TRAIN/Batik Pala/32.jpg,Batik Pala,train
+TRAIN/Batik Pala/33.jpg,Batik Pala,train
+TRAIN/Batik Pala/34.jpg,Batik Pala,train
+TRAIN/Batik Pala/35.jpg,Batik Pala,train
+TRAIN/Batik Pala/36.jpg,Batik Pala,train
+TRAIN/Batik Pala/37.jpg,Batik Pala,train
+TRAIN/Batik Pala/38.jpg,Batik Pala,train
+TRAIN/Batik Pala/39.jpg,Batik Pala,train
+TRAIN/Batik Pala/4.jpg,Batik Pala,train
+TRAIN/Batik Pala/40.jpg,Batik Pala,train
+TRAIN/Batik Pala/41.jpg,Batik Pala,train
+TRAIN/Batik Pala/42.jpg,Batik Pala,train
+TRAIN/Batik Pala/43.jpg,Batik Pala,train
+TRAIN/Batik Pala/44.jpg,Batik Pala,train
+TRAIN/Batik Pala/45.jpg,Batik Pala,train
+TRAIN/Batik Pala/46.jpg,Batik Pala,train
+TRAIN/Batik Pala/47.jpg,Batik Pala,train
+TRAIN/Batik Pala/48.jpg,Batik Pala,train
+TRAIN/Batik Pala/49.jpg,Batik Pala,train
+TRAIN/Batik Pala/5.jpg,Batik Pala,train
+TRAIN/Batik Pala/50.jpg,Batik Pala,train
+TRAIN/Batik Pala/52.jpg,Batik Pala,train
+TRAIN/Batik Pala/53.jpg,Batik Pala,train
+TRAIN/Batik Pala/55.jpg,Batik Pala,train
+TRAIN/Batik Pala/56.jpg,Batik Pala,train
+TRAIN/Batik Pala/57.jpg,Batik Pala,train
+TRAIN/Batik Pala/58.jpg,Batik Pala,train
+TRAIN/Batik Pala/59.jpg,Batik Pala,train
+TRAIN/Batik Pala/6.jpg,Batik Pala,train
+TRAIN/Batik Pala/60.jpg,Batik Pala,train
+TRAIN/Batik Pala/61.jpg,Batik Pala,train
+TRAIN/Batik Pala/62.jpg,Batik Pala,train
+TRAIN/Batik Pala/63.jpg,Batik Pala,train
+TRAIN/Batik Pala/64.jpg,Batik Pala,train
+TRAIN/Batik Pala/65.jpg,Batik Pala,train
+TRAIN/Batik Pala/66.jpg,Batik Pala,train
+TRAIN/Batik Pala/67.jpg,Batik Pala,train
+TRAIN/Batik Pala/68.jpg,Batik Pala,train
+TRAIN/Batik Pala/69.jpg,Batik Pala,train
+TRAIN/Batik Pala/7.jpg,Batik Pala,train
+TRAIN/Batik Pala/8.jpg,Batik Pala,train
+TRAIN/Batik Pala/9.jpg,Batik Pala,train
+TRAIN/Batik Parang/0.jpg,Batik Parang,train
+TRAIN/Batik Parang/1.jpg,Batik Parang,train
+TRAIN/Batik Parang/10.jpg,Batik Parang,train
+TRAIN/Batik Parang/11.jpg,Batik Parang,train
+TRAIN/Batik Parang/12.jpg,Batik Parang,train
+TRAIN/Batik Parang/13.jpg,Batik Parang,train
+TRAIN/Batik Parang/14.jpg,Batik Parang,train
+TRAIN/Batik Parang/15.jpg,Batik Parang,train
+TRAIN/Batik Parang/16.jpg,Batik Parang,train
+TRAIN/Batik Parang/17.jpg,Batik Parang,train
+TRAIN/Batik Parang/18.jpg,Batik Parang,train
+TRAIN/Batik Parang/19.jpg,Batik Parang,train
+TRAIN/Batik Parang/2.jpg,Batik Parang,train
+TRAIN/Batik Parang/20.jpg,Batik Parang,train
+TRAIN/Batik Parang/21.jpg,Batik Parang,train
+TRAIN/Batik Parang/22.jpg,Batik Parang,train
+TRAIN/Batik Parang/23.jpg,Batik Parang,train
+TRAIN/Batik Parang/24.jpg,Batik Parang,train
+TRAIN/Batik Parang/25.jpg,Batik Parang,train
+TRAIN/Batik Parang/26.jpg,Batik Parang,train
+TRAIN/Batik Parang/27.jpg,Batik Parang,train
+TRAIN/Batik Parang/28.jpg,Batik Parang,train
+TRAIN/Batik Parang/29.jpg,Batik Parang,train
+TRAIN/Batik Parang/3.jpg,Batik Parang,train
+TRAIN/Batik Parang/30.jpg,Batik Parang,train
+TRAIN/Batik Parang/31.jpg,Batik Parang,train
+TRAIN/Batik Parang/32.jpg,Batik Parang,train
+TRAIN/Batik Parang/33.jpg,Batik Parang,train
+TRAIN/Batik Parang/34.jpg,Batik Parang,train
+TRAIN/Batik Parang/35.jpg,Batik Parang,train
+TRAIN/Batik Parang/36.jpg,Batik Parang,train
+TRAIN/Batik Parang/37.jpg,Batik Parang,train
+TRAIN/Batik Parang/38.jpg,Batik Parang,train
+TRAIN/Batik Parang/39.jpg,Batik Parang,train
+TRAIN/Batik Parang/4.jpg,Batik Parang,train
+TRAIN/Batik Parang/40.jpg,Batik Parang,train
+TRAIN/Batik Parang/41.jpg,Batik Parang,train
+TRAIN/Batik Parang/42.jpg,Batik Parang,train
+TRAIN/Batik Parang/43.jpg,Batik Parang,train
+TRAIN/Batik Parang/44.jpg,Batik Parang,train
+TRAIN/Batik Parang/45.jpg,Batik Parang,train
+TRAIN/Batik Parang/46.jpg,Batik Parang,train
+TRAIN/Batik Parang/47.jpg,Batik Parang,train
+TRAIN/Batik Parang/48.jpg,Batik Parang,train
+TRAIN/Batik Parang/49.jpg,Batik Parang,train
+TRAIN/Batik Parang/5.jpg,Batik Parang,train
+TRAIN/Batik Parang/50.jpg,Batik Parang,train
+TRAIN/Batik Parang/51.jpg,Batik Parang,train
+TRAIN/Batik Parang/52.jpg,Batik Parang,train
+TRAIN/Batik Parang/53.jpg,Batik Parang,train
+TRAIN/Batik Parang/54.jpg,Batik Parang,train
+TRAIN/Batik Parang/55.jpg,Batik Parang,train
+TRAIN/Batik Parang/56.jpg,Batik Parang,train
+TRAIN/Batik Parang/57.jpg,Batik Parang,train
+TRAIN/Batik Parang/58.jpg,Batik Parang,train
+TRAIN/Batik Parang/59.jpg,Batik Parang,train
+TRAIN/Batik Parang/6.jpg,Batik Parang,train
+TRAIN/Batik Parang/60.jpg,Batik Parang,train
+TRAIN/Batik Parang/61.jpg,Batik Parang,train
+TRAIN/Batik Parang/62.jpg,Batik Parang,train
+TRAIN/Batik Parang/63.jpg,Batik Parang,train
+TRAIN/Batik Parang/64.jpg,Batik Parang,train
+TRAIN/Batik Parang/65.jpg,Batik Parang,train
+TRAIN/Batik Parang/66.jpg,Batik Parang,train
+TRAIN/Batik Parang/67.jpg,Batik Parang,train
+TRAIN/Batik Parang/68.jpg,Batik Parang,train
+TRAIN/Batik Parang/69.jpg,Batik Parang,train
+TRAIN/Batik Parang/7.jpg,Batik Parang,train
+TRAIN/Batik Parang/8.jpg,Batik Parang,train
+TRAIN/Batik Parang/9.jpg,Batik Parang,train
+TRAIN/Batik Poleng/0.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/1.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/10.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/11.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/12.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/13.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/14.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/15.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/16.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/17.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/18.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/19.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/2.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/20.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/21.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/22.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/23.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/24.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/25.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/26.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/27.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/28.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/29.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/3.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/30.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/31.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/32.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/33.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/34.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/35.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/36.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/37.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/38.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/39.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/4.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/40.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/41.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/42.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/43.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/44.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/45.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/46.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/47.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/48.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/49.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/5.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/50.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/51.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/52.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/53.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/54.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/55.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/56.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/57.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/58.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/59.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/6.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/60.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/61.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/62.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/63.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/64.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/65.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/66.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/67.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/68.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/69.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/7.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/8.jpg,Batik Poleng,train
+TRAIN/Batik Poleng/9.jpg,Batik Poleng,train
+TRAIN/Batik Sekar Jagad/0.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/1.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/10.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/11.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/12.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/13.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/14.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/15.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/16.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/17.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/18.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/19.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/2.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/20.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/21.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/22.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/23.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/24.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/25.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/26.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/27.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/28.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/29.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/3.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/30.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/31.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/32.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/33.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/34.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/35.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/36.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/37.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/38.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/39.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/4.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/40.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/41.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/42.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/43.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/44.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/45.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/46.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/47.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/48.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/49.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/5.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/50.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/51.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/52.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/53.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/54.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/55.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/56.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/58.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/60.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/61.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/62.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/63.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/64.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/65.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/66.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/67.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/68.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/69.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/7.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Sekar Jagad/9.jpg,Batik Sekar Jagad,train
+TRAIN/Batik Tambal/0.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/1.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/10.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/11.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/12.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/13.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/14.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/15.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/16.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/17.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/18.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/19.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/2.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/20.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/21.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/23.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/24.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/25.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/26.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/27.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/28.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/3.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/30.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/31.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/32.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/33.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/34.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/35.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/36.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/37.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/38.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/39.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/4.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/40.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/41.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/42.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/43.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/44.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/45.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/46.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/47.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/48.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/49.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/5.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/50.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/51.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/53.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/54.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/55.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/56.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/57.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/59.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/60.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/61.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/62.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/63.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/64.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/65.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/66.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/68.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/69.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/7.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/8.jpg,Batik Tambal,train
+TRAIN/Batik Tambal/9.jpg,Batik Tambal,train

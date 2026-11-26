@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+.ipynb_checkpoints/
 
 # Node
 node_modules/
@@ -15,17 +16,45 @@ build/
 *.env
 !.env.example
 
-# Data & artifacts
-data/*
-!data/README.md
-artifacts/*
-!artifacts/README.md
+# Model, database, dan arsip besar (aturan umum)
 *.pt
 *.pth
 *.h5
 *.npy
 *.db
 *.sqlite
+
+# Data: gambar TRAIN dan TEST ikut di Git supaya seluruh tim bisa langsung memakainya
+data/*
+!data/README.md
+!data/manifest.csv
+!data/raw/
+data/raw/*
+!data/raw/TRAIN/
+!data/raw/TEST/
+
+# Artefak pemodelan: hanya yang dibutuhkan tim dan backend
+artifacts/*
+!artifacts/README.md
+!artifacts/final_config.json
+!artifacts/results_baseline.csv
+!artifacts/results_finetune.csv
+!artifacts/results_test.csv
+!artifacts/results_test_per_class.csv
+!artifacts/history/
+!artifacts/models/
+artifacts/models/*
+!artifacts/models/final.pt
+!artifacts/embeddings/
+artifacts/embeddings/*
+!artifacts/embeddings/final_gallery.npy
+!artifacts/embeddings/final_gallery_manifest.csv
+!artifacts/embeddings/gallery_paths.json
+
+# Alat uji lokal, arsip, dan cadangan
+artifacts_repro/
+smoke_test.py
+*.bak
 
 # OS / IDE
 .DS_Store

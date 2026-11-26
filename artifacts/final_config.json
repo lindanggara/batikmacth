@@ -1,0 +1,10 @@
+{
+ "tag": "D6_eff_u4_sgd_hi",
+ "backbone": "efficientnet_b0",
+ "n_unfreeze": 4,
+ "optimizer": "sgd",
+ "lr": 0.01,
+ "lr_head": 0.01,
+ "augment": true,
+ "epochs": 30
+}

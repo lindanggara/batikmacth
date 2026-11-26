@@ -1,47 +1,36 @@
+"""Metrik retrieval: Precision@K dan mAP (definisi sama dengan notebook 02 sampai 04)."""
 import numpy as np
-from search import compute_cosine_similarity
+
+from .search import compute_cosine_similarity
 
 
 def precision_at_k(ranked_labels: np.ndarray, query_label, k: int) -> float:
-    """Menghitung Precision@K untuk satu kueri."""
-    top_k_labels = ranked_labels[:k]
-    relevant = np.sum(top_k_labels == query_label)
-    return float(relevant) / k
+    return float(np.sum(ranked_labels[:k] == query_label)) / k
 
 
 def average_precision(ranked_labels: np.ndarray, query_label) -> float:
-    """Menghitung Average Precision (AP) untuk satu kueri."""
     matches = (ranked_labels == query_label).astype(np.float32)
-    num_relevant = np.sum(matches)
-    if num_relevant == 0:
+    n_rel = np.sum(matches)
+    if n_rel == 0:
         return 0.0
-
-    cum_hits = np.cumsum(matches)
-    ranks = np.arange(1, len(matches) + 1)
-    precisions = cum_hits / ranks
-    return float(np.sum(precisions * matches) / num_relevant)
+    precisions = np.cumsum(matches) / np.arange(1, len(matches) + 1)
+    return float(np.sum(precisions * matches) / n_rel)
 
 
-def evaluate_retrieval(
-    query_embs: np.ndarray,
-    query_labels: np.ndarray,
-    gallery_embs: np.ndarray,
-    gallery_labels: np.ndarray,
-    ks=(5, 10)
-) -> dict:
-    """Mengevaluasi performa retrieval secara keseluruhan (P@K dan mAP)."""
-    sim_matrix = compute_cosine_similarity(query_embs, gallery_embs)
-    ranked_indices = np.argsort(sim_matrix, axis=1)[:, ::-1]
+def evaluate_retrieval(query_embs, query_labels, gallery_embs, gallery_labels, ks=(5, 10)) -> dict:
+    """Mengembalikan {'P@5':..., 'P@10':..., 'mAP':...} (rata-rata atas query)."""
+    query_labels, gallery_labels = np.asarray(query_labels), np.asarray(gallery_labels)
+    sim = compute_cosine_similarity(query_embs, gallery_embs)
+    ranked = np.argsort(-sim, axis=1, kind="stable")
 
-    p_at_k_scores = {f"P@{k}": [] for k in ks}
-    ap_scores = []
-
-    for i, q_label in enumerate(query_labels):
-        ranked_labels = gallery_labels[ranked_indices[i]]
+    p_scores = {f"P@{k}": [] for k in ks}
+    aps = []
+    for i, y in enumerate(query_labels):
+        ranked_labels = gallery_labels[ranked[i]]
         for k in ks:
-            p_at_k_scores[f"P@{k}"].append(precision_at_k(ranked_labels, q_label, k))
-        ap_scores.append(average_precision(ranked_labels, q_label))
+            p_scores[f"P@{k}"].append(precision_at_k(ranked_labels, y, k))
+        aps.append(average_precision(ranked_labels, y))
 
-    metrics = {k: float(np.mean(v)) for k, v in p_at_k_scores.items()}
-    metrics["mAP"] = float(np.mean(ap_scores))
-    return metrics
+    out = {k: float(np.mean(v)) for k, v in p_scores.items()}
+    out["mAP"] = float(np.mean(aps))
+    return out
