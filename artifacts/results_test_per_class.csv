@@ -1,0 +1,16 @@
+kelas,P@5,P@10,AP,top1_benar,n_query
+Batik Megamendung,1.0,0.995,0.9698,1.0,20
+Batik Poleng,1.0,1.0,0.9603,1.0,20
+Batik Insang,0.99,0.975,0.9348,0.95,20
+Batik Dayak,0.91,0.9,0.8308,0.95,20
+Batik Parang,0.86,0.85,0.8104,0.9,20
+Batik Tambal,0.8588,0.8529,0.7708,0.8824,17
+Batik Geblek Renteng,0.87,0.845,0.692,0.85,20
+Batik Kawung,0.76,0.75,0.6728,0.8,20
+Batik Ikat Celup,0.7158,0.7263,0.6678,0.7368,19
+Batik Sekar Jagad,0.68,0.675,0.6584,0.75,20
+Batik Cendrawasih,0.6737,0.6737,0.6457,0.5789,19
+Batik Betawi,0.65,0.635,0.583,0.65,20
+Batik Pala,0.71,0.675,0.5442,0.7,20
+Batik Bali,0.64,0.645,0.5303,0.65,20
+Batik Lasem,0.48,0.5,0.376,0.5,20

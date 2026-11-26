@@ -1,96 +1,129 @@
-import os
+"""Model dan ekstraksi embedding. Sama persis dengan notebook 02, 03, dan 04."""
+from pathlib import Path
+
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
-from torchvision import models, transforms
 from PIL import Image
-import numpy as np
+from torch.utils.data import DataLoader, Dataset
+from torchvision import models, transforms
+
+IMG_SIZE = 224
+MEAN, STD = [0.485, 0.456, 0.406], [0.229, 0.224, 0.225]
 
 
-def get_transforms(img_size: int = 224, is_train: bool = False):
-    """Mengembalikan transformasi gambar sesuai standar ImageNet."""
+def get_transforms(img_size: int = IMG_SIZE, is_train: bool = False):
+    """Transformasi gambar. Mode latih = augmentasi yang dipakai di notebook 03."""
     if is_train:
         return transforms.Compose([
-            transforms.Resize((img_size, img_size)),
-            transforms.RandomHorizontalFlip(p=0.5),
-            transforms.RandomRotation(degrees=15),
-            transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2),
+            transforms.RandomResizedCrop(img_size, scale=(0.6, 1.0)),
+            transforms.RandomHorizontalFlip(),
+            transforms.ColorJitter(0.2, 0.2, 0.2, 0.02),
             transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+            transforms.Normalize(MEAN, STD),
         ])
     return transforms.Compose([
         transforms.Resize((img_size, img_size)),
         transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+        transforms.Normalize(MEAN, STD),
     ])
 
 
 class ImageDataset(Dataset):
-    """Dataset citra untuk ekstraksi fitur maupun pelatihan."""
-    def __init__(self, df, transform=None, class_to_idx=None):
-        self.df = df.reset_index(drop=True)
-        self.transform = transform
-        self.class_to_idx = class_to_idx
+    """df berisi kolom `path` (relatif terhadap data_dir) dan, untuk training, `class`."""
+
+    def __init__(self, df, data_dir, transform=None, class_to_idx=None):
+        self.paths = df["path"].tolist()
+        self.data_dir = Path(data_dir)
+        self.transform = transform or get_transforms(is_train=False)
+        self.labels = None
+        if class_to_idx is not None:
+            self.labels = [class_to_idx[c] for c in df["class"].tolist()]
 
     def __len__(self):
-        return len(self.df)
+        return len(self.paths)
 
-    def __getitem__(self, idx):
-        row = self.df.iloc[idx]
-        img = Image.open(row["path"]).convert("RGB")
-        if self.transform:
-            img = self.transform(img)
-        
-        if self.class_to_idx is not None and "class" in row:
-            label = self.class_to_idx[row["class"]]
-            return img, label
-        return img, row["path"]
+    def __getitem__(self, i):
+        img = Image.open(self.data_dir / self.paths[i]).convert("RGB")
+        x = self.transform(img)
+        return x if self.labels is None else (x, int(self.labels[i]))
 
 
-def build_backbone(model_name: str = "efficientnet_b0", pretrained: bool = True, checkpoint_path: str = None, device: str = "cpu"):
-    """Membangun backbone CNN (ResNet50, MobileNetV2, atau EfficientNet-B0) sebagai feature extractor."""
+def make_loader(df, data_dir, class_to_idx=None, is_train=False, batch_size=32,
+                shuffle=False, drop_last=False, num_workers=0):
+    ds = ImageDataset(df, data_dir, get_transforms(is_train=is_train), class_to_idx)
+    return DataLoader(ds, batch_size=batch_size, shuffle=shuffle,
+                      drop_last=drop_last, num_workers=num_workers)
+
+
+def _make_backbone(model_name: str, pretrained: bool = True):
+    """Backbone CNN tanpa layer klasifikasi asli. Keluarannya adalah embedding."""
     if model_name == "resnet50":
-        weights = models.ResNet50_Weights.IMAGENET1K_V2 if pretrained else None
-        model = models.resnet50(weights=weights)
-        feat_dim = model.fc.in_features
-        model.fc = nn.Identity()
+        w = models.ResNet50_Weights.IMAGENET1K_V2 if pretrained else None
+        m = models.resnet50(weights=w)
+        dim = m.fc.in_features
+        m.fc = nn.Identity()
     elif model_name == "mobilenet_v2":
-        weights = models.MobileNet_V2_Weights.IMAGENET1K_V2 if pretrained else None
-        model = models.mobilenet_v2(weights=weights)
-        feat_dim = model.classifier[-1].in_features
-        model.classifier = nn.Identity()
+        w = models.MobileNet_V2_Weights.IMAGENET1K_V2 if pretrained else None
+        m = models.mobilenet_v2(weights=w)
+        dim = m.classifier[1].in_features
+        m.classifier = nn.Identity()
     elif model_name == "efficientnet_b0":
-        weights = models.EfficientNet_B0_Weights.IMAGENET1K_V1 if pretrained else None
-        model = models.efficientnet_b0(weights=weights)
-        feat_dim = model.classifier[-1].in_features
-        model.classifier = nn.Identity()
+        w = models.EfficientNet_B0_Weights.IMAGENET1K_V1 if pretrained else None
+        m = models.efficientnet_b0(weights=w)
+        dim = m.classifier[1].in_features
+        m.classifier = nn.Identity()
     else:
         raise ValueError(f"Model tidak didukung: {model_name}")
+    return m, dim
 
-    if checkpoint_path and os.path.exists(checkpoint_path):
-        state = torch.load(checkpoint_path, map_location=device)
-        # Mendukung loading state_dict dari model full classifier maupun backbone murni
-        backbone_state = {
-            k.replace("backbone.", ""): v
-            for k, v in state.items()
-            if not k.startswith("head.") and not k.startswith("fc.") and not k.startswith("classifier.")
-        }
-        model.load_state_dict(backbone_state, strict=False)
 
-    model = model.to(device)
-    model.eval()
-    return model, feat_dim
+def build_backbone(model_name: str = "efficientnet_b0", pretrained: bool = True, device: str = "cpu"):
+    """Backbone pretrained saja (untuk baseline tanpa fine-tuning). Mengembalikan (model, dimensi)."""
+    m, dim = _make_backbone(model_name, pretrained)
+    return m.to(device).eval(), dim
+
+
+class RetrievalNet(nn.Module):
+    """Backbone + head klasifikasi. Nama atribut sama dengan notebook, jadi final.pt bisa dimuat langsung."""
+
+    def __init__(self, name: str, n_classes: int, pretrained: bool = True):
+        super().__init__()
+        self.name = name
+        self.backbone, dim = _make_backbone(name, pretrained)
+        self.head = nn.Sequential(nn.Dropout(0.2), nn.Linear(dim, n_classes))
+
+    def embed(self, x):          # embedding untuk retrieval (sebelum head)
+        return self.backbone(x)
+
+    def forward(self, x):        # logit untuk training
+        return self.head(self.backbone(x))
+
+
+def load_model(checkpoint_path, backbone: str, n_classes: int, device: str = "cpu"):
+    """Memuat bobot final. Pemuatan ketat (strict): kalau kunci tidak cocok, langsung error."""
+    net = RetrievalNet(backbone, n_classes, pretrained=False).to(device)
+    state = torch.load(checkpoint_path, map_location=device, weights_only=True)
+    net.load_state_dict(state)
+    return net.eval()
 
 
 @torch.no_grad()
 def extract_embeddings(model, dataloader, device: str = "cpu") -> np.ndarray:
-    """Mengekstrak embedding dan melakukan Normalisasi L2."""
+    """Embedding seluruh isi dataloader, dinormalisasi L2. Model boleh RetrievalNet atau backbone."""
+    embed = model.embed if hasattr(model, "embed") else model
     model.eval()
-    all_embs = []
-    for imgs, _ in dataloader:
-        imgs = imgs.to(device)
-        feats = model(imgs)
-        feats = F.normalize(feats, p=2, dim=1)
-        all_embs.append(feats.cpu().numpy())
-    return np.vstack(all_embs)
+    out = []
+    for batch in dataloader:
+        imgs = batch[0] if isinstance(batch, (list, tuple)) else batch
+        out.append(F.normalize(embed(imgs.to(device)), p=2, dim=1).cpu().numpy())
+    return np.vstack(out)
+
+
+@torch.no_grad()
+def embed_image(model, image: Image.Image, device: str = "cpu") -> np.ndarray:
+    """Embedding satu gambar PIL (vektor 1 dimensi, L2-normal)."""
+    model.eval()
+    x = get_transforms(is_train=False)(image.convert("RGB")).unsqueeze(0).to(device)
+    return F.normalize(model.embed(x), p=2, dim=1).cpu().numpy()[0]
