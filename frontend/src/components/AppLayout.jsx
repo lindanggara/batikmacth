@@ -19,7 +19,6 @@ const IKON = {
 };
 
 const MENU = [
-  { to: "/", label: "Beranda", end: true, d: IKON.landing },
   { to: "/studio", label: "Studio Pindai", d: IKON.scan },
   { to: "/jelajah", label: "Katalog Motif", d: IKON.grid },
   { to: "/bandingkan", label: "Bandingkan Motif", d: IKON.compare },
@@ -32,7 +31,7 @@ const JUDUL_RUTE = {
   "/": "Beranda Utama",
   "/studio": "Studio Pemindaian AI",
   "/jelajah": "Katalog 15 Motif Batik",
-  "/bandingkan": "Laboratorium Komparasi",
+  "/bandingkan": "Bandingkan Motif",
   "/riwayat": "Riwayat Pemindaian",
   "/favorit": "Koleksi Favorit",
   "/tentang": "Tentang Sistem & Dataset",

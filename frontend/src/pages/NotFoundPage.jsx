@@ -17,12 +17,6 @@ export default function NotFoundPage() {
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2.5">
           <Link
-            to="/"
-            className="rounded-full bg-[#AD7559] px-6 py-2.5 text-xs font-bold text-white shadow-sm hover:brightness-105"
-          >
-            Kembali ke Beranda
-          </Link>
-          <Link
             to="/studio"
             className="rounded-full border border-[#C59C8A]/70 bg-white/80 px-6 py-2.5 text-xs font-bold text-[#432912]"
           >

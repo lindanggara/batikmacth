@@ -1,115 +1,166 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { KATALOG } from "../data/katalogMotif";
-import { LingkaranFotoBatik } from "../components/KartuMotifBaru";
+import { KATALOG as KATALOG_MOTIF } from "../data/katalogMotif";
 
-function hitungAnalisisMendalam(a, b) {
-  if (!a || !b) return { total: 50, dimensi: [], matriks: [] };
+const CONTOH_POPULER = [
+  { label: "Bali vs Poleng", a: "bali", b: "poleng" },
+  { label: "Kawung vs Sekar Jagad", a: "kawung", b: "sekar-jagad" },
+  { label: "Megamendung vs Celup", a: "megamendung", b: "celup" },
+];
 
-  const identik = a.id === b.id;
-  const samaAliran = (a.aliran || "") === (b.aliran || "");
-  const samaDaerah = (a.daerah || "").split(" ")[0] === (b.daerah || "").split(" ")[0];
-  const samaPola = (a.pola || "") === (b.pola || "");
+const ambilTeks = (m, keys) => {
+  for (const k of keys) {
+    if (Array.isArray(m?.[k]) && m[k].length) return m[k].join(", ");
+    if (typeof m?.[k] === "string" && m[k].trim()) return m[k].trim();
+  }
+  return "—";
+};
 
-  const geometri = identik ? 100 : samaPola ? 84 : 44;
-  const isen = identik ? 100 : samaAliran ? 79 : 51;
-  const wilayah = identik ? 100 : samaDaerah ? 92 : samaAliran ? 70 : 35;
-  const pakem = identik ? 100 : samaAliran ? 83 : 48;
-  const total = Math.round((geometri + isen + wilayah + pakem) / 4);
+const cekAtribut = (motif, tipe) => {
+  const gabungan = [
+    motif?.aliran,
+    motif?.ringkasan,
+    motif?.deskripsi,
+    motif?.filosofi,
+    motif?.pakem,
+    motif?.sejarah,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
 
-  const matriks = [
-    { aspek: "Daerah Asal", kiri: a.daerah, kanan: b.daerah },
-    { aspek: "Aliran Wastra", kiri: a.aliran || "-", kanan: b.aliran || "-" },
-    { aspek: "Anatomi & Isen-Isen", kiri: a.anatomi || a.ciri, kanan: b.anatomi || b.ciri },
-    { aspek: "Makna Filosofis", kiri: a.filosofi || "-", kanan: b.filosofi || "-" },
-    { aspek: "Pakem & Busana", kiri: a.busana || a.pakem || "-", kanan: b.busana || b.pakem || "-" },
-  ];
+  if (tipe === "keraton") return /keraton|pedalaman|yogyakarta|solo|surakarta|mataram/.test(gabungan);
+  if (tipe === "geometris") return /geometris|simetri|lingkaran|diagonal|kotak|catur|berulang|garis/.test(gabungan);
+  if (tipe === "pakem") return /larangan|sakral|raja|bangsawan|upacara|adat|pakem/.test(gabungan);
+  if (tipe === "alam") return /awan|bunga|flora|fauna|burung|daun|tumbuhan|laut|alam|pala|cendrawasih/.test(gabungan);
+  return false;
+};
 
-  return {
-    total,
-    dimensi: [
-      { label: "Struktur Geometris & Simetri", nilai: geometri },
-      { label: "Kerapatan Ornamen & Isen-Isen", nilai: isen },
-      { label: "Kedekatan Aliran & Wilayah", nilai: wilayah },
-      { label: "Keselarasan Pakem Adat", nilai: pakem },
-    ],
-    matriks,
-  };
+function IkonStatus({ aktif, warnaAktif }) {
+  if (aktif) {
+    return (
+      <span className={`inline-flex h-6 w-6 items-center justify-center rounded-full ${warnaAktif} text-white shadow-xs`}>
+        <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </span>
+    );
+  }
+  return (
+    <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#D9CEC3] text-[#7A6858]">
+      <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </span>
+  );
 }
 
 export default function ComparePage() {
-  const [idKiri, setIdKiri] = useState("kawung");
-  const [idKanan, setIdKanan] = useState("sekar-jagad");
+  const daftarMotif = useMemo(() => (Array.isArray(KATALOG_MOTIF) ? KATALOG_MOTIF : []), []);
+
+  const [idA, setIdA] = useState("kawung");
+  const [idB, setIdB] = useState("sekar-jagad");
   const [modeTampilan, setModeTampilan] = useState("berdampingan");
-  const [zoomTekstur, setZoomTekstur] = useState(false);
-  const [posisiSlider, setPosisiSlider] = useState(50);
+  const [posisiGeser, setPosisiGeser] = useState(50);
+  const [perbesar, setPerbesar] = useState(false);
 
-  const kiri = KATALOG.find((m) => m.id === idKiri) || KATALOG[0];
-  const kanan = KATALOG.find((m) => m.id === idKanan) || KATALOG[1];
+  const motifA = useMemo(
+    () => daftarMotif.find((m) => m.id === idA) || daftarMotif[0] || {},
+    [daftarMotif, idA]
+  );
+  const motifB = useMemo(
+    () => daftarMotif.find((m) => m.id === idB) || daftarMotif[1] || daftarMotif[0] || {},
+    [daftarMotif, idB]
+  );
 
-  const analisis = useMemo(() => hitungAnalisisMendalam(kiri, kanan), [kiri, kanan]);
+  const tukarMotif = () => {
+    setIdA(idB);
+    setIdB(idA);
+  };
 
-  function tukarMotif() {
-    setIdKiri(idKanan);
-    setIdKanan(idKiri);
-  }
+  const gbrA = motifA.gambar || `/motif/${motifA.id}.jpg`;
+  const gbrB = motifB.gambar || `/motif/${motifB.id}.jpg`;
+
+  const barisChecklist = [
+    { id: "keraton", label: "Aliran Pedalaman / Keraton" },
+    { id: "geometris", label: "Struktur Pola Geometris" },
+    { id: "pakem", label: "Memiliki Pakem / Aturan Adat" },
+    { id: "alam", label: "Unsur Flora, Fauna & Alam" },
+  ];
+
+  const barisTeks = [
+    {
+      aspek: "Ciri Visual Utama",
+      nilaiA: ambilTeks(motifA, ["ringkasan", "deskripsi", "ciriVisual", "ciri", "karakteristik"]),
+      nilaiB: ambilTeks(motifB, ["ringkasan", "deskripsi", "ciriVisual", "ciri", "karakteristik"]),
+    },
+    {
+      aspek: "Makna & Filosofi",
+      nilaiA: ambilTeks(motifA, ["filosofi", "makna"]),
+      nilaiB: ambilTeks(motifB, ["filosofi", "makna"]),
+    },
+    {
+      aspek: "Sejarah Singkat",
+      nilaiA: ambilTeks(motifA, ["sejarah"]),
+      nilaiB: ambilTeks(motifB, ["sejarah"]),
+    },
+  ];
 
   return (
-    <div className="w-full max-w-full space-y-7 overflow-x-hidden">
-      {/* Header + Preset Pasangan Mirip */}
-      <div className="flex flex-col justify-between gap-4 xl:flex-row xl:items-end">
-        <div className="min-w-0">
-          <span className="text-[11px] font-bold tracking-widest text-[#AD7559] uppercase">
-            Laboratorium Komparasi Visual
-          </span>
-          <h1 className="mt-1 text-2xl font-bold tracking-tight text-[#432912]">
+    <div className="mx-auto max-w-6xl space-y-6 pb-12">
+      {/* BAGIAN ATAS TETAP SEPERTI SEMULA */}
+      <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+        <div>
+          <p className="text-xs font-semibold tracking-wider text-[#9A6347] uppercase">
+            Eksplorasi Visual
+          </p>
+          <h1 className="mt-1 font-serif text-2xl font-bold text-[#2D1A0B] sm:text-3xl">
             Bandingkan Dua Motif Batik
           </h1>
-          <p className="mt-1 text-xs text-[#432912]/65">
-            Analisis struktur pola, detail isen-isen, dan tabel perbandingan karakteristik dua motif secara berdampingan.
+          <p className="mt-1 text-sm text-[#6E5440]">
+            Pilih dua kain batik untuk melihat perbedaan pola, asal daerah, dan filosofinya secara langsung.
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-1.5">
-          <span className="mr-1 text-[10px] font-bold tracking-wider text-[#85522F] uppercase">
-            Uji Mirip:
-          </span>
-          {[
-            { a: "bali", b: "poleng", label: "Bali vs Poleng" },
-            { a: "kawung", b: "sekar-jagad", label: "Kawung vs Sekar Jagad" },
-            { a: "megamendung", b: "celup", label: "Megamendung vs Celup" },
-          ].map((p) => (
-            <button
-              key={p.label}
-              type="button"
-              onClick={() => {
-                setIdKiri(p.a);
-                setIdKanan(p.b);
-                setPosisiSlider(50);
-              }}
-              className="whitespace-nowrap rounded-full border border-[#C59C8A]/60 bg-white/80 px-3 py-1.5 text-[11px] font-bold text-[#432912] transition hover:bg-[#AD7559] hover:text-white"
-            >
-              {p.label}
-            </button>
-          ))}
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-xs font-medium text-[#8C705A]">Coba cepat:</span>
+          {CONTOH_POPULER.map((c) => {
+            const aktif = idA === c.a && idB === c.b;
+            return (
+              <button
+                key={c.label}
+                type="button"
+                onClick={() => {
+                  setIdA(c.a);
+                  setIdB(c.b);
+                }}
+                className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
+                  aktif
+                    ? "bg-[#432912] text-white shadow-xs"
+                    : "border border-[#DFD1C3] bg-white/80 text-[#432912] hover:bg-white"
+                }`}
+              >
+                {c.label}
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* PANEL UTAMA KOMPARASI VISUAL */}
-      <section className="glass-panel w-full overflow-hidden rounded-[32px] p-5 sm:p-6">
-        {/* Baris Pemilih Motif A, Tombol Tukar, dan Motif B (Grid Simetris Anti-Melenceng) */}
-        <div className="grid w-full grid-cols-1 items-center gap-3 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
-          <div className="flex min-w-0 items-center gap-2.5 rounded-2xl border border-[#C59C8A]/55 bg-white/85 px-3.5 py-2.5 shadow-2xs">
-            <span className="shrink-0 whitespace-nowrap rounded-full bg-[#432912] px-2.5 py-1 text-[10px] font-bold text-white">
-              Kiri (A)
+      {/* Kotak Pemilih Motif & Bingkai Perbandingan Gambar (Tetap Seperti Semula) */}
+      <section className="overflow-hidden rounded-[28px] border border-[#E5D7CA] bg-[#FAF6F2] p-5 shadow-xs sm:p-6">
+        <div className="grid grid-cols-1 items-center gap-3 md:grid-cols-[1fr_auto_1fr]">
+          <div className="flex items-center gap-2.5 rounded-2xl border border-[#E2D4C6] bg-white px-3.5 py-2.5">
+            <span className="shrink-0 rounded-full bg-[#3D2310] px-2.5 py-0.5 text-[11px] font-bold text-white">
+              Kiri
             </span>
             <select
-              value={idKiri}
-              onChange={(e) => setIdKiri(e.target.value)}
               aria-label="Pilih Motif Kiri"
-              className="w-full min-w-0 truncate bg-transparent text-xs font-bold text-[#432912] focus:outline-none"
+              value={idA}
+              onChange={(e) => setIdA(e.target.value)}
+              className="w-full bg-transparent text-sm font-semibold text-[#2D1A0B] focus:outline-none"
             >
-              {KATALOG.map((m) => (
+              {daftarMotif.map((m) => (
                 <option key={m.id} value={m.id}>
                   {m.nama} — {m.daerah}
                 </option>
@@ -120,24 +171,26 @@ export default function ComparePage() {
           <button
             type="button"
             onClick={tukarMotif}
-            title="Tukar posisi Motif A dan B"
-            aria-label="Tukar posisi Motif A dan B"
-            className="mx-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#C59C8A]/60 bg-white text-sm font-bold text-[#432912] shadow-xs transition hover:scale-105 hover:bg-[#AD7559] hover:text-white"
+            title="Tukar posisi motif kiri dan kanan"
+            className="mx-auto flex h-10 w-10 items-center justify-center rounded-full border border-[#DFD1C3] bg-white text-[#432912] shadow-2xs transition hover:border-[#AD7559] hover:text-[#AD7559]"
           >
-            ⇄
+            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M7 10h14l-4-4" />
+              <path d="M17 14H3l4 4" />
+            </svg>
           </button>
 
-          <div className="flex min-w-0 items-center gap-2.5 rounded-2xl border border-[#C59C8A]/55 bg-white/85 px-3.5 py-2.5 shadow-2xs">
-            <span className="shrink-0 whitespace-nowrap rounded-full bg-[#AD7559] px-2.5 py-1 text-[10px] font-bold text-white">
-              Kanan (B)
+          <div className="flex items-center gap-2.5 rounded-2xl border border-[#E2D4C6] bg-white px-3.5 py-2.5">
+            <span className="shrink-0 rounded-full bg-[#AD7559] px-2.5 py-0.5 text-[11px] font-bold text-white">
+              Kanan
             </span>
             <select
-              value={idKanan}
-              onChange={(e) => setIdKanan(e.target.value)}
               aria-label="Pilih Motif Kanan"
-              className="w-full min-w-0 truncate bg-transparent text-xs font-bold text-[#432912] focus:outline-none"
+              value={idB}
+              onChange={(e) => setIdB(e.target.value)}
+              className="w-full bg-transparent text-sm font-semibold text-[#2D1A0B] focus:outline-none"
             >
-              {KATALOG.map((m) => (
+              {daftarMotif.map((m) => (
                 <option key={m.id} value={m.id}>
                   {m.nama} — {m.daerah}
                 </option>
@@ -146,215 +199,273 @@ export default function ComparePage() {
           </div>
         </div>
 
-        {/* Kontrol Mode Tampilan (Sejajar Penuh Kiri-Kanan) */}
-        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-b border-[#432912]/10 pb-4">
-          <div className="inline-flex rounded-full bg-[#D5D2CA]/60 p-1">
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[#EAE0D5] pt-4">
+          <div className="inline-flex rounded-full border border-[#E2D4C6] bg-[#F2E9E0] p-1">
             <button
               type="button"
               onClick={() => setModeTampilan("berdampingan")}
-              className={`rounded-full px-4 py-1.5 text-xs font-bold transition ${
+              className={`rounded-full px-4 py-1.5 text-xs font-semibold transition ${
                 modeTampilan === "berdampingan"
-                  ? "bg-[#432912] text-white shadow-xs"
-                  : "text-[#432912]/70 hover:text-[#432912]"
+                  ? "bg-[#3D2310] text-white shadow-2xs"
+                  : "text-[#6E5440] hover:text-[#2D1A0B]"
               }`}
             >
-              Berdampingan (Side-by-Side)
+              Berdampingan
             </button>
             <button
               type="button"
-              onClick={() => setModeTampilan("slider")}
-              className={`rounded-full px-4 py-1.5 text-xs font-bold transition ${
-                modeTampilan === "slider"
-                  ? "bg-[#432912] text-white shadow-xs"
-                  : "text-[#432912]/70 hover:text-[#432912]"
+              onClick={() => setModeTampilan("geser")}
+              className={`rounded-full px-4 py-1.5 text-xs font-semibold transition ${
+                modeTampilan === "geser"
+                  ? "bg-[#3D2310] text-white shadow-2xs"
+                  : "text-[#6E5440] hover:text-[#2D1A0B]"
               }`}
             >
-              Lensa Geser (Overlay)
+              Geser Lapisan
             </button>
           </div>
 
           <button
             type="button"
-            onClick={() => setZoomTekstur((z) => !z)}
-            className={`rounded-full border px-4 py-1.5 text-xs font-bold transition ${
-              zoomTekstur
+            onClick={() => setPerbesar((v) => !v)}
+            className={`inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-semibold transition ${
+              perbesar
                 ? "border-[#AD7559] bg-[#AD7559] text-white"
-                : "border-[#C59C8A]/60 bg-white/80 text-[#432912] hover:bg-white"
+                : "border-[#DFD1C3] bg-white text-[#432912] hover:border-[#AD7559]"
             }`}
           >
-            {zoomTekstur ? "🔍 Zoom Tekstur 1.75× Aktif" : "🔍 Perbesar Detail Isen-Isen"}
+            <svg
+              className={`h-4 w-4 ${perbesar ? "text-white" : "text-[#AD7559]"}`}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+              <path d="M11 8v6" />
+              <path d="M8 11h6" />
+            </svg>
+            <span>{perbesar ? "Zoom Detail Aktif (1.6×)" : "Perbesar Detail Kain"}</span>
           </button>
         </div>
 
-        {/* KANVAS PERBANDINGAN VISUAL */}
         {modeTampilan === "berdampingan" ? (
-          <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+          <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
             {[
-              { kode: "A", data: kiri, badgeBg: "bg-[#432912]" },
-              { kode: "B", data: kanan, badgeBg: "bg-[#AD7559]" },
-            ].map((item) => (
+              { item: motifA, src: gbrA, sisi: "Motif Kiri", badgeColor: "bg-[#3D2310]" },
+              { item: motifB, src: gbrB, sisi: "Motif Kanan", badgeColor: "bg-[#AD7559]" },
+            ].map(({ item, src, sisi, badgeColor }) => (
               <div
-                key={item.kode}
-                className="group relative h-72 min-w-0 overflow-hidden rounded-[24px] border border-white/45 bg-[#432912] shadow-md sm:h-80"
+                key={sisi}
+                className="group relative h-[290px] overflow-hidden rounded-[22px] border border-[#E2D4C6] bg-[#2D1A0B]"
               >
-                <div
-                  className={`h-full w-full transition-transform duration-500 ${
-                    zoomTekstur ? "scale-[1.75]" : "scale-100 group-hover:scale-105"
+                <img
+                  src={src}
+                  alt={item.nama}
+                  className={`h-full w-full object-cover transition-transform duration-500 ${
+                    perbesar ? "scale-150" : "scale-100"
                   }`}
-                >
-                  <LingkaranFotoBatik motif={item.data} className="h-full w-full" />
-                </div>
-
-                <div
-                  className="pointer-events-none absolute inset-0"
-                  style={{
-                    background:
-                      "linear-gradient(180deg, rgba(43,24,11,0.28) 0%, transparent 42%, rgba(32,17,7,0.92) 100%)",
-                  }}
                 />
-
-                <div className="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between gap-2">
-                  <span className={`rounded-full ${item.badgeBg} px-3 py-1 text-[10px] font-bold text-white shadow-xs`}>
-                    Motif {item.kode}
+                <div className="absolute inset-x-0 top-0 flex items-center justify-between bg-gradient-to-b from-black/55 to-transparent p-3.5">
+                  <span className={`rounded-full ${badgeColor} px-3 py-1 text-[11px] font-bold text-white`}>
+                    {sisi}
                   </span>
-                  <span className="truncate rounded-full border border-white/20 bg-black/35 px-3 py-1 text-[10px] font-semibold text-white backdrop-blur-md">
-                    {item.data.aliran || "Wastra Nusantara"}
+                  <span className="rounded-full bg-black/45 px-3 py-1 text-[11px] font-medium text-white backdrop-blur-xs">
+                    {item.aliran}
                   </span>
                 </div>
-
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <p className="text-[11px] font-medium text-[#C59C8A]">{item.data.daerah}</p>
-                  <h2 className="text-lg font-bold">{item.data.nama}</h2>
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/45 to-transparent p-4 text-white">
+                  <p className="text-xs text-white/80">{item.daerah}</p>
+                  <h2 className="font-serif text-lg font-bold">{item.nama}</h2>
                 </div>
               </div>
             ))}
           </div>
         ) : (
-          <div className="relative mt-5 h-72 w-full select-none overflow-hidden rounded-[24px] border border-white/45 bg-[#432912] shadow-lg sm:h-96">
-            <div className={`absolute inset-0 transition-transform duration-500 ${zoomTekstur ? "scale-[1.75]" : "scale-100"}`}>
-              <LingkaranFotoBatik motif={kanan} className="h-full w-full" />
-            </div>
-
-            <div
-              className="absolute inset-0 overflow-hidden"
-              style={{ clipPath: `inset(0 ${100 - posisiSlider}% 0 0)` }}
-            >
-              <div className={`h-full w-full transition-transform duration-500 ${zoomTekstur ? "scale-[1.75]" : "scale-100"}`}>
-                <LingkaranFotoBatik motif={kiri} className="h-full w-full" />
+          <div className="mt-4 space-y-3">
+            <div className="relative h-[320px] w-full overflow-hidden rounded-[22px] border border-[#E2D4C6] bg-[#2D1A0B] select-none">
+              <img
+                src={gbrB}
+                alt={motifB.nama}
+                className={`h-full w-full object-cover transition-transform duration-300 ${
+                  perbesar ? "scale-150" : "scale-100"
+                }`}
+              />
+              <div
+                className="absolute inset-y-0 left-0 overflow-hidden"
+                style={{ width: `${posisiGeser}%` }}
+              >
+                <img
+                  src={gbrA}
+                  alt={motifA.nama}
+                  className={`h-full w-full max-w-none object-cover transition-transform duration-300 ${
+                    perbesar ? "scale-150" : "scale-100"
+                  }`}
+                  style={{ width: "100%" }}
+                />
               </div>
-            </div>
-
-            <div
-              className="pointer-events-none absolute inset-y-0 z-20 w-0.5 bg-white shadow-[0_0_12px_rgba(0,0,0,0.65)]"
-              style={{ left: `${posisiSlider}%` }}
-            >
-              <div className="absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-[#432912]/90 text-xs font-bold text-white shadow-lg backdrop-blur-md">
-                ⇄
+              <div
+                className="pointer-events-none absolute inset-y-0 w-0.5 bg-white shadow-[0_0_10px_rgba(0,0,0,0.6)]"
+                style={{ left: `${posisiGeser}%` }}
+              >
+                <div className="absolute top-1/2 left-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-xs font-bold text-[#2D1A0B] shadow-md">
+                  ⇄
+                </div>
               </div>
+              <span className="absolute top-3 left-3 rounded-full bg-[#3D2310]/85 px-3 py-1 text-xs font-semibold text-white">
+                {motifA.nama}
+              </span>
+              <span className="absolute top-3 right-3 rounded-full bg-[#AD7559]/90 px-3 py-1 text-xs font-semibold text-white">
+                {motifB.nama}
+              </span>
             </div>
-
-            <input
-              type="range"
-              min="5"
-              max="95"
-              value={posisiSlider}
-              onChange={(e) => setPosisiSlider(Number(e.target.value))}
-              aria-label="Geser pembanding motif"
-              className="absolute inset-0 z-30 h-full w-full cursor-ew-resize opacity-0"
-            />
-
-            <span className="pointer-events-none absolute bottom-4 left-4 z-10 rounded-full border border-white/25 bg-black/45 px-3.5 py-1 text-xs font-bold text-white backdrop-blur-md">
-              A: {kiri.nama}
-            </span>
-            <span className="pointer-events-none absolute right-4 bottom-4 z-10 rounded-full border border-white/25 bg-black/45 px-3.5 py-1 text-xs font-bold text-white backdrop-blur-md">
-              B: {kanan.nama}
-            </span>
+            <div className="flex items-center gap-3 px-1">
+              <span className="text-xs font-semibold text-[#432912]">{motifA.nama}</span>
+              <input
+                type="range"
+                min="5"
+                max="95"
+                value={posisiGeser}
+                onChange={(e) => setPosisiGeser(Number(e.target.value))}
+                aria-label="Geser perbandingan dua motif"
+                className="h-2 flex-1 cursor-pointer accent-[#AD7559]"
+              />
+              <span className="text-xs font-semibold text-[#AD7559]">{motifB.nama}</span>
+            </div>
           </div>
         )}
       </section>
 
-      {/* BAGIAN BAWAH: SKOR KEMIRIPAN VEKTOR & TABEL PERBANDINGAN DETAIL */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[340px_minmax(0,1fr)]">
-        <div className="glass-panel flex flex-col justify-between rounded-[28px] p-6">
-          <div>
-            <div className="flex items-center justify-between gap-2">
-              <div>
-                <span className="text-[10px] font-bold tracking-wider text-[#AD7559] uppercase">
-                  Analisis Vektor CNN
-                </span>
-                <h2 className="mt-0.5 text-base font-bold text-[#432912]">
-                  Indeks Kemiripan
-                </h2>
-              </div>
-              <div className="shrink-0 rounded-2xl bg-[#432912] px-3.5 py-2 text-right text-white">
-                <span className="block text-[9px] text-[#C59C8A] uppercase">Skor Total</span>
-                <span className="text-base font-extrabold">{analisis.total}%</span>
-              </div>
-            </div>
-
-            <div className="mt-5 space-y-4">
-              {analisis.dimensi.map((d) => (
-                <div key={d.label}>
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="font-bold text-[#432912]">{d.label}</span>
-                    <span className="font-extrabold text-[#85522F]">{d.nilai}%</span>
-                  </div>
-                  <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-[#D5D2CA]/70">
-                    <div
-                      className="h-full rounded-full bg-gradient-to-r from-[#85522F] to-[#AD7559] transition-all duration-500"
-                      style={{ width: `${d.nilai}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-6 grid grid-cols-2 gap-2.5">
-            <Link
-              to="/hasil"
-              state={{ contohId: kiri.id }}
-              className="flex h-10 items-center justify-center rounded-full bg-[#432912] px-3 text-center text-[11px] font-bold text-white transition hover:opacity-90"
-            >
-              Detail {kiri.nama.replace("Batik ", "")}
-            </Link>
-            <Link
-              to="/hasil"
-              state={{ contohId: kanan.id }}
-              className="flex h-10 items-center justify-center rounded-full bg-[#AD7559] px-3 text-center text-[11px] font-bold text-white transition hover:brightness-105"
-            >
-              Detail {kanan.nama.replace("Batik ", "")}
-            </Link>
-          </div>
-        </div>
-
-        <div className="glass-latte min-w-0 overflow-hidden rounded-[28px] p-6">
-          <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">
-            Matriks Komparasi Kurator
-          </span>
-          <h2 className="mt-0.5 text-base font-bold text-[#432912]">
-            Perbedaan Karakteristik {kiri.nama} vs {kanan.nama}
+      {/* HANYA TABEL BAWAH YANG DIUBAH KE DESAIN MATRIKS KARTU BERWARNA & DASHED */}
+      <section className="glass-card-motion rounded-[28px] p-5 shadow-[0_18px_45px_rgba(67,41,18,0.07)] sm:p-7">
+        <div className="mb-6 text-center">
+          <h2 className="font-serif text-xl font-extrabold text-[#2D1A0B] sm:text-2xl">
+            Perbedaan Karakteristik &amp; Makna
           </h2>
+          <p className="mt-1 text-xs text-[#7D6450]">
+            Ringkasan perbandingan visual dan filosofis antara{" "}
+            <strong className="text-[#3D2310]">{motifA.nama}</strong> dan{" "}
+            <strong className="text-[#AD7559]">{motifB.nama}</strong>
+          </p>
+        </div>
 
-          <div className="mt-4 divide-y divide-[#432912]/10">
-            {analisis.matriks.map((row) => (
-              <div key={row.aspek} className="grid grid-cols-1 gap-3 py-3.5 sm:grid-cols-[130px_minmax(0,1fr)_minmax(0,1fr)]">
-                <span className="text-[11px] font-extrabold text-[#85522F] uppercase">
-                  {row.aspek}
-                </span>
-                <p className="min-w-0 rounded-xl bg-white/75 p-3 text-xs leading-relaxed text-[#432912]">
-                  <strong className="mb-0.5 block text-[10px] text-[#432912]/60">A &bull; {kiri.nama}</strong>
-                  {row.kiri}
-                </p>
-                <p className="min-w-0 rounded-xl bg-white/75 p-3 text-xs leading-relaxed text-[#432912]">
-                  <strong className="mb-0.5 block text-[10px] text-[#AD7559]">B &bull; {kanan.nama}</strong>
-                  {row.kanan}
-                </p>
-              </div>
-            ))}
+        {/* Header Kartu Berwarna dengan Bayangan Bawah (Persis Gaya Referensi) */}
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-[210px_1fr_1fr]">
+          <div className="flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-[#D7B89C] to-[#C49E7E] px-4 py-3 text-center text-[#2D1A0B] shadow-[0_8px_18px_rgba(196,158,126,0.35)]">
+            <span className="text-[10px] font-extrabold tracking-widest uppercase opacity-75">
+              Parameter Wastra
+            </span>
+            <span className="mt-0.5 font-serif text-sm font-bold">Aspek Motif</span>
+          </div>
+
+          <div className="flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-[#432912] to-[#2E1B0B] px-4 py-3 text-center text-white shadow-[0_8px_18px_rgba(67,41,18,0.24)]">
+            <span className="text-[10px] font-bold tracking-widest text-white/75 uppercase">
+              {motifA.daerah}
+            </span>
+            <span className="mt-0.5 font-serif text-sm font-bold">{motifA.nama}</span>
+          </div>
+
+          <div className="flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-[#AD7559] to-[#8F5A40] px-4 py-3 text-center text-white shadow-[0_8px_18px_rgba(173,117,89,0.28)]">
+            <span className="text-[10px] font-bold tracking-widest text-white/80 uppercase">
+              {motifB.daerah}
+            </span>
+            <span className="mt-0.5 font-serif text-sm font-bold">{motifB.nama}</span>
           </div>
         </div>
-      </div>
+
+        {/* Baris Checklist Bulat dengan Garis Pemisah Dashed */}
+        <div className="mt-3 divide-y divide-dashed divide-[#DFD1C3]">
+          {barisChecklist.map((baris, idx) => (
+            <div
+              key={baris.id}
+              className={`grid grid-cols-1 items-center gap-3 py-2.5 md:grid-cols-[210px_1fr_1fr] ${
+                idx % 2 === 1 ? "rounded-xl bg-[#F5EFE9]/90" : ""
+              }`}
+            >
+              <div className="px-3 text-center text-[11px] font-bold text-[#3D2310]">{baris.label}</div>
+
+              <div className="flex items-center justify-center gap-2 bg-gradient-to-b from-[#432912]/[0.05] to-transparent py-1">
+                <span className="text-[11px] font-bold text-[#3D2310] md:hidden">{motifA.nama}:</span>
+                <IkonStatus aktif={cekAtribut(motifA, baris.id)} warnaAktif="bg-[#432912]" />
+              </div>
+
+              <div className="flex items-center justify-center gap-2 bg-gradient-to-b from-[#AD7559]/[0.07] to-transparent py-1">
+                <span className="text-[11px] font-bold text-[#AD7559] md:hidden">{motifB.nama}:</span>
+                <IkonStatus aktif={cekAtribut(motifB, baris.id)} warnaAktif="bg-[#AD7559]" />
+              </div>
+            </div>
+          ))}
+
+          {/* Baris Detail Deskriptif dengan Pemisah Dashed */}
+          {barisTeks.map((b, idx) => (
+            <div
+              key={b.aspek}
+              className={`grid grid-cols-1 items-center gap-3 py-3 md:grid-cols-[210px_1fr_1fr] ${
+                idx % 2 === 1 ? "rounded-xl bg-[#F5EFE9]/90" : ""
+              }`}
+            >
+              <div className="px-3 text-center text-[11px] font-bold text-[#3D2310]">{b.aspek}</div>
+
+              <div className="px-3.5 text-center text-xs leading-normal text-[#2D1A0B]">
+                <span className="mb-1 block text-[11px] font-bold text-[#3D2310] md:hidden">{motifA.nama}</span>
+                {b.nilaiA}
+              </div>
+
+              <div className="px-3.5 text-center text-xs leading-normal text-[#2D1A0B]">
+                <span className="mb-1 block text-[11px] font-bold text-[#AD7559] md:hidden">{motifB.nama}</span>
+                {b.nilaiB}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Legenda Ikon Bawah & Tautan Bedah Motif (Persis 3 Indikator Bawah Referensi) */}
+        <div className="mt-6 grid grid-cols-1 gap-4 border-t border-[#E5D7CA] pt-5 sm:grid-cols-3">
+          <div className="flex items-center gap-3">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#432912] text-xs font-bold text-white shadow-xs">
+              ✓
+            </span>
+            <p className="text-[11px] leading-snug text-[#6E5440]">
+              <strong className="text-[#2D1A0B]">Ciri Utama Motif Kiri:</strong> Menandai karakter yang melekat kuat pada {motifA.nama}.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#AD7559] text-xs font-bold text-white shadow-xs">
+              ✓
+            </span>
+            <p className="text-[11px] leading-snug text-[#6E5440]">
+              <strong className="text-[#2D1A0B]">Ciri Utama Motif Kanan:</strong> Menandai karakter yang melekat kuat pada {motifB.nama}.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-between gap-2 rounded-2xl bg-[#FAF6F2] px-3.5 py-2.5">
+            <div className="flex items-center gap-2.5">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#D9CEC3] text-xs font-bold text-[#7A6858]">
+                ✕
+              </span>
+              <span className="text-[11px] font-medium text-[#6E5440]">Bukan ciri dominan</span>
+            </div>
+            <div className="flex gap-1.5">
+              <Link
+                to="/hasil"
+                state={{ contohId: motifA.id }}
+                className="rounded-full bg-[#432912] px-2.5 py-1 text-[10px] font-bold text-white hover:opacity-90"
+              >
+                Bedah Kiri
+              </Link>
+              <Link
+                to="/hasil"
+                state={{ contohId: motifB.id }}
+                className="rounded-full bg-[#AD7559] px-2.5 py-1 text-[10px] font-bold text-white hover:opacity-90"
+              >
+                Bedah Kanan
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

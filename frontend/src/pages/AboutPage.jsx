@@ -4,10 +4,10 @@ import { KATALOG, unduhDatasetCSV, unduhDatasetJSON } from "../data/katalogMotif
 import { BatikMatchMascot } from "../components/BatikMatchLogo";
 
 const METRIK_MODEL = [
-  { label: "Top-1 Accuracy", nilai: "92.4%", ket: "Akurasi prediksi kelas utama pada data uji" },
-  { label: "Top-3 Recall", nilai: "98.1%", ket: "Motif target masuk dalam 3 kerabat terdekat" },
+  { label: "PRECISION@5 (P@5)", nilai: "82.5%", ket: "Relevansi 5 motif teratas pada 295 citra uji (D6 EfficientNet-B0)" },
+  { label: "MEAN AVERAGE PRECISION (mAP)", nilai: "73.1%", ket: "Performa retrieval seluruh peringkat (P@10 mencapai 80.8%)" },
   { label: "Latensi Inferensi", nilai: "< 180 ms", ket: "Ekstraksi vektor embedding 224×224 px" },
-  { label: "Dataset Kaggle", nilai: "15 Kelas", ket: "Indonesian Batik Motifs (Corak App)" },
+  { label: "Dataset Kaggle", nilai: "15 Kelas", ket: "1.326 citra bersih (1.031 latih · 295 uji)" },
 ];
 
 const PIPELINE = [
@@ -34,7 +34,7 @@ const PIPELINE = [
 const FAQ_LIST = [
   {
     tanya: "Dari mana sumber dataset 15 motif batik pada BatikMatch?",
-    jawab: "Dataset referensi mengacu pada koleksi Indonesian Batik Motifs (Corak App) yang mencakup 15 ragam motif klasik Nusantara dari Sumatra, Jawa, Bali, hingga Papua.",
+    jawab: "Dataset referensi mengacu pada koleksi 1.326 citra bersih (1.031 latih · 295 uji) yang mencakup 15 ragam motif klasik Nusantara dari Sumatra, Jawa, Bali, hingga Papua.",
   },
   {
     tanya: "Bagaimana cara mendapatkan akurasi terbaik saat menggunakan kamera?",
@@ -43,6 +43,21 @@ const FAQ_LIST = [
   {
     tanya: "Apa perbedaan peran Guest, Kolektor (User), dan Admin?",
     jawab: "Guest dapat memindai dan membandingkan motif secara bebas; Kolektor dapat menyimpan koleksi favorit & riwayat; Admin dapat mengelola kelas dataset motif.",
+  },
+  {
+    tanya: "Mengapa sistem menggunakan metode CBIR (Cosine Similarity) dibanding klasifikasi biasa?",
+    jawab:
+      "Pendekatan Content-Based Image Retrieval (CBIR) dengan ekstraksi fitur EfficientNet-B0 memungkinkan sistem mengukur kemiripan tekstur visual secara langsung terhadap seluruh galeri referensi, sehingga tetap mampu menampilkan motif terdekat meskipun corak kain memiliki variasi warna atau pencahayaan baru.",
+  },
+  {
+    tanya: "Apa arti metrik Precision@5 (82.5%) dan mAP (73.1%) pada hasil evaluasi?",
+    jawab:
+      "Precision@5 sebesar 82.5% menunjukkan bahwa rata-rata lebih dari 4 dari 5 rekomendasi motif teratas yang ditampilkan sistem benar-benar sesuai dengan kelas motif asli pada data uji, sedangkan mAP 73.1% mengukur ketepatan urutan relevansi di seluruh peringkat pencarian.",
+  },
+  {
+    tanya: "Bagaimana jika kain batik memiliki perpaduan dua motif sekaligus?",
+    jawab:
+      "Sistem akan menampilkan peringkat skor kemiripan teratas beserta persentase kecocokannya. Kamu juga dapat menggunakan fitur Pemotong Gambar (Cropper 1:1) untuk memfokuskan pemindaian pada salah satu bagian ornamen utama terlebih dahulu.",
   },
 ];
 
@@ -54,7 +69,7 @@ export default function AboutPage() {
       {/* 1. Hero dengan Maskot BatikMatch & Tombol Unduh Dataset */}
       <section className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#6B3E21] via-[#4D2C16] to-[#2B170A] p-7 text-white shadow-[0_22px_50px_rgba(43,23,10,0.24)] sm:p-10">
         <img
-          src="/motif/parang.jpg"
+          src="/motif/banner-tentang.jpg"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20 mix-blend-luminosity"
@@ -65,7 +80,7 @@ export default function AboutPage() {
             <div className="inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-[11px] font-semibold text-[#C59C8A] backdrop-blur-md">
               <span>✦ Arsitektur Sistem &amp; Dokumentasi Dataset</span>
             </div>
-            <h1 className="mt-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
+            <h1 className="font-serif mt-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
               Tentang BatikMatch
             </h1>
             <p className="mt-3 text-xs leading-relaxed text-[#D5D2CA]/90 sm:text-sm">
@@ -132,7 +147,7 @@ export default function AboutPage() {
                 {p.metrik}
               </span>
             </div>
-            <h2 className="mt-4 text-base font-bold text-[#432912]">{p.judul}</h2>
+            <h2 className="font-serif mt-4 text-base font-bold text-[#432912]">{p.judul}</h2>
             <p className="mt-1.5 text-xs leading-relaxed text-[#432912]/75">{p.isi}</p>
           </div>
         ))}
@@ -146,7 +161,7 @@ export default function AboutPage() {
               <span className="text-[10px] font-bold tracking-wider text-[#AD7559] uppercase">
                 Struktur Kelas Dataset
               </span>
-              <h2 className="mt-0.5 text-base font-bold text-[#432912]">
+              <h2 className="font-serif mt-0.5 text-base font-bold text-[#432912]">
                 15 Label Kelas Motif Terdaftar
               </h2>
             </div>
@@ -176,7 +191,7 @@ export default function AboutPage() {
           <span className="text-[10px] font-bold tracking-wider text-[#AD7559] uppercase">
             Panduan &amp; Bantuan
           </span>
-          <h2 className="mt-0.5 text-base font-bold text-[#432912]">
+          <h2 className="font-serif mt-0.5 text-base font-bold text-[#432912]">
             Pertanyaan yang Sering Diajukan
           </h2>
 

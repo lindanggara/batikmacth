@@ -33,7 +33,7 @@ export default function KartuMotifBaru({ motif, favorit, onToggle, label }) {
   return (
     <article
       onClick={() => nav("/hasil", { state: { contohId: motif.id } })}
-      className="card-motion motion-sway motion-reveal group relative flex min-h-[350px] cursor-pointer select-none flex-col justify-between overflow-hidden rounded-[28px] border border-white/35 bg-[#432912] text-white shadow-[0_18px_36px_rgba(67,41,18,0.2)] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_24px_46px_rgba(67,41,18,0.3)]"
+      className="card-motion motion-sway motion-reveal group relative flex min-h-[350px] cursor-pointer select-none flex-col justify-between overflow-hidden rounded-[28px] border border-white/35 ring-1 ring-inset ring-white/20 bg-[#2D1A0B] text-white shadow-[0_18px_38px_rgba(67,41,18,0.22)] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_24px_46px_rgba(67,41,18,0.3)]"
     >
       {/* Foto Full-Bleed */}
       {!gagal && sumber ? (
@@ -81,7 +81,7 @@ export default function KartuMotifBaru({ motif, favorit, onToggle, label }) {
 
       {/* Bagian Bawah: Judul, Daerah, Deskripsi, Tag & Tombol Putih Utuh */}
       <div className="glass-photo-sheet relative z-10 mt-20 flex flex-col rounded-t-[24px] p-4">
-        <span className="w-fit rounded-full bg-white/15 px-2.5 py-0.5 text-[10px] font-semibold text-[#C59C8A] backdrop-blur-sm">
+        <span className="w-fit rounded-full border border-[#E5BFA9]/25 bg-white/15 px-2.5 py-0.5 text-[10px] font-bold text-[#F4D5B8] backdrop-blur-sm">
           {motif.daerah}
         </span>
 
@@ -104,9 +104,7 @@ export default function KartuMotifBaru({ motif, favorit, onToggle, label }) {
 
         {/* Tombol Pil Putih Utuh di Bawah */}
         <div className="mt-4">
-          <span className="flex h-10 w-full items-center justify-center rounded-full bg-white text-xs font-bold text-[#432912] shadow-md transition-transform duration-200 group-hover:scale-[1.02]">
-            Lihat Detail Motif
-          </span>
+          <span className="flex h-10 w-full items-center justify-center gap-1.5 rounded-full bg-[#FAF6F2] text-xs font-extrabold text-[#432912] shadow-md transition-all duration-300 group-hover:bg-white group-hover:scale-[1.02]"><span>Lihat Detail Motif</span><span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span></span>
         </div>
       </div>
     </article>

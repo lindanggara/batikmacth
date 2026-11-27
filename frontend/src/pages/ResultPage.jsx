@@ -89,7 +89,7 @@ export default function ResultPage() {
       <div className="grid items-start gap-8 lg:grid-cols-[370px_1fr]">
         {/* KARTU KIRI: Full-Bleed Card + Frosted Glass Sheet */}
         <div className="card-motion motion-reveal relative flex min-h-[500px] flex-col justify-between overflow-hidden rounded-[32px] border border-white/35 bg-[#432912] text-white shadow-[0_24px_50px_rgba(67,41,18,0.22)] lg:sticky lg:top-8">
-          <LingkaranFotoBatik motif={t} srcManual={fotoUrl} className="absolute inset-0 h-full w-full" />
+          <LingkaranFotoBatik motif={t} srcManual={fotoUrl || t.gambar} className="absolute inset-0 h-full w-full" />
 
           <div
             className="pointer-events-none absolute inset-0"
