@@ -1,136 +1,206 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
+import { KATALOG } from "../data/katalogMotif";
 import { useAuth } from "../context/AuthContext";
 import { useToast } from "../context/ToastContext";
 import BatikMatchLogo from "../components/BatikMatchLogo";
 import {
-  BackendMati,
-  SesiHabis,
   ambilKoleksi,
   ambilStatistik,
   ambilUmpanBalik,
+  BackendMati,
   hapusMotif,
+  SesiHabis,
   tambahFotoMotif,
-  tambahMotif as tambahMotifApi,
+  tambahMotif,
   tandaiUmpanBalikSelesai,
 } from "../api/admin";
-
-function formatWaktu(iso) {
-  try {
-    return new Date(iso).toLocaleString("id-ID", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
-  } catch {
-    return iso;
-  }
-}
 
 export default function AdminDashboardPage() {
   const nav = useNavigate();
   const { user, isAdmin, logout } = useAuth();
   const { tampilkanToast } = useToast();
   const [tab, setTab] = useState("dataset");
-  const [daftarMotif, setDaftarMotif] = useState([]);
-  const [feedbackList, setFeedbackList] = useState([]);
-  const [statistik, setStatistik] = useState(null);
+  const [modeApi, setModeApi] = useState(true);
   const [memuat, setMemuat] = useState(true);
-  const [galat, setGalat] = useState("");
+
+  const [stats, setStats] = useState({
+    total_queries: 0,
+    total_motifs: KATALOG.length,
+    feedback_positif: 0,
+    feedback_negatif: 0,
+    pencarian_tidak_dikenal: 0,
+  });
+
+  const [daftarMotif, setDaftarMotif] = useState(KATALOG);
   const [namaBaru, setNamaBaru] = useState("");
   const [daerahBaru, setDaerahBaru] = useState("");
   const [ciriBaru, setCiriBaru] = useState("");
-  const [sibuk, setSibuk] = useState(false);
+  const [uploadingId, setUploadingId] = useState(null);
 
-  // Semua error dari API lewat sini: sesi habis -> keluar, sisanya tampilkan pesan.
-  const tanganiGalat = useCallback(
-    (err) => {
-      if (err instanceof SesiHabis) {
-        logout();
-        tampilkanToast("Sesi admin habis. Silakan masuk lagi.", "error");
-        nav("/admin/login", { replace: true });
-        return;
-      }
-      tampilkanToast(err.message || "Terjadi kesalahan.", "error");
-    },
-    [logout, nav, tampilkanToast]
-  );
-
-  const muatData = useCallback(async () => {
-    setMemuat(true);
-    setGalat("");
-    try {
-      const [stat, motif, umpan] = await Promise.all([ambilStatistik(), ambilKoleksi(), ambilUmpanBalik()]);
-      setStatistik(stat);
-      setDaftarMotif(motif);
-      setFeedbackList(umpan);
-    } catch (err) {
-      if (err instanceof BackendMati) setGalat(err.message);
-      else tanganiGalat(err);
-    } finally {
-      setMemuat(false);
-    }
-  }, [tanganiGalat]);
+  const [feedbackList, setFeedbackList] = useState([]);
 
   useEffect(() => {
-    if (isAdmin) muatData();
-  }, [isAdmin, muatData]);
+    if (!isAdmin) return;
+    let batal = false;
+
+    async function muatSemua() {
+      setMemuat(true);
+      try {
+        const [st, kol, fb] = await Promise.all([
+          ambilStatistik(),
+          ambilKoleksi(),
+          ambilUmpanBalik(),
+        ]);
+        if (batal) return;
+        setModeApi(true);
+        setStats(st);
+        setDaftarMotif(kol);
+        setFeedbackList(fb);
+      } catch (err) {
+        if (batal) return;
+        if (err instanceof SesiHabis) {
+          logout();
+          tampilkanToast(err.message, "error");
+          nav("/admin/login");
+          return;
+        }
+        if (err instanceof BackendMati) {
+          setModeApi(false);
+          const lokalFb = JSON.parse(localStorage.getItem("batikmatch_feedback_v1") || "[]");
+          setFeedbackList(
+            lokalFb.map((x) => ({
+              query_id: String(x.id),
+              motif_nama: x.motif,
+              cocok: x.status === "Akurat",
+              created_at: x.waktu,
+              skor: 0.92,
+            }))
+          );
+        }
+      } finally {
+        if (!batal) setMemuat(false);
+      }
+    }
+
+    muatSemua();
+    return () => {
+      batal = true;
+    };
+  }, [isAdmin]);
 
   if (!isAdmin) {
     return <Navigate to="/admin/login" replace />;
   }
 
-  async function tambahMotif(e) {
+  async function handleTambahMotif(e) {
     e.preventDefault();
     if (!namaBaru.trim() || !daerahBaru.trim()) {
       tampilkanToast("Nama motif dan daerah asal wajib diisi.", "error");
       return;
     }
-    setSibuk(true);
-    try {
-      const baru = await tambahMotifApi({ nama: namaBaru.trim(), daerah: daerahBaru.trim(), ciri: ciriBaru.trim() });
+
+    if (modeApi) {
+      try {
+        const baru = await tambahMotif({
+          nama: namaBaru.trim(),
+          daerah: daerahBaru.trim(),
+          ciri: ciriBaru.trim() || `Motif batik tradisional khas ${daerahBaru.trim()}.`,
+        });
+        setDaftarMotif([baru, ...daftarMotif]);
+        setStats((s) => ({ ...s, total_motifs: s.total_motifs + 1 }));
+        setNamaBaru("");
+        setDaerahBaru("");
+        setCiriBaru("");
+        tampilkanToast(`${baru.nama} berhasil disimpan ke server backend.`);
+      } catch (err) {
+        if (err instanceof SesiHabis) {
+          logout();
+          nav("/admin/login");
+          return;
+        }
+        tampilkanToast(err.message, "error");
+      }
+    } else {
+      const itemBaru = {
+        id: namaBaru.toLowerCase().replace(/\s+/g, "-"),
+        nama: namaBaru.trim(),
+        daerah: daerahBaru.trim(),
+        ciri: ciriBaru.trim() || `Motif batik tradisional khas ${daerahBaru.trim()}.`,
+        tambahan: true,
+      };
+      setDaftarMotif([itemBaru, ...daftarMotif]);
       setNamaBaru("");
       setDaerahBaru("");
       setCiriBaru("");
-      tampilkanToast(`${baru.nama} ditambahkan. Unggah foto supaya motif ini bisa dicari.`);
-      await muatData();
-    } catch (err) {
-      tanganiGalat(err);
-    } finally {
-      setSibuk(false);
+      tampilkanToast(`${itemBaru.nama} ditambahkan (Mode Simulasi Lokal).`);
     }
   }
 
-  async function hapus(m) {
-    if (!window.confirm(`Hapus ${m.nama} beserta semua fotonya?`)) return;
-    try {
-      await hapusMotif(m.id);
-      tampilkanToast(`${m.nama} dihapus dari koleksi.`);
-      await muatData();
-    } catch (err) {
-      tanganiGalat(err);
-    }
-  }
-
-  async function unggahFoto(m, file) {
+  async function handleUploadFotoReferensi(motifId, file) {
     if (!file) return;
+    if (!modeApi) {
+      tampilkanToast("Nyalakan server backend untuk mengunggah gambar referensi galeri.", "error");
+      return;
+    }
+    setUploadingId(motifId);
     try {
-      await tambahFotoMotif(m.id, file);
-      tampilkanToast(`Foto ditambahkan ke ${m.nama}. Motif langsung bisa dicari tanpa melatih ulang model.`);
-      await muatData();
+      const updated = await tambahFotoMotif(motifId, file);
+      setDaftarMotif((prev) => prev.map((m) => (m.id === motifId ? updated : m)));
+      tampilkanToast(`Foto ditambahkan ke ${updated.nama}! Siap dikenali tanpa retrain.`);
     } catch (err) {
-      tanganiGalat(err);
+      if (err instanceof SesiHabis) {
+        logout();
+        nav("/admin/login");
+        return;
+      }
+      tampilkanToast(err.message, "error");
+    } finally {
+      setUploadingId(null);
     }
   }
 
-  async function hapusFeedback(queryId) {
-    try {
-      await tandaiUmpanBalikSelesai(queryId);
-      setFeedbackList((daftar) => daftar.filter((f) => f.query_id !== queryId));
-      tampilkanToast("Laporan feedback telah ditandai selesai.");
-    } catch (err) {
-      tanganiGalat(err);
+  async function handleHapusMotif(motif) {
+    if (modeApi) {
+      try {
+        await hapusMotif(motif.id);
+        setDaftarMotif(daftarMotif.filter((x) => x.id !== motif.id));
+        setStats((s) => ({ ...s, total_motifs: Math.max(0, s.total_motifs - 1) }));
+        tampilkanToast(`${motif.nama} dihapus dari server.`);
+      } catch (err) {
+        if (err instanceof SesiHabis) {
+          logout();
+          nav("/admin/login");
+          return;
+        }
+        tampilkanToast(err.message, "error");
+      }
+    } else {
+      setDaftarMotif(daftarMotif.filter((x) => x.id !== motif.id));
+      tampilkanToast(`${motif.nama} dihapus (Mode Lokal).`);
     }
   }
 
-  const totalUmpanBalik = statistik ? statistik.feedback_positif + statistik.feedback_negatif : 0;
-  const kepuasan = totalUmpanBalik ? Math.round((statistik.feedback_positif / totalUmpanBalik) * 100) : null;
+  async function handleSelesaiFeedback(queryId) {
+    if (modeApi) {
+      try {
+        await tandaiUmpanBalikSelesai(queryId);
+        setFeedbackList((prev) => prev.filter((f) => f.query_id !== queryId));
+        tampilkanToast("Laporan feedback ditandai selesai ditinjau.");
+      } catch (err) {
+        if (err instanceof SesiHabis) {
+          logout();
+          nav("/admin/login");
+          return;
+        }
+        tampilkanToast(err.message, "error");
+      }
+    } else {
+      const sisa = feedbackList.filter((f) => f.query_id !== queryId);
+      setFeedbackList(sisa);
+      tampilkanToast("Feedback dihapus dari daftar lokal.");
+    }
+  }
 
   return (
     <div className="min-h-screen p-5 text-[#432912] sm:p-10">
@@ -140,9 +210,18 @@ export default function AdminDashboardPage() {
           <div className="flex items-center gap-4">
             <BatikMatchLogo size={42} showTagline={false} />
             <div className="border-l border-[#432912]/15 pl-4">
-              <span className="text-[10px] font-bold tracking-widest text-[#AD7559] uppercase">
-                Panel Kurator &bull; {user?.username || user?.email}
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-bold tracking-widest text-[#AD7559] uppercase">
+                  Panel Kurator &bull; {user?.email || user?.nama}
+                </span>
+                <span
+                  className={`rounded-full px-2 py-0.5 text-[9px] font-bold ${
+                    modeApi ? "bg-emerald-700/15 text-emerald-900" : "bg-amber-700/15 text-amber-900"
+                  }`}
+                >
+                  {modeApi ? "Terhubung Backend" : "Mode Offline"}
+                </span>
+              </div>
               <h1 className="text-lg font-extrabold sm:text-xl">Dashboard Manajemen Wastra</h1>
             </div>
           </div>
@@ -167,46 +246,23 @@ export default function AdminDashboardPage() {
           </div>
         </div>
 
-        {galat && (
-          <div role="alert" className="glass-panel flex flex-wrap items-center justify-between gap-3 rounded-[24px] border border-red-300/60 p-5">
-            <p className="text-sm font-bold text-red-800">{galat}</p>
-            <button
-              type="button"
-              onClick={muatData}
-              className="rounded-full bg-[#AD7559] px-4 py-2 text-xs font-bold text-white"
-            >
-              Coba lagi
-            </button>
-          </div>
-        )}
-
-        {/* Kartu Ringkasan Statistik (dari GET /admin/stats) */}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Kartu Ringkasan Statistik */}
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <div className="glass-latte rounded-2xl p-5">
-            <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Total Kelas Dataset</span>
-            <p className="mt-1 text-2xl font-extrabold text-[#432912]">{memuat ? "…" : `${daftarMotif.length} Motif`}</p>
+            <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Total Kelas</span>
+            <p className="mt-1 text-2xl font-extrabold text-[#432912]">{daftarMotif.length}</p>
           </div>
           <div className="glass-latte rounded-2xl p-5">
-            <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Total Pencarian</span>
-            <p className="mt-1 text-2xl font-extrabold text-[#432912]">{statistik ? statistik.total_queries : "…"}</p>
-            {statistik && (
-              <p className="mt-0.5 text-[10px] font-semibold text-[#432912]/55">
-                {statistik.pencarian_tidak_dikenal} tidak dikenal
-              </p>
-            )}
+            <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Total Pindai</span>
+            <p className="mt-1 text-2xl font-extrabold text-[#432912]">{stats.total_queries}</p>
           </div>
           <div className="glass-latte rounded-2xl p-5">
-            <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Umpan Balik Masuk</span>
-            <p className="mt-1 text-2xl font-extrabold text-[#432912]">{statistik ? `${totalUmpanBalik} Laporan` : "…"}</p>
+            <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Feedback Akurat</span>
+            <p className="mt-1 text-2xl font-extrabold text-emerald-800">{stats.feedback_positif}</p>
           </div>
           <div className="glass-latte rounded-2xl p-5">
-            <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Tingkat Kepuasan Prediksi</span>
-            <p className="mt-1 text-2xl font-extrabold text-emerald-800">{kepuasan === null ? "–" : `${kepuasan}%`}</p>
-            {statistik && (
-              <p className="mt-0.5 text-[10px] font-semibold text-[#432912]/55">
-                {statistik.feedback_positif} akurat &bull; {statistik.feedback_negatif} kurang tepat
-              </p>
-            )}
+            <span className="text-[10px] font-bold tracking-wider text-[#85522F] uppercase">Tidak Dikenal</span>
+            <p className="mt-1 text-2xl font-extrabold text-amber-800">{stats.pencarian_tidak_dikenal}</p>
           </div>
         </div>
 
@@ -219,7 +275,7 @@ export default function AdminDashboardPage() {
               tab === "dataset" ? "bg-[#AD7559] text-white shadow-xs" : "text-[#432912]/70"
             }`}
           >
-            Kelola Kelas Motif ({daftarMotif.length})
+            Kelola Kelas &amp; Galeri ({daftarMotif.length})
           </button>
           <button
             type="button"
@@ -232,9 +288,13 @@ export default function AdminDashboardPage() {
           </button>
         </div>
 
-        {tab === "dataset" ? (
+        {memuat ? (
+          <div className="glass-panel rounded-[28px] p-10 text-center text-xs font-bold text-[#85522F]">
+            Memuat data dari server BatikMatch...
+          </div>
+        ) : tab === "dataset" ? (
           <>
-            <form onSubmit={tambahMotif} className="glass-panel grid gap-3 rounded-[28px] p-5 sm:grid-cols-4">
+            <form onSubmit={handleTambahMotif} className="glass-panel grid gap-3 rounded-[28px] p-5 sm:grid-cols-4">
               <input
                 type="text"
                 placeholder="Nama Motif (mis. Batik Nitik)"
@@ -258,10 +318,9 @@ export default function AdminDashboardPage() {
               />
               <button
                 type="submit"
-                disabled={sibuk}
-                className="rounded-full bg-[#AD7559] py-2.5 text-xs font-bold text-white shadow-sm hover:brightness-105 disabled:opacity-60"
+                className="rounded-full bg-[#AD7559] py-2.5 text-xs font-bold text-white shadow-sm hover:brightness-105"
               >
-                {sibuk ? "Menyimpan..." : "+ Tambah Kelas Motif"}
+                + Tambah Kelas Baru
               </button>
             </form>
 
@@ -269,43 +328,48 @@ export default function AdminDashboardPage() {
               <div className="divide-y divide-[#432912]/10">
                 {daftarMotif.map((m) => (
                   <div key={m.id} className="flex flex-wrap items-center justify-between gap-3 py-3.5 first:pt-0 last:pb-0">
-                    <div>
-                      <div className="flex items-center gap-2">
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
                         <p className="text-sm font-bold text-[#432912]">{m.nama}</p>
                         <span className="rounded-full bg-[#AD7559]/15 px-2.5 py-0.5 text-[10px] font-bold text-[#85522F]">
                           {m.daerah}
                         </span>
-                        <span className="text-[10px] font-semibold text-[#432912]/50">{m.jumlah_gambar} foto</span>
+                        {typeof m.jumlah_gambar === "number" && (
+                          <span className="rounded-full bg-[#432912]/10 px-2 py-0.5 text-[10px] font-semibold text-[#432912]/75">
+                            {m.jumlah_gambar} foto galeri
+                          </span>
+                        )}
                       </div>
-                      <p className="mt-0.5 text-xs text-[#432912]/65">{m.ciri || "Belum ada deskripsi ciri visual."}</p>
+                      <p className="mt-0.5 line-clamp-1 text-xs text-[#432912]/65">{m.ciri}</p>
                     </div>
-                    {m.tambahan ? (
-                      <div className="flex items-center gap-2">
-                        <label className="cursor-pointer rounded-full border border-[#C59C8A]/60 bg-white/80 px-3.5 py-1.5 text-[11px] font-bold text-[#432912] hover:bg-[#AD7559] hover:text-white">
-                          + Foto
-                          <input
-                            type="file"
-                            accept="image/jpeg,image/png,image/webp"
-                            className="sr-only"
-                            onChange={(e) => {
-                              unggahFoto(m, e.target.files?.[0]);
-                              e.target.value = "";
-                            }}
-                          />
-                        </label>
+
+                    <div className="flex items-center gap-2">
+                      {/* Unggah Foto Referensi Tanpa Retrain */}
+                      <label className="cursor-pointer rounded-full border border-[#C59C8A]/70 bg-white/85 px-3.5 py-1.5 text-[11px] font-bold text-[#432912] transition hover:bg-[#AD7559] hover:text-white">
+                        {uploadingId === m.id ? "Mengunggah..." : "+ Foto Referensi"}
+                        <input
+                          type="file"
+                          accept="image/*"
+                          className="hidden"
+                          disabled={uploadingId === m.id}
+                          onChange={(e) => {
+                            const f = e.target.files?.[0];
+                            e.target.value = "";
+                            handleUploadFotoReferensi(m.id, f);
+                          }}
+                        />
+                      </label>
+
+                      {(m.tambahan || !modeApi) && (
                         <button
                           type="button"
-                          onClick={() => hapus(m)}
+                          onClick={() => handleHapusMotif(m)}
                           className="rounded-full bg-red-900/10 px-3.5 py-1.5 text-[11px] font-bold text-red-800 hover:bg-red-900/20"
                         >
                           Hapus
                         </button>
-                      </div>
-                    ) : (
-                      <span className="rounded-full bg-[#432912]/8 px-3 py-1 text-[10px] font-bold text-[#432912]/55">
-                        Kelas dataset
-                      </span>
-                    )}
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -315,38 +379,36 @@ export default function AdminDashboardPage() {
           <div className="glass-panel rounded-[28px] p-6">
             <h2 className="text-base font-bold">Log Evaluasi Akurasi dari Pengguna</h2>
             <div className="mt-4 divide-y divide-[#432912]/10">
-              {memuat ? (
-                <p className="py-6 text-center text-xs text-[#432912]/60">Memuat…</p>
-              ) : feedbackList.length === 0 ? (
-                <p className="py-6 text-center text-xs text-[#432912]/60">Belum ada laporan evaluasi baru.</p>
+              {feedbackList.length === 0 ? (
+                <p className="py-6 text-center text-xs text-[#432912]/60">
+                  Semua laporan evaluasi sudah ditinjau.
+                </p>
               ) : (
                 feedbackList.map((f) => (
-                  <div key={f.query_id} className="flex items-center justify-between gap-3 py-3.5">
+                  <div key={f.query_id} className="flex flex-wrap items-center justify-between gap-3 py-3.5">
                     <div className="flex items-center gap-3">
                       <span
                         className={`rounded-full px-3 py-1 text-[10px] font-bold ${
-                          f.cocok ? "bg-emerald-700/15 text-emerald-900" : "bg-amber-700/15 text-amber-900"
+                          f.cocok
+                            ? "bg-emerald-700/15 text-emerald-900"
+                            : "bg-amber-700/15 text-amber-900"
                         }`}
                       >
                         {f.cocok ? "Akurat" : "Kurang Tepat"}
                       </span>
                       <div>
                         <p className="text-xs font-bold text-[#432912]">
-                          {f.motif_nama || "Tidak ada tebakan"}
-                          {typeof f.skor === "number" && (
-                            <span className="ml-1.5 font-semibold text-[#432912]/55">
-                              ({Math.round(f.skor * 100)}%{f.yakin ? "" : ", tidak dikenal"})
-                            </span>
-                          )}
+                          {f.motif_nama || f.motif_id || "Hasil Pencarian"}{" "}
+                          {typeof f.skor === "number" && `(${Math.round(f.skor * 100)}%)`}
                         </p>
                         <p className="text-[10px] text-[#432912]/55">
-                          {formatWaktu(f.created_at)} &bull; model {f.model}
+                          ID: {f.query_id?.slice(0, 8)} &bull; {f.created_at || "Baru saja"}
                         </p>
                       </div>
                     </div>
                     <button
                       type="button"
-                      onClick={() => hapusFeedback(f.query_id)}
+                      onClick={() => handleSelesaiFeedback(f.query_id)}
                       className="rounded-full border border-[#C59C8A]/60 bg-white/80 px-3.5 py-1 text-[11px] font-bold text-[#432912] hover:bg-[#AD7559] hover:text-white"
                     >
                       Tandai Selesai
